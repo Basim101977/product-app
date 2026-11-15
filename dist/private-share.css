@@ -1,0 +1,17 @@
+#privateShareDialog{width:min(700px,94vw);max-height:90dvh;overflow:auto;border:1px solid #d8e5df;border-radius:20px;padding:22px;color:#173e45;background:white;font-family:Tajawal,sans-serif}#privateShareDialog::backdrop{background:#102f3c88}#privateShareDialog p{white-space:pre-line;overflow-wrap:anywhere;line-height:1.7}#privateShareDialog input[type=email]{width:100%;margin:8px 0 16px}.privateShareChoices{display:flex;flex-wrap:wrap;gap:16px;margin:12px 0}.privateShareChoices label,.privateShareConsent{display:flex;align-items:center;gap:8px}#privateShareDialog input[type=checkbox]{width:20px;height:20px;flex:none}.privateShareConsent{margin:16px 0}.privateShareItem{border-bottom:1px solid #d8e5df;padding:12px 0}.privateShareNames{max-height:220px;overflow:auto}#privateShareReview{margin-top:20px}#privateShareDialog .btn{margin:4px}#privateShareStatus{color:#24575c}@media(max-width:520px){#privateShareDialog{padding:14px}.privateShareChoices{flex-direction:column}}
+
+#privateShareDialog .privateShareChoices label{margin:0;padding:4px 0;min-height:32px}#privateShareDialog .settingsHeader{position:sticky;top:-22px;background:white;z-index:2;padding:8px 0}
+
+[data-share-unread="true"]{position:relative}
+[data-share-unread="true"]::after{content:attr(data-share-count);position:absolute;inset-block-start:-5px;inset-inline-end:-3px;min-width:20px;height:20px;padding:0 3px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;border-radius:999px;background:#d72d36;color:white;font:700 12px/1 sans-serif;border:2px solid white;box-shadow:0 0 0 1px #d72d3628;pointer-events:none}
+#privateShareIncomingTitle{display:inline-block;padding-inline-end:24px;scroll-margin-top:85px}
+#privateShareIncomingTitle[data-share-unread="true"]{color:#b42328}
+#privateShareIncomingTitle::after{inset-block-start:8px}
+#privateShareDialog .privateShareItemUnread{border-inline-start:3px solid #d72d36;padding-inline-start:12px;background:#fffafa}
+.privateShareNew{display:inline-block;border-radius:12px;background:#b42328;color:white;font-size:12px;font-weight:700;padding:2px 10px}
+#privateShareNoticeText{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#privateShareHistory{margin-top:18px;border-top:1px solid #d8e5df;padding-top:12px}
+#privateShareHistory summary{font-weight:700;padding:8px 0}
+#privateShareHistoryList{max-height:300px;overflow:auto}
+#privateShareDialog .privateShareHistoryRow{font-size:13px;line-height:1.6;border-bottom:1px solid #e5ecea;padding:10px 0;margin:0}
+#privateShareEmail{display:block;width:100%;box-sizing:border-box;margin:8px 0;min-height:88px;resize:vertical;font:inherit}
