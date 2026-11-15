@@ -1,0 +1,80 @@
+/* Isolated personal edition; attendance/scanner styles are kept intact. */
+#authName { display:grid; gap:8px; text-align:start; }
+#authName[hidden], #personalPendingActions[hidden], [data-signup-only][hidden] { display:none!important; }
+#authName label { font-size:13px; font-weight:600; }
+#personalPendingActions { display:grid; gap:8px; }
+.personalAcademicStatus { min-width:116px; background:transparent; }
+tr.personalStatusSet>td { background:#fff0f0; }
+tr.personalStatusSet:hover>td { background:#ffe6e6; }
+.rosterTable tr.personalStatusSet>td.cancelledLectureColumn { background:#fff0f0; }
+.rosterTable tr.personalStatusSet:hover>td.cancelledLectureColumn { background:#ffe6e6; }
+.personalMeta { display:grid; grid-template-columns:1fr; gap:12px; margin:12px 0; max-width:360px; }
+#attendanceDepartmentSelect { direction:rtl; text-align:right; }
+#personalSupportModal .modalCard { width:min(520px,94vw); padding:24px; }
+#personalSupportModal .miniActions { margin-top:18px; }
+/* Internal identity survives in the DOM/data model, but is never presented as
+   the student's name or sequence number. RFID settings keep their own binding. */
+.studentIdentityColumn,
+.personalStudentIdentityField, #profileStudentCodeInput,
+label[for="profileStudentCodeInput"] { display:none!important; }
+.personalNameOnlyFields { grid-template-columns:1fr; }
+#lastScanId { font-size:18px; line-height:1.45; letter-spacing:normal; overflow-wrap:anywhere; }
+#usersView, [data-view="usersView"], #memberProfileModal, #classOwnerSelect, #editClassOwnerSelect, #transferOwnerBtn { display:none!important; }
+@media(max-width:520px) { .personalMeta { grid-template-columns:1fr; } }
+
+.rosterExpandButton { flex:0 0 44px; width:44px; height:44px; padding:10px; }
+#attendanceRecordCard > .cardHeader { flex-direction:row; align-items:flex-start; gap:12px; }
+#attendanceRecordCard > .cardHeader > div { flex:1; min-width:0; }
+#attendanceRecordCard #expandAttendanceRecordBtn { width:44px; min-width:44px; max-width:44px; }
+.rosterExpandButton svg { display:block; width:24px; height:24px; }
+.rosterExpandButton .rosterCollapseIcon { display:none; }
+body.rosterExpanded { overflow:hidden; }
+.profileQrBox { text-align:center; padding-top:12px; border-top:1px solid var(--border); }
+#profileQrStatus:empty { display:none; }
+#profileQrImage { display:block; width:min(280px,100%); height:auto; margin:0 auto; border-radius:12px; background:white; }
+#profileQrName { overflow-wrap:anywhere; }
+#attendanceView #attendanceRecordCard.rosterExpandedCard {
+  position:fixed; inset:0; z-index:150; box-sizing:border-box;
+  width:100%; max-width:none; height:100vh; height:100dvh; margin:0;
+  border-radius:0; padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  display:flex; flex-direction:column; overflow:auto; background:var(--card,#fff);
+}
+#attendanceRecordCard.rosterExpandedCard > :not(.tableWrap) { flex-shrink:0; }
+#attendanceRecordCard.rosterExpandedCard > .attendanceActions,
+#attendanceRecordCard.rosterExpandedCard > .cardHeader p { display:none; }
+#attendanceRecordCard.rosterExpandedCard > .tableWrap { flex:1 1 auto; min-height:160px; max-height:none; overflow:auto; }
+#attendanceRecordCard.rosterExpandedCard .rosterExpandIcon { display:none; }
+#attendanceRecordCard.rosterExpandedCard .rosterCollapseIcon { display:block; }
+@media print {
+  .rosterExpandButton { display:none!important; }
+  #attendanceView #attendanceRecordCard.rosterExpandedCard { position:static; height:auto; overflow:visible; display:block; }
+}
+
+#studentProfileModal .modalCard { width:min(960px,96vw); }
+#studentProfileModal .profileGrid { grid-template-columns:minmax(0,1fr) minmax(280px,1fr); gap:20px; }
+#studentProfileModal .profileInfoBox, #studentProfileModal .profileFaceBox { padding:18px; border:1px solid var(--border); border-radius:16px; background:#f8fafc; }
+#studentProfileModal .profileFaceBox h3 { margin:0; }
+#studentProfileModal .profileFaceStage { width:100%; max-width:360px; aspect-ratio:1; min-height:0; margin-inline:auto; }
+#studentProfileModal .profileFaceStage video { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+#studentProfileModal .profileCameraActions { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+#studentProfileModal .profileCameraActions .btn { width:100%; min-height:46px; padding:10px; white-space:normal; }
+#studentProfileModal #profileFaceImageBtn { grid-column:1 / -1; }
+#studentProfileModal .profileDangerActions { margin-top:16px; padding-top:16px; border-top:1px solid var(--border); }
+#studentProfileModal .profileDangerActions .btn { width:100%; }
+#studentProfileModal .infoList { grid-template-columns:1fr 1fr; }
+#studentProfileModal .personalNameOnlyFields { grid-template-columns:1fr; }
+#studentProfileModal .infoItem { min-width:0; padding:10px; grid-template-columns:1fr; gap:6px; align-content:start; }
+#studentProfileModal .infoItem strong { font-size:14px; overflow-wrap:anywhere; }
+#studentProfileModal .profileRemoveFace { color:var(--danger); }
+#studentProfileModal .profileEditNotice { padding:12px 16px; margin-bottom:16px; border:1px solid #e6c478; border-radius:12px; background:#fffbeb; color:#754a13; }
+#studentProfileModal .profileEditNotice p { margin:0 0 10px; line-height:1.7; }
+#studentProfileModal [hidden] { display:none!important; }
+@media(max-width:700px) {
+  #studentProfileModal .profileGrid { grid-template-columns:1fr; }
+  #studentProfileModal .profileInfoBox, #studentProfileModal .profileFaceBox { padding:12px; }
+}
+
+/* A saved pending account is a status screen, not another registration form. */
+#loginPage[data-account-saved="true"] .tabs,#loginPage[data-account-saved="true"] .authGrid > :not(#authStatus):not(#personalPendingActions){display:none!important}
+#loginPage[data-account-saved="true"] #authStatus{font-size:17px;line-height:1.9}
+#loginPage[data-account-saved="true"] #personalPendingActions{display:grid;gap:12px}

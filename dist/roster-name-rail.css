@@ -1,0 +1,11 @@
+body.beginnerSimplified #attendanceView #attendanceRecordCard.rosterScrollHost{position:relative!important}
+.rosterNameRail{position:absolute;inset:0;pointer-events:none;z-index:6}
+.rosterNameRail[hidden]{display:none}
+.rosterRailCell{position:absolute;box-sizing:border-box;display:flex;align-items:center;justify-content:center;pointer-events:auto}
+.rosterRailFilter{border:0;background:transparent;color:inherit;font:inherit;padding:0;width:100%;cursor:pointer;touch-action:manipulation}
+/* No vertically scrolling/composited container for the home names. The page
+   supplies vertical movement; the table alone supplies horizontal movement. */
+body.beginnerSimplified #attendanceView .rosterRailActive>.tableWrap{max-height:none!important;height:auto;overflow:auto!important;position:relative;scroll-snap-type:x mandatory;scroll-padding-inline-start:var(--rail-padding,110px)}
+.rosterRailActive .rosterTable td.name,.rosterRailActive .rosterTable #rosterHead th:nth-child(2){visibility:hidden}
+.rosterRailActive .rosterTable #rosterHead{position:static!important}
+@media print{.rosterNameRail{display:none!important}.rosterRailActive .rosterTable td.name,.rosterRailActive .rosterTable #rosterHead th:nth-child(2){visibility:visible}}
