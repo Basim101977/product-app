@@ -1,0 +1,30 @@
+#deviceCloudDialog{box-sizing:border-box;width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;border:1px solid #dce6e9;border-radius:22px;padding:24px;color:#163743;background:#fff;box-shadow:0 24px 80px #18364233;text-align:right;font-family:inherit}
+#deviceCloudDialog::backdrop{background:#17324066;backdrop-filter:blur(3px)}
+#deviceCloudDialog header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+#deviceCloudDialog h2{margin:0;font-size:24px}#deviceCloudDialog p{margin:8px 0 0;line-height:1.7;overflow-wrap:anywhere}
+#deviceCloudDialog header p{color:#58717a;font-size:15px}
+#deviceCloudDialog .deviceCloudClose{flex:none;width:38px;height:38px;border:0;border-radius:50%;background:#eef3f5;color:#274855;font-size:27px;cursor:pointer}
+#deviceCloudDialog .deviceCloudMain{margin-top:22px;padding:18px;background:#f0f7f5;border:1px solid #dbeae5;border-radius:15px}
+#deviceCloudStatus{min-height:54px;font-size:16px}#deviceCloudStatus[data-state=error]{color:#a12626}#deviceCloudStatus[data-state=success]{color:#126749}
+#deviceCloudUpload{display:block;width:100%;margin-top:16px;min-height:48px;border-radius:12px;background:#16755a;color:white;justify-content:center}
+#deviceCloudDialog .deviceCloudAdvanced{margin-top:22px;border-top:1px solid #e3e9ec;padding-top:18px}
+#deviceCloudDialog summary{cursor:pointer;font-weight:700;font-size:16px;padding:4px 0}
+#deviceCloudDialog .deviceCloudAdvanced>p{font-size:14px;color:#58717a}
+#deviceCloudDialog .deviceCloudOptions{display:grid;gap:10px;margin-top:14px}
+#deviceCloudDialog .deviceCloudOptions .btn{width:100%;justify-content:flex-start;white-space:normal;min-height:44px}
+#deviceCloudDialog .deviceCloudRecovery{display:grid;gap:10px;margin-top:12px}#deviceCloudDialog select{width:100%;min-height:44px}
+#deviceCloudDialog .deviceCloudNote{color:#8c3d22}
+@media(max-width:440px){#deviceCloudDialog{padding:18px}#deviceCloudDialog h2{font-size:22px}}
+html body #syncStatusHost #offlineStatus[data-device-status],html body #offlineStatus[data-device-status],html body #deviceRecordStatus[data-device-status]{box-sizing:border-box;width:100%;height:auto;min-height:52px;padding:10px 12px;line-height:1.65;font-size:13px;font-weight:700;white-space:normal;overflow:visible;border-radius:10px;text-align:center;background:#eef2f5;color:#475569;cursor:default}
+html body #syncStatusHost:has([data-device-status]){width:min(460px,100%);max-width:100%;cursor:default}
+html body #syncStatusHost #offlineStatus[data-device-status][data-state=waiting],html body #deviceRecordStatus[data-device-status][data-state=waiting]{background:#edf5fc;color:#205c93}
+html body #syncStatusHost #offlineStatus[data-device-status][data-state=offline],html body #syncStatusHost #offlineStatus[data-device-status][data-state=pending],html body #deviceRecordStatus[data-device-status][data-state=offline],html body #deviceRecordStatus[data-device-status][data-state=pending]{background:#fff4df;color:#845511}
+html body #syncStatusHost #offlineStatus[data-device-status][data-state=uploading],html body #deviceRecordStatus[data-device-status][data-state=uploading]{background:linear-gradient(to left,#cbe5fa var(--lecture-progress),#edf5fc var(--lecture-progress));color:#205c93}
+html body #syncStatusHost #offlineStatus[data-device-status][data-state=synced],html body #deviceRecordStatus[data-device-status][data-state=synced]{background:#e4f5eb;color:#176744}
+html body #syncStatusHost #offlineStatus[data-device-status][data-state=error],html body #deviceRecordStatus[data-device-status][data-state=error]{background:#fff0ee;color:#a32b22}
+.lectureSyncSelector{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer;padding:3px 4px;border-radius:5px}
+.lectureSyncSelector:focus-visible{outline:2px solid #16755a;outline-offset:2px}
+
+#deviceRecordStatus{margin:8px 0 14px}@media print{#deviceRecordStatus{display:none!important}}
+
+.lectureSyncSelector[aria-pressed=true]{background:#e4f5eb;box-shadow:inset 0 -2px #16755a}

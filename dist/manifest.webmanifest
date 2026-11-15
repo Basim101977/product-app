@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Hathir",
+  "short_name": "Hathir",
+  "description": "مساحة شخصية مستقلة لكل مدرس لإدارة المواد والطلبة والحضور.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f8fb",
+  "theme_color": "#f4f8fb",
+  "icons": [
+    {
+      "src": "assets/hathir-check-large-icon-192-20260929.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/hathir-check-large-icon-512-20260929.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/hathir-check-large-maskable-512-20260929.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

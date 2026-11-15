@@ -1,0 +1,24 @@
+#subjectWeeklyHint { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:10px; font-size:13px; color:#4a6269; }
+#subjectForgetDay { background:none; border:0; text-decoration:underline; color:#285b53; font:inherit; cursor:pointer; }
+body.beginnerSimplified #beginnerSubjectMenu { max-height:min(440px,65dvh); overflow:auto; }
+.subjectEditor { width:min(580px,calc(100vw - 24px)); max-height:90dvh; padding:24px; border:1px solid #cbd7dc; border-radius:16px; color:#213b49; background:#fff; font-family:inherit; box-sizing:border-box; }
+.subjectEditor::backdrop { background:#142b3b66; }
+.subjectEditor header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:18px; }
+.subjectEditor h2 { margin:0; font-size:24px; }
+.subjectField { display:flex; flex-direction:column; gap:7px; margin-bottom:14px; font-weight:600; min-width:0; }
+.subjectEditor input,.subjectEditor select { width:100%; min-height:44px; padding:10px; border:1px solid #b9cbd3; border-radius:8px; background:#fff; color:#213b49; font:inherit; box-sizing:border-box; }
+.subjectEditor select:disabled { background:#f1f5f6; color:#4a6269; opacity:1; }
+.subjectFormGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.subjectHelp { font-size:14px; color:#4a6269; line-height:1.65; margin:0 0 16px; }
+.subjectEditor summary { padding:10px 0; cursor:pointer; }
+.subjectEditor footer { display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; position:sticky; bottom:-16px; background:#fff; padding:12px 0; }
+#subjectEditorError { color:#a52e29; }
+.subjectEditor :focus-visible,.subjectChoiceActions :focus-visible { outline:3px solid #478c80; outline-offset:3px; }
+@media(max-width:480px) { .subjectEditor { padding:16px; } .subjectFormGrid { grid-template-columns:1fr; gap:0; } }
+.subjectChoiceRow { display:flex; align-items:stretch; border-bottom:1px solid #e5ecef; }
+.subjectChoiceRow > [data-subject-id] { flex:1; min-width:0; }
+.subjectChoiceActions { display:flex; align-items:center; gap:2px; flex:0 0 auto; padding-inline:4px; }
+#beginnerSubjectChoices .subjectChoiceActions button { display:grid; place-items:center; width:40px; min-height:44px; padding:9px; border:0; border-radius:8px; color:#285b53; }
+.subjectChoiceActions svg { width:20px; height:20px; pointer-events:none; }
+#beginnerSubjectChoices .subjectChoiceActions [data-subject-action="delete"] { color:#a52e29; }
+#beginnerSubjectChoices .subjectChoiceRow > button { border-bottom:0; }

@@ -1,0 +1,53 @@
+.rosterFilterToggle{display:inline-flex;align-items:center;justify-content:center;min-width:26px;min-height:28px;padding:2px;margin-inline-start:6px;border:1px solid #cddbdc;border-radius:5px;background:#fff;color:#537078;font-size:11px;cursor:pointer}.rosterFilterToggle.active{background:#176e62;color:#fff;border-color:#176e62}.rosterFilterExcluded{display:none!important}#rosterFilterSummary{display:flex;align-items:center;gap:12px;font-size:13px;padding:6px}#rosterFilterSummary[hidden]{display:none}#rosterFilterSummary button{padding:5px 10px;min-height:30px}#rosterFilterDialog{position:fixed;box-sizing:border-box;margin:0;padding:15px;max-height:calc(100dvh - 24px);overflow:auto;border:1px solid #bbcfd0;border-radius:12px;box-shadow:0 12px 40px #193c4230;color:#193c42;background:white;font-family:inherit}#rosterFilterDialog::backdrop{background:transparent}#rosterFilterDialog button{cursor:pointer;border:1px solid #cddbdc;background:#f5f8f8;color:#193c42;border-radius:6px;padding:8px;font:inherit;font-size:13px}#rosterFilterSearch{box-sizing:border-box;width:100%;min-height:36px;margin:10px 0;padding:7px;border:1px solid #b8cdce;border-radius:6px;font:inherit}#rosterFilterValues{min-height:70px;max-height:230px;overflow:auto;border:1px solid #dbe4e5;border-radius:6px;padding:8px}#rosterFilterValues label,.rosterFilterAll{display:flex;align-items:center;gap:8px;padding:6px;font-size:14px;cursor:pointer}#rosterFilterDialog input[type=checkbox]{width:17px;height:17px;accent-color:#176e62;flex-shrink:0}.rosterFilterSort,.rosterFilterActions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}#rosterFilterApply{background:#176e62!important;color:#fff!important}@media print{.rosterFilterToggle,#rosterFilterSummary,#rosterFilterDialog{display:none!important}}
+
+#lectureColumnActions{box-sizing:border-box;width:min(460px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;border:1px solid #cddbdc;border-radius:16px;padding:22px;color:#193c42;font-family:inherit}#lectureColumnActions::backdrop{background:#10263055}#lectureColumnActions p{line-height:1.7}#lectureColumnActions h3{margin-top:0}@media print{#lectureColumnActions{display:none!important}}
+
+.rosterFilterHeader{cursor:pointer;touch-action:manipulation}.rosterFilterHeader.rosterFilterActive{color:#117565;background:#e3f3eb;box-shadow:inset 0 -3px #168675}
+#rosterFilterDialog{padding:12px;max-height:calc(100dvh - 24px);font-size:14px}#rosterFilterTitle{display:block;font-size:14px}#rosterFilterValues{min-height:44px;max-height:min(210px,32dvh);padding:4px}#rosterFilterValues label,.rosterFilterAll{padding:5px;min-height:28px}#rosterFilterDialog #rosterFilterDelete{color:#a52c32;background:#fff3f3;width:100%;margin-top:10px}#rosterFilterDelete[hidden]{display:none}
+
+
+#rosterFilterDialog input[type=checkbox]{min-height:17px;max-height:17px;min-width:17px;max-width:17px;margin:0;padding:0}#rosterFilterValues label,.rosterFilterAll{margin:0;line-height:1.4}#rosterFilterSearch{min-height:36px!important;height:36px;padding:6px 8px!important}
+
+
+
+.rosterFullName{display:block;box-sizing:border-box;width:100%;max-width:100%;padding:0;border:0;background:transparent;color:inherit;font:inherit;line-height:inherit;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+#rosterNameTooltip{position:fixed;inset:auto;margin:0;box-sizing:border-box;width:max-content;max-width:calc(100vw - 16px);padding:7px 10px;border:1px solid #9ba3a6;border-radius:3px;background:#242424;color:#fff;font-family:inherit;line-height:1.5;font-size:14px;white-space:normal;overflow-wrap:anywhere;box-shadow:0 2px 6px #0002;pointer-events:none;z-index:2147483647}
+#rosterNameTooltip[hidden]{display:none!important}
+
+
+
+
+#rosterFilterTitle:focus{outline:none}
+
+/* One set of native sticky rules: no GPU promotion, transforms, or animated cell sizing. */
+.rosterTable{border-collapse:separate;border-spacing:0;--roster-compact-name-width:180px;--roster-name-width:var(--roster-full-name-width,280px)}
+.rosterTable.rosterNamesCompact{--roster-name-width:var(--roster-compact-name-width)}
+body.beginnerSimplified #attendanceView #attendanceRecordCard>.tableWrap{max-height:70vh;max-height:70dvh;overflow:auto!important;position:relative}
+#attendanceRecordCard>.tableWrap{scroll-snap-type:x mandatory;scroll-padding-inline-start:180px;-webkit-overflow-scrolling:auto}
+.rosterTable #rosterHead{position:static!important;transform:none!important}
+.rosterTable #rosterHead th{position:sticky;top:0;z-index:3;background:#f3f7fb}
+.rosterTable td.name,.rosterTable #rosterHead th:nth-child(2){position:sticky;right:0;left:auto;box-sizing:border-box;width:var(--roster-name-width);min-width:var(--roster-name-width);max-width:var(--roster-name-width);padding-inline:6px!important;border-inline:0;box-shadow:none;white-space:nowrap!important;overflow:visible;transform:none;will-change:auto;transition:none;backface-visibility:visible;-webkit-backface-visibility:visible}
+.rosterTable td.name{top:auto;z-index:2;background:#fff}
+.rosterTable #rosterHead th:nth-child(2){top:0;z-index:4;background:#f3f7fb}
+.rosterTable #rosterHead th.rosterFilterActive{background:#e3f3eb}
+.rosterTable tr.personalStatusSet>td.name{background:#fff0f0}
+.rosterTable tr.personalStatusSet:hover>td.name{background:#ffe6e6}
+html[dir="ltr"] .rosterTable td.name,html[dir="ltr"] .rosterTable #rosterHead th:nth-child(2){right:auto;left:0}
+.rosterTable #rosterHead th:not(:nth-child(2)){scroll-snap-align:start;scroll-snap-stop:normal}
+@media(max-width:600px){.rosterTable{--roster-compact-name-width:34vw}#attendanceRecordCard>.tableWrap{scroll-padding-inline-start:34vw}}
+/* Mobile rows use flex layout to avoid iOS painting of sticky table cells.
+   The same cells, handlers and data remain in place; no mirrored names or scroll transforms. */
+@media screen and (max-width:600px), screen and (pointer:coarse) and (max-width:1024px){
+ .rosterTable{display:block;width:max-content;min-width:100%;--roster-compact-name-width:clamp(88px,25vw,110px)}
+ .rosterTable thead,.rosterTable tbody{display:block}
+ .rosterTable tr{display:flex;width:max-content;min-width:100%;align-items:stretch}
+ .rosterTable th,.rosterTable td{display:flex;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 140px;width:140px;min-width:140px;max-width:140px}
+ .rosterTable th:first-child,.rosterTable td:first-child{flex-basis:40px;width:40px;min-width:40px;max-width:40px}
+ .rosterTable td.name,.rosterTable #rosterHead th:nth-child(2){flex-basis:var(--roster-name-width);width:var(--roster-name-width);min-width:var(--roster-name-width);max-width:var(--roster-name-width)}
+ .rosterTable #rosterHead{position:sticky!important;top:0;z-index:5;background:#f3f7fb}
+ .rosterTable #rosterHead th{top:auto}
+ #attendanceRecordCard>.tableWrap{scroll-padding-inline-start:clamp(88px,25vw,110px)}
+}
+@media print{body.beginnerSimplified #attendanceView #attendanceRecordCard>.tableWrap{max-height:none;overflow:visible!important}#attendanceRecordCard>.tableWrap{scroll-snap-type:none}.rosterTable #rosterHead th,.rosterTable #rosterHead th:nth-child(2),.rosterTable td.name{position:static;inset:auto;width:auto;max-width:none;min-width:175px}.rosterFullName{overflow:visible}#rosterNameTooltip{display:none!important}}
+
+#largeRosterPager{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:8px}#largeRosterPager[hidden]{display:none}@media print{#largeRosterPager{display:none!important}}
