@@ -51,7 +51,7 @@ function saveReport(report, name) {
   return file;
 }
 
-async function launch(report, { legacyCloud = false } = {}) {
+async function launch(report, { legacyCloud = false, args = [] } = {}) {
   report.runtimeUnderTest = legacyCloud ? 'retained-legacy-cloud-path' : 'current-device-first';
   const server = http.createServer((req, res) => {
     // Exercise the candidate's shared Hosting security headers in every UI test.
@@ -73,7 +73,7 @@ async function launch(report, { legacyCloud = false } = {}) {
   const origin = 'http://127.0.0.1:' + server.address().port;
   const chrome = process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
   const engine = process.env.HATHIR_TEST_BROWSER || 'chromium';
-  const browser = await loadPlaywright()[engine].launch({ headless: true,
+  const browser = await loadPlaywright()[engine].launch({ headless: true, args,
     ...(engine === 'chromium' && fs.existsSync(chrome) ? { executablePath: chrome } : engine === 'webkit' && process.env.WEBKIT_PATH ? { executablePath: process.env.WEBKIT_PATH } : {}) });
   return { browser, origin,
     async page({ width = 1440, fixture = {}, runtime = 'synthetic', touch = false } = {}) {

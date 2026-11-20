@@ -44,6 +44,7 @@ const suites = [
   { name: 'name-only-ui', args: ['tests/name-only-ui-regression.cjs'], report: 'name-only-ui-regression.json' },
   { name: 'name-qr-browser', args: ['tests/name-qr-regression.cjs'], report: 'name-qr-regression.json' },
   { name: 'department-stage-qr', args: ['tests/department-stage-qr.cjs'], report: 'department-stage-qr.json' },
+  { name: 'camera-fake-stream', args: ['tests/camera-fake-stream.cjs'], report: 'camera-fake-stream.json' },
   { name: 'sync-transport', args: ['tests/sync-transport-regression.cjs'], report: 'sync-transport-regression.json' },
   { name: 'emulator', args: ['tests/personal-rules-emulator.cjs'], report: 'personal-rules-emulator.json' }
 ];
