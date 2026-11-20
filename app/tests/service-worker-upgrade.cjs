@@ -9,8 +9,26 @@ const { APP, SITE, assert, fs, path, makeReport, check, saveReport } = require('
 const OLD_SITE = require('./previous-worker-fixture.cjs')(SITE);
 const report = makeReport('actual-local-service-worker-upgrade');
 report.limitations.push('Loopback registration is explicit because shipped auto-registration requires HTTPS.',
-  'No OS-level PWA installation or physical iPhone test; Firebase SDK/auth is an in-memory test fixture.');
+  'No OS-level PWA installation or physical iPhone test; Firebase SDK/auth is an in-memory test fixture.',
+  'Handover package: candidate runtime-config is served as a synthetic configured copy and excluded help videos as synthetic bytes.');
 const hash = buffer => createHash('sha256').update(buffer).digest('hex');
+// Handover adapter: the GitHub package ships an unconfigured runtime-config and
+// excludes help videos. Serve synthetic stand-ins for the candidate only, so the
+// worker lifecycle is still exercised; app files on disk are not modified.
+const HANDOVER_VIDEO = /^\/assets\/help-v\d+\/[^/]+\.mp4$/;
+const SYNTHETIC_VIDEO = Buffer.alloc(16384, 0);
+function candidateBytes(pathname) {
+  const file = path.join(SITE, pathname.slice(1));
+  if (pathname === '/runtime-config.js') {
+    const source = fs.readFileSync(file, 'utf8');
+    if (!/configured:\s*false/.test(source)) return null;
+    return Buffer.from(source.replace(/configured:\s*false/, 'configured: true')
+      .replace("'HATHIR_FIREBASE_API_KEY_REQUIRED'", "'synthetic-local-only'"));
+  }
+  if (HANDOVER_VIDEO.test(pathname) && !fs.existsSync(file)) return SYNTHETIC_VIDEO;
+  return null;
+}
+const candidateFile = pathname => candidateBytes(pathname) || fs.readFileSync(path.join(SITE, pathname.slice(1)));
 const workerVersion = root => /const CACHE_VERSION = "([^"]+)"/.exec(fs.readFileSync(path.join(root, 'service-worker.js'), 'utf8'))[1];
 const OLD_CACHE = workerVersion(OLD_SITE), NEW_CACHE = workerVersion(SITE);
 let browser, context, page, server, proxy, phase = 'original', offline = false, origin;
@@ -58,6 +76,11 @@ async function required(label, task) {
     let pathname; try { pathname = decodeURIComponent(url.pathname); } catch { res.writeHead(400); res.end(); return; }
     const file = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
     if (!file.startsWith(root + path.sep)) { res.writeHead(403); res.end(); return; }
+    const synthetic = phase === 'original' ? null : candidateBytes(path.posix.normalize(pathname));
+    if (synthetic) {
+      res.writeHead(200, { 'content-type': pathname.endsWith('.mp4') ? 'video/mp4' : 'text/javascript', 'cache-control': 'no-store' });
+      res.end(synthetic); return;
+    }
     const type = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.webmanifest': 'application/manifest+json',
       '.png': 'image/png', '.webp': 'image/webp' }[path.extname(file)] || 'application/octet-stream';
     fs.readFile(file, (error, body) => {
@@ -150,7 +173,7 @@ async function required(label, task) {
   const codeUrls = ['/index.html', '/runtime-config.js', ...['personal-ui.js', 'name-qr.js', 'offline-store.js', 'offline-attendance.js'].map(file => {
     const match = html.match(new RegExp('(?:src|href)="(' + file.replace('.', '\\.') + '[^"]*)"')); assert(match, file); return '/' + match[1];
   })];
-  const expected = Object.fromEntries(codeUrls.map(url => [url, hash(fs.readFileSync(path.join(SITE, new URL(url, origin).pathname.slice(1))))]));
+  const expected = Object.fromEntries(codeUrls.map(url => [url, hash(candidateFile(new URL(url, origin).pathname))]));
   await required('Every active same-origin HTML/config/protocol/outbox script matches the candidate bytes, never stale old cache entries', async () => {
     const result = await cacheHashes(codeUrls);
     for (const url of codeUrls) { assert.equal(result[url].status, 200); assert.equal(result[url].hash, expected[url], url); }
