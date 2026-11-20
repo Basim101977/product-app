@@ -53,8 +53,9 @@ const fixture=vm.runInNewContext(source.slice(source.indexOf('async function ins
   await check(report,'Face library and all three model sets load for first use offline',async()=>{
    const loaded=await page.evaluate(async()=>{await loadOptionalLibrary('faceapi');await Promise.all([faceapi.nets.tinyFaceDetector,faceapi.nets.faceLandmark68Net,faceapi.nets.faceRecognitionNet].map(net=>net.loadFromUri(FACE_MODEL_URL)));return [faceapi.nets.tinyFaceDetector,faceapi.nets.faceLandmark68Net,faceapi.nets.faceRecognitionNet].every(net=>net.isLoaded);});assert.equal(loaded,true);
   });
-  await check(report,'Offline help video supports seeking with proper partial responses',async()=>{
-   const data=await page.evaluate(async()=>{const r=await fetch('/assets/help-v5/teacher-guide.mp4',{headers:{Range:'bytes=100-199'}});return {status:r.status,range:r.headers.get('Content-Range'),length:(await r.arrayBuffer()).byteLength};});assert.equal(data.status,206);assert.equal(data.length,100);assert.match(data.range,/^bytes 100-199\//);
+  await check(report,'Help video stays online-only: excluded from the offline package and never served from cache offline',async()=>{
+   const data=await page.evaluate(async()=>{const assets=HATHIR_OFFLINE_PACKAGE.assets;let served=false;try{served=(await fetch('/assets/help-v5/teacher-guide.mp4',{headers:{Range:'bytes=100-199'}})).ok;}catch{}const cached=[];for(const key of await caches.keys())for(const request of await (await caches.open(key)).keys())if(/\.mp4$/.test(new URL(request.url).pathname))cached.push(request.url);return {video:assets.filter(x=>/\.mp4$/.test(x)),served,cached};});
+   assert.deepEqual(data,{video:[],served:false,cached:[]});
   });
   await check(report,'Readiness refuses to claim complete after a required asset is lost',async()=>{
    await page.evaluate(async()=>{for(const key of await caches.keys())if(key.startsWith('student-attendance-shell-'))await (await caches.open(key)).delete('/vendor/exceljs-4.4.0.min.js');});

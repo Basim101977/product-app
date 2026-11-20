@@ -10,13 +10,11 @@ const OLD_SITE = require('./previous-worker-fixture.cjs')(SITE);
 const report = makeReport('actual-local-service-worker-upgrade');
 report.limitations.push('Loopback registration is explicit because shipped auto-registration requires HTTPS.',
   'No OS-level PWA installation or physical iPhone test; Firebase SDK/auth is an in-memory test fixture.',
-  'Handover package: candidate runtime-config is served as a synthetic configured copy and excluded help videos as synthetic bytes.');
+  'Handover package: candidate runtime-config is served as a synthetic configured copy.');
 const hash = buffer => createHash('sha256').update(buffer).digest('hex');
-// Handover adapter: the GitHub package ships an unconfigured runtime-config and
-// excludes help videos. Serve synthetic stand-ins for the candidate only, so the
-// worker lifecycle is still exercised; app files on disk are not modified.
-const HANDOVER_VIDEO = /^\/assets\/help-v\d+\/[^/]+\.mp4$/;
-const SYNTHETIC_VIDEO = Buffer.alloc(16384, 0);
+// Handover adapter: the GitHub package ships an unconfigured runtime-config.
+// Serve a synthetic configured copy for the candidate only, so the worker
+// lifecycle is still exercised; app files on disk are not modified.
 function candidateBytes(pathname) {
   const file = path.join(SITE, pathname.slice(1));
   if (pathname === '/runtime-config.js') {
@@ -25,7 +23,6 @@ function candidateBytes(pathname) {
     return Buffer.from(source.replace(/configured:\s*false/, 'configured: true')
       .replace("'HATHIR_FIREBASE_API_KEY_REQUIRED'", "'synthetic-local-only'"));
   }
-  if (HANDOVER_VIDEO.test(pathname) && !fs.existsSync(file)) return SYNTHETIC_VIDEO;
   return null;
 }
 const candidateFile = pathname => candidateBytes(pathname) || fs.readFileSync(path.join(SITE, pathname.slice(1)));
@@ -78,7 +75,7 @@ async function required(label, task) {
     if (!file.startsWith(root + path.sep)) { res.writeHead(403); res.end(); return; }
     const synthetic = phase === 'original' ? null : candidateBytes(path.posix.normalize(pathname));
     if (synthetic) {
-      res.writeHead(200, { 'content-type': pathname.endsWith('.mp4') ? 'video/mp4' : 'text/javascript', 'cache-control': 'no-store' });
+      res.writeHead(200, { 'content-type': 'text/javascript', 'cache-control': 'no-store' });
       res.end(synthetic); return;
     }
     const type = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.webmanifest': 'application/manifest+json',
