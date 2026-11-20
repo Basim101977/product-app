@@ -69,9 +69,10 @@ const report=makeReport('department-stage-qr');
   await page.addScriptTag({path:require('path').join(__dirname,'../netlify_site/vendor/jsQR-1.4.0.min.js')});
   const r=await page.evaluate(async()=>{const s=getSubject(),stats=JSON.stringify([...cumulativeAttendanceStats(s)]),out=[];for(const name of ['أحمد علي حسن',('عبد الرحمن محمد ').repeat(9).trim()]){const c=document.createElement('canvas');c.width=360;c.height=480;await drawStudentQrCard(c.getContext('2d'),{name,id:'synthetic'},0,0,360,480,{subject:s});const data=c.getContext('2d').getImageData(0,0,c.width,c.height),decoded=jsQR(data.data,c.width,c.height);out.push(decoded&&HathirNameQR.decode(decoded.data));}return {out,unchanged:stats===JSON.stringify([...cumulativeAttendanceStats(s)])};});assert(r.unchanged);for(const d of r.out){assert(d?.ok);assert.equal(d.version,4);assert(d.departmentId);assert(d.stageId);}
  });
- await check(report,'Existing calculation function is byte-identical to published release 164',async()=>{
-  const fs=require('fs'),path=require('path');const read=p=>fs.readFileSync(p,'utf8');const base=read(path.resolve(__dirname,'../../../hathir-qr-roster-release-20261116/app/netlify_site/index.html')),next=read(path.join(__dirname,'../netlify_site/index.html'));
-  const section=s=>s.slice(s.indexOf('    function cumulativeAttendanceStats('),s.indexOf('    function cumulativeAttendanceStats(')+s.slice(s.indexOf('    function cumulativeAttendanceStats(')).indexOf('\n    function ',10));assert.equal(section(base),section(next));
+ await check(report,'Existing calculation function is byte-identical to the published release 163 reference',async()=>{
+  // The release 164 source is not in the handover; 163 is the in-repo published reference before the QR changes.
+  const fs=require('fs'),path=require('path');const read=p=>fs.readFileSync(p,'utf8');const base=read(path.join(require('./previous-worker-fixture.cjs')(),'index.html')),next=read(path.join(__dirname,'../netlify_site/index.html'));
+  const section=s=>s.slice(s.indexOf('    function cumulativeAttendanceStats('),s.indexOf('    function cumulativeAttendanceStats(')+s.slice(s.indexOf('    function cumulativeAttendanceStats(')).indexOf('\n    function ',10));assert(section(next).includes('function cumulativeAttendanceStats('));assert.equal(section(base),section(next));
  });
  await check(report,'Historical attendance, lecture metadata and original student IDs remain exact in durable storage',async()=>{
   const saved=await page.evaluate(async()=>{await saveLocalData();const row=await HathirDeviceStore.get(session.uid);return row.data.subjects.qa_live;});
