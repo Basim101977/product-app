@@ -164,8 +164,8 @@ async function installWorkspace(page) {
             const workbook = new ExcelJS.Workbook();
             await workbook.xlsx.load(file.content);
             workbooks.push({ filename: file.filename, sheets: workbook.worksheets.map(sheet => {
-              const rows = [], headingNumber = 13;
-              sheet.eachRow(row => rows.push(row.values.slice(1)));
+              const rows = [];let headingNumber = 0;
+              sheet.eachRow((row, number) => { rows.push(row.values.slice(1)); if (!headingNumber && row.values.includes(text("num")) && row.values.includes(text("student"))) headingNumber = number; });
               const header = sheet.getRow(headingNumber).getCell(3);
               return { rows, widths: sheet.columns.map(column => column.width), headingHeight: sheet.getRow(headingNumber).height,
                 headingColor: header.font?.color?.argb || '', headingFill: header.fill?.fgColor?.argb || '',

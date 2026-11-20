@@ -33,7 +33,7 @@ function fixture(overrides = {}) {
       const {page,context}=await harness.page();
       await page.clock.install();
       let release;const held=new Promise(resolve=>release=resolve);
-      await context.route('https://www.gstatic.com/firebasejs/**',async route=>{await held;await route.fulfill({contentType:'text/javascript',body:'/* delayed synthetic SDK */'});});
+      await context.route('https://www.gstatic.com/firebasejs/**',async route=>{await held;await route.fulfill({contentType:'text/javascript',body:'/* delayed synthetic SDK */'});});await context.route(/\/vendor\/firebase-10\.12\.5\//,async route=>{await held;await route.fulfill({contentType:'text/javascript',body:'/* delayed synthetic SDK */'});});
       await page.reload({waitUntil:'commit'});
       await page.locator('#authStartup').waitFor({state:'visible'});
       await page.waitForFunction(()=>Boolean(window.HathirStartup));

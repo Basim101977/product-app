@@ -498,7 +498,7 @@ async function installQrLibraries(page) {
       try { const canvas = document.createElement('canvas'); canvas.width = 800; canvas.height = 1000;
         await drawStudentQrCard(canvas.getContext('2d'), subjects[0].students[0], 0, 0, 800, 1000);
       } finally { makeQrCanvas = original; }
-      return { captured, expected: HathirNameQR.encodePortable(subjects[0].students[0].name) };
+      return { captured, expected: HathirNameQR.encodeScoped(subjects[0].students[0].name, getSubject().departmentId, getSubject().stageId) };
     });
     assert.deepEqual(payloads.captured, [payloads.expected]); assert(!payloads.expected.includes('MI20250001'));
   });
@@ -541,7 +541,7 @@ async function installQrLibraries(page) {
         crop.getContext('2d').putImageData(ctx.getImageData(qrX, qrY, qrWidth, qrHeight), 0, 0);
         const cropPixels = crop.getContext('2d').getImageData(0, 0, crop.width, crop.height).data;
         const image = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        const payload=HathirNameQR.encodePortable(fullName),generator=qrcode(0,'M');
+        const payload=HathirNameQR.encodeScoped(fullName, getSubject().departmentId, getSubject().stageId),generator=qrcode(0,'M');
         generator.addData(payload,'Byte');generator.make();const modules=generator.getModuleCount();
         return { drawn, card, internalId: student.id, expected: HathirNameQR.normalizeName(fullName),
           reconstructed: HathirNameQR.normalizeName(drawn.map(line => line.text).join('')),
@@ -589,7 +589,7 @@ async function installQrLibraries(page) {
       drawStudentQrCard = async (ctx, student, x, y, width, height, options) => {
         await original(ctx, student, x, y, width, height, options);
         const image = ctx.getImageData(x, y, width, height);
-        cards.push({ x, y, width, height, payload: HathirNameQR.encodePortable(student.name),
+        cards.push({ x, y, width, height, payload: HathirNameQR.encodeScoped(student.name, (options?.subject || getSubject()).departmentId, (options?.subject || getSubject()).stageId),
           decoded: jsQR(image.data, image.width, image.height, { inversionAttempts: 'attemptBoth' })?.data || '' });
       };
       try {
