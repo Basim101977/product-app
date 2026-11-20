@@ -1,0 +1,807 @@
+[
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/add.mp3",
+    "status": "excluded",
+    "bytes": 232732
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/camera.mp3",
+    "status": "excluded",
+    "bytes": 339730
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/close.mp3",
+    "status": "excluded",
+    "bytes": 344328
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/confirm.mp3",
+    "status": "excluded",
+    "bytes": 273692
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/course.mp3",
+    "status": "excluded",
+    "bytes": 287067
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/department.mp3",
+    "status": "excluded",
+    "bytes": 240256
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/face-open.mp3",
+    "status": "excluded",
+    "bytes": 329281
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/face-save.mp3",
+    "status": "excluded",
+    "bytes": 253630
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/hours.mp3",
+    "status": "excluded",
+    "bytes": 307965
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/import.mp3",
+    "status": "excluded",
+    "bytes": 312981
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/name.mp3",
+    "status": "excluded",
+    "bytes": 289993
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/profile-close.mp3",
+    "status": "excluded",
+    "bytes": 231897
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/qr.mp3",
+    "status": "excluded",
+    "bytes": 253630
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/record.mp3",
+    "status": "excluded",
+    "bytes": 269095
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/scan.mp3",
+    "status": "excluded",
+    "bytes": 321340
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/select.mp3",
+    "status": "excluded",
+    "bytes": 223119
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/setup-close.mp3",
+    "status": "excluded",
+    "bytes": 228135
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/stage.mp3",
+    "status": "excluded",
+    "bytes": 239420
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/subject.mp3",
+    "status": "excluded",
+    "bytes": 239420
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v1/sync.mp3",
+    "status": "excluded",
+    "bytes": 396154
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/add.mp3",
+    "status": "excluded",
+    "bytes": 154156
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/camera.mp3",
+    "status": "excluded",
+    "bytes": 222283
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/close.mp3",
+    "status": "excluded",
+    "bytes": 190519
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/confirm.mp3",
+    "status": "excluded",
+    "bytes": 190519
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/course.mp3",
+    "status": "excluded",
+    "bytes": 174218
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/department.mp3",
+    "status": "excluded",
+    "bytes": 165023
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/face-open.mp3",
+    "status": "excluded",
+    "bytes": 185085
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/face-save.mp3",
+    "status": "excluded",
+    "bytes": 190937
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/hours.mp3",
+    "status": "excluded",
+    "bytes": 205983
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/import.mp3",
+    "status": "excluded",
+    "bytes": 205147
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/name.mp3",
+    "status": "excluded",
+    "bytes": 199296
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/profile-close.mp3",
+    "status": "excluded",
+    "bytes": 183831
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/qr.mp3",
+    "status": "excluded",
+    "bytes": 223955
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/record.mp3",
+    "status": "excluded",
+    "bytes": 211834
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/scan.mp3",
+    "status": "excluded",
+    "bytes": 192608
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/select.mp3",
+    "status": "excluded",
+    "bytes": 170457
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/setup-close.mp3",
+    "status": "excluded",
+    "bytes": 179234
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/stage.mp3",
+    "status": "excluded",
+    "bytes": 165859
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/subject.mp3",
+    "status": "excluded",
+    "bytes": 165023
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/sync.mp3",
+    "status": "excluded",
+    "bytes": 231897
+  },
+  {
+    "path": "netlify_site/assets/guide-abdullah-v2/welcome.mp3",
+    "status": "excluded",
+    "bytes": 223955
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/add.mp3",
+    "status": "excluded",
+    "bytes": 92880
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/camera.mp3",
+    "status": "excluded",
+    "bytes": 125856
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/close.mp3",
+    "status": "excluded",
+    "bytes": 132912
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/confirm.mp3",
+    "status": "excluded",
+    "bytes": 108000
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/course.mp3",
+    "status": "excluded",
+    "bytes": 111312
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/department.mp3",
+    "status": "excluded",
+    "bytes": 91872
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/face-open.mp3",
+    "status": "excluded",
+    "bytes": 130752
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/face-save.mp3",
+    "status": "excluded",
+    "bytes": 101952
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/hours.mp3",
+    "status": "excluded",
+    "bytes": 116928
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/import.mp3",
+    "status": "excluded",
+    "bytes": 126432
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/name.mp3",
+    "status": "excluded",
+    "bytes": 110304
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/profile-close.mp3",
+    "status": "excluded",
+    "bytes": 94032
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/qr.mp3",
+    "status": "excluded",
+    "bytes": 104400
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/record.mp3",
+    "status": "excluded",
+    "bytes": 106848
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/scan.mp3",
+    "status": "excluded",
+    "bytes": 120960
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/select.mp3",
+    "status": "excluded",
+    "bytes": 79344
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/setup-close.mp3",
+    "status": "excluded",
+    "bytes": 92448
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/stage.mp3",
+    "status": "excluded",
+    "bytes": 92880
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/subject.mp3",
+    "status": "excluded",
+    "bytes": 89568
+  },
+  {
+    "path": "netlify_site/assets/guide-ar-v1/sync.mp3",
+    "status": "excluded",
+    "bytes": 150768
+  },
+  {
+    "path": "netlify_site/assets/help-v1/account.mp4",
+    "status": "excluded",
+    "bytes": 1151517
+  },
+  {
+    "path": "netlify_site/assets/help-v1/account.webp",
+    "status": "excluded",
+    "bytes": 17664
+  },
+  {
+    "path": "netlify_site/assets/help-v1/export.mp4",
+    "status": "excluded",
+    "bytes": 923366
+  },
+  {
+    "path": "netlify_site/assets/help-v1/export.webp",
+    "status": "excluded",
+    "bytes": 20208
+  },
+  {
+    "path": "netlify_site/assets/help-v1/face.mp4",
+    "status": "excluded",
+    "bytes": 718425
+  },
+  {
+    "path": "netlify_site/assets/help-v1/face.webp",
+    "status": "excluded",
+    "bytes": 20898
+  },
+  {
+    "path": "netlify_site/assets/help-v1/lecture.mp4",
+    "status": "excluded",
+    "bytes": 992071
+  },
+  {
+    "path": "netlify_site/assets/help-v1/lecture.webp",
+    "status": "excluded",
+    "bytes": 14882
+  },
+  {
+    "path": "netlify_site/assets/help-v1/manual.mp4",
+    "status": "excluded",
+    "bytes": 1485617
+  },
+  {
+    "path": "netlify_site/assets/help-v1/manual.webp",
+    "status": "excluded",
+    "bytes": 21908
+  },
+  {
+    "path": "netlify_site/assets/help-v1/policy.mp4",
+    "status": "excluded",
+    "bytes": 2002448
+  },
+  {
+    "path": "netlify_site/assets/help-v1/policy.webp",
+    "status": "excluded",
+    "bytes": 21224
+  },
+  {
+    "path": "netlify_site/assets/help-v1/qr.mp4",
+    "status": "excluded",
+    "bytes": 325974
+  },
+  {
+    "path": "netlify_site/assets/help-v1/qr.webp",
+    "status": "excluded",
+    "bytes": 19810
+  },
+  {
+    "path": "netlify_site/assets/help-v1/status.mp4",
+    "status": "excluded",
+    "bytes": 961516
+  },
+  {
+    "path": "netlify_site/assets/help-v1/status.webp",
+    "status": "excluded",
+    "bytes": 21624
+  },
+  {
+    "path": "netlify_site/assets/help-v1/students.mp4",
+    "status": "excluded",
+    "bytes": 949262
+  },
+  {
+    "path": "netlify_site/assets/help-v1/students.webp",
+    "status": "excluded",
+    "bytes": 21318
+  },
+  {
+    "path": "netlify_site/assets/help-v1/subject.mp4",
+    "status": "excluded",
+    "bytes": 1058633
+  },
+  {
+    "path": "netlify_site/assets/help-v1/subject.webp",
+    "status": "excluded",
+    "bytes": 18418
+  },
+  {
+    "path": "netlify_site/assets/help-v1/sync.mp4",
+    "status": "excluded",
+    "bytes": 1432873
+  },
+  {
+    "path": "netlify_site/assets/help-v1/sync.webp",
+    "status": "excluded",
+    "bytes": 25424
+  },
+  {
+    "path": "netlify_site/assets/help-v2/account.mp4",
+    "status": "excluded",
+    "bytes": 2106493
+  },
+  {
+    "path": "netlify_site/assets/help-v2/account.webp",
+    "status": "excluded",
+    "bytes": 11448
+  },
+  {
+    "path": "netlify_site/assets/help-v2/export.mp4",
+    "status": "excluded",
+    "bytes": 2029499
+  },
+  {
+    "path": "netlify_site/assets/help-v2/export.webp",
+    "status": "excluded",
+    "bytes": 27124
+  },
+  {
+    "path": "netlify_site/assets/help-v2/face.mp4",
+    "status": "excluded",
+    "bytes": 4194554
+  },
+  {
+    "path": "netlify_site/assets/help-v2/face.webp",
+    "status": "excluded",
+    "bytes": 24846
+  },
+  {
+    "path": "netlify_site/assets/help-v2/lecture.mp4",
+    "status": "excluded",
+    "bytes": 3334693
+  },
+  {
+    "path": "netlify_site/assets/help-v2/lecture.webp",
+    "status": "excluded",
+    "bytes": 27816
+  },
+  {
+    "path": "netlify_site/assets/help-v2/manual.mp4",
+    "status": "excluded",
+    "bytes": 3255981
+  },
+  {
+    "path": "netlify_site/assets/help-v2/manual.webp",
+    "status": "excluded",
+    "bytes": 26806
+  },
+  {
+    "path": "netlify_site/assets/help-v2/policy.mp4",
+    "status": "excluded",
+    "bytes": 3943496
+  },
+  {
+    "path": "netlify_site/assets/help-v2/policy.webp",
+    "status": "excluded",
+    "bytes": 14398
+  },
+  {
+    "path": "netlify_site/assets/help-v2/qr.mp4",
+    "status": "excluded",
+    "bytes": 819757
+  },
+  {
+    "path": "netlify_site/assets/help-v2/qr.webp",
+    "status": "excluded",
+    "bytes": 24066
+  },
+  {
+    "path": "netlify_site/assets/help-v2/status.mp4",
+    "status": "excluded",
+    "bytes": 1724571
+  },
+  {
+    "path": "netlify_site/assets/help-v2/status.webp",
+    "status": "excluded",
+    "bytes": 16132
+  },
+  {
+    "path": "netlify_site/assets/help-v2/students.mp4",
+    "status": "excluded",
+    "bytes": 2154796
+  },
+  {
+    "path": "netlify_site/assets/help-v2/students.webp",
+    "status": "excluded",
+    "bytes": 25296
+  },
+  {
+    "path": "netlify_site/assets/help-v2/subject.mp4",
+    "status": "excluded",
+    "bytes": 2226587
+  },
+  {
+    "path": "netlify_site/assets/help-v2/subject.webp",
+    "status": "excluded",
+    "bytes": 14854
+  },
+  {
+    "path": "netlify_site/assets/help-v2/sync.mp4",
+    "status": "excluded",
+    "bytes": 3245575
+  },
+  {
+    "path": "netlify_site/assets/help-v2/sync.webp",
+    "status": "excluded",
+    "bytes": 34514
+  },
+  {
+    "path": "netlify_site/assets/help-v3/account.mp4",
+    "status": "excluded",
+    "bytes": 1942116
+  },
+  {
+    "path": "netlify_site/assets/help-v3/account.webp",
+    "status": "excluded",
+    "bytes": 10858
+  },
+  {
+    "path": "netlify_site/assets/help-v3/export.mp4",
+    "status": "excluded",
+    "bytes": 2289725
+  },
+  {
+    "path": "netlify_site/assets/help-v3/export.webp",
+    "status": "excluded",
+    "bytes": 29410
+  },
+  {
+    "path": "netlify_site/assets/help-v3/face.mp4",
+    "status": "excluded",
+    "bytes": 4606784
+  },
+  {
+    "path": "netlify_site/assets/help-v3/face.webp",
+    "status": "excluded",
+    "bytes": 24918
+  },
+  {
+    "path": "netlify_site/assets/help-v3/lecture.mp4",
+    "status": "excluded",
+    "bytes": 2917864
+  },
+  {
+    "path": "netlify_site/assets/help-v3/lecture.webp",
+    "status": "excluded",
+    "bytes": 22808
+  },
+  {
+    "path": "netlify_site/assets/help-v3/manual.mp4",
+    "status": "excluded",
+    "bytes": 3491406
+  },
+  {
+    "path": "netlify_site/assets/help-v3/manual.webp",
+    "status": "excluded",
+    "bytes": 27000
+  },
+  {
+    "path": "netlify_site/assets/help-v3/policy.mp4",
+    "status": "excluded",
+    "bytes": 4118857
+  },
+  {
+    "path": "netlify_site/assets/help-v3/policy.webp",
+    "status": "excluded",
+    "bytes": 14640
+  },
+  {
+    "path": "netlify_site/assets/help-v3/qr.mp4",
+    "status": "excluded",
+    "bytes": 986589
+  },
+  {
+    "path": "netlify_site/assets/help-v3/qr.webp",
+    "status": "excluded",
+    "bytes": 24206
+  },
+  {
+    "path": "netlify_site/assets/help-v3/status.mp4",
+    "status": "excluded",
+    "bytes": 1645282
+  },
+  {
+    "path": "netlify_site/assets/help-v3/status.webp",
+    "status": "excluded",
+    "bytes": 16258
+  },
+  {
+    "path": "netlify_site/assets/help-v3/students.mp4",
+    "status": "excluded",
+    "bytes": 2470555
+  },
+  {
+    "path": "netlify_site/assets/help-v3/students.webp",
+    "status": "excluded",
+    "bytes": 25556
+  },
+  {
+    "path": "netlify_site/assets/help-v3/subject.mp4",
+    "status": "excluded",
+    "bytes": 2369241
+  },
+  {
+    "path": "netlify_site/assets/help-v3/subject.webp",
+    "status": "excluded",
+    "bytes": 15778
+  },
+  {
+    "path": "netlify_site/assets/help-v3/sync.mp4",
+    "status": "excluded",
+    "bytes": 3561382
+  },
+  {
+    "path": "netlify_site/assets/help-v3/sync.webp",
+    "status": "excluded",
+    "bytes": 34630
+  },
+  {
+    "path": "netlify_site/assets/help-v4/account.mp4",
+    "status": "excluded",
+    "bytes": 1757042
+  },
+  {
+    "path": "netlify_site/assets/help-v4/account.webp",
+    "status": "excluded",
+    "bytes": 17942
+  },
+  {
+    "path": "netlify_site/assets/help-v4/export.mp4",
+    "status": "excluded",
+    "bytes": 1560841
+  },
+  {
+    "path": "netlify_site/assets/help-v4/export.webp",
+    "status": "excluded",
+    "bytes": 30312
+  },
+  {
+    "path": "netlify_site/assets/help-v4/face.mp4",
+    "status": "excluded",
+    "bytes": 2964955
+  },
+  {
+    "path": "netlify_site/assets/help-v4/face.webp",
+    "status": "excluded",
+    "bytes": 21582
+  },
+  {
+    "path": "netlify_site/assets/help-v4/lecture.mp4",
+    "status": "excluded",
+    "bytes": 1865638
+  },
+  {
+    "path": "netlify_site/assets/help-v4/lecture.webp",
+    "status": "excluded",
+    "bytes": 2570
+  },
+  {
+    "path": "netlify_site/assets/help-v4/manual.mp4",
+    "status": "excluded",
+    "bytes": 2336216
+  },
+  {
+    "path": "netlify_site/assets/help-v4/manual.webp",
+    "status": "excluded",
+    "bytes": 25636
+  },
+  {
+    "path": "netlify_site/assets/help-v4/policy.mp4",
+    "status": "excluded",
+    "bytes": 3096687
+  },
+  {
+    "path": "netlify_site/assets/help-v4/policy.webp",
+    "status": "excluded",
+    "bytes": 23884
+  },
+  {
+    "path": "netlify_site/assets/help-v4/qr.mp4",
+    "status": "excluded",
+    "bytes": 665601
+  },
+  {
+    "path": "netlify_site/assets/help-v4/qr.webp",
+    "status": "excluded",
+    "bytes": 24222
+  },
+  {
+    "path": "netlify_site/assets/help-v4/status.mp4",
+    "status": "excluded",
+    "bytes": 1446889
+  },
+  {
+    "path": "netlify_site/assets/help-v4/status.webp",
+    "status": "excluded",
+    "bytes": 22068
+  },
+  {
+    "path": "netlify_site/assets/help-v4/students.mp4",
+    "status": "excluded",
+    "bytes": 1482594
+  },
+  {
+    "path": "netlify_site/assets/help-v4/students.webp",
+    "status": "excluded",
+    "bytes": 20654
+  },
+  {
+    "path": "netlify_site/assets/help-v4/subject.mp4",
+    "status": "excluded",
+    "bytes": 1674704
+  },
+  {
+    "path": "netlify_site/assets/help-v4/subject.webp",
+    "status": "excluded",
+    "bytes": 27966
+  },
+  {
+    "path": "netlify_site/assets/help-v4/sync.mp4",
+    "status": "excluded",
+    "bytes": 2569111
+  },
+  {
+    "path": "netlify_site/assets/help-v4/sync.webp",
+    "status": "excluded",
+    "bytes": 46494
+  },
+  {
+    "path": "netlify_site/assets/help-v5/teacher-guide.mp4",
+    "status": "excluded",
+    "bytes": 19556369
+  },
+  {
+    "path": "reports/attendance-removal-1440.png",
+    "status": "excluded",
+    "bytes": 40709
+  },
+  {
+    "path": "reports/attendance-removal-390.png",
+    "status": "excluded",
+    "bytes": 28435
+  },
+  {
+    "path": "reports/attendance-row-feedback-1440.png",
+    "status": "excluded",
+    "bytes": 37856
+  },
+  {
+    "path": "reports/attendance-row-feedback-390.png",
+    "status": "excluded",
+    "bytes": 24241
+  },
+  {
+    "path": "reports/lecture-sync-1440.png",
+    "status": "excluded",
+    "bytes": 138381
+  },
+  {
+    "path": "reports/lecture-sync-390.png",
+    "status": "excluded",
+    "bytes": 69970
+  },
+  {
+    "path": "reports/scope-preview-1440.png",
+    "status": "excluded",
+    "bytes": 159045
+  },
+  {
+    "path": "reports/scope-preview-390.png",
+    "status": "excluded",
+    "bytes": 96710
+  },
+  {
+    "path": "reports/security-review-20261117.png",
+    "status": "excluded",
+    "bytes": 136777
+  },
+  {
+    "path": "reports/sync-background-1440.png",
+    "status": "excluded",
+    "bytes": 2614
+  },
+  {
+    "path": "reports/sync-background-390.png",
+    "status": "excluded",
+    "bytes": 2354
+  }
+]

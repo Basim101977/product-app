@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-17T07:19:16.272Z",
+  "passed": true,
+  "cloudWrites": 0,
+  "total": 48,
+  "suites": [
+    {
+      "name": "sync-background-indicator",
+      "total": 12
+    },
+    {
+      "name": "sync-readiness-regression",
+      "total": 15
+    },
+    {
+      "name": "offline-package-regression",
+      "total": 10
+    },
+    {
+      "name": "service-worker-upgrade",
+      "total": 11
+    }
+  ],
+  "scope": "Sync indicator rendering and cache version only; synchronization engine and backend bytes unchanged"
+}

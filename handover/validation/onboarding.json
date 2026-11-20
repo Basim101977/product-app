@@ -1,0 +1,51 @@
+{
+  "suite": "guided-audio-onboarding",
+  "checkedAt": "2026-11-20T15:13:37.325Z",
+  "mode": "synthetic-local-only",
+  "externalNetwork": "blocked",
+  "cloudWrites": 0,
+  "credentialsRead": false,
+  "limitations": [
+    "No deployed-service, Firebase emulator, payment-provider, camera, or physical-device verification."
+  ],
+  "cases": [
+    {
+      "label": "320px six silent steps once, target interaction, no blur/polling/audio/writes",
+      "passed": true
+    },
+    {
+      "label": "390px six silent steps once, target interaction, no blur/polling/audio/writes",
+      "passed": true
+    },
+    {
+      "label": "768px six silent steps once, target interaction, no blur/polling/audio/writes",
+      "passed": true
+    },
+    {
+      "label": "1440px six silent steps once, target interaction, no blur/polling/audio/writes",
+      "passed": true
+    },
+    {
+      "label": "existing teacher not interrupted; retired email entry is absent",
+      "passed": true
+    },
+    {
+      "label": "390px searchable help loads video only on demand and stops on close",
+      "passed": true
+    },
+    {
+      "label": "1440px searchable help loads video only on demand and stops on close",
+      "passed": true
+    },
+    {
+      "label": "real assets for every lesson and silent event-driven tour",
+      "passed": false,
+      "error": "Error: ENOENT: no such file or directory, stat 'WORKSPACE\\app\\netlify_site\\assets\\help-v5\\teacher-guide.mp4'\n    at Object.statSync (node:fs:1746:25)\n    at WORKSPACE\\app\\tests\\onboarding-regression.cjs:13:296\n    at check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:27)\n    at WORKSPACE\\app\\tests\\onboarding-regression.cjs:13:7"
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "screenshots": [],
+  "runtimeUnderTest": "retained-legacy-cloud-path",
+  "passed": false
+}

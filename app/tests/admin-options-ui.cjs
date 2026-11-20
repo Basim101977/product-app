@@ -1,0 +1,64 @@
+const {launch,makeReport,check,saveReport,assert,path,REPORTS}=require('./offline-harness.cjs');
+const share=require('../functions/test/private-share-fixture.cjs')();
+const report=makeReport('admin-options-ui');
+async function workspace(p){await p.evaluate(()=>{
+ fixtureAuth.currentUser=fixtureUser();lang='ar';const uid=personalFixture.uid;
+ session={uid,email:personalFixture.email,workspaceId:uid,role:'owner',active:true,local:false,deviceFirst:true,permissions:rolePermissions('owner'),departmentIds:[],stageIds:[],subjectIds:[]};
+ departments=defaultDepartments();stages=defaultStages();compactScope={departmentId:DEFAULT_DEPARTMENT_ID,stageId:DEFAULT_STAGE_ID,studyPeriod:'morning',section:''};
+ const s={id:'testsubject',titleAr:'مادة اختبار',ownerUserId:uid,...compactScope,students:[{id:'s1',name:'طالب تجريبي',faceDescriptors:[Array(128).fill(.2)]}],archivedStudents:[],lectures:[],lectureMeta:{},attendance:{},excuses:{},rosterLoaded:true,faceTemplatesLoaded:true,totalHours:60,lectureDurationHours:2};subjects=[s];activeSubjectId=s.id;
+ localData={workspace:{id:uid},users:{[uid]:session},subjects:{[s.id]:s},departments:Object.fromEntries(departments.map(d=>[d.id,d])),stages:Object.fromEntries(stages.map(d=>[d.id,d]))};
+ window.fixtureInvoke=async(name,data)=>{personalFixture.calls.push({name,data});if(name==='listPersonalRegistrations'){if(data.countOnly)return {pendingCount:0};if(data.lectureUid)return {lectureCount:7};return {requests:[{uid:'teacher1',fullName:data.search?'أحمد فاطمة':'تدريسي اختبار',email:'teacher@example.test',status:'approved',emailVerified:true}]};}if(name==='accountPresence')return {entries:[]};return {};};showApp();
+});}
+(async()=>{const h=await launch(report);try{
+ const {page:p,context}=await h.page({width:390,fixture:{uid:'a',email:'a@example.test',verified:true}});await workspace(p);
+ await check(report,'Face attendance defaults OFF without loading a model; header and all face cells are hidden',async()=>{assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);assert.equal(await p.evaluate(()=>scanFaceFrameAuto()),false);assert(await p.locator('#rosterHead .faceIndicatorColumn').isHidden());assert(await p.locator('#rosterRows .faceIndicatorColumn').isHidden());await p.evaluate(()=>HathirSettings.open());assert.equal(await p.locator('#faceAttendanceToggle').getAttribute('aria-checked'),'false');});
+ await check(report,'Previously enabled legacy preference defaults OFF until explicitly enabled in Settings',async()=>{
+  await p.evaluate(()=>{const key='hathir-device-settings-v1:'+JSON.stringify([!!session.local,session.uid,session.workspaceId]);localStorage.setItem(key,JSON.stringify({faceAttendance:true,rfid:false,lang:'ar'}));HathirSettings.render();});
+  assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);assert.equal(await p.locator('#faceAttendanceToggle').getAttribute('aria-checked'),'false');assert(await p.locator('#rosterHead .faceIndicatorColumn').isHidden());assert.equal(await p.evaluate(()=>scanFaceFrameAuto()),false);
+  await p.reload();await p.waitForFunction(()=>personalFixture.initialAuthDelivered);await workspace(p);assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);await p.evaluate(()=>HathirSettings.open());
+ });
+ await check(report,'Requested explanatory notes stay empty and hidden without hiding settings controls',async()=>{
+  for(const id of ['faceAttendanceHelp','settingsRecoveryHelp','settingsInvitesHelp','ownerRegistrationHint','ownerLectureCountHelp','ownerRequestsSearchLabel']){assert(await p.locator('#'+id).isHidden());assert.equal(await p.locator('#'+id).textContent(),'');}
+  assert(await p.locator('#faceAttendanceToggle').isVisible());assert(!(await p.locator('#settingsModal').textContent()).includes('تنزيل نسخة محلية أو استقبال نسخة من جهاز آخر.'));
+  assert(!(await p.locator('#deviceNotificationsStatus').textContent()).includes('فعّل تنبيهات رسائل الدعم والمشاركات'));
+  await p.evaluate(()=>HathirSettings.render());assert.equal(await p.locator('#faceAttendanceHelp').textContent(),'');
+ });
+ await check(report,'Face switch persists ON across page reload and OFF across reload; templates preserved',async()=>{
+  await p.locator('#faceAttendanceToggle').click();assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),true);await p.reload();await p.waitForFunction(()=>personalFixture.initialAuthDelivered);await workspace(p);assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),true);await p.evaluate(()=>HathirSettings.open());await p.locator('#faceAttendanceToggle').click();assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);assert.equal(await p.evaluate(()=>getFaceDescriptors(getSubject().students[0]).length),1);await p.reload();await p.waitForFunction(()=>personalFixture.initialAuthDelivered);await workspace(p);assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);
+ });
+ await check(report,'Different account defaults OFF and does not overwrite the original account preference',async()=>{await p.evaluate(()=>{HathirSettings.open();document.getElementById('faceAttendanceToggle').click();session={...session,uid:'other',workspaceId:'other'};HathirSettings.render();});assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);await p.evaluate(()=>{session={...session,uid:'a',workspaceId:'a'};HathirSettings.render();});assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),true);await p.evaluate(()=>HathirSettings.close(false));});
+ await check(report,'Switch restores face column immediately; disabling clears its invisible filter without changing students or templates',async()=>{
+  assert(await p.locator('#rosterHead .faceIndicatorColumn').isVisible());await p.locator('#rosterHead .faceIndicatorColumn').dispatchEvent('dblclick');await p.locator('#rosterFilterDialog').waitFor({state:'visible'});await p.locator('#rosterFilterAll').uncheck();await p.locator('#rosterFilterApply').click();assert.equal(await p.locator('#rosterRows tr[data-student-id]:visible').count(),0);
+  await p.evaluate(()=>HathirSettings.open());await p.locator('#faceAttendanceToggle').click();await p.evaluate(()=>HathirSettings.close(false));assert(await p.locator('#rosterHead .faceIndicatorColumn').isHidden());assert.equal(await p.locator('#rosterRows tr[data-student-id]:visible').count(),1);assert.equal(await p.evaluate(()=>getFaceDescriptors(getSubject().students[0]).length),1);
+  await p.emulateMedia({media:'print'});assert(await p.locator('#rosterHead .faceIndicatorColumn').isHidden());await p.emulateMedia({media:'screen'});await p.screenshot({path:path.join(REPORTS,'face-column-off-phone.png')});await p.setViewportSize({width:1280,height:900});assert(await p.locator('#rosterHead .faceIndicatorColumn').isHidden());await p.screenshot({path:path.join(REPORTS,'face-column-off-desktop.png')});await p.setViewportSize({width:390,height:844});
+  await p.evaluate(()=>HathirSettings.open());await p.locator('#faceAttendanceToggle').click();await p.evaluate(()=>HathirSettings.close(false));assert(await p.locator('#rosterHead .faceIndicatorColumn').isVisible());assert(await p.locator('#rosterRows .faceIndicatorColumn').isVisible());
+ });
+ await check(report,'Another tab disabling face is respected by scanning, rendering, unrelated saves and reload',async()=>{
+  const other=await context.newPage();await other.goto(p.url());
+  const key=await p.evaluate(()=>'hathir-device-settings-v1:'+JSON.stringify([!!session.local,session.uid,session.workspaceId]));
+  await other.evaluate(key=>{const saved=JSON.parse(localStorage.getItem(key)||'{}');localStorage.setItem(key,JSON.stringify({...saved,faceAttendanceOptInV2:false}));},key);
+  await p.waitForFunction(()=>document.getElementById('faceAttendanceToggle').getAttribute('aria-checked')==='false');
+  assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);assert(await p.locator('#rosterHead .faceIndicatorColumn').isHidden());
+  await p.evaluate(()=>{HathirSettings.open();document.getElementById('rfidToggle').click();});
+  assert.equal(await other.evaluate(key=>JSON.parse(localStorage.getItem(key)).faceAttendanceOptInV2,key),false);
+  await p.reload();await p.waitForFunction(()=>personalFixture.initialAuthDelivered);await workspace(p);assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),false);
+  await p.evaluate(()=>{HathirSettings.open();document.getElementById('faceAttendanceToggle').click();HathirSettings.close(false);});assert.equal(await p.evaluate(()=>HathirSettings.faceEnabled()),true);await other.close();
+ });
+ await p.exposeFunction('shareTransport',async d=>{if(d.action==='send'&&d.recipientUid==='c'&&!share.failedOnce){share.failedOnce=true;throw Error('synthetic disconnected');}return share.call(d,'a');});
+ await p.evaluate(()=>{const previous=firebase.app;firebase.app=()=>({functions:()=>({httpsCallable:name=>async data=>({data:name==='privateRosterShare'?await shareTransport(data):await fixtureInvoke(name,data)})})});HathirPrivateShare.open();});
+ await check(report,'Multiple recipient preview deduplicates emails, validates each and displays all names',async()=>{
+  await p.waitForFunction(()=>document.getElementById('privateShareStatus').textContent.includes('لا توجد'));await p.locator('#privateShareEmail').fill('b@example.test, c@example.test\nb@example.test');await p.locator('#privateSharePrepare').click();await p.locator('#privateShareSend').waitFor({state:'visible'});const text=await p.locator('#privateSharePreview').textContent();assert(text.includes('Teacher b')&&text.includes('Teacher c'));assert.equal((text.match(/المستلم:/g)||[]).length,2);
+ });
+ await check(report,'Partial multi-send retries failed recipient without duplicating successful invitation',async()=>{
+  await p.locator('#privateShareAuthorized').check();await p.locator('#privateShareSend').click();await p.waitForFunction(()=>document.getElementById('privateShareStatus').textContent.includes('أُرسلت بعض'));assert.equal([...share.records.keys()].filter(k=>/^attendancePrivateShares\/[^/]+$/.test(k)).length,1);await p.locator('#privateShareSend').click();await p.waitForFunction(()=>document.getElementById('privateShareStatus').textContent.includes('تم إرسال جميع'));assert.equal([...share.records.keys()].filter(k=>/^attendancePrivateShares\/[^/]+$/.test(k)).length,2);
+ });
+ await check(report,'Invalid and excessive recipient lists fail before any invitation write',async()=>{await p.locator('#privateShareEmail').fill('invalid@@example.test');await p.locator('#privateSharePrepare').click();await p.waitForFunction(()=>document.getElementById('privateShareStatus').textContent.includes('بريد غير صحيح'));assert(await p.locator('#privateShareSend').isHidden());await p.locator('#privateShareEmail').fill(Array.from({length:21},(_,i)=>'t'+i+'@example.test').join(','));await p.locator('#privateSharePrepare').click();await p.waitForFunction(()=>document.getElementById('privateShareStatus').textContent.includes('20 بريد'));});
+ await p.locator('#privateShareEmail').fill('b@example.test, c@example.test');await p.screenshot({path:path.join(REPORTS,'admin-options-share-phone.png')});await p.locator('#privateShareClose').click();
+ await check(report,'Owner search sends text to server and count appears next to the teacher name',async()=>{
+  await p.evaluate(()=>{personalFixture.uid='HATHIR_OWNER_UID_REQUIRED';session.uid=personalFixture.uid;personalFixture.email='redacted@example.invalid';fixtureAuth.currentUser=fixtureUser();session.email=personalFixture.email;document.getElementById('ownerRegistrationModal').hidden=false;});await p.locator('#ownerRequestsSearch').fill('احمد فاطمه');await p.waitForFunction(()=>document.querySelector('[data-lecture-count-uid]')?.textContent.includes('7'));assert.equal(await p.evaluate(()=>personalFixture.calls.filter(c=>c.name==='listPersonalRegistrations'&&c.data.search).at(-1).data.search),'احمد فاطمه');assert((await p.locator('#ownerRequestsList').textContent()).includes('أحمد فاطمة'));assert(await p.locator('#ownerLectureCountHelp').isHidden());assert(await p.locator('#ownerRequestsSearchLabel').isHidden());assert.equal(await p.locator('#ownerRequestsSearch').getAttribute('aria-label'),'بحث التدريسيين');
+ });
+ await p.screenshot({path:path.join(REPORTS,'admin-options-requests-phone.png')});await p.setViewportSize({width:1280,height:900});await p.screenshot({path:path.join(REPORTS,'admin-options-requests-desktop.png')});
+ await check(report,'Phone forms fit viewport and no uncaught browser errors',async()=>{await p.setViewportSize({width:390,height:844});assert(await p.locator('#ownerRequestsSearch').evaluate(e=>e.getBoundingClientRect().right<=innerWidth));assert.deepEqual(report.pageErrors,[]);});await context.close();
+ }finally{await h.close();}saveReport(report,'admin-options-ui');})().catch(e=>{console.error(e);process.exitCode=1;});
+
+

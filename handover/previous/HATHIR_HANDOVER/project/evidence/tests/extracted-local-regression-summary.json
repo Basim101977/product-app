@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-09-22T21:04:40.930Z",
+  "passed": true,
+  "cloudWrites": 0,
+  "productionDataRead": false,
+  "credentialsRead": false,
+  "syntheticOnly": true,
+  "total": 394,
+  "results": [
+    {
+      "suite": "promotion",
+      "passed": true,
+      "elapsedMs": 12032,
+      "total": 39,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\promotion-regression.json"
+    },
+    {
+      "suite": "service-worker-upgrade",
+      "passed": true,
+      "elapsedMs": 5408,
+      "total": 10,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\service-worker-upgrade.json"
+    },
+    {
+      "suite": "function-metadata",
+      "passed": true,
+      "elapsedMs": 784,
+      "total": 1,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\function-metadata-static.json"
+    },
+    {
+      "suite": "static",
+      "passed": true,
+      "elapsedMs": 93,
+      "total": 7,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\security-isolation-static.json"
+    },
+    {
+      "suite": "backend",
+      "passed": true,
+      "elapsedMs": 250,
+      "total": 47,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\backend-unit-tests.json"
+    },
+    {
+      "suite": "browser",
+      "passed": true,
+      "elapsedMs": 6255,
+      "total": 30,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\personal-ui-regression.json"
+    },
+    {
+      "suite": "prefixes",
+      "passed": true,
+      "elapsedMs": 4176,
+      "total": 36,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\department-prefix-regression.json"
+    },
+    {
+      "suite": "name-qr-unit",
+      "passed": true,
+      "elapsedMs": 113,
+      "total": 29,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\name-qr-unit.json"
+    },
+    {
+      "suite": "name-only-ui",
+      "passed": true,
+      "elapsedMs": 4931,
+      "total": 34,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\name-only-ui-regression.json"
+    },
+    {
+      "suite": "name-qr-browser",
+      "passed": true,
+      "elapsedMs": 17489,
+      "total": 50,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\name-qr-regression.json"
+    },
+    {
+      "suite": "sync-transport",
+      "passed": true,
+      "elapsedMs": 8706,
+      "total": 28,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\sync-transport-regression.json"
+    },
+    {
+      "suite": "emulator",
+      "passed": true,
+      "elapsedMs": 15188,
+      "total": 83,
+      "report": "C:\\Users\\alqar\\Documents\\Codex\\2026-06-29\\re\\work\\hathir-transfer-20260922\\unpacked-verification\\Hathir-Handover-20260922\\source\\work\\hathir-production-upgrade-20260922\\app\\reports\\personal-rules-emulator.json"
+    }
+  ]
+}

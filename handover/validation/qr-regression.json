@@ -1,0 +1,224 @@
+{
+  "suite": "name-qr-offline-browser-regression",
+  "checkedAt": "2026-11-20T15:16:43.536Z",
+  "mode": "synthetic-local-only",
+  "externalNetwork": "blocked",
+  "cloudWrites": 0,
+  "credentialsRead": false,
+  "limitations": [
+    "No deployed-service, Firebase emulator, payment-provider, camera, or physical-device verification."
+  ],
+  "cases": [
+    {
+      "label": "Normalized QR marks only the correct immutable ID in the selected subject and durable offline outbox",
+      "passed": true
+    },
+    {
+      "label": "One portable QR selects the second subject own internal ID without touching the first",
+      "passed": true
+    },
+    {
+      "label": "Normalized duplicate names are blocked without success feedback or an outbox operation",
+      "passed": true
+    },
+    {
+      "label": "True v1 name QR still matches normalized names and retains the internal attendance ID",
+      "passed": true
+    },
+    {
+      "label": "True v1 name QR rejects normalized duplicate names without marking attendance",
+      "passed": true
+    },
+    {
+      "label": "Missing full names do not match partial names or historical students",
+      "passed": true
+    },
+    {
+      "label": "Old ID-only cards are rejected even if an existing student has that ID",
+      "passed": true
+    },
+    {
+      "label": "Matching names across selected sections are ambiguous even when student IDs coincide",
+      "passed": true
+    },
+    {
+      "label": "A partial offline roster cannot establish uniqueness",
+      "passed": true
+    },
+    {
+      "label": "A failed authoritative roster load never falls back to a cached partial match",
+      "passed": true
+    },
+    {
+      "label": "Completing a partial roster discovers a duplicate before any attendance write",
+      "passed": true
+    },
+    {
+      "label": "Switching active subject invalidates an already captured QR scope",
+      "passed": true
+    },
+    {
+      "label": "Switching account invalidates an already captured QR scope",
+      "passed": true
+    },
+    {
+      "label": "Replacing the session object for the same account invalidates its captured scope",
+      "passed": true
+    },
+    {
+      "label": "Changing selection during an awaited roster load does not mark either subject",
+      "passed": true
+    },
+    {
+      "label": "Queued name attendance revalidates rename before writing",
+      "passed": true
+    },
+    {
+      "label": "Queued name attendance revalidates collision before writing",
+      "passed": true
+    },
+    {
+      "label": "Queued name attendance revalidates roster-reset before writing",
+      "passed": true
+    },
+    {
+      "label": "Queued name attendance revalidates attendance-clear before writing",
+      "passed": true
+    },
+    {
+      "label": "Name uniqueness is checked again after the awaited automatic lecture-close operation",
+      "passed": true
+    },
+    {
+      "label": "Stopping or replacing the camera invalidates a camera-owned scope",
+      "passed": true
+    },
+    {
+      "label": "Rejected and debounced QR frames are handled and never fall through to face attendance",
+      "passed": true
+    },
+    {
+      "label": "Concurrent camera and image scans remain one durable internal-ID attendance mark",
+      "passed": true
+    },
+    {
+      "label": "ID-only manual and face entry still use existing internal IDs",
+      "passed": true
+    },
+    {
+      "label": "Manual full-name input accepts normalization and clears only after successful attendance",
+      "passed": true
+    },
+    {
+      "label": "Manual full-name input rejects ambiguity and preserves the entered name for correction",
+      "passed": true
+    },
+    {
+      "label": "A newer manual name typed while attendance waits is not erased by the earlier completion",
+      "passed": true
+    },
+    {
+      "label": "Face enrollment resolves a normalized full name to its immutable target ID",
+      "passed": true
+    },
+    {
+      "label": "Face enrollment rechecks collision after delayed synthetic face capture",
+      "passed": true
+    },
+    {
+      "label": "Face enrollment rechecks selection after delayed synthetic face capture",
+      "passed": true
+    },
+    {
+      "label": "Actual v2 and v1 generator rasters round-trip short and 150-character names through actual jsQR",
+      "passed": true
+    },
+    {
+      "label": "Compact QR survives controlled 132px and 99px browser downscales without a physical-camera claim",
+      "passed": true
+    },
+    {
+      "label": "Alternate generator configuration retains four quiet modules and version-specific correction",
+      "passed": true
+    },
+    {
+      "label": "Too-small QR canvases are rejected instead of silently rendering a blank code",
+      "passed": true
+    },
+    {
+      "label": "Student QR-card creation passes the name protocol instead of the internal student ID",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   'H4:%5B%22%D9%81%D8%A7%D8%B7%D9%85%D9%87%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D8%AD%D9%85%D8%AF%22%2C%22medical_devices%22%2C%22medical_stage_2%22%5D'\n-   'H3:%D9%81%D8%A7%D8%B7%D9%85%D9%87%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D8%AD%D9%85%D8%AF'\n  ]\n\n    at WORKSPACE\\app\\tests\\name-qr-regression.cjs:503:12\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:78:7\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async scenario (WORKSPACE\\app\\tests\\name-qr-regression.cjs:74:3)\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:493:3"
+    },
+    {
+      "label": "normal QR card preserves its entire name within card bounds and draws no internal ID",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n318 !== 315\n\n    at WORKSPACE\\app\\tests\\name-qr-regression.cjs:564:14\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:78:7\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async scenario (WORKSPACE\\app\\tests\\name-qr-regression.cjs:74:3)\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:512:5"
+    },
+    {
+      "label": "long QR card preserves its entire name within card bounds and draws no internal ID",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n291 !== 279\n\n    at WORKSPACE\\app\\tests\\name-qr-regression.cjs:564:14\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:78:7\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async scenario (WORKSPACE\\app\\tests\\name-qr-regression.cjs:74:3)\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:512:5"
+    },
+    {
+      "label": "unspaced QR card preserves its entire name within card bounds and draws no internal ID",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n339 !== 327\n\n    at WORKSPACE\\app\\tests\\name-qr-regression.cjs:564:14\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:78:7\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async scenario (WORKSPACE\\app\\tests\\name-qr-regression.cjs:74:3)\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:512:5"
+    },
+    {
+      "label": "maximum150 QR card preserves its entire name within card bounds and draws no internal ID",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n351 !== 339\n\n    at WORKSPACE\\app\\tests\\name-qr-regression.cjs:564:14\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:78:7\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async scenario (WORKSPACE\\app\\tests\\name-qr-regression.cjs:74:3)\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:512:5"
+    },
+    {
+      "label": "All six cards in the actual PDF-page canvas decode their own portable name payload",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Actual PDF card at 80,280\n+ actual - expected\n\n+ 'H4:%5B%22%D9%81%D8%A7%D8%B7%D9%85%D8%A9%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A3%D8%AD%D9%85%D8%AF%22%2C%22medical_devices%22%2C%22medical_stage_2%22%5D'\n- 'H3:%D9%81%D8%A7%D8%B7%D9%85%D8%A9%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A3%D8%AD%D9%85%D8%AF'\n\n    at WORKSPACE\\app\\tests\\name-qr-regression.cjs:603:14\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:78:7\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async scenario (WORKSPACE\\app\\tests\\name-qr-regression.cjs:74:3)\n    at async WORKSPACE\\app\\tests\\name-qr-regression.cjs:583:3"
+    },
+    {
+      "label": "Real v2 PNG image decoding queues the selected internal ID",
+      "passed": true
+    },
+    {
+      "label": "Actual video/canvas/jsQR v2 path queues one camera mark",
+      "passed": true
+    },
+    {
+      "label": "Real v2 PNG image decoding rejects duplicate names",
+      "passed": true
+    },
+    {
+      "label": "Actual video/canvas/jsQR v2 path rejects duplicate names",
+      "passed": true
+    },
+    {
+      "label": "Real v1 PNG image decoding queues the selected internal ID",
+      "passed": true
+    },
+    {
+      "label": "Actual video/canvas/jsQR v1 path queues one camera mark",
+      "passed": true
+    },
+    {
+      "label": "Real v1 PNG image decoding rejects duplicate names",
+      "passed": true
+    },
+    {
+      "label": "Actual video/canvas/jsQR v1 path rejects duplicate names",
+      "passed": true
+    },
+    {
+      "label": "Image-file scanning captures selection before an awaited decoder-library load",
+      "passed": true
+    },
+    {
+      "label": "No uncaught browser exceptions in isolated name-QR regressions",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "screenshots": [],
+  "runtimeUnderTest": "current-device-first",
+  "passed": false
+}

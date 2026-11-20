@@ -1,0 +1,20 @@
+{
+  "name": "hathir-portable-handover-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable test adapters; original source preserved, delivery HTML contains an authorized privacy derivative.",
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "check": "node run-tests.cjs --check",
+    "test": "node run-tests.cjs",
+    "install:emulator": "node install-runtime.cjs",
+    "preview": "node safe-preview.cjs"
+    ,"preview:beginner": "node beginner-preview.cjs"
+  },
+  "devDependencies": {
+    "firebase-tools": "15.30.0",
+    "jsqr": "1.4.0",
+    "playwright": "1.62.1",
+    "qrcode-generator": "1.4.4"
+  }
+}

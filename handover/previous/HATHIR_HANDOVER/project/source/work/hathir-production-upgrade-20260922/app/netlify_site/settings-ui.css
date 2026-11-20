@@ -1,0 +1,28 @@
+.settingsCard{width:min(760px,94vw);max-width:760px;max-height:90dvh;overflow:auto;padding:24px;overscroll-behavior:contain}
+.settingsHeader,.settingsRow{display:flex;justify-content:space-between;align-items:center;gap:18px}
+.settingsHeader{margin-bottom:18px}
+.settingsHeader h2{margin:0}.settingsHeader p{margin:5px 0 0}.settingsHeader .iconBtn{flex:0 0 40px}
+.settingsCard p{font-size:13px;line-height:1.7;color:#536779;margin:6px 0;overflow-wrap:anywhere}
+.settingsCard h3{margin:0;font-size:15px;color:#173d4a;text-align:start}
+.settingsToolbar{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.settingsLanguageLabel{font:700 14px Tajawal,Arial,sans-serif;color:#173d4a}
+.settingsReaderGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.settingsSection{border:1px solid #dce6ee;border-radius:14px;padding:16px;margin-bottom:12px;background:#fbfdfe;min-width:0}
+.settingsRow>div{min-width:0;flex:1}
+.settingsAccountInfo{display:flex;flex-direction:column;align-items:flex-start}
+.settingsAccountInfo p{max-width:100%}
+.readerToggle{border:0;border-radius:8px;background:transparent;color:#173d4a;padding:0;font:700 14px Tajawal,Arial,sans-serif;min-height:44px;width:100%;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.readerSwitchTrack{position:relative;display:block;flex:0 0 46px;width:46px;height:26px;border-radius:999px;background:#8797a5;box-shadow:inset 0 0 0 1px #0000000c;transition:background .18s ease}
+.readerSwitchTrack:before{content:'';position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:white;box-shadow:0 1px 3px #0003;transition:transform .18s ease}
+.readerToggle[aria-checked=true] .readerSwitchTrack{background:#078358}
+.readerToggle[aria-checked=true] .readerSwitchTrack:before{transform:translateX(20px)}
+.readerToggle:disabled{opacity:.5;cursor:not-allowed}.readerToggle:focus-visible{outline:3px solid #47a8c4;outline-offset:4px}
+.settingsCard .btn{white-space:nowrap;flex-shrink:0;min-height:40px}
+.settingsBadge{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:999px;background:#bc2538;color:white;padding:0 6px;font:700 12px Tajawal,Arial,sans-serif;margin-inline-start:6px}
+.settingsState[data-state=on]{color:#087353}.settingsState[data-state=warn]{color:#906b19}.settingsState[data-state=error]{color:#ac2630}
+#settingsNfcStatus:empty{display:none}
+#settingsAccountEmail{text-align:start;unicode-bidi:plaintext;font-size:12px}#settingsPasswordStatus:empty{display:none}
+#settingsBtn{display:inline-flex;align-items:center;justify-content:center;gap:3px}
+@media(max-width:600px){.settingsCard{padding:16px;max-height:92dvh}.settingsSection{padding:13px}.settingsRow{gap:10px}.settingsReaderGrid{gap:10px}.readerToggle{gap:8px}.settingsCard .btn{padding:9px 11px}.settingsCard p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.readerSwitchTrack,.readerSwitchTrack:before{transition:none}}
+@media print{#settingsBtn,#settingsModal,#recoveryBackBtn{display:none!important}}

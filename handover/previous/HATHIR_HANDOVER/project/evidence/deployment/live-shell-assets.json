@@ -1,0 +1,156 @@
+{
+  "at": "2026-09-22T19:55:46.362Z",
+  "origin": "https://hathir.web.app",
+  "passed": true,
+  "cloudWrites": 0,
+  "assets": 21,
+  "results": [
+    {
+      "path": "/",
+      "sha256": "e4ca2c9cf675175d93b354fe0bcbaf896d926ce29ed8e73a49ce40ac3b0ca216",
+      "bytes": 624172,
+      "type": "text/html; charset=utf-8",
+      "cache": "no-cache"
+    },
+    {
+      "path": "/index.html",
+      "sha256": "e4ca2c9cf675175d93b354fe0bcbaf896d926ce29ed8e73a49ce40ac3b0ca216",
+      "bytes": 624172,
+      "type": "text/html; charset=utf-8",
+      "cache": "no-cache"
+    },
+    {
+      "path": "/runtime-config.js",
+      "sha256": "36d96a890a99f16ffd7315d28bbdd40255c43715d1b712ed4650fb408d96fe3b",
+      "bytes": 822,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "no-store"
+    },
+    {
+      "path": "/personal-ui.js?v=v2026.09.22-personal-upgrade-1",
+      "sha256": "54e37ded5f6f9dd79cea766157b26ac9c185c931dec65cfe1603e4b8dda2d30b",
+      "bytes": 62923,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/personal-ui.css?v=v2026.09.22-personal-upgrade-1",
+      "sha256": "3218305063d978e4033d2a834cbe3f92ee3b8863b72aed46bcb6a1e25ea47d59",
+      "bytes": 1547,
+      "type": "text/css; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/name-qr.js?v=v2026.09.22-personal-upgrade-1",
+      "sha256": "c832333b70ec54a565c46a5d396158b410ee77d457879afbd1f279a975893698",
+      "bytes": 8627,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/guide.html",
+      "sha256": "c26add95cd9982691fc0b76aebc69e612fd329ec5b17d0d5cdda9220fdca2921",
+      "bytes": 22782,
+      "type": "text/html; charset=utf-8",
+      "cache": "no-cache"
+    },
+    {
+      "path": "/offline-store.js?v=v2026.09.22-personal-upgrade-1",
+      "sha256": "f36a4f1bc6b2645459a7c9d4396683f7565eadf4a3325ad547e7bdf93f2c8a4f",
+      "bytes": 12776,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/offline-attendance.js?v=v2026.09.22-personal-upgrade-1",
+      "sha256": "c96a33e5d3b007263834dc71c1143603d2917d1f6e6e07b5809167f6c176c223",
+      "bytes": 57090,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/settings-ui.js?v=v2026.09.22-personal-upgrade-1",
+      "sha256": "ca800c1500d8f5a755eff75eb94410c19910279e11fb7e9676c80b07a8f38894",
+      "bytes": 10963,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/card-readers.js?v=20260915-settings1",
+      "sha256": "428da3e0bf7040ab55542c317345114df6face959140cc38f2583b2193050722",
+      "bytes": 5506,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/settings-ui.css?v=20260916-language1",
+      "sha256": "9aafc380156b6dc42d24e02a9de245444394e855522f95bbf4c18fb19eec0838",
+      "bytes": 3040,
+      "type": "text/css; charset=utf-8",
+      "cache": "max-age=3600"
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "sha256": "f75a7a367beae62ec85e67e0fcf9e6666c56946a68c8dbb8f9c18186b9d3c5e9",
+      "bytes": 813,
+      "type": "application/manifest+json; charset=utf-8",
+      "cache": "no-cache"
+    },
+    {
+      "path": "/assets/hathir-white-brand-768-20260914.webp",
+      "sha256": "599fe30c9a6dd885495d8bb43c2e5d138f9f0283e7d9343582a8b2d4cfe99711",
+      "bytes": 20880,
+      "type": "image/webp",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/hathir-white-icon-192-20260914.png",
+      "sha256": "41f57199138085605d7b9c27364812571d15b927158406ac21d763b9dc6aac19",
+      "bytes": 11040,
+      "type": "image/png",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/hathir-white-icon-512-20260914.png",
+      "sha256": "86bc25049cdecfd561c3ca94fba5f83577dd94d785b65dcbeb9b1a227afe5252",
+      "bytes": 57574,
+      "type": "image/png",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/hathir-white-maskable-512-20260914.png",
+      "sha256": "259577cf9caecec72807f005323c205f6a3252a91fb970e2ac8796acf7fdebd4",
+      "bytes": 41521,
+      "type": "image/png",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/hathir-white-apple-180-20260914.png",
+      "sha256": "5342e395f86973c3b6a1b62bb6df95c15d757a2184ed7ea8efae7bebc7f913a9",
+      "bytes": 8159,
+      "type": "image/png",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/hathir-white-favicon-32-20260914.png",
+      "sha256": "0d595f865594411febba31f3605f606b0daf51d1195855dfbc3f59e8ff062f65",
+      "bytes": 679,
+      "type": "image/png",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/assets/hathir-white-favicon-64-20260914.png",
+      "sha256": "7f6df6607ddfad962a1439322ebd5d82c29a7c7193e8168ca73dfaa90345f724",
+      "bytes": 1695,
+      "type": "image/png",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/service-worker.js",
+      "sha256": "539de99c20841bf93f17802fd5e731b8780685248a2cf0214d4fa6a5dd91200b",
+      "bytes": 4955,
+      "type": "text/javascript; charset=utf-8",
+      "cache": "no-cache"
+    }
+  ]
+}

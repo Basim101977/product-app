@@ -1,0 +1,203 @@
+{
+  "source": "development/source/work/hathir-department-stage-preview-20261116/app",
+  "changes": [
+    {
+      "path": "app/firestore_attendance.rules",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/functions/package-lock.json",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/functions/personal-workspace.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/functions/push-notifications.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/functions/README-personal.md",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/functions/support-broadcast.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/functions/support-chat.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/functions/support-mailbox.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/guide.html",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/personal-ui.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/runtime-config.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/support-chat.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/vendor/exceljs-4.4.0.min.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/vendor/jspdf-2.5.1.umd.min.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/__/firebase/init.js",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/netlify_site/__/firebase/init.json",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/preview.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tests/admin-options-ui.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tests/live-public-smoke.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tests/offline-harness.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tests/personal-rules-emulator.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tests/security-isolation-static.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tests/support-chat-server-check.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tests/support-chat-ui.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "app/tools/deploy-check.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "support/beginner-preview.cjs",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "support/package-lock.json",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "handover/previous/HATHIR_HANDOVER/INDEX.md",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    },
+    {
+      "path": "handover/previous/HATHIR_HANDOVER/MEDIA_INDEX.md",
+      "reason": "Removed fixed account identifiers, contact information or API credentials"
+    }
+  ],
+  "excluded": [
+    "development/source/work/hathir-department-stage-preview-20261116/app/functions/node_modules",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/attendance-removal-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/attendance-removal-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/attendance-row-feedback-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/attendance-row-feedback-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/attendance-row-feedback.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/auth-startup-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/auto-lecture-desktop.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/auto-lecture-mobile.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/beginner-ui-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/daily-actions-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/daily-actions-320.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/daily-actions-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/daily-actions-768.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/department-editor-1280.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/department-editor-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/department-menu-1280.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/department-menu-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/department-stage-qr.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/department-tools.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/device-live-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/device-workspace-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/interaction-repair.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/lecture-action-visibility.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/lecture-sync-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/lecture-sync-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/lecture-sync-ui.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/live-attendance-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/live-conflict-mobile.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/name-attendance-toggle.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/name-qr-unit.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/numbered-roster-import.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/offline-package-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/password-reset-ui.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/personal-rules-emulator.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/phone-drawer-ar.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/phone-drawer-en.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/phone-record-dialog.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/phone-scanner-success.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/profile-qr-inline-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/profile-qr-inline-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/profile-qr-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/record-open-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/record-open-320.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/record-open-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/record-open-768.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/release-current-auth.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/scope-preview-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/scope-preview-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/scope-preview.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/security-backend-20261117.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/security-hardening-backend.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/security-headers.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/security-isolation-static.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/security-phase2-backend.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/security-review-20261117.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/security-server-release-backend.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/service-worker-upgrade.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/stability-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/startup-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/startup-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/student-profile-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/student-profile-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/student-profile-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/subject-dropdown-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/subject-editor-1280.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/subject-editor-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/subject-home-1280.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/subject-home-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/subject-tools-regression.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/sync-background-1440.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/sync-background-390.png",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/sync-background-indicator.log",
+    "development/source/work/hathir-department-stage-preview-20261116/app/reports/sync-readiness-regression.log",
+    "development/support/development-final-test.log",
+    "development/support/development-test.log",
+    "development/support/node_modules",
+    "development/support/runtime"
+  ],
+  "scope": "Only delivery copies modified; original workspace and cloud unchanged",
+  "note": "Initial copy/redaction log. Third-party library bytes and current package locks were subsequently restored unchanged; SOURCE_TRANSFORM_MANIFEST.json is the final source comparison."
+}

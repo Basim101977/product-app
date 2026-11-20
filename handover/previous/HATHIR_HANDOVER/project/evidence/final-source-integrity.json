@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-09-22T21:07:27.204Z",
+  "passed": true,
+  "originalFrozenFilesChecked": 63,
+  "originalCopiedFilesChecked": 111,
+  "originalChanges": 0,
+  "scope": "Original local source read-only. Delivery HTML derivatives are audited separately in privacy-transform.json. Inventory is the historical pre-transform copy snapshot, not the final package manifest.",
+  "changedDeliveryFiles": [
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/tests/personal-ui-regression.cjs",
+      "reason": "Authorized removal of original local-login fixture credentials",
+      "sourceSha256": "6467c4ac0b4b902e4c05a01b2d8aa9cbf8a0f563ffedc46138ca1f093801ebc4",
+      "deliverySha256": "72f65fbd91d66d98ae347b2b3e5261d1f84105c51bb11fefe188f37e303e15e8"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/local-regression-summary.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "d6016acc5fc3b9239f486c83e358e85e132d9702d96297e340162e54a9fb9503",
+      "deliverySha256": "fd2e3084de0c7c84a7976c2802ffb7fe69ae246769ab72ef7e3ee32eae471ceb"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/function-metadata-static.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "fb95e4764cc31b7b9d07396c12d596f44bc5c174e75d516cf84d1f1972777672",
+      "deliverySha256": "1eff203fac001226ddda066ff1860f9255358fecf6120dd881debdcac0a4af21"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/promotion-regression.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "6a304a8165fdcfb3c24bcbc4ec016f8ffe619342872dc9924cfeabc55451688d",
+      "deliverySha256": "fa47f1fff5dd8ad588c08b101f3d639d55d52786dbd207edb97e92c73c848e74"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/service-worker-upgrade.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "f24c5e32fe1b2d8f6cf0d2ca51665b06ed1640c227e6c3154c10fc9f0d27a5f7",
+      "deliverySha256": "e21828374bb8f638388b994a59522fd4db0b6656614c4bab4f4ebc8ec35b9510"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/personal-rules-emulator.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "6f5528248080ce3da4dd4bd8c4c72c9047f28370d9950102bbd899e1d04eff85",
+      "deliverySha256": "e7ee846b78777dc98508f10b08a0ef06715cea7077414d3a43bf7009994c50af"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/department-prefix-regression.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "98c43f13a7370f03826552b92e1ab763c5d5488c404a5e3e2642f627fbde0803",
+      "deliverySha256": "5a26e9bc5399c3093a58d6c75da65f54876be961e0890de33cd23e103103efe6"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/personal-ui-regression.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "661577168d0f03121e876deb06647f3bd00022d8a1f0975673d7d851a8879099",
+      "deliverySha256": "7e6b67ef7d05b9d3718886a7fea21e4599ec3a22b65f2e4fc158b23666aae2f8"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/security-isolation-static.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "0f7eda5770a980718d5d2cebfa9d6b4e2601ee76ad47ea835268dd2439a54ea7",
+      "deliverySha256": "3cb867c4fd64427f642f96a0e8b07229314b0734d776b4e7bbfff8ecaa57c690"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/name-qr-unit.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "89943a3bdd2418b65cf9661443cb73b053d1e1235cfd7db46d34344317824df4",
+      "deliverySha256": "d37677aace447e6e7947b178786e7555a4913d0d8c0429f1fb48999354a51ddb"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/name-only-ui-regression.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "5a3d10dde1f6b73f148eec703bfc471e4a2be98334ff036068ecd38ba18caa4a",
+      "deliverySha256": "9e1ec8cff22ec375735fdd3a20b8a82c4035ef7887645f49e40b735a911fe20c"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/name-qr-regression.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "23048c8eff1c108aa99973abb00d8aa428581a6e987843b82c7774d4b8686b70",
+      "deliverySha256": "2bd11312ec60fabc7ab7e5ad8a8a1a0e41b91270f1f30bfabddc846945300fd5"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/reports/sync-transport-regression.json",
+      "reason": "Regenerated local synthetic test report",
+      "sourceSha256": "4f7e8b0d450997f8669e3568106e5a2ee8b0bbffcb5055b8858960a6ca10417f",
+      "deliverySha256": "c1f0fa5f6b0090c499d2edd494f09427ecc9f7a0da1266c89125972c655fb680"
+    }
+  ],
+  "extractedPayloadComparison": {
+    "filesChecked": 121,
+    "mismatches": 0,
+    "extractedManifestSha256": "bfe3057ef181a473423940b81d1fa61d173643ded54b044e4c66dcc22b4489c5",
+    "scope": "Every staged source/support file is identical to the original manifest of the independently extracted test package."
+  }
+}

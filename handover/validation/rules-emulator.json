@@ -1,0 +1,792 @@
+{
+  "suite": "personal-real-firestore-rules-emulator",
+  "checkedAt": "2026-11-20T15:17:28.201Z",
+  "mode": "real-local-emulator-synthetic-records",
+  "externalNetwork": "blocked",
+  "cloudWrites": 0,
+  "credentialsRead": false,
+  "limitations": [
+    "Rules ran in a local Firestore emulator, not a deployed Firebase project.",
+    "No live account, email, payment, camera, or physical-device verification."
+  ],
+  "cases": [
+    {
+      "label": "Verified approved user reads own workspace",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Verified approved user lists own subjects",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Foreign workspace document denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Foreign workspace query denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Foreign workspace write denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Anonymous private read denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Unverified approved private read denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Administrative unverified account reads own workspace",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Administrative approval preserves cross-account isolation",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Teacher cannot forge administrative approval",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Deletion blocks even verified stale tokens",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Non-owner reviewer cannot waive verification",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Approval for an old email cannot authorize changed email",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Pending user cannot read own workspace",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Reserved verified owner reads only own workspace",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Platform owner cannot read teacher private data",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Matching owner email with wrong UID does not bypass approval",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Reserved owner UID with wrong email does not bypass approval",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Unverified platform owner cannot read own workspace",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "User reads own registration while email verification is pending",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Teacher cannot list all registrations",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Teacher cannot read another registration",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Verified platform owner lists registrations",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Unverified platform owner cannot list registrations",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Frozen approved old user reads own data without pretending email verification",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Frozen old user retains cross-workspace isolation",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Unlisted approved unverified user remains denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Frozen entry cannot authorize a changed email",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Frozen entry is not client-readable even by its account",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Client cannot edit frozen grandfather evidence",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Client cannot add grandfather evidence",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Platform owner cannot write grandfather evidence through browser",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Revoked current approval overrides frozen old evidence",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Frozen entry cannot promote an unapproved account",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Frozen entry must match the exact UID",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Frozen entry requires cutover approval marker",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Existing unverified pinned owner retains own workspace through frozen owner evidence",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Existing unverified pinned owner retains approval-list authority",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Grandfather owner cannot read another teacher workspace",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Owner email and forged owner marker never elevate another UID",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "A nonowner cannot consume an owner-designated frozen entry",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Client cannot self-approve",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Owner also cannot bypass callable validation for approval",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Client cannot directly create registration",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Own workspace pointer read allowed",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Foreign workspace pointer read denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Pointer cannot redirect to another workspace",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Own member identity read allowed",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "No workspace member listing or central-grant workflow",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Cannot create another member grant",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Cannot alter own role or grant permissions",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Cannot create invitation grants",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Cannot change private workspace ownership",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Ordinary own subject title update allowed",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Legacy title edits remain valid without invented academic year",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Legacy duration edits preserve the old roster location",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Adding personal year metadata cannot silently redirect old roster",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Changing legacy stage cannot silently redirect old roster",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Legacy roster version marker is server-only",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Embedded roster mutation must pass preserving server callable",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Legacy per-subject name changes retain differing stored document ID",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Legacy per-subject identifier cannot change",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Legacy inline face map can be edited without moving the student",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Existing old cohort rows remain name-editable without fabricating a missing parent",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Old cohort student identifiers remain immutable",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Valid new personal subject can be created",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Name-based subject creation requires no academic year or student code",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Name-based subject title remains editable",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Name-based cohort department cannot be redirected",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Existing subject cannot opt into a different roster location",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Browser cannot forge name reservations",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Protected subject field cannot be changed: academicStatuses",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Protected subject field cannot be changed: ownerUserId",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Protected subject field cannot be changed: rosterCohortId",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Protected subject field cannot be changed: studentCount",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Protected subject field cannot be changed: academicYearStart",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Protected subject field cannot be changed: departmentId",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Protected subject field cannot be changed: stageNumber",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Server-generated student IDs cannot be inserted by browser",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Name-only change preserves generated student identity",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Generated student code cannot be changed",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Generated entry year cannot be changed",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Department prefix is locked after allocation",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Stage identity is locked after allocation",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Generated sequence counter is server-only",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Import receipt is server-only",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Own attendance history remains readable",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Browser cannot forge lecture revisions",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Browser cannot reopen a lecture outside lifecycle transaction",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Browser cannot bypass attendance correction revisions",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Browser cannot remove attendance without a tombstone",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Browser cannot bypass excuse correction transaction",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Correction receipts remain server-only",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Cross-user attendance history denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Own biometric metadata remains readable",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Cross-user biometric metadata denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Central organization roster read denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Central organization grant write denied even for owner",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Shared subscription pointer is server controlled",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Shared publication cannot be forged by a browser",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Even admin publishes through the callable only",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Shared snapshots require the scoped callable",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Private subscription receipts cannot be forged",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Approved recipient can read own opaque sharing signal",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Other teacher cannot read sharing signal",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Anonymous cannot read sharing signal",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Owner cannot read another teachers sharing signal",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Recipient cannot forge sharing signal",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Direct mailbox access remains blocked",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Support thread readable by its teacher",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Support thread readable by platform owner",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Support thread denied to another teacher",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Support thread denied anonymously",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Support signal readable only by recipient",
+      "passed": true,
+      "expected": "ALLOW",
+      "status": 200
+    },
+    {
+      "label": "Support signal denied to another teacher",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Support direct writes denied",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Support messages require scoped callable",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Support images require scoped callable",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Broadcast job cannot be injected by teacher",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Owner must use announcement callable",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Broadcast recipient list is not browser-readable",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    },
+    {
+      "label": "Support: private text/image send, idempotent retry and owner reply",
+      "passed": true
+    },
+    {
+      "label": "Support: other teachers, anonymous and revoked accounts cannot access messages or images",
+      "passed": true
+    },
+    {
+      "label": "Support: unseen totals survive concurrent reads, retries and new messages",
+      "passed": true
+    },
+    {
+      "label": "Support: completed thread reopens; messages page without omissions",
+      "passed": true
+    },
+    {
+      "label": "Support: invalid attachments, oversized text and rapid sends rejected",
+      "passed": true
+    },
+    {
+      "label": "Broadcast: owner-only validation, idempotence and rate limit",
+      "passed": true
+    },
+    {
+      "label": "Broadcast: paged delivery, retry safety, unread count and private reply",
+      "passed": true
+    },
+    {
+      "label": "Announcements: independent receipts, support separation, legacy compatibility and scoped access",
+      "passed": true
+    },
+    {
+      "label": "Announcements: existing broadcast appears without migration; list pagination keeps unread intact",
+      "passed": true
+    },
+    {
+      "label": "Inactive member loses access even when approved",
+      "passed": true,
+      "expected": "DENY",
+      "status": 403
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "screenshots": [],
+  "project": "demo-hathir-production-upgrade-rules",
+  "origin": "http://127.0.0.1:52752",
+  "emulatorSha256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c",
+  "rulesSha256": "6c5d5324d97bc1a4e7457d334f72c265be6ab97acaee363ba14dd3f17536030f",
+  "rulesCompiled": true,
+  "emulatorStopped": true,
+  "passed": true
+}

@@ -1,0 +1,1130 @@
+{
+  "suite": "actual-local-service-worker-upgrade",
+  "checkedAt": "2026-11-20T15:16:06.990Z",
+  "mode": "synthetic-local-only",
+  "externalNetwork": "blocked",
+  "cloudWrites": 0,
+  "credentialsRead": false,
+  "limitations": [
+    "No deployed-service, Firebase emulator, payment-provider, camera, or physical-device verification.",
+    "Loopback registration is explicit because shipped auto-registration requires HTTPS.",
+    "No OS-level PWA installation or physical iPhone test; Firebase SDK/auth is an in-memory test fixture."
+  ],
+  "cases": [
+    {
+      "label": "The original shipped worker installs and controls the original same-origin shell",
+      "passed": true
+    },
+    {
+      "label": "Original storage API creates synthetic private snapshots and an outbox under the installed worker",
+      "passed": true
+    },
+    {
+      "label": "Old caches contain deliberately stale same-origin config/code and a prepared public-library sentinel",
+      "passed": true
+    },
+    {
+      "label": "An actual worker update atomically activates the new candidate shell",
+      "passed": false,
+      "error": "page.waitForFunction: Timeout 15000ms exceeded.\n    at WORKSPACE\\app\\tests\\service-worker-upgrade.cjs:140:16\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async required (WORKSPACE\\app\\tests\\service-worker-upgrade.cjs:41:8)\n    at async WORKSPACE\\app\\tests\\service-worker-upgrade.cjs:135:3"
+    },
+    {
+      "label": "Actual worker lifecycle",
+      "passed": false,
+      "error": "Error: Cannot continue worker lifecycle after: An actual worker update atomically activates the new candidate shell\n    at required (WORKSPACE\\app\\tests\\service-worker-upgrade.cjs:41:48)\n    at async WORKSPACE\\app\\tests\\service-worker-upgrade.cjs:135:3"
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "screenshots": [],
+  "localRequests": [
+    {
+      "phase": "original",
+      "path": "/",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/runtime-config.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Regular.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/fonts.css",
+      "query": "?v=20260923-ui2"
+    },
+    {
+      "phase": "original",
+      "path": "/device-workspace.css",
+      "query": "?v=20260928-study-period-95"
+    },
+    {
+      "phase": "original",
+      "path": "/personal-ui.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/record-window.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/beginner-ui.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/settings-ui.css",
+      "query": "?v=20260923-ui2"
+    },
+    {
+      "phase": "original",
+      "path": "/onboarding.css",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/private-share.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/support-chat.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-filters.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/subject-tools.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-name-rail.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/consolidation.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/department-tools.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-white-brand-768-20260914.webp",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/attendance-tones.js",
+      "query": "?v=20261004-121"
+    },
+    {
+      "phase": "original",
+      "path": "/offline-store.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/offline-attendance.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/card-readers.js",
+      "query": "?v=20260915-settings1"
+    },
+    {
+      "phase": "original",
+      "path": "/guide-lessons.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/onboarding.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/notifications.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/settings-ui.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/qr-decoder.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/name-qr.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/spreadsheet-import.js",
+      "query": "?v=20260927-import-status-78"
+    },
+    {
+      "phase": "original",
+      "path": "/personal-ui.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/beginner-ui.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/device-workspace-store.js",
+      "query": "?v=20260927-local-first-1"
+    },
+    {
+      "phase": "original",
+      "path": "/device-sync-model.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/device-workspace.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/live-attendance.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/private-share-model.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/private-scope-roster.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/support-chat.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/private-share.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-filters.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/lecture-column-actions.js",
+      "query": "?v=20261006-141"
+    },
+    {
+      "phase": "original",
+      "path": "/modal-dismiss.js",
+      "query": "?v=20261006-141"
+    },
+    {
+      "phase": "original",
+      "path": "/subject-tools.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-name-rail.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/consolidation-model.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/consolidation.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/department-tools.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Medium.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Black.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Bold.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-check-large-favicon-32-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/service-worker.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/notification-worker.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/department-tools.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/department-tools.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/consolidation-model.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/consolidation.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/consolidation.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-name-rail.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-name-rail.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/subject-tools.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/subject-tools.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/modal-dismiss.js",
+      "query": "?v=20261006-141"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-filters.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/roster-filters.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/lecture-column-actions.js",
+      "query": "?v=20261006-141"
+    },
+    {
+      "phase": "original",
+      "path": "/notifications.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/notification-worker.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/attendance-tones.js",
+      "query": "?v=20261004-121"
+    },
+    {
+      "phase": "original",
+      "path": "/private-scope-roster.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/private-share.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/private-share-model.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/private-share.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/device-sync-model.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/device-workspace.css",
+      "query": "?v=20260928-study-period-95"
+    },
+    {
+      "phase": "original",
+      "path": "/device-workspace-store.js",
+      "query": "?v=20260927-local-first-1"
+    },
+    {
+      "phase": "original",
+      "path": "/device-workspace.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/live-attendance.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/qr-decoder.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/qr-decoder-worker.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/vendor/jsQR-1.4.0.min.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/support-chat.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/support-chat.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/help.html",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/help.css",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/help.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/help-catalog.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/guide-lessons.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/onboarding.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/onboarding.css",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/index.html",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/runtime-config.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/fonts.css",
+      "query": "?v=20260923-ui2"
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Light.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Regular.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Medium.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Bold.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-ExtraBold.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/fonts/Tajawal-Black.ttf",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/personal-ui.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/personal-ui.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/name-qr.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "original",
+      "path": "/guide.html",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/vendor/qrcode-generator-1.4.4.js",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/spreadsheet-import.js",
+      "query": "?v=20260927-import-status-78"
+    },
+    {
+      "phase": "original",
+      "path": "/spreadsheet-worker.js",
+      "query": "?v=20260923-stability1"
+    },
+    {
+      "phase": "original",
+      "path": "/offline-store.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/offline-attendance.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/settings-ui.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/beginner-ui.js",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/beginner-ui.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/record-window.css",
+      "query": "?v=v2026.10.26-face-optin-163"
+    },
+    {
+      "phase": "original",
+      "path": "/card-readers.js",
+      "query": "?v=20260915-settings1"
+    },
+    {
+      "phase": "original",
+      "path": "/settings-ui.css",
+      "query": "?v=20260923-ui2"
+    },
+    {
+      "phase": "original",
+      "path": "/manifest.webmanifest",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-white-brand-768-20260914.webp",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-check-large-icon-192-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-check-large-icon-512-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-check-large-maskable-512-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-check-large-apple-180-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-check-large-favicon-32-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "original",
+      "path": "/assets/hathir-check-large-favicon-64-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/service-worker.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/offline-package-manifest.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/notification-worker.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/name-attendance.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/sync-reminder.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/sync-reminder.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/department-tools.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/department-tools.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/consolidation-model.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/consolidation.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/consolidation.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/roster-name-rail.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/roster-name-rail.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/subject-tools.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/subject-tools.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/modal-dismiss.js",
+      "query": "?v=20261006-141"
+    },
+    {
+      "phase": "candidate",
+      "path": "/roster-filters.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/roster-filters.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/lecture-column-actions.js",
+      "query": "?v=20261006-141"
+    },
+    {
+      "phase": "candidate",
+      "path": "/notifications.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/notification-worker.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/attendance-tones.js",
+      "query": "?v=20261004-121"
+    },
+    {
+      "phase": "candidate",
+      "path": "/private-scope-roster.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/private-share.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/private-share-model.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/private-share.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/device-sync-model.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/device-workspace.css",
+      "query": "?v=20260928-study-period-95"
+    },
+    {
+      "phase": "candidate",
+      "path": "/device-workspace-store.js",
+      "query": "?v=20260927-local-first-1"
+    },
+    {
+      "phase": "candidate",
+      "path": "/device-workspace.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/live-attendance.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/qr-decoder.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "candidate",
+      "path": "/qr-decoder-worker.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/jsQR-1.4.0.min.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/support-chat.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/support-chat.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/help.html",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/help.css",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/help.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/help-catalog.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/guide-lessons.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "candidate",
+      "path": "/onboarding.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/onboarding.css",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "candidate",
+      "path": "/",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/index.html",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/runtime-config.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/fonts.css",
+      "query": "?v=20260923-ui2"
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/fonts/Tajawal-Light.ttf",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/fonts/Tajawal-Regular.ttf",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/fonts/Tajawal-Medium.ttf",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/fonts/Tajawal-Bold.ttf",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/fonts/Tajawal-ExtraBold.ttf",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/fonts/Tajawal-Black.ttf",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/personal-ui.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/personal-ui.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/name-qr.js",
+      "query": "?v=v2026.09.25-daily-actions-35"
+    },
+    {
+      "phase": "candidate",
+      "path": "/guide.html",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/qrcode-generator-1.4.4.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/spreadsheet-import.js",
+      "query": "?v=20260927-import-status-78"
+    },
+    {
+      "phase": "candidate",
+      "path": "/spreadsheet-worker.js",
+      "query": "?v=20260923-stability1"
+    },
+    {
+      "phase": "candidate",
+      "path": "/offline-store.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/offline-attendance.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/settings-ui.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/beginner-ui.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/beginner-ui.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/record-window.css",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/card-readers.js",
+      "query": "?v=20260915-settings1"
+    },
+    {
+      "phase": "candidate",
+      "path": "/settings-ui.css",
+      "query": "?v=20260923-ui2"
+    },
+    {
+      "phase": "candidate",
+      "path": "/manifest.webmanifest",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/hathir-white-brand-768-20260914.webp",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/hathir-check-large-icon-192-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/hathir-check-large-icon-512-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/hathir-check-large-maskable-512-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/hathir-check-large-apple-180-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/hathir-check-large-favicon-32-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/hathir-check-large-favicon-64-20260929.png",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/jspdf-2.5.1.umd.min.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/face-api-1.7.15.min.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/firebase-10.12.5/firebase-app-compat.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/firebase-10.12.5/firebase-auth-compat.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/firebase-10.12.5/firebase-firestore-compat.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/firebase-10.12.5/firebase-functions-compat.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/face-models-1.7.15/face_landmark_68_model-weights_manifest.json",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/face-models-1.7.15/face_landmark_68_model.bin",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/face-models-1.7.15/face_recognition_model-weights_manifest.json",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/face-models-1.7.15/face_recognition_model.bin",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/face-models-1.7.15/tiny_face_detector_model-weights_manifest.json",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/face-models-1.7.15/tiny_face_detector_model.bin",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/xlsx-0.20.3.full.min.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/vendor/exceljs-4.4.0.min.js",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/assets/help-v5/teacher-guide.mp4",
+      "query": ""
+    },
+    {
+      "phase": "candidate",
+      "path": "/offline-package-manifest.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    },
+    {
+      "phase": "candidate",
+      "path": "/offline-package.js",
+      "query": "?v=v2026.11.18-interaction-167"
+    }
+  ],
+  "rejectedExternalHosts": [
+    "http://clients2.google.com/time/1/current",
+    "www.gstatic.com:443",
+    "www.google.com:443",
+    "accounts.google.com:443",
+    "content-autofill.googleapis.com:443"
+  ],
+  "passed": false
+}

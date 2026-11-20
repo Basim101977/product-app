@@ -1,0 +1,70 @@
+{
+  "at": "2026-09-22T19:50:16.528Z",
+  "project": "alqar-student-attendance-2026",
+  "passed": true,
+  "cloudDataWrites": 0,
+  "authenticated": false,
+  "requests": 10,
+  "results": [
+    {
+      "name": "submitPersonalRegistration",
+      "region": "us-central1",
+      "httpStatus": 401,
+      "errorStatus": "UNAUTHENTICATED"
+    },
+    {
+      "name": "getPersonalAccountStatus",
+      "region": "us-central1",
+      "httpStatus": 401,
+      "errorStatus": "UNAUTHENTICATED"
+    },
+    {
+      "name": "listPersonalRegistrations",
+      "region": "us-central1",
+      "httpStatus": 401,
+      "errorStatus": "UNAUTHENTICATED"
+    },
+    {
+      "name": "approvePersonalAccount",
+      "region": "us-central1",
+      "httpStatus": 401,
+      "errorStatus": "UNAUTHENTICATED"
+    },
+    {
+      "name": "openIndividualWorkspace",
+      "region": "us-central1",
+      "httpStatus": 403,
+      "errorStatus": "PERMISSION_DENIED"
+    },
+    {
+      "name": "importPersonalStudents",
+      "region": "us-central1",
+      "httpStatus": 403,
+      "errorStatus": "PERMISSION_DENIED"
+    },
+    {
+      "name": "setPersonalAcademicStatus",
+      "region": "us-central1",
+      "httpStatus": 403,
+      "errorStatus": "PERMISSION_DENIED"
+    },
+    {
+      "name": "updateLegacyEmbeddedRoster",
+      "region": "us-central1",
+      "httpStatus": 403,
+      "errorStatus": "PERMISSION_DENIED"
+    },
+    {
+      "name": "configureLegacySubjectScope",
+      "region": "us-central1",
+      "httpStatus": 403,
+      "errorStatus": "PERMISSION_DENIED"
+    },
+    {
+      "name": "syncOfflineAttendanceBatch",
+      "region": "asia-south1",
+      "httpStatus": 401,
+      "errorStatus": "UNAUTHENTICATED"
+    }
+  ]
+}

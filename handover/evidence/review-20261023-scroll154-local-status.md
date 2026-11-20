@@ -1,0 +1,8 @@
+# Local candidate 154 — home roster scroll reachability
+Not published. Live remains 153; baseline source hathir-sidebar-icons-20261022/app is retained unchanged. Candidate development/source/work/hathir-record-scroll-20261023/app, version v2026.10.23-record-scroll-154.
+Baseline reproduction at viewport height844 with3students: phone cardTop422 at maximum page scroll; desktop cardTop390. The document was too short to scroll the roster to the viewport top.
+Changed beginner-ui.css only for home roster screen min-height calc(100vh - 16px) and safe-area-aware 8px scroll margin. Stable vh avoids mobile browser-toolbar resizing; no global scroll handlers, auto scrolling, sticky/transforms, name rail, snapping, inner table scrolling, modal, printing or data changes. index.html/service-worker version references bumped. No deployment.
+Six reachability checks passed Chromium and six WebKit: widths390/1440, student counts0/3/80, card reaches8px from top, existing rows preserved, expanded dialog opens/closes. Screenshots inspected phone/desktop together. No physical-device claim. Logs review-20261023-scroll154-ui.log and -webkit.log. Preview http://127.0.0.1:4194/ synthetic loopback with production connections blocked, runner review-20261023-scroll154-preview.cjs session44211.
+Before publishing: register154 gate, add tests/home-record-scroll.cjs to run-local, final full QA, fresh encrypted production backup, freeze and verify changed assets. Current change is local only.
+
+Published and verified release154 at 2026-10-23T07:16:04.005Z. Earlier local-only text is historical. See review-20261023-release154-status.md.

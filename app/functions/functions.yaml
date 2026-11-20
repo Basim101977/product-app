@@ -1,0 +1,1062 @@
+{
+  "endpoints": {
+    "correctSubjectAnnualHours": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "correctSubjectAnnualHours"
+    },
+    "archiveDeletedPersonalSubject": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.deleted",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/subjects/{subjectId}"
+        },
+        "retry": true
+      },
+      "entryPoint": "archiveDeletedPersonalSubject"
+    },
+    "archiveDeletedPersonalStudent": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.deleted",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/{container}/{containerId}/{records}/{studentId}"
+        },
+        "retry": true
+      },
+      "entryPoint": "archiveDeletedPersonalStudent"
+    },
+    "listDeletedPersonalRecords": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "listDeletedPersonalRecords"
+    },
+    "restoreDeletedPersonalRecord": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "restoreDeletedPersonalRecord"
+    },
+    "getSubjectRosterCount": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": 30,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "getSubjectRosterCount"
+    },
+    "invalidateSummaryOnRosterChange": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.written",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/{container}/{containerId}/students/{studentId}"
+        },
+        "retry": true
+      },
+      "entryPoint": "invalidateSummaryOnRosterChange"
+    },
+    "invalidateSummaryOnSubjectChange": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.written",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/subjects/{subjectId}"
+        },
+        "retry": true
+      },
+      "entryPoint": "invalidateSummaryOnSubjectChange"
+    },
+    "invalidateSummaryOnExcuseChange": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.written",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/subjects/{subjectId}/lectures/{lectureDate}/excuses/{studentId}"
+        },
+        "retry": true
+      },
+      "entryPoint": "invalidateSummaryOnExcuseChange"
+    },
+    "auditBrowserAttendanceMark": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.written",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/subjects/{subjectId}/lectures/{lectureDate}/marks/{studentId}"
+        },
+        "retry": true
+      },
+      "entryPoint": "auditBrowserAttendanceMark"
+    },
+    "normaliseBrowserLecture": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.written",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/subjects/{subjectId}/lectures/{lectureDate}"
+        },
+        "retry": false
+      },
+      "entryPoint": "normaliseBrowserLecture"
+    },
+    "snapshotAndSummariseClosedLecture": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.updated",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceWorkspaces/{workspaceId}/subjects/{subjectId}/lectures/{lectureDate}"
+        },
+        "retry": false
+      },
+      "entryPoint": "snapshotAndSummariseClosedLecture"
+    },
+    "migrateCohortFaceTemplates": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "migrateCohortFaceTemplates"
+    },
+    "recordOfficialAttendance": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 30,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "recordOfficialAttendance"
+    },
+    "finalizeOfficialLecture": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "finalizeOfficialLecture"
+    },
+    "cancelOfficialLecture": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "cancelOfficialLecture"
+    },
+    "clearOfficialSubjectAttendance": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "clearOfficialSubjectAttendance"
+    },
+    "listAttendanceRecoverySnapshots": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "listAttendanceRecoverySnapshots"
+    },
+    "restoreAttendanceRecoverySnapshot": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "restoreAttendanceRecoverySnapshot"
+    },
+    "correctOfficialAttendance": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "correctOfficialAttendance"
+    },
+    "rebuildOfficialAttendanceSummaries": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "rebuildOfficialAttendanceSummaries"
+    },
+    "approveWeeklyAttendanceStatuses": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "scheduleTrigger": {
+        "schedule": "0 0 * * 5",
+        "retryConfig": {
+          "retryCount": 3,
+          "minBackoffSeconds": 60,
+          "maxBackoffSeconds": 300
+        },
+        "timeZone": "Asia/Baghdad"
+      },
+      "entryPoint": "approveWeeklyAttendanceStatuses"
+    },
+    "closeDueAttendanceLectures": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "scheduleTrigger": {
+        "schedule": "* * * * *",
+        "retryConfig": {},
+        "timeZone": "Asia/Baghdad"
+      },
+      "entryPoint": "closeDueAttendanceLectures"
+    },
+    "clearSubjectRoster": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "clearSubjectRoster"
+    },
+    "listSubjectRosterBackups": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "listSubjectRosterBackups"
+    },
+    "restoreSubjectRoster": {
+      "availableMemoryMb": 1024,
+      "timeoutSeconds": 540,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "restoreSubjectRoster"
+    },
+    "syncOfflineAttendance": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "syncOfflineAttendance"
+    },
+    "syncOfflineAttendanceBatch": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "asia-south1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "syncOfflineAttendanceBatch"
+    },
+    "provisionAttendanceMember": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "provisionAttendanceMember"
+    },
+    "renameOfficialStudentIdentifier": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "renameOfficialStudentIdentifier"
+    },
+    "revokeAttendanceMember": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "revokeAttendanceMember"
+    },
+    "updateAttendanceMemberProfile": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "updateAttendanceMemberProfile"
+    },
+    "accountPresence": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "accountPresence"
+    },
+    "submitPersonalRegistration": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "submitPersonalRegistration"
+    },
+    "getPersonalAccountStatus": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "getPersonalAccountStatus"
+    },
+    "listPersonalRegistrations": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "listPersonalRegistrations"
+    },
+    "approvePersonalAccount": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "approvePersonalAccount"
+    },
+    "openIndividualWorkspace": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "openIndividualWorkspace"
+    },
+    "importPersonalStudents": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "importPersonalStudents"
+    },
+    "setPersonalAcademicStatus": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "setPersonalAcademicStatus"
+    },
+    "updateLegacyEmbeddedRoster": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "updateLegacyEmbeddedRoster"
+    },
+    "configureLegacySubjectScope": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "configureLegacySubjectScope"
+    },
+    "syncOfflineAttendancePreview": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "asia-south1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "syncOfflineAttendancePreview"
+    },
+    "closedLectureWorkspace": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "closedLectureWorkspace"
+    },
+    "deviceLiveSync": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "deviceLiveSync"
+    },
+    "privateRosterShare": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "privateRosterShare"
+    },
+    "supportChat": {
+      "availableMemoryMb": 256,
+      "timeoutSeconds": 60,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "supportChat"
+    },
+    "sharedStudentRoster": {
+      "availableMemoryMb": 512,
+      "timeoutSeconds": 120,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "sharedStudentRoster"
+    },
+    "deviceNotifications": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": 60,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "deviceNotifications"
+    },
+    "notifySupportChat": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.created",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceSupportThreads/{uid}/messages/{messageId}"
+        },
+        "retry": false
+      },
+      "entryPoint": "notifySupportChat"
+    },
+    "notifyRegistration": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.created",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceIndividualRequests/{uid}"
+        },
+        "retry": false
+      },
+      "entryPoint": "notifyRegistration"
+    },
+    "notifyPrivateShare": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": null,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.created",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendancePrivateShares/{id}"
+        },
+        "retry": false
+      },
+      "entryPoint": "notifyPrivateShare"
+    },
+    "supportBroadcast": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": 60,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "callableTrigger": {},
+      "entryPoint": "supportBroadcast"
+    },
+    "deliverSupportBroadcast": {
+      "availableMemoryMb": null,
+      "timeoutSeconds": 300,
+      "minInstances": 0,
+      "maxInstances": 2,
+      "ingressSettings": null,
+      "concurrency": null,
+      "serviceAccountEmail": "687554777181-compute@developer.gserviceaccount.com",
+      "vpc": null,
+      "platform": "gcfv2",
+      "region": [
+        "us-central1"
+      ],
+      "labels": {},
+      "eventTrigger": {
+        "eventType": "google.cloud.firestore.document.v1.created",
+        "eventFilters": {
+          "database": "(default)",
+          "namespace": "(default)"
+        },
+        "eventFilterPathPatterns": {
+          "document": "attendanceSupportBroadcastJobs/{jobId}"
+        },
+        "retry": true
+      },
+      "entryPoint": "deliverSupportBroadcast"
+    }
+  },
+  "specVersion": "v1alpha1",
+  "requiredAPIs": [
+    {
+      "api": "cloudscheduler.googleapis.com",
+      "reason": "Needed for scheduled functions."
+    }
+  ],
+  "extensions": {}
+}

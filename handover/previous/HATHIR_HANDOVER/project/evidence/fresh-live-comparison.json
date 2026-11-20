@@ -1,0 +1,805 @@
+{
+  "at": "2026-09-22T20:06:36.868Z",
+  "readOnly": true,
+  "cloudWrites": 0,
+  "project": "alqar-student-attendance-2026",
+  "localRelease": "v2026.09.22-personal-upgrade-1",
+  "localFrozenFiles": 63,
+  "localDrift": [],
+  "assets": [
+    {
+      "path": "assets/hathir-apple-180-20260914.png",
+      "status": 200,
+      "localSha256": "83d68f30399a9aa6cd00da3846ee2bdb9864c5c371167940cd582067056806dd",
+      "liveSha256": "83d68f30399a9aa6cd00da3846ee2bdb9864c5c371167940cd582067056806dd",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-brand-768-20260914.webp",
+      "status": 200,
+      "localSha256": "9b02a246e9fa22121cd3c21c50215fa938c97f9f7985f579595f96f9f08a91a7",
+      "liveSha256": "9b02a246e9fa22121cd3c21c50215fa938c97f9f7985f579595f96f9f08a91a7",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-favicon-32-20260914.png",
+      "status": 200,
+      "localSha256": "3b9348631ba82c9ee1aca763493cf22aca18b3581d7b977b82fbca3254915387",
+      "liveSha256": "3b9348631ba82c9ee1aca763493cf22aca18b3581d7b977b82fbca3254915387",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-favicon-64-20260914.png",
+      "status": 200,
+      "localSha256": "dcade5cfc7e1792feacdbafa8bf579e5d050d2bff991298bbb8731879ad37cc8",
+      "liveSha256": "dcade5cfc7e1792feacdbafa8bf579e5d050d2bff991298bbb8731879ad37cc8",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-green-apple-180-20260914.png",
+      "status": 200,
+      "localSha256": "d6cff15201fdb752d6f5d57a4e6bc8a4e92a429b3acd7d813f5f767a8284f2e3",
+      "liveSha256": "d6cff15201fdb752d6f5d57a4e6bc8a4e92a429b3acd7d813f5f767a8284f2e3",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-green-brand-768-20260914.webp",
+      "status": 200,
+      "localSha256": "65349a2fcf6cdafa9eb010660d5b31eba92512caa0fe706fa330182ec9a2b987",
+      "liveSha256": "65349a2fcf6cdafa9eb010660d5b31eba92512caa0fe706fa330182ec9a2b987",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-green-favicon-32-20260914.png",
+      "status": 200,
+      "localSha256": "2fb4a8a2554067ca0380a6bff3a48fd1f86ecfe07f731d6f3725e15201e7af00",
+      "liveSha256": "2fb4a8a2554067ca0380a6bff3a48fd1f86ecfe07f731d6f3725e15201e7af00",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-green-favicon-64-20260914.png",
+      "status": 200,
+      "localSha256": "591a9c2f828f5f530b5c1aa897f5fb9ff989a810b5d576acf75d90093241321d",
+      "liveSha256": "591a9c2f828f5f530b5c1aa897f5fb9ff989a810b5d576acf75d90093241321d",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-green-icon-192-20260914.png",
+      "status": 200,
+      "localSha256": "f1d1656bfbf22df07f17cd284e45d72a16f64d8710d68950f7247815dd73fba5",
+      "liveSha256": "f1d1656bfbf22df07f17cd284e45d72a16f64d8710d68950f7247815dd73fba5",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-green-icon-512-20260914.png",
+      "status": 200,
+      "localSha256": "a4478d58d6d5d438249c0b0ffcaae3ca96b3c91a1e7be19bd3a17f2d30cb90f0",
+      "liveSha256": "a4478d58d6d5d438249c0b0ffcaae3ca96b3c91a1e7be19bd3a17f2d30cb90f0",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-green-maskable-512-20260914.png",
+      "status": 200,
+      "localSha256": "f48980caceac9893c9c9ed2e275c72f26c1755983347a421fd7cdf60e21c2eec",
+      "liveSha256": "f48980caceac9893c9c9ed2e275c72f26c1755983347a421fd7cdf60e21c2eec",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-icon-192-20260914.png",
+      "status": 200,
+      "localSha256": "1ef0e8d23d78ad92b89b794f24c7817f01319a3a5991068866c330b63a5d9cf6",
+      "liveSha256": "1ef0e8d23d78ad92b89b794f24c7817f01319a3a5991068866c330b63a5d9cf6",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-icon-512-20260914.png",
+      "status": 200,
+      "localSha256": "9e46e3e1ecaeaeb1fd2915d548c057a4b50ee76d45aa25be05c8627e259ceef6",
+      "liveSha256": "9e46e3e1ecaeaeb1fd2915d548c057a4b50ee76d45aa25be05c8627e259ceef6",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-maskable-512-20260914.png",
+      "status": 200,
+      "localSha256": "ca2514aea75c0722a0fd4c8b1a1382503296cb8c37403342d1673a43fdf2cb19",
+      "liveSha256": "ca2514aea75c0722a0fd4c8b1a1382503296cb8c37403342d1673a43fdf2cb19",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-white-apple-180-20260914.png",
+      "status": 200,
+      "localSha256": "5342e395f86973c3b6a1b62bb6df95c15d757a2184ed7ea8efae7bebc7f913a9",
+      "liveSha256": "5342e395f86973c3b6a1b62bb6df95c15d757a2184ed7ea8efae7bebc7f913a9",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-white-brand-768-20260914.webp",
+      "status": 200,
+      "localSha256": "599fe30c9a6dd885495d8bb43c2e5d138f9f0283e7d9343582a8b2d4cfe99711",
+      "liveSha256": "599fe30c9a6dd885495d8bb43c2e5d138f9f0283e7d9343582a8b2d4cfe99711",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-white-favicon-32-20260914.png",
+      "status": 200,
+      "localSha256": "0d595f865594411febba31f3605f606b0daf51d1195855dfbc3f59e8ff062f65",
+      "liveSha256": "0d595f865594411febba31f3605f606b0daf51d1195855dfbc3f59e8ff062f65",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-white-favicon-64-20260914.png",
+      "status": 200,
+      "localSha256": "7f6df6607ddfad962a1439322ebd5d82c29a7c7193e8168ca73dfaa90345f724",
+      "liveSha256": "7f6df6607ddfad962a1439322ebd5d82c29a7c7193e8168ca73dfaa90345f724",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-white-icon-192-20260914.png",
+      "status": 200,
+      "localSha256": "41f57199138085605d7b9c27364812571d15b927158406ac21d763b9dc6aac19",
+      "liveSha256": "41f57199138085605d7b9c27364812571d15b927158406ac21d763b9dc6aac19",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-white-icon-512-20260914.png",
+      "status": 200,
+      "localSha256": "86bc25049cdecfd561c3ca94fba5f83577dd94d785b65dcbeb9b1a227afe5252",
+      "liveSha256": "86bc25049cdecfd561c3ca94fba5f83577dd94d785b65dcbeb9b1a227afe5252",
+      "matches": true
+    },
+    {
+      "path": "assets/hathir-white-maskable-512-20260914.png",
+      "status": 200,
+      "localSha256": "259577cf9caecec72807f005323c205f6a3252a91fb970e2ac8796acf7fdebd4",
+      "liveSha256": "259577cf9caecec72807f005323c205f6a3252a91fb970e2ac8796acf7fdebd4",
+      "matches": true
+    },
+    {
+      "path": "assets/student-attendance-icon.png",
+      "status": 200,
+      "localSha256": "c4aaf27ef1f6ee4998075655bd80615d0ef86ae6540f81cc6962d3fb4af799d9",
+      "liveSha256": "c4aaf27ef1f6ee4998075655bd80615d0ef86ae6540f81cc6962d3fb4af799d9",
+      "matches": true
+    },
+    {
+      "path": "card-readers.js",
+      "status": 200,
+      "localSha256": "428da3e0bf7040ab55542c317345114df6face959140cc38f2583b2193050722",
+      "liveSha256": "428da3e0bf7040ab55542c317345114df6face959140cc38f2583b2193050722",
+      "matches": true
+    },
+    {
+      "path": "guide.html",
+      "status": 200,
+      "localSha256": "c26add95cd9982691fc0b76aebc69e612fd329ec5b17d0d5cdda9220fdca2921",
+      "liveSha256": "c26add95cd9982691fc0b76aebc69e612fd329ec5b17d0d5cdda9220fdca2921",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "localSha256": "e4ca2c9cf675175d93b354fe0bcbaf896d926ce29ed8e73a49ce40ac3b0ca216",
+      "liveSha256": "e4ca2c9cf675175d93b354fe0bcbaf896d926ce29ed8e73a49ce40ac3b0ca216",
+      "matches": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "localSha256": "f75a7a367beae62ec85e67e0fcf9e6666c56946a68c8dbb8f9c18186b9d3c5e9",
+      "liveSha256": "f75a7a367beae62ec85e67e0fcf9e6666c56946a68c8dbb8f9c18186b9d3c5e9",
+      "matches": true
+    },
+    {
+      "path": "name-qr.js",
+      "status": 200,
+      "localSha256": "c832333b70ec54a565c46a5d396158b410ee77d457879afbd1f279a975893698",
+      "liveSha256": "c832333b70ec54a565c46a5d396158b410ee77d457879afbd1f279a975893698",
+      "matches": true
+    },
+    {
+      "path": "offline-attendance.js",
+      "status": 200,
+      "localSha256": "c96a33e5d3b007263834dc71c1143603d2917d1f6e6e07b5809167f6c176c223",
+      "liveSha256": "c96a33e5d3b007263834dc71c1143603d2917d1f6e6e07b5809167f6c176c223",
+      "matches": true
+    },
+    {
+      "path": "offline-store.js",
+      "status": 200,
+      "localSha256": "f36a4f1bc6b2645459a7c9d4396683f7565eadf4a3325ad547e7bdf93f2c8a4f",
+      "liveSha256": "f36a4f1bc6b2645459a7c9d4396683f7565eadf4a3325ad547e7bdf93f2c8a4f",
+      "matches": true
+    },
+    {
+      "path": "personal-ui.css",
+      "status": 200,
+      "localSha256": "3218305063d978e4033d2a834cbe3f92ee3b8863b72aed46bcb6a1e25ea47d59",
+      "liveSha256": "3218305063d978e4033d2a834cbe3f92ee3b8863b72aed46bcb6a1e25ea47d59",
+      "matches": true
+    },
+    {
+      "path": "personal-ui.js",
+      "status": 200,
+      "localSha256": "54e37ded5f6f9dd79cea766157b26ac9c185c931dec65cfe1603e4b8dda2d30b",
+      "liveSha256": "54e37ded5f6f9dd79cea766157b26ac9c185c931dec65cfe1603e4b8dda2d30b",
+      "matches": true
+    },
+    {
+      "path": "runtime-config.js",
+      "status": 200,
+      "localSha256": "36d96a890a99f16ffd7315d28bbdd40255c43715d1b712ed4650fb408d96fe3b",
+      "liveSha256": "36d96a890a99f16ffd7315d28bbdd40255c43715d1b712ed4650fb408d96fe3b",
+      "matches": true
+    },
+    {
+      "path": "service-worker.js",
+      "status": 200,
+      "localSha256": "539de99c20841bf93f17802fd5e731b8780685248a2cf0214d4fa6a5dd91200b",
+      "liveSha256": "539de99c20841bf93f17802fd5e731b8780685248a2cf0214d4fa6a5dd91200b",
+      "matches": true
+    },
+    {
+      "path": "settings-ui.css",
+      "status": 200,
+      "localSha256": "9aafc380156b6dc42d24e02a9de245444394e855522f95bbf4c18fb19eec0838",
+      "liveSha256": "9aafc380156b6dc42d24e02a9de245444394e855522f95bbf4c18fb19eec0838",
+      "matches": true
+    },
+    {
+      "path": "settings-ui.js",
+      "status": 200,
+      "localSha256": "ca800c1500d8f5a755eff75eb94410c19910279e11fb7e9676c80b07a8f38894",
+      "liveSha256": "ca800c1500d8f5a755eff75eb94410c19910279e11fb7e9676c80b07a8f38894",
+      "matches": true
+    }
+  ],
+  "functions": [
+    {
+      "name": "syncOfflineAttendanceBatch",
+      "region": "asia-south1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "normaliseBrowserLecture",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "auditBrowserAttendanceMark",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "clearOfficialSubjectAttendance",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "rebuildOfficialAttendanceSummaries",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "invalidateSummaryOnExcuseChange",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "migrateCohortFaceTemplates",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "getPersonalAccountStatus",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "restoreAttendanceRecoverySnapshot",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "listPersonalRegistrations",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "closeDueAttendanceLectures",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "finalizeOfficialLecture",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "snapshotAndSummariseClosedLecture",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "importPersonalStudents",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "cancelOfficialLecture",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "correctOfficialAttendance",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "clearSubjectRoster",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "correctSubjectAnnualHours",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "provisionAttendanceMember",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "configureLegacySubjectScope",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "openIndividualWorkspace",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "listDeletedPersonalRecords",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "renameOfficialStudentIdentifier",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "invalidateSummaryOnRosterChange",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "syncOfflineAttendance",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "recordOfficialAttendance",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "updateLegacyEmbeddedRoster",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "listAttendanceRecoverySnapshots",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "setPersonalAcademicStatus",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "approvePersonalAccount",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "listSubjectRosterBackups",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "archiveDeletedPersonalStudent",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "revokeAttendanceMember",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "restoreSubjectRoster",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "approveWeeklyAttendanceStatuses",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "updateAttendanceMemberProfile",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "archiveDeletedPersonalSubject",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "invalidateSummaryOnSubjectChange",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "submitPersonalRegistration",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "restoreDeletedPersonalRecord",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    },
+    {
+      "name": "getSubjectRosterCount",
+      "region": "us-central1",
+      "state": "ACTIVE",
+      "runtime": "nodejs22"
+    }
+  ],
+  "functionArchives": [
+    {
+      "file": "function-source-1.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "syncOfflineAttendanceBatch"
+      ]
+    },
+    {
+      "file": "function-source-2.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "normaliseBrowserLecture"
+      ]
+    },
+    {
+      "file": "function-source-3.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "auditBrowserAttendanceMark"
+      ]
+    },
+    {
+      "file": "function-source-4.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "clearOfficialSubjectAttendance"
+      ]
+    },
+    {
+      "file": "function-source-5.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "rebuildOfficialAttendanceSummaries"
+      ]
+    },
+    {
+      "file": "function-source-6.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "invalidateSummaryOnExcuseChange"
+      ]
+    },
+    {
+      "file": "function-source-7.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "migrateCohortFaceTemplates"
+      ]
+    },
+    {
+      "file": "function-source-8.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "getPersonalAccountStatus"
+      ]
+    },
+    {
+      "file": "function-source-9.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "restoreAttendanceRecoverySnapshot"
+      ]
+    },
+    {
+      "file": "function-source-10.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "listPersonalRegistrations"
+      ]
+    },
+    {
+      "file": "function-source-11.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "closeDueAttendanceLectures"
+      ]
+    },
+    {
+      "file": "function-source-12.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "finalizeOfficialLecture"
+      ]
+    },
+    {
+      "file": "function-source-13.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "snapshotAndSummariseClosedLecture"
+      ]
+    },
+    {
+      "file": "function-source-14.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "importPersonalStudents"
+      ]
+    },
+    {
+      "file": "function-source-15.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "cancelOfficialLecture"
+      ]
+    },
+    {
+      "file": "function-source-16.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "correctOfficialAttendance"
+      ]
+    },
+    {
+      "file": "function-source-17.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "clearSubjectRoster"
+      ]
+    },
+    {
+      "file": "function-source-18.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "correctSubjectAnnualHours"
+      ]
+    },
+    {
+      "file": "function-source-19.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "provisionAttendanceMember"
+      ]
+    },
+    {
+      "file": "function-source-20.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "configureLegacySubjectScope"
+      ]
+    },
+    {
+      "file": "function-source-21.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "openIndividualWorkspace"
+      ]
+    },
+    {
+      "file": "function-source-22.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "listDeletedPersonalRecords"
+      ]
+    },
+    {
+      "file": "function-source-23.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "renameOfficialStudentIdentifier"
+      ]
+    },
+    {
+      "file": "function-source-24.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "invalidateSummaryOnRosterChange"
+      ]
+    },
+    {
+      "file": "function-source-25.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "syncOfflineAttendance"
+      ]
+    },
+    {
+      "file": "function-source-26.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "recordOfficialAttendance"
+      ]
+    },
+    {
+      "file": "function-source-27.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "updateLegacyEmbeddedRoster"
+      ]
+    },
+    {
+      "file": "function-source-28.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "listAttendanceRecoverySnapshots"
+      ]
+    },
+    {
+      "file": "function-source-29.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "setPersonalAcademicStatus"
+      ]
+    },
+    {
+      "file": "function-source-30.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "approvePersonalAccount"
+      ]
+    },
+    {
+      "file": "function-source-31.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "listSubjectRosterBackups"
+      ]
+    },
+    {
+      "file": "function-source-32.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "archiveDeletedPersonalStudent"
+      ]
+    },
+    {
+      "file": "function-source-33.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "revokeAttendanceMember"
+      ]
+    },
+    {
+      "file": "function-source-34.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "restoreSubjectRoster"
+      ]
+    },
+    {
+      "file": "function-source-35.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "approveWeeklyAttendanceStatuses"
+      ]
+    },
+    {
+      "file": "function-source-36.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "updateAttendanceMemberProfile"
+      ]
+    },
+    {
+      "file": "function-source-37.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "archiveDeletedPersonalSubject"
+      ]
+    },
+    {
+      "file": "function-source-38.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "invalidateSummaryOnSubjectChange"
+      ]
+    },
+    {
+      "file": "function-source-39.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "submitPersonalRegistration"
+      ]
+    },
+    {
+      "file": "function-source-40.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "restoreDeletedPersonalRecord"
+      ]
+    },
+    {
+      "file": "function-source-41.zip",
+      "sha256": "128b658aaaf28390fc2f9e25247121c5501fbaf0fe912a4d4e5da08976de03a5",
+      "functions": [
+        "getSubjectRosterCount"
+      ]
+    }
+  ],
+  "rules": {
+    "name": "projects/alqar-student-attendance-2026/rulesets/f554e495-9c7c-49bb-8278-4237bc2b592c",
+    "sha256": "d3b2958ce3057a2008e65a99cdffa14532be7a69e841b65171f85456cdc887a2",
+    "matches": true
+  },
+  "hosting": [
+    {
+      "version": "projects/alqar-student-attendance-2026/sites/hathir/versions/431b94622b068451",
+      "time": "2026-09-22T19:54:36.676Z"
+    }
+  ],
+  "passed": true
+}

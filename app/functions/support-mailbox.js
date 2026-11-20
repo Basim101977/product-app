@@ -1,0 +1,11 @@
+"use strict";
+const OWNER=process.env.HATHIR_OWNER_UID || 'HATHIR_OWNER_UID_REQUIRED';
+module.exports=({db,now=Date.now})=>{
+ function state(meta,docs){const rows=docs.map(d=>({id:d.id,ref:d.ref,...d.data()})).sort((a,b)=>a.seq-b.seq);rows.forEach((r,i)=>{r.read=Boolean(r.readAt)||i<(meta.userSeen||0);});return rows;}
+ const counts=rows=>({announcementsUnread:rows.filter(r=>r.announcementId&&!r.read).length,supportUnread:rows.filter(r=>!r.announcementId&&!r.read).length});
+ function refs(uid){const ref=db.collection('attendanceSupportThreads').doc(uid);return {ref,query:ref.collection('messages').where('senderUid','==',OWNER).select('seq','announcementId','readAt','createdAt'),signal:db.collection('attendanceSupportSignals').doc(uid)};}
+ async function list(uid,before){const {ref,query}=refs(uid);const [t,q]=await Promise.all([ref.get(),query.get()]);const rows=state(t.data()||{},q.docs),ann=rows.filter(r=>r.announcementId&&(!before||r.seq<before)).reverse(),page=ann.slice(0,25);const messages=await Promise.all(page.map(async r=>{const d=(await r.ref.get()).data();return {id:r.id,announcementId:r.announcementId,seq:r.seq,read:r.read,text:d.text,createdAt:d.createdAt};}));return {...counts(rows),announcements:messages,before:ann.length>25?page.at(-1).seq:null};}
+ async function read(uid,{announcementId,ids,legacyReceived}={}){const {ref,query,signal}=refs(uid);return db.runTransaction(async tx=>{const [t,q,s]=await Promise.all([tx.get(ref),tx.get(query),tx.get(signal)]);if(!t.exists)return {announcementsUnread:0,supportUnread:0};const data=t.data(),rows=state(data,q.docs);let changed=false;const selected=new Set(ids||[]);for(let i=0;i<rows.length;i++){const r=rows[i];if(!r.read&&(announcementId===r.id||(!r.announcementId&&selected.has(r.id))||(legacyReceived!==undefined&&i<legacyReceived))){r.read=true;changed=true;if(legacyReceived===undefined)tx.update(r.ref,{readAt:now()});}}
+ const c=counts(rows);if(changed){let prefix=0;while(prefix<rows.length&&rows[prefix].read)prefix++;tx.update(ref,{userSeen:prefix,latestOwnerMessageRead:rows.length?rows.at(-1).read:true});tx.set(signal,{...s.data(),...c,unread:c.announcementsUnread+c.supportUnread,revision:now()});}return c;});}
+ return {list,read};
+};

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-11-18T16:59:35.223Z",
+  "passed": true,
+  "cloudWrites": 0,
+  "total": 86,
+  "suites": [
+    {
+      "name": "interaction-repair",
+      "total": 7
+    },
+    {
+      "name": "name-attendance-toggle",
+      "total": 2
+    },
+    {
+      "name": "device-workspace-regression",
+      "total": 21
+    },
+    {
+      "name": "subject-tools-local",
+      "total": 8
+    },
+    {
+      "name": "sync-background-indicator",
+      "total": 12
+    },
+    {
+      "name": "sync-readiness-regression",
+      "total": 15
+    },
+    {
+      "name": "offline-package-regression",
+      "total": 10
+    },
+    {
+      "name": "service-worker-upgrade",
+      "total": 11
+    }
+  ],
+  "scope": "Spinner removal, contiguous lecture labels, load-completion name/cell activation; sync engine and backend unchanged"
+}

@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-22T19:54:39.186Z",
+  "mode": "all",
+  "project": "alqar-student-attendance-2026",
+  "readOnly": true,
+  "cloudWrites": 0,
+  "functions": 41,
+  "active": true,
+  "originalFunctionsPreserved": 33,
+  "originalAccountsPreserved": 28,
+  "currentAuthCount": 28,
+  "verified": 1,
+  "disabled": 0,
+  "ruleset": "projects/alqar-student-attendance-2026/rulesets/f554e495-9c7c-49bb-8278-4237bc2b592c",
+  "rulesSha256": "d3b2958ce3057a2008e65a99cdffa14532be7a69e841b65171f85456cdc887a2",
+  "hosting": [
+    {
+      "version": "projects/alqar-student-attendance-2026/sites/hathir/versions/431b94622b068451",
+      "time": "2026-09-22T19:54:36.676Z"
+    }
+  ],
+  "passed": true
+}

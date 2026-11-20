@@ -1,0 +1,46 @@
+{
+  "published": true,
+  "release": "v2026.11.18-interaction-167",
+  "date": "2026-11-18T17:20:23.160Z",
+  "localChecks": 86,
+  "httpsAccountCheck": true,
+  "backgroundCheckStaysGreen": true,
+  "smallSpinner": false,
+  "lectureLabelsContiguous": true,
+  "doubleClickLoadRegressionFixed": true,
+  "realPendingTransferBlue": true,
+  "initialCheckUnconfirmed": true,
+  "errorsAndOfflinePreserved": true,
+  "engineUnchanged": true,
+  "pollIntervalUnchanged": true,
+  "functionsRulesAndAuthUnchanged": true,
+  "original32BackupUnchanged": true,
+  "previous": {
+    "hathir": {
+      "project": "alqar-student-attendance-2026",
+      "release": "projects/alqar-student-attendance-2026/sites/hathir/channels/live/releases/1794900138686000",
+      "version": "projects/alqar-student-attendance-2026/sites/hathir/versions/16ec6b148d6ca82a",
+      "releaseTime": "2026-11-17T07:22:18.686Z"
+    },
+    "hathirs": {
+      "project": "project-1e05d6b8-4a86-483b-b25",
+      "release": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/channels/live/releases/1794900131806000",
+      "version": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/versions/f572841c2a64f302",
+      "releaseTime": "2026-11-17T07:22:11.806Z"
+    }
+  },
+  "current": {
+    "hathir": {
+      "project": "alqar-student-attendance-2026",
+      "release": "projects/alqar-student-attendance-2026/sites/hathir/channels/live/releases/1795022330557000",
+      "version": "projects/alqar-student-attendance-2026/sites/hathir/versions/d8f046ec0c6fb97c",
+      "releaseTime": "2026-11-18T17:18:50.557Z"
+    },
+    "hathirs": {
+      "project": "project-1e05d6b8-4a86-483b-b25",
+      "release": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/channels/live/releases/1795022322851000",
+      "version": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/versions/cdf32fca27a57948",
+      "releaseTime": "2026-11-18T17:18:42.851Z"
+    }
+  }
+}

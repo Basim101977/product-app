@@ -1,0 +1,3318 @@
+{
+  "scope": "Filesystem inventory plus readable text signature scan; dependencies, Git internals, symlinks and large/binary artifacts excluded from text inspection. Only the separately audited allowlisted delivery is uploaded.",
+  "files": 23486,
+  "textFiles": 10947,
+  "matches": [
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-stage-preview-20261116/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-release-20261116/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tests/admin-options-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/functions/push-notifications.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/functions/support-broadcast.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/functions/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/functions/support-mailbox.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/netlify_site/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/netlify_site/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/netlify_site/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/tests/support-chat-server-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/tests/support-chat-ui.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/firestore_attendance.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/live-public-smoke.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tools/deploy-check.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/firestore.rules",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/functions/personal-workspace.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/netlify_site/previous/assets/app.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/netlify_site/previous/config.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/netlify_site/previous/firebase-sdkconfig.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/netlify_site/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/tests/offline-harness.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/tests/personal-rules-emulator.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/classic/tests/security-isolation-static.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/CLASSIC_STATUS.md",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/scripts/check-classic.mjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/scripts/prepare-classic.mjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/scripts/preserve-rebuild-data.mjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/tests/classic-integration.mjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/web/assets/app.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/web/config.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "HATHIR_REBUILD/web/firebase-sdkconfig.json",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "review-20261007-face-audit/read-only.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "review-20261007-face-audit/result.json",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "review-20261102-stats.cjs",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "sites/hathir-alternate-20261115/dist/runtime-config.js",
+      "types": [
+        "Firebase API key",
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "sites/hathir-alternate-20261115/dist/support-chat.js",
+      "types": [
+        "fixed owner identity"
+      ]
+    },
+    {
+      "path": "sites/hathir-alternate-20261115/dist/__/firebase/init.js",
+      "types": [
+        "Firebase API key"
+      ]
+    },
+    {
+      "path": "sites/hathir-alternate-20261115/dist/__/firebase/init.json",
+      "types": [
+        "Firebase API key"
+      ]
+    }
+  ],
+  "large": [
+    {
+      "path": "development/source/work/hathir-admin-options-20261019/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-civil-branches-20261025/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-clean-notes-20261019/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-20261021/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-clear-20261022/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-consolidation-plain-20261023/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-default-departments-20261025/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-department-labels-20261025/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-department-tools-20261025/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-face-column-20261019/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-face-preference-20261026/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-lecture-sync-local-20261106/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-page-scroll-local-20261016/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-qr-roster-local-20261107/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-record-fill-20261023/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-record-scroll-20261023/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-20261025/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-retire-civil-guard-20261025/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-roster-stable-local-20261015/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-roster700-20261018/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-sharing-20261015/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-sidebar-icons-20261022/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "development/source/work/hathir-subject-ux-local-20261015/app/netlify_site/assets/help-v5/teacher-guide.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "HATHIR_HANDOVER/media/desktop/Hathir Video Guide 2026-09-20/Hathir-Updated-Full-Course.mp4",
+      "bytes": 86165353
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/runtime/firestore-emulator-v1.22.0.jar",
+      "bytes": 136707194
+    },
+    {
+      "path": "HATHIR_HANDOVER.zip",
+      "bytes": 495149433
+    },
+    {
+      "path": "review-20260924/aligned-help/models/base/model.bin",
+      "bytes": 145217532
+    },
+    {
+      "path": "video-guide-20261004/Hathir-Tutorials-2026-10.zip",
+      "bytes": 99404472
+    },
+    {
+      "path": "video-guide-20261005-revised/audio/full-master.wav",
+      "bytes": 73547564
+    },
+    {
+      "path": "video-guide-20261005-revised/Hathir-Tutorials-Revised.zip",
+      "bytes": 104655123
+    },
+    {
+      "path": "video-guide-20261005-v3/audio/full-master.wav",
+      "bytes": 69227564
+    },
+    {
+      "path": "video-guide-20261005-v3/Hathir-Teacher-Guide-v3.mp4",
+      "bytes": 56932025
+    },
+    {
+      "path": "video-guide-20261005-v3/Hathir-Tutorials-v3.zip",
+      "bytes": 113956899
+    },
+    {
+      "path": "video-production/edit/clean-video.mp4",
+      "bytes": 54829207
+    },
+    {
+      "path": "video-production/edit/main-video.mp4",
+      "bytes": 54584543
+    },
+    {
+      "path": "video-production/renders/HATHIR_PROMO_CLEAN.mp4",
+      "bytes": 57121196
+    },
+    {
+      "path": "video-production/renders/HATHIR_PROMO_MASTER_1080P.mp4",
+      "bytes": 56890191
+    },
+    {
+      "path": "video-production/renders/HATHIR_PROMO_NO_MUSIC.mp4",
+      "bytes": 56167852
+    },
+    {
+      "path": "video-production/renders/HATHIR_PROMO_NO_VOICE.mp4",
+      "bytes": 56888806
+    }
+  ],
+  "excluded": [
+    ".git",
+    "app/functions/node_modules",
+    "development/source/work/hathir-admin-options-20261019/app/functions/node_modules",
+    "development/source/work/hathir-civil-branches-20261025/app/functions/node_modules",
+    "development/source/work/hathir-clean-notes-20261019/app/functions/node_modules",
+    "development/source/work/hathir-consolidation-20261021/app/functions/node_modules",
+    "development/source/work/hathir-consolidation-clear-20261022/app/functions/node_modules",
+    "development/source/work/hathir-consolidation-plain-20261023/app/functions/node_modules",
+    "development/source/work/hathir-default-departments-20261025/app/functions/node_modules",
+    "development/source/work/hathir-department-labels-20261025/app/functions/node_modules",
+    "development/source/work/hathir-department-stage-preview-20261116/app/functions/node_modules",
+    "development/source/work/hathir-department-tools-20261025/app/functions/node_modules",
+    "development/source/work/hathir-face-column-20261019/app/functions/node_modules",
+    "development/source/work/hathir-face-preference-20261026/app/functions/node_modules",
+    "development/source/work/hathir-page-scroll-local-20261016/app/functions/node_modules",
+    "development/source/work/hathir-production-upgrade-20260922/app/functions/node_modules",
+    "development/source/work/hathir-record-fill-20261023/app/functions/node_modules",
+    "development/source/work/hathir-record-scroll-20261023/app/functions/node_modules",
+    "development/source/work/hathir-retire-civil-20261025/app/functions/node_modules",
+    "development/source/work/hathir-retire-civil-guard-20261025/app/functions/node_modules",
+    "development/source/work/hathir-roster-stable-local-20261015/app/functions/node_modules",
+    "development/source/work/hathir-roster700-20261018/app/functions/node_modules",
+    "development/source/work/hathir-sharing-20261015/app/functions/node_modules",
+    "development/source/work/hathir-sidebar-icons-20261022/app/functions/node_modules",
+    "development/source/work/hathir-subject-ux-local-20261015/app/functions/node_modules",
+    "development/support/node_modules",
+    "development/support/runtime",
+    "HATHIR_REBUILD/classic/functions/node_modules",
+    "HATHIR_REBUILD/functions/node_modules",
+    "HATHIR_REBUILD/node_modules",
+    "outputs/hathir-paper-20261103/plot-libs/contourpy/util/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/contourpy/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/cycler/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/dateutil/parser/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/dateutil/tz/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/dateutil/zoneinfo/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/dateutil/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/cffLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/colorLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/config/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/cu2qu/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/designspaceLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/diff/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/encodings/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/feaLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/merge/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/misc/filesystem/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/misc/plistlib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/misc/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/mtiLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/otlLib/optimize/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/otlLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/pens/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/qu2cu/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/subset/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/svgLib/path/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/svgLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/t1Lib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/ttLib/tables/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/ttLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/ufoLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/unicodedata/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/varLib/avar/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/varLib/instancer/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/varLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/voltLib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/fontTools/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/kiwisolver/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/axes/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/backends/qt_editor/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/backends/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/projections/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/sphinxext/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/style/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/testing/jpl_units/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/testing/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/tri/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/_api/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/matplotlib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/mpl_toolkits/axes_grid1/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/mpl_toolkits/axes_grid1/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/mpl_toolkits/axisartist/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/mpl_toolkits/axisartist/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/mpl_toolkits/mplot3d/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/mpl_toolkits/mplot3d/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/char/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/core/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/ctypeslib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/doc/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/f2py/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/f2py/_backends/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/f2py/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/fft/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/fft/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/lib/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/lib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/linalg/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/linalg/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/ma/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/ma/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/matrixlib/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/matrixlib/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/polynomial/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/polynomial/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/random/tests/data/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/random/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/random/_examples/cffi/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/random/_examples/numba/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/random/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/rec/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/strings/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/testing/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/testing/_private/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/testing/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/typing/tests/data/pass/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/typing/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/typing/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_core/tests/examples/cython/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_core/tests/examples/limited_api/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_core/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_core/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_pyinstaller/tests/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_pyinstaller/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_typing/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/_utils/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/numpy/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/packaging/licenses/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/packaging/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/PIL/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/pyparsing/ai/show_best_practices/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/pyparsing/ai/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/pyparsing/diagram/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/pyparsing/tools/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/pyparsing/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Africa/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/America/Argentina/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/America/Indiana/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/America/Kentucky/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/America/North_Dakota/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/America/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Antarctica/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Arctic/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Asia/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Atlantic/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Australia/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Brazil/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Canada/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Chile/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Etc/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Europe/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Indian/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Mexico/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/Pacific/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/US/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/zoneinfo/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/tzdata/__pycache__",
+    "outputs/hathir-paper-20261103/plot-libs/__pycache__",
+    "reports/20261102/node_modules",
+    "sites/hathir-alternate-20261115/.git",
+    "support/node_modules",
+    "video-production/.venv",
+    "video-production/revision-02/__pycache__",
+    "video-production/scripts/__pycache__",
+    "video-production/tests/__pycache__"
+  ]
+}

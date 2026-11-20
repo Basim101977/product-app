@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-20T15:19:39.809Z",
+  "scope": "Staged files and all branch/tag reachable Git blobs",
+  "files": 663,
+  "findings": [],
+  "large": [],
+  "limitations": "Pattern scan plus manual source review, not a proof of absence of every form of personal information. Public third-party license attribution is preserved."
+}

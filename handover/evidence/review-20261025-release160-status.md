@@ -1,0 +1,5 @@
+# Retirement deployment160 — verified2026-10-25T12:04:38.235Z
+Source development/source/work/hathir-retire-civil-20261025/app
+Published160 then superseded by161 as part of authorized global old-civil retirement. Backendguards deviceLiveSync/closedLectureWorkspace/privateRosterShare and Firestore rules block oldcivil recreation; shared client/server sync model purges only civil_techniques while preservingbuilding/roads. Sixpublicassethashes verified;3ACTIVEdeployedfunction source ZIP entries matched localSHA256.793localcases passed.
+OriginalcombinedCLI successfully deployed3functions and rules but stopped beforehostingrelease because it could not set unrelated artifactcleanup policy inasia-south1. No --force, no cleanup policy changed, no container artifactsdeleted. Separatehostingcompletion only after functionsourceverification; logs review-20261025-publish160.log/review-20261025-publish160-finish.log. No rollback or permissionweakening.
+Baseline encrypted backup release-20261025-1792928455103;44119? See manifest actual44213documents,55functions,263hostingfiles. No data deletion by publishing alone; deletion execution logged separately.

@@ -1,0 +1,9 @@
+# Published159 — 2026-10-25
+Live https://hathir.web.app/
+Source development/source/work/hathir-civil-branches-20261025/app
+Version v2026.10.25-civil-branches-159
+Verified2026-10-25T11:30:47.873Z. SHA256 matched4changedpublicassets:device-workspace.js,index.html,personal-ui.js,service-worker.js. Hosting-only; backend/rules/identity unchanged.
+Default catalog now17departments including exact requested labels التقنيات المدنية-بناء and التقنيات المدنية-طرق, IDs civil_building/civil_roads, frontendCTB/CTR,5stages each. Existing cloud workspace create-only transaction adds missing rows after session/permission/existing-workspace checks; existing stages/names untouched. Existing device workspace installation/live refresh merges only missing department/stage rows, durably saves through original serialized save/live diff path. No student/history/face deletion. Legacy civil_techniques retained/protected in saved workspaces.
+Full792syntheticcases passed fresh2026-10-25T11:30:06.666Z including2newdurability/idempotence cases,44prefix/cloudcatalog cases,21device-workspace,13live,10departmentUI. No real cloudCRUD/physical-device claim.
+Fresh encrypted original production backup C:\Users\USER\AppData\Local\HathirBackups\release-20261025-1792927515331:44119Firestore documents,55functions,263hostingfiles.261hostingbytes cached only after exact authenticated immutable live-manifest hashes, ciphertext/plaintext hashes and DPAPI decryption verification;2downloaded. Newencryptedroundtripverified. Authpasswordhashes/localpendingrecords excluded; no fullrestoreattempt.
+Prior158retained intact. Freeze reports/release-source-manifest-civil-branches-159.json; retained reports/retained-release-158.json; published reports/published-159.json. Logs review-20261025-qa159.log,review-20261025-backup159.log,review-20261025-publish159.log. No announcement sent.

@@ -1,0 +1,35 @@
+{
+  "scope": "Available project-related local sessions only. Message text export, not raw rollouts. System/developer prompts, tool I/O, reasoning, binaries, code blocks and sensitive paragraphs omitted. Historical gaps are not reconstructed.",
+  "sessions": [
+    {
+      "file": "rollout-2026-09-27T08-30-39-01a0e158-0bc2-75d2-9b94-4b03029c6e33.messages.jsonl",
+      "sessionId": "01a0e158-0bc2-75d2-9b94-4b03029c6e33",
+      "sourceBytes": 417991054,
+      "messages": 1863
+    },
+    {
+      "file": "rollout-2026-11-12T10-54-30-01a1cec0-44ee-7e40-ae5f-dfd98262aa68.messages.jsonl",
+      "sessionId": "01a1cec0-44ee-7e40-ae5f-dfd98262aa68",
+      "sourceBytes": 31873503,
+      "messages": 387
+    },
+    {
+      "file": "rollout-2026-11-12T11-35-53-01a1c0f6-9c9d-7ed1-99e0-f4c1db032e77_01a1cee6-2cfc-7ba0-a885-458a8e7dc766.messages.jsonl",
+      "sessionId": "01a1c0f6-9c9d-7ed1-99e0-f4c1db032e77",
+      "sourceBytes": 15978972,
+      "messages": 38
+    },
+    {
+      "file": "rollout-2026-11-18T20-44-44-01a1efc2-cf7d-72c2-b23f-83e0b0bbc960.messages.jsonl",
+      "sessionId": "01a1efc2-cf7d-72c2-b23f-83e0b0bbc960",
+      "sourceBytes": 80672578,
+      "messages": 90
+    },
+    {
+      "file": "rollout-2026-11-20T18-00-02-01a1f978-bdd2-71f0-acc3-4ca2b809f60f.messages.jsonl",
+      "sessionId": "01a1f978-bdd2-71f0-acc3-4ca2b809f60f",
+      "sourceBytes": 871648,
+      "messages": 5
+    }
+  ]
+}

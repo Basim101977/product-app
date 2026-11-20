@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "purpose": "User-approved delivery-only privacy sanitization; not a deployment",
+  "originalSourcesModified": false,
+  "cloudAccessed": false,
+  "changedFilesBySourceTree": {
+    "current": [
+      "netlify_site/index.html",
+      "tests/personal-ui-regression.cjs"
+    ],
+    "historical": [
+      "netlify_site/index.html"
+    ]
+  },
+  "scannerRationale": {
+    "originalShortPasswordCategory": "four-digit numeric local-demo password",
+    "unrelatedSubstringMatches": {
+      "backendSyntheticOperationIdentifier": 3,
+      "offlineHarnessSyntheticTimestamp": 1
+    },
+    "rule": "Only numeric-only four-digit password candidates require no adjacent digit; all other seed categories retain full substring checks.",
+    "actualQuoteDelimitedLocalLoginFixtureReplaced": true
+  },
+  "files": [
+    {
+      "kind": "privacy-sanitized-current-delivery-derivative",
+      "originalSource": "work/hathir-production-upgrade-20260922/app/netlify_site/index.html",
+      "destination": "source/work/hathir-production-upgrade-20260922/app/netlify_site/index.html",
+      "originalSourceSha256": "e4ca2c9cf675175d93b354fe0bcbaf896d926ce29ed8e73a49ce40ac3b0ca216",
+      "sanitizedSha256": "daee6b7a7de6d9cdd0a78363f5821b6e3dea13475e4b4c74dbcbec5a0d59c914",
+      "sanitizedStudentRows": 34,
+      "sanitizedLocalAccounts": 7,
+      "replacedLocalAccountFields": {
+        "password": 7,
+        "email": 7,
+        "displayName": 7
+      },
+      "sanitizedOldIdPlaceholders": 0,
+      "reviewedReplacementRanges": 3,
+      "unchangedOutsideReviewedRanges": true,
+      "residualPrivateSeedValues": 0,
+      "inlineScriptsParsed": 1,
+      "preservedWorkerAndStorageCode": true,
+      "originalAndCurrentSourcesModified": false
+    },
+    {
+      "kind": "privacy-sanitized-historical-test-derivative",
+      "originalSource": "work/hathir-mobile-actions-20260919/candidate/netlify_site/index.html",
+      "destination": "source/work/hathir-mobile-actions-20260919/candidate/netlify_site/index.html",
+      "originalSourceSha256": "042e8cd622e8e93bd7fdb7340868f7e5c3dae90aacff054012c1fc3574cfeffd",
+      "sanitizedSha256": "816ab880d2f1be3b0d7bc57b0323e9892d0824e7efbee24748e59923ca7f79ed",
+      "sanitizedStudentRows": 34,
+      "sanitizedLocalAccounts": 7,
+      "replacedLocalAccountFields": {
+        "password": 7,
+        "email": 7,
+        "displayName": 7
+      },
+      "sanitizedOldIdPlaceholders": 1,
+      "reviewedReplacementRanges": 4,
+      "unchangedOutsideReviewedRanges": true,
+      "residualPrivateSeedValues": 0,
+      "inlineScriptsParsed": 1,
+      "preservedWorkerAndStorageCode": true,
+      "originalAndCurrentSourcesModified": false
+    },
+    {
+      "kind": "privacy-sanitized-local-login-test-derivative",
+      "originalSource": "work/hathir-production-upgrade-20260922/app/tests/personal-ui-regression.cjs",
+      "destination": "source/work/hathir-production-upgrade-20260922/app/tests/personal-ui-regression.cjs",
+      "originalSourceSha256": "6467c4ac0b4b902e4c05a01b2d8aa9cbf8a0f563ffedc46138ca1f093801ebc4",
+      "sanitizedSha256": "72f65fbd91d66d98ae347b2b3e5261d1f84105c51bb11fefe188f37e303e15e8",
+      "changedLine": 325,
+      "replacedFixtureFields": {
+        "localEmail": 1,
+        "localPassword": 1
+      },
+      "reviewedReplacementRanges": 2,
+      "unchangedOutsideReviewedRanges": true,
+      "originalLocalCredentialLiteralsRemaining": 0,
+      "javascriptParsed": true,
+      "testAssertionsAndControlFlowUnchanged": true,
+      "originalSourceModified": false
+    }
+  ]
+}

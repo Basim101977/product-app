@@ -1,0 +1,51 @@
+{
+  "publishedAt": "2026-11-17T06:44:33.416Z",
+  "frontendVersion": "preview-2026.11.17-offline-ready",
+  "liveUrl": "https://hathirs.web.app",
+  "published": true,
+  "scope": "Hosting frontend only",
+  "backendPhaseTwoPublished": false,
+  "previous": {
+    "hathir": {
+      "project": "alqar-student-attendance-2026",
+      "release": "projects/alqar-student-attendance-2026/sites/hathir/channels/live/releases/1794778426939000",
+      "version": "projects/alqar-student-attendance-2026/sites/hathir/versions/a094364b1cb34942",
+      "releaseTime": "2026-11-15T21:33:46.939Z"
+    },
+    "hathirs": {
+      "project": "project-1e05d6b8-4a86-483b-b25",
+      "release": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/channels/live/releases/1794778457145000",
+      "version": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/versions/3e53bcaa8fbfaf38",
+      "releaseTime": "2026-11-15T21:34:17.145Z"
+    }
+  },
+  "current": {
+    "hathir": {
+      "project": "alqar-student-attendance-2026",
+      "release": "projects/alqar-student-attendance-2026/sites/hathir/channels/live/releases/1794897795482000",
+      "version": "projects/alqar-student-attendance-2026/sites/hathir/versions/3df5720586e0ef6d",
+      "releaseTime": "2026-11-17T06:43:15.482Z"
+    },
+    "hathirs": {
+      "project": "project-1e05d6b8-4a86-483b-b25",
+      "release": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/channels/live/releases/1794897787734000",
+      "version": "projects/project-1e05d6b8-4a86-483b-b25/sites/hathirs/versions/5772e590a2e2d1f6",
+      "releaseTime": "2026-11-17T06:43:07.734Z"
+    }
+  },
+  "authenticationConfigUnchanged": true,
+  "existingTeacherDataEdited": false,
+  "original32QueueUntouched": true,
+  "localChecks": 155,
+  "publicFilesVerifiedPerSite": 282,
+  "offlineAssetsVerified": 90,
+  "httpsSyntheticLoginAndOfflineRestorePassed": true,
+  "originalUrlStatus": 404,
+  "limitations": [
+    "Physical camera/phone not tested",
+    "Original URL remains HTTP 404",
+    "Initial online preparation required for offline operation",
+    "Server phase-two hardening remains local and is not part of this Hosting release"
+  ],
+  "backupDirectory": "C:/Users/alqar/AppData/Local/HathirBackups/release-20261117-1794897428665"
+}

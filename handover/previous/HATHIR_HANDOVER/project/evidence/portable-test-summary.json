@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-22T20:51:56.063Z",
+  "passed": true,
+  "stage": "staged-transfer-tree-before-final-archive",
+  "total": 394,
+  "sourceRoot": "source/work/hathir-production-upgrade-20260922/app",
+  "scope": "Authorized delivery-only sanitized current/historical HTML; original frozen source left unchanged.",
+  "commands": [
+    {
+      "cwd": "support",
+      "command": "npm.cmd ci --ignore-scripts --no-audit --no-fund",
+      "exitCode": 0,
+      "installedPackages": 675
+    },
+    {
+      "cwd": "source/work/hathir-production-upgrade-20260922/app/functions",
+      "command": "npm.cmd ci --ignore-scripts --no-audit --no-fund",
+      "exitCode": 0,
+      "installedPackages": 265
+    },
+    {
+      "cwd": "support",
+      "command": "node run-tests.cjs --check",
+      "exitCode": 0
+    },
+    {
+      "cwd": "support",
+      "command": "node run-tests.cjs",
+      "exitCode": 0
+    },
+    {
+      "cwd": "support",
+      "command": "node safe-preview.cjs",
+      "exitCode": 0
+    }
+  ],
+  "versions": {
+    "node": "22.20.0",
+    "npm": "10.9.3",
+    "firebaseTools": "15.30.0",
+    "playwright": "1.62.1",
+    "chrome": "153.0.8010.53",
+    "java": "Temurin 21.0.12.1+1",
+    "firestoreEmulator": "1.22.0",
+    "firebaseAdmin": "14.4.0",
+    "firebaseFunctions": "7.3.2",
+    "qrcodeGenerator": "1.4.4",
+    "jsqr": "1.4.0"
+  },
+  "dependencies": {
+    "freshSupportNpmInstall": true,
+    "freshCopiedFunctionsNpmInstall": true,
+    "publicRegistryOnly": true,
+    "existingBrowserVia": "CHROME_PATH",
+    "existingJavaVia": "PERSONAL_TEST_JAVA",
+    "existingVerifiedEmulatorVia": "PERSONAL_TEST_FIRESTORE_JAR",
+    "supportLockSha256": "ba78dffa52dd501f9b8a3eb33d27a2d9994701fc64764a96da5a01ecd2b5fb9b",
+    "functionsLockSha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+    "emulatorSha256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c"
+  },
+  "tests": {
+    "summary": "evidence/tests/local-regression-summary.json",
+    "summarySha256": "fd2e3084de0c7c84a7976c2802ffb7fe69ae246769ab72ef7e3ee32eae471ceb",
+    "passed": true,
+    "total": 394,
+    "suites": [
+      {
+        "suite": "promotion",
+        "passed": true,
+        "total": 39,
+        "elapsedMs": 12472
+      },
+      {
+        "suite": "service-worker-upgrade",
+        "passed": true,
+        "total": 10,
+        "elapsedMs": 5445
+      },
+      {
+        "suite": "function-metadata",
+        "passed": true,
+        "total": 1,
+        "elapsedMs": 644
+      },
+      {
+        "suite": "static",
+        "passed": true,
+        "total": 7,
+        "elapsedMs": 86
+      },
+      {
+        "suite": "backend",
+        "passed": true,
+        "total": 47,
+        "elapsedMs": 222
+      },
+      {
+        "suite": "browser",
+        "passed": true,
+        "total": 30,
+        "elapsedMs": 6240
+      },
+      {
+        "suite": "prefixes",
+        "passed": true,
+        "total": 36,
+        "elapsedMs": 4136
+      },
+      {
+        "suite": "name-qr-unit",
+        "passed": true,
+        "total": 29,
+        "elapsedMs": 114
+      },
+      {
+        "suite": "name-only-ui",
+        "passed": true,
+        "total": 34,
+        "elapsedMs": 4799
+      },
+      {
+        "suite": "name-qr-browser",
+        "passed": true,
+        "total": 50,
+        "elapsedMs": 16966
+      },
+      {
+        "suite": "sync-transport",
+        "passed": true,
+        "total": 28,
+        "elapsedMs": 8580
+      },
+      {
+        "suite": "emulator",
+        "passed": true,
+        "total": 83,
+        "elapsedMs": 14719
+      }
+    ],
+    "cloudWrites": 0,
+    "productionDataRead": false,
+    "credentialsRead": false,
+    "syntheticOnly": true,
+    "testSourceEdited": false
+  },
+  "preview": {
+    "path": "support/previews/synthetic-login-390.png",
+    "sha256": "8c16975183bf3a087d9a4591d45c73cfe1785bb686fc55bf669f5c66b29f806e",
+    "passed": true,
+    "visuallyInspected": true,
+    "width": 390,
+    "mode": "synthetic Firebase fixture, external browser requests blocked, screenshot only"
+  },
+  "limitations": [
+    "This run used the staged transfer tree on the original Windows PC, not a new notebook or final extracted archive.",
+    "Existing Chrome, Java and verified emulator JAR were supplied explicitly; their fresh downloads were not exercised.",
+    "The official emulator download endpoint was checked read-only: HTTP 200, no redirect, Content-Length 136707194.",
+    "The delivery current/historical HTML files are authorized privacy derivatives, not byte-exact restoration copies of deployed originals.",
+    "No Firebase login, deploy, cloud writes, real-device camera/NFC verification or actual-email workflow was performed.",
+    "npm emitted dependency deprecation warnings; locked dependency versions were preserved and no automatic audit fixes were applied."
+  ]
+}

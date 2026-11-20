@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cases": [
+    "Full/compact width and native snap restored",
+    "Outer document scroll leaves visible name rail hit-testable; no attendance mutation",
+    "Tap full-name tooltip",
+    "Rail header double-tap and filter keep names aligned with visible rows",
+    "Source rerender refreshes names",
+    "Desktop returns to original table DOM",
+    "Expanded record retains original names and table"
+  ],
+  "limitation": "Physical iPhone Safari still needs validation"
+}

@@ -1,0 +1,13 @@
+node_modules/
+.firebase/
+.private/
+*.log
+*-debug.log
+emulator-data/
+reports/
+.env
+.env.local
+functions/.env.local
+functions/.secret.local
+service-account*.json
+*-service-account.json

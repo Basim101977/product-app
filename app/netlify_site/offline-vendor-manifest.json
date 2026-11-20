@@ -1,0 +1,65 @@
+{
+  "version": "offline-ready-20261117",
+  "assets": [
+    {
+      "path": "/vendor/jspdf-2.5.1.umd.min.js",
+      "bytes": 364463,
+      "sha256": "98ccf17aa10c20bb1301762618fcc9b6ab3a4e7f26b6071d64d0b41154df3875"
+    },
+    {
+      "path": "/vendor/face-api-1.7.15.min.js",
+      "bytes": 1327374,
+      "sha256": "8c68e735534357792c93f0fa9bdeddbdbd7ff19716af84b93fcab09d1e4201c7"
+    },
+    {
+      "path": "/vendor/firebase-10.12.5/firebase-app-compat.js",
+      "bytes": 31683,
+      "sha256": "8912da846b0424822a8ca681e0021bc9281a089313966c5f97bad82d02cb9f65"
+    },
+    {
+      "path": "/vendor/firebase-10.12.5/firebase-auth-compat.js",
+      "bytes": 139589,
+      "sha256": "d08600699f3d17864b1e133b8d4e0a5a94ac62756b6ffdd9e4516b457800de61"
+    },
+    {
+      "path": "/vendor/firebase-10.12.5/firebase-firestore-compat.js",
+      "bytes": 342262,
+      "sha256": "603b7f6d0a9d4a214960f4d720afd76ff9ecdc9187bcc689b477780fabea0b75"
+    },
+    {
+      "path": "/vendor/firebase-10.12.5/firebase-functions-compat.js",
+      "bytes": 8190,
+      "sha256": "b6b2c559aaa6a0dac7603c493209d54a8ac345a3fe522504e86fb578e53b0b18"
+    },
+    {
+      "path": "/vendor/face-models-1.7.15/face_landmark_68_model-weights_manifest.json",
+      "bytes": 8485,
+      "sha256": "ca4886639f86e99b39fed0c155f81b63317225773bd9616716e887b0153389c9"
+    },
+    {
+      "path": "/vendor/face-models-1.7.15/face_landmark_68_model.bin",
+      "bytes": 356840,
+      "sha256": "4611ef65c87d836d03d684b30eec4d195d8b219fa1dd58fc58945831c6b9299b"
+    },
+    {
+      "path": "/vendor/face-models-1.7.15/face_recognition_model-weights_manifest.json",
+      "bytes": 19615,
+      "sha256": "cbaffa501b0b9275a12b63357a6843e7e30c054e1c9151e1a5f879b26e32986b"
+    },
+    {
+      "path": "/vendor/face-models-1.7.15/face_recognition_model.bin",
+      "bytes": 6444032,
+      "sha256": "b413e420d6840b2775fba32008db6f3cddb07d485967fb42cfcf379c16a8c589"
+    },
+    {
+      "path": "/vendor/face-models-1.7.15/tiny_face_detector_model-weights_manifest.json",
+      "bytes": 3219,
+      "sha256": "5d1af4849ac48d5b985f4a9b16010c512353ddd6fcc63d50fd0bc9e9e64296e5"
+    },
+    {
+      "path": "/vendor/face-models-1.7.15/tiny_face_detector_model.bin",
+      "bytes": 193321,
+      "sha256": "b7503ce7df31039b1c43316a9b865cab6a70dd748cc602d3fa28b551503c3871"
+    }
+  ]
+}

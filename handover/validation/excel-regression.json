@@ -1,0 +1,161 @@
+{
+  "suite": "name-only-personal-ui-regression",
+  "checkedAt": "2026-11-20T15:16:36.263Z",
+  "mode": "synthetic-local-only",
+  "externalNetwork": "blocked",
+  "cloudWrites": 0,
+  "credentialsRead": false,
+  "limitations": [
+    "No deployed-service, Firebase emulator, payment-provider, camera, or physical-device verification."
+  ],
+  "cases": [
+    {
+      "label": "390px ar: names and sequence remain visible, internal-ID cells stay hidden across renders",
+      "passed": true
+    },
+    {
+      "label": "390px ar: profile keeps its internal identity without presenting the field or label",
+      "passed": true
+    },
+    {
+      "label": "390px ar: exports omit IDs and retain sequence, attendance, duplicate-name and per-course status alignment",
+      "passed": true
+    },
+    {
+      "label": "390px ar: empty-row span matches visible headers and import help requests names only",
+      "passed": true
+    },
+    {
+      "label": "390px ar: Excel headings keep their layout and colour only cancelled text",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nundefined !== 32\n\n    at WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:198:85\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:151:7"
+    },
+    {
+      "label": "390px en: names and sequence remain visible, internal-ID cells stay hidden across renders",
+      "passed": true
+    },
+    {
+      "label": "390px en: profile keeps its internal identity without presenting the field or label",
+      "passed": true
+    },
+    {
+      "label": "390px en: exports omit IDs and retain sequence, attendance, duplicate-name and per-course status alignment",
+      "passed": true
+    },
+    {
+      "label": "390px en: empty-row span matches visible headers and import help requests names only",
+      "passed": true
+    },
+    {
+      "label": "390px en: Excel headings keep their layout and colour only cancelled text",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nundefined !== 32\n\n    at WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:198:85\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:151:7"
+    },
+    {
+      "label": "390px status writes and RFID binding still use internal IDs",
+      "passed": true
+    },
+    {
+      "label": "390px editing a name retains the hidden ID and every existing attendance/status key",
+      "passed": true
+    },
+    {
+      "label": "1440px ar: names and sequence remain visible, internal-ID cells stay hidden across renders",
+      "passed": true
+    },
+    {
+      "label": "1440px ar: profile keeps its internal identity without presenting the field or label",
+      "passed": true
+    },
+    {
+      "label": "1440px ar: exports omit IDs and retain sequence, attendance, duplicate-name and per-course status alignment",
+      "passed": true
+    },
+    {
+      "label": "1440px ar: empty-row span matches visible headers and import help requests names only",
+      "passed": true
+    },
+    {
+      "label": "1440px ar: Excel headings keep their layout and colour only cancelled text",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nundefined !== 32\n\n    at WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:198:85\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:151:7"
+    },
+    {
+      "label": "1440px en: names and sequence remain visible, internal-ID cells stay hidden across renders",
+      "passed": true
+    },
+    {
+      "label": "1440px en: profile keeps its internal identity without presenting the field or label",
+      "passed": true
+    },
+    {
+      "label": "1440px en: exports omit IDs and retain sequence, attendance, duplicate-name and per-course status alignment",
+      "passed": true
+    },
+    {
+      "label": "1440px en: empty-row span matches visible headers and import help requests names only",
+      "passed": true
+    },
+    {
+      "label": "1440px en: Excel headings keep their layout and colour only cancelled text",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nundefined !== 32\n\n    at WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:198:85\n    at async check (WORKSPACE\\app\\tests\\offline-harness.cjs:32:21)\n    at async WORKSPACE\\app\\tests\\name-only-ui-regression.cjs:151:7"
+    },
+    {
+      "label": "1440px status writes and RFID binding still use internal IDs",
+      "passed": true
+    },
+    {
+      "label": "1440px editing a name retains the hidden ID and every existing attendance/status key",
+      "passed": true
+    },
+    {
+      "label": "Roster completeness: server requires authoritative reads and preserves prepared offline data",
+      "passed": true
+    },
+    {
+      "label": "Roster completeness: cached requires authoritative reads and preserves prepared offline data",
+      "passed": true
+    },
+    {
+      "label": "Roster completeness: prepared-offline requires authoritative reads and preserves prepared offline data",
+      "passed": true
+    },
+    {
+      "label": "Roster load revalidates account before applying server results",
+      "passed": true
+    },
+    {
+      "label": "Roster load revalidates workspace before applying server results",
+      "passed": true
+    },
+    {
+      "label": "Roster load revalidates same-account-session before applying server results",
+      "passed": true
+    },
+    {
+      "label": "Roster load revalidates subject before applying server results",
+      "passed": true
+    },
+    {
+      "label": "Roster load revalidates roster-reset before applying server results",
+      "passed": true
+    },
+    {
+      "label": "Roster load revalidates cohort before applying server results",
+      "passed": true
+    },
+    {
+      "label": "Roster load revalidates generation before applying server results",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "screenshots": [
+    "WORKSPACE\\app\\reports\\name-only-roster-390.png",
+    "WORKSPACE\\app\\reports\\name-only-roster-1440.png"
+  ],
+  "runtimeUnderTest": "retained-legacy-cloud-path",
+  "passed": false
+}

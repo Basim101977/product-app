@@ -1,0 +1,60 @@
+# Cloud Functions API inventory
+
+Extracted from the saved functions/functions.yaml deployment description. This is a historical metadata snapshot; index.js and its imported factories are authoritative. Confirm metadata after any edit.
+
+| Name | Region | Trigger |
+|---|---|---|
+| correctSubjectAnnualHours | us-central1 | callableTrigger |
+| archiveDeletedPersonalSubject | us-central1 | eventTrigger |
+| archiveDeletedPersonalStudent | us-central1 | eventTrigger |
+| listDeletedPersonalRecords | us-central1 | callableTrigger |
+| restoreDeletedPersonalRecord | us-central1 | callableTrigger |
+| getSubjectRosterCount | us-central1 | callableTrigger |
+| invalidateSummaryOnRosterChange | us-central1 | eventTrigger |
+| invalidateSummaryOnSubjectChange | us-central1 | eventTrigger |
+| invalidateSummaryOnExcuseChange | us-central1 | eventTrigger |
+| auditBrowserAttendanceMark | us-central1 | eventTrigger |
+| normaliseBrowserLecture | us-central1 | eventTrigger |
+| snapshotAndSummariseClosedLecture | us-central1 | eventTrigger |
+| migrateCohortFaceTemplates | us-central1 | callableTrigger |
+| recordOfficialAttendance | us-central1 | callableTrigger |
+| finalizeOfficialLecture | us-central1 | callableTrigger |
+| cancelOfficialLecture | us-central1 | callableTrigger |
+| clearOfficialSubjectAttendance | us-central1 | callableTrigger |
+| listAttendanceRecoverySnapshots | us-central1 | callableTrigger |
+| restoreAttendanceRecoverySnapshot | us-central1 | callableTrigger |
+| correctOfficialAttendance | us-central1 | callableTrigger |
+| rebuildOfficialAttendanceSummaries | us-central1 | callableTrigger |
+| approveWeeklyAttendanceStatuses | us-central1 | scheduleTrigger |
+| closeDueAttendanceLectures | us-central1 | scheduleTrigger |
+| clearSubjectRoster | us-central1 | callableTrigger |
+| listSubjectRosterBackups | us-central1 | callableTrigger |
+| restoreSubjectRoster | us-central1 | callableTrigger |
+| syncOfflineAttendance | us-central1 | callableTrigger |
+| syncOfflineAttendanceBatch | asia-south1 | callableTrigger |
+| provisionAttendanceMember | us-central1 | callableTrigger |
+| renameOfficialStudentIdentifier | us-central1 | callableTrigger |
+| revokeAttendanceMember | us-central1 | callableTrigger |
+| updateAttendanceMemberProfile | us-central1 | callableTrigger |
+| accountPresence | us-central1 | callableTrigger |
+| submitPersonalRegistration | us-central1 | callableTrigger |
+| getPersonalAccountStatus | us-central1 | callableTrigger |
+| listPersonalRegistrations | us-central1 | callableTrigger |
+| approvePersonalAccount | us-central1 | callableTrigger |
+| openIndividualWorkspace | us-central1 | callableTrigger |
+| importPersonalStudents | us-central1 | callableTrigger |
+| setPersonalAcademicStatus | us-central1 | callableTrigger |
+| updateLegacyEmbeddedRoster | us-central1 | callableTrigger |
+| configureLegacySubjectScope | us-central1 | callableTrigger |
+| syncOfflineAttendancePreview | asia-south1 | callableTrigger |
+| closedLectureWorkspace | us-central1 | callableTrigger |
+| deviceLiveSync | us-central1 | callableTrigger |
+| privateRosterShare | us-central1 | callableTrigger |
+| supportChat | us-central1 | callableTrigger |
+| sharedStudentRoster | us-central1 | callableTrigger |
+| deviceNotifications | us-central1 | callableTrigger |
+| notifySupportChat | us-central1 | eventTrigger |
+| notifyRegistration | us-central1 | eventTrigger |
+| notifyPrivateShare | us-central1 | eventTrigger |
+| supportBroadcast | us-central1 | callableTrigger |
+| deliverSupportBroadcast | us-central1 | eventTrigger |

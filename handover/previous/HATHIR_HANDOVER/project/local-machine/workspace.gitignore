@@ -1,0 +1,6 @@
+# Local credentials, production backup pointers and Firebase working files.
+**/.private/
+**/.firebase/
+**/*-debug.log
+**/*-debug.*.log
+**/node_modules/

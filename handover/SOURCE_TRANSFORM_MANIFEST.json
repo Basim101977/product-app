@@ -1,0 +1,2656 @@
+{
+  "source": "development/source/work/hathir-department-stage-preview-20261116/app",
+  "files": [
+    {
+      "path": ".firebaserc",
+      "status": "unchanged",
+      "sourceSha256": "50e9ab6dbf046f827c9b1e093e9318349cc3a8fec097dcff56d3d420812e5d71",
+      "deliverySha256": "50e9ab6dbf046f827c9b1e093e9318349cc3a8fec097dcff56d3d420812e5d71"
+    },
+    {
+      "path": "firebase.json",
+      "status": "unchanged",
+      "sourceSha256": "d5fdd9d4272b6284930095354cdf2f27e80fc55fb018db0eeb8581c08d8b6160",
+      "deliverySha256": "d5fdd9d4272b6284930095354cdf2f27e80fc55fb018db0eeb8581c08d8b6160"
+    },
+    {
+      "path": "firestore.indexes.json",
+      "status": "unchanged",
+      "sourceSha256": "15d0c990a0c72e6352cec0672274060853e63139e00a36694786385f486d0412",
+      "deliverySha256": "15d0c990a0c72e6352cec0672274060853e63139e00a36694786385f486d0412"
+    },
+    {
+      "path": "firestore_attendance.rules",
+      "status": "delivery adaptation",
+      "sourceSha256": "bc56fe51c9f4fbdc764403db75471d294627d128bd80ddc41ecb8d076048507b",
+      "deliverySha256": "6c5d5324d97bc1a4e7457d334f72c265be6ab97acaee363ba14dd3f17536030f"
+    },
+    {
+      "path": "functions/account-presence.js",
+      "status": "unchanged",
+      "sourceSha256": "e75ea397114e1f61b760e6551b615a3c40288bf19e52afad0eb414489ba1f2d3",
+      "deliverySha256": "e75ea397114e1f61b760e6551b615a3c40288bf19e52afad0eb414489ba1f2d3"
+    },
+    {
+      "path": "functions/closed-lecture-workspace.js",
+      "status": "unchanged",
+      "sourceSha256": "f1ce81ec86503e11ce675c034b5d4205a0e7e4ee9d05e371851c3062f4e0ba46",
+      "deliverySha256": "f1ce81ec86503e11ce675c034b5d4205a0e7e4ee9d05e371851c3062f4e0ba46"
+    },
+    {
+      "path": "functions/cumulative-attendance.js",
+      "status": "unchanged",
+      "sourceSha256": "0840cc1502b02b87df72e3df1866e6ffbd83cdab662e1b05b1a3d855fa3d0546",
+      "deliverySha256": "0840cc1502b02b87df72e3df1866e6ffbd83cdab662e1b05b1a3d855fa3d0546"
+    },
+    {
+      "path": "functions/device-live-sync.js",
+      "status": "unchanged",
+      "sourceSha256": "d884323095ee8c0ff82f375b05c6d5084c247377afc6a15ad2c2df2b203329a3",
+      "deliverySha256": "d884323095ee8c0ff82f375b05c6d5084c247377afc6a15ad2c2df2b203329a3"
+    },
+    {
+      "path": "functions/device-record-validation.js",
+      "status": "unchanged",
+      "sourceSha256": "74e7e747494b7f5ff9b77b711f10e2ab25ccfc68ff021baa253df4047097a175",
+      "deliverySha256": "74e7e747494b7f5ff9b77b711f10e2ab25ccfc68ff021baa253df4047097a175"
+    },
+    {
+      "path": "functions/device-sync-model.js",
+      "status": "unchanged",
+      "sourceSha256": "209f623c7fd655e09f5101ead835e8e59f7eea5a477113ea8418b0af1d4e96fe",
+      "deliverySha256": "209f623c7fd655e09f5101ead835e8e59f7eea5a477113ea8418b0af1d4e96fe"
+    },
+    {
+      "path": "functions/functions.yaml",
+      "status": "unchanged",
+      "sourceSha256": "f767954cf5725bf3bed6036795e563cbbda0e498bcbc121d9b7b57f57896bf64",
+      "deliverySha256": "f767954cf5725bf3bed6036795e563cbbda0e498bcbc121d9b7b57f57896bf64"
+    },
+    {
+      "path": "functions/index.js",
+      "status": "unchanged",
+      "sourceSha256": "61eb3b3d8f363d7b4ab9a79800ed328f5a8b475dfd3f1b8b538d5fa78e723a04",
+      "deliverySha256": "61eb3b3d8f363d7b4ab9a79800ed328f5a8b475dfd3f1b8b538d5fa78e723a04"
+    },
+    {
+      "path": "functions/lecture-session.js",
+      "status": "unchanged",
+      "sourceSha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "deliverySha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e"
+    },
+    {
+      "path": "functions/official-correction.js",
+      "status": "unchanged",
+      "sourceSha256": "0f9ccd53c839c87ae9054df8cf875a1d76576f5777f880dff76cc94759b8abc0",
+      "deliverySha256": "0f9ccd53c839c87ae9054df8cf875a1d76576f5777f880dff76cc94759b8abc0"
+    },
+    {
+      "path": "functions/offline-attendance-batch.js",
+      "status": "unchanged",
+      "sourceSha256": "aa053e3e434fd9ff09f76585863a650b1225205e70f9d0355f0fe2148a106116",
+      "deliverySha256": "aa053e3e434fd9ff09f76585863a650b1225205e70f9d0355f0fe2148a106116"
+    },
+    {
+      "path": "functions/offline-attendance.js",
+      "status": "unchanged",
+      "sourceSha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "deliverySha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07"
+    },
+    {
+      "path": "functions/owner-lecture-count.js",
+      "status": "unchanged",
+      "sourceSha256": "d24b3b1a4c2674c713a98e2ad145dec00ed80d5ad41714450a86aacf64739e17",
+      "deliverySha256": "d24b3b1a4c2674c713a98e2ad145dec00ed80d5ad41714450a86aacf64739e17"
+    },
+    {
+      "path": "functions/package-lock.json",
+      "status": "unchanged",
+      "sourceSha256": "3044dc4458ebfdb11d78a5348d9f944d248a4104467390259f1e995c97237092",
+      "deliverySha256": "3044dc4458ebfdb11d78a5348d9f944d248a4104467390259f1e995c97237092"
+    },
+    {
+      "path": "functions/package.json",
+      "status": "unchanged",
+      "sourceSha256": "c0923521520e145a7eda8e899d5bd432886037d48de6bef52d63adc8f593dd2b",
+      "deliverySha256": "c0923521520e145a7eda8e899d5bd432886037d48de6bef52d63adc8f593dd2b"
+    },
+    {
+      "path": "functions/personal-workspace.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "6d1567648fb52a8aae66be16aee994a1540e0c95526ed6f87ec2de622050d527",
+      "deliverySha256": "968b68b8c99510d533cc017b5b0168976a0c6b467cce34533f9df168d921c841"
+    },
+    {
+      "path": "functions/private-roster-share.js",
+      "status": "unchanged",
+      "sourceSha256": "102668caf6c34c2fd6455aae240d496c04eb979978bf5e7451d4854bd119094a",
+      "deliverySha256": "102668caf6c34c2fd6455aae240d496c04eb979978bf5e7451d4854bd119094a"
+    },
+    {
+      "path": "functions/private-share-model.js",
+      "status": "unchanged",
+      "sourceSha256": "fc5a4745be611516799a5208397ad0930c5b1f4d81f1820e8fa52aba1125de6d",
+      "deliverySha256": "fc5a4745be611516799a5208397ad0930c5b1f4d81f1820e8fa52aba1125de6d"
+    },
+    {
+      "path": "functions/push-notifications.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "0de194f6437d80e3470f942f334b3fcf10f55f35c5c9935c39280739fb654ec8",
+      "deliverySha256": "087223c275171d4571a7f93d74e8319a7e18e67f024061334ca660a17dcc0898"
+    },
+    {
+      "path": "functions/README-personal.md",
+      "status": "delivery adaptation",
+      "sourceSha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "deliverySha256": "1350819c1e2092c8cd5f1a31bc2de963ebf2d37e262b823d788ab973993686c2"
+    },
+    {
+      "path": "functions/README-production-upgrade.md",
+      "status": "unchanged",
+      "sourceSha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "deliverySha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c"
+    },
+    {
+      "path": "functions/retired-compatibility.js",
+      "status": "unchanged",
+      "sourceSha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "deliverySha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3"
+    },
+    {
+      "path": "functions/retired-shared-roster.js",
+      "status": "unchanged",
+      "sourceSha256": "2dd142f8e9574d987174cf4c6ea4df8554e39d7c9e5ce0f1282404b005296a0b",
+      "deliverySha256": "2dd142f8e9574d987174cf4c6ea4df8554e39d7c9e5ce0f1282404b005296a0b"
+    },
+    {
+      "path": "functions/shared-rosters.js",
+      "status": "unchanged",
+      "sourceSha256": "42af347b5c22117d787a505d5a31c5fbe11bb73ad69f3da8d4fa65c615a6d7b9",
+      "deliverySha256": "42af347b5c22117d787a505d5a31c5fbe11bb73ad69f3da8d4fa65c615a6d7b9"
+    },
+    {
+      "path": "functions/subject-roster-reset.js",
+      "status": "unchanged",
+      "sourceSha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "deliverySha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4"
+    },
+    {
+      "path": "functions/support-broadcast.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "f9c785e8cfdd33c222d3bf48fa2c121c2a35e9931bab69920637c7a30c079739",
+      "deliverySha256": "1d28f581694da3a1f0095a9052f6761a30f2015bcc91fb14101a6ee8f6a1285e"
+    },
+    {
+      "path": "functions/support-chat.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "2525ba86e5ea31f31458068dd6ccd512c1350f982a302cca38712f4fff28c027",
+      "deliverySha256": "3a604612dc7f57581837f3745ce78d3a18595ed9849297498e5fb57a2268cbff"
+    },
+    {
+      "path": "functions/support-mailbox.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "0ea3490eab57876472c9e8b7a2d0abdea0c14801e17bbe394d942b1baba2c4f9",
+      "deliverySha256": "5a38c831688f7908a77795b3a06b1ff3b50c2e7019efcb2a9df4996d995e4fb5"
+    },
+    {
+      "path": "functions/test/account-presence.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "52dbd58a98d835f366ded05a087bbc225ec93d97ea4f1f14d36ef89e299f437c",
+      "deliverySha256": "52dbd58a98d835f366ded05a087bbc225ec93d97ea4f1f14d36ef89e299f437c"
+    },
+    {
+      "path": "functions/test/admin-options.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "6eb0947c6a140ca9b22d04bcde2f13d3054dcb433a390d1370a001abce7d5736",
+      "deliverySha256": "6eb0947c6a140ca9b22d04bcde2f13d3054dcb433a390d1370a001abce7d5736"
+    },
+    {
+      "path": "functions/test/closed-lecture-workspace.test.js",
+      "status": "unchanged",
+      "sourceSha256": "4ad1be839ca9a267fed9a1696964b14a74794b9d87d03c8d1adb1993ba5e6502",
+      "deliverySha256": "4ad1be839ca9a267fed9a1696964b14a74794b9d87d03c8d1adb1993ba5e6502"
+    },
+    {
+      "path": "functions/test/consolidation.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "4e7539dd6e23b639cd4c71b914e946602dfcdf1dc939f5b4b7974c983d5e94c9",
+      "deliverySha256": "4e7539dd6e23b639cd4c71b914e946602dfcdf1dc939f5b4b7974c983d5e94c9"
+    },
+    {
+      "path": "functions/test/device-live-sync.test.js",
+      "status": "unchanged",
+      "sourceSha256": "6e51466bb6e95cc442fd535b1014921b2e8608f53f6de2f7183b3138c4887164",
+      "deliverySha256": "6e51466bb6e95cc442fd535b1014921b2e8608f53f6de2f7183b3138c4887164"
+    },
+    {
+      "path": "functions/test/lecture-lifecycle.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "deliverySha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6"
+    },
+    {
+      "path": "functions/test/legacy-elapsed-close.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "7370804d26289c8996720b62216f71874623e33468d28c500e1101dc7157ba27",
+      "deliverySha256": "7370804d26289c8996720b62216f71874623e33468d28c500e1101dc7157ba27"
+    },
+    {
+      "path": "functions/test/live-fixture.cjs",
+      "status": "unchanged",
+      "sourceSha256": "65390492711168a916ee6b0e9137f905fec773ee7346eb6f89127f90304fb466",
+      "deliverySha256": "65390492711168a916ee6b0e9137f905fec773ee7346eb6f89127f90304fb466"
+    },
+    {
+      "path": "functions/test/name-attendance.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "e480cbe9f0979db6df3e73498dd2808cbc1965b3d5bac361244eb69b44177db3",
+      "deliverySha256": "e480cbe9f0979db6df3e73498dd2808cbc1965b3d5bac361244eb69b44177db3"
+    },
+    {
+      "path": "functions/test/official-correction.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "926ef578afbf2c93008306c13fc10f08def34b6486d4d163fe9b3579c9daf2e8",
+      "deliverySha256": "926ef578afbf2c93008306c13fc10f08def34b6486d4d163fe9b3579c9daf2e8"
+    },
+    {
+      "path": "functions/test/offline-corrections-server.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "006e5504558e31a9de53af0c538bff77f03dccfe5abaabfcd5437d552a71fe99",
+      "deliverySha256": "006e5504558e31a9de53af0c538bff77f03dccfe5abaabfcd5437d552a71fe99"
+    },
+    {
+      "path": "functions/test/offline-server.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "deliverySha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7"
+    },
+    {
+      "path": "functions/test/personal-workspace.test.js",
+      "status": "unchanged",
+      "sourceSha256": "51820d09aaf6ed34fb3210f74fc34e3f2016e0c117026ae9145fa1c639e4d9b5",
+      "deliverySha256": "51820d09aaf6ed34fb3210f74fc34e3f2016e0c117026ae9145fa1c639e4d9b5"
+    },
+    {
+      "path": "functions/test/preview-close.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "521bf098da55a4f28e5c3443126c6a481d9ce8cca90ea21a1052b48b70d2be39",
+      "deliverySha256": "521bf098da55a4f28e5c3443126c6a481d9ce8cca90ea21a1052b48b70d2be39"
+    },
+    {
+      "path": "functions/test/private-scope-roster.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "e11f56d37f5667dc81d71da82d37b768b980887eff431baa5346e6db7522afd8",
+      "deliverySha256": "e11f56d37f5667dc81d71da82d37b768b980887eff431baa5346e6db7522afd8"
+    },
+    {
+      "path": "functions/test/private-share-fixture.cjs",
+      "status": "unchanged",
+      "sourceSha256": "2cbe5d9de8ace119f44f7cf3261aac6258befa945fb4289cdadf3b74556b4799",
+      "deliverySha256": "2cbe5d9de8ace119f44f7cf3261aac6258befa945fb4289cdadf3b74556b4799"
+    },
+    {
+      "path": "functions/test/private-share.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "261ab78ad479a21b138f71b47fa70731774210328b1a64a15825133e5a9b53b0",
+      "deliverySha256": "261ab78ad479a21b138f71b47fa70731774210328b1a64a15825133e5a9b53b0"
+    },
+    {
+      "path": "functions/test/production-roster-sources.test.js",
+      "status": "unchanged",
+      "sourceSha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "deliverySha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a"
+    },
+    {
+      "path": "functions/test/registration-pagination.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "309790b7ba7ce8f5fd979bf50bee843a154d5138fc2566d863a865fb3fd471d2",
+      "deliverySha256": "309790b7ba7ce8f5fd979bf50bee843a154d5138fc2566d863a865fb3fd471d2"
+    },
+    {
+      "path": "functions/test/retired-civil.test.js",
+      "status": "unchanged",
+      "sourceSha256": "8dc9d1e8d8bd95e6e817774cb455a3ea0ce2f535bca4a259e9c7a0ba24a1d463",
+      "deliverySha256": "8dc9d1e8d8bd95e6e817774cb455a3ea0ce2f535bca4a259e9c7a0ba24a1d463"
+    },
+    {
+      "path": "functions/test/retired-shared-roster.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "674680518f936fbc810f4f1021eda229950c97f1da10ee163abfc7c3eed88432",
+      "deliverySha256": "674680518f936fbc810f4f1021eda229950c97f1da10ee163abfc7c3eed88432"
+    },
+    {
+      "path": "functions/test/roster700.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "2453df95a7104125d3b44258b14d0b84416ce0ee28fba466a7a9cadc5ff0dade",
+      "deliverySha256": "2453df95a7104125d3b44258b14d0b84416ce0ee28fba466a7a9cadc5ff0dade"
+    },
+    {
+      "path": "functions/test/subject-roster-reset.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "deliverySha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b"
+    },
+    {
+      "path": "functions/test/summary-read-fence.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "ca9692b15594d42d779832db4a7b8e7a13dd465563dc52d46c8124f967d5f994",
+      "deliverySha256": "ca9692b15594d42d779832db4a7b8e7a13dd465563dc52d46c8124f967d5f994"
+    },
+    {
+      "path": "functions/weekly-approval.js",
+      "status": "unchanged",
+      "sourceSha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "deliverySha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65"
+    },
+    {
+      "path": "netlify_site/assets/fonts/font-checksums.json",
+      "status": "unchanged",
+      "sourceSha256": "007f042deb8f94d3b030ddc759d6e2d88addd4aac4329e45af3275c4dbae203f",
+      "deliverySha256": "007f042deb8f94d3b030ddc759d6e2d88addd4aac4329e45af3275c4dbae203f"
+    },
+    {
+      "path": "netlify_site/assets/fonts/OFL.txt",
+      "status": "unchanged",
+      "sourceSha256": "9b584984f9db0ee30347391a76eff9c0a6b03dc450c3c6afe3757a2cb3a4db87",
+      "deliverySha256": "9b584984f9db0ee30347391a76eff9c0a6b03dc450c3c6afe3757a2cb3a4db87"
+    },
+    {
+      "path": "netlify_site/assets/fonts/README.md",
+      "status": "unchanged",
+      "sourceSha256": "4417297717fad8e7f617c9079fb441e804c3cd24dac5e7bc5437506f24a86943",
+      "deliverySha256": "4417297717fad8e7f617c9079fb441e804c3cd24dac5e7bc5437506f24a86943"
+    },
+    {
+      "path": "netlify_site/assets/fonts/Tajawal-Black.ttf",
+      "status": "unchanged",
+      "sourceSha256": "da582a579d3200869535dc994d2349608a8582042f8776b3679b157015db287c",
+      "deliverySha256": "da582a579d3200869535dc994d2349608a8582042f8776b3679b157015db287c"
+    },
+    {
+      "path": "netlify_site/assets/fonts/Tajawal-Bold.ttf",
+      "status": "unchanged",
+      "sourceSha256": "0342ab6b74b6bd1b4b5bf7beda45a9734a2b3147a31e8a3a45b6a3417a52d9d7",
+      "deliverySha256": "0342ab6b74b6bd1b4b5bf7beda45a9734a2b3147a31e8a3a45b6a3417a52d9d7"
+    },
+    {
+      "path": "netlify_site/assets/fonts/Tajawal-ExtraBold.ttf",
+      "status": "unchanged",
+      "sourceSha256": "3d1298b747c22579f9e1bdeb0d4165064cb17f7e66145e2f43f9deb12ad7a2cf",
+      "deliverySha256": "3d1298b747c22579f9e1bdeb0d4165064cb17f7e66145e2f43f9deb12ad7a2cf"
+    },
+    {
+      "path": "netlify_site/assets/fonts/Tajawal-Light.ttf",
+      "status": "unchanged",
+      "sourceSha256": "ab26ed3e0c5af2c71b469b5780decff8088d290ab91aa29b07321580136e813a",
+      "deliverySha256": "ab26ed3e0c5af2c71b469b5780decff8088d290ab91aa29b07321580136e813a"
+    },
+    {
+      "path": "netlify_site/assets/fonts/Tajawal-Medium.ttf",
+      "status": "unchanged",
+      "sourceSha256": "1ff8bd943a261c9dd7906bdb1993cab87b6d925a7fb5f848cdb51ed301531090",
+      "deliverySha256": "1ff8bd943a261c9dd7906bdb1993cab87b6d925a7fb5f848cdb51ed301531090"
+    },
+    {
+      "path": "netlify_site/assets/fonts/Tajawal-Regular.ttf",
+      "status": "unchanged",
+      "sourceSha256": "6882892da3e03527d5db2bbab3b48bde6ef2e878a43f522d1a4eebda90010a19",
+      "deliverySha256": "6882892da3e03527d5db2bbab3b48bde6ef2e878a43f522d1a4eebda90010a19"
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/add.mp3",
+      "status": "excluded",
+      "bytes": 232732
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/camera.mp3",
+      "status": "excluded",
+      "bytes": 339730
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/close.mp3",
+      "status": "excluded",
+      "bytes": 344328
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/confirm.mp3",
+      "status": "excluded",
+      "bytes": 273692
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/course.mp3",
+      "status": "excluded",
+      "bytes": 287067
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/department.mp3",
+      "status": "excluded",
+      "bytes": 240256
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/face-open.mp3",
+      "status": "excluded",
+      "bytes": 329281
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/face-save.mp3",
+      "status": "excluded",
+      "bytes": 253630
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/hours.mp3",
+      "status": "excluded",
+      "bytes": 307965
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/import.mp3",
+      "status": "excluded",
+      "bytes": 312981
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/name.mp3",
+      "status": "excluded",
+      "bytes": 289993
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/profile-close.mp3",
+      "status": "excluded",
+      "bytes": 231897
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/qr.mp3",
+      "status": "excluded",
+      "bytes": 253630
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/record.mp3",
+      "status": "excluded",
+      "bytes": 269095
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/scan.mp3",
+      "status": "excluded",
+      "bytes": 321340
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/select.mp3",
+      "status": "excluded",
+      "bytes": 223119
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/setup-close.mp3",
+      "status": "excluded",
+      "bytes": 228135
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/stage.mp3",
+      "status": "excluded",
+      "bytes": 239420
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/subject.mp3",
+      "status": "excluded",
+      "bytes": 239420
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v1/sync.mp3",
+      "status": "excluded",
+      "bytes": 396154
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/add.mp3",
+      "status": "excluded",
+      "bytes": 154156
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/camera.mp3",
+      "status": "excluded",
+      "bytes": 222283
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/close.mp3",
+      "status": "excluded",
+      "bytes": 190519
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/confirm.mp3",
+      "status": "excluded",
+      "bytes": 190519
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/course.mp3",
+      "status": "excluded",
+      "bytes": 174218
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/department.mp3",
+      "status": "excluded",
+      "bytes": 165023
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/face-open.mp3",
+      "status": "excluded",
+      "bytes": 185085
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/face-save.mp3",
+      "status": "excluded",
+      "bytes": 190937
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/hours.mp3",
+      "status": "excluded",
+      "bytes": 205983
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/import.mp3",
+      "status": "excluded",
+      "bytes": 205147
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/name.mp3",
+      "status": "excluded",
+      "bytes": 199296
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/profile-close.mp3",
+      "status": "excluded",
+      "bytes": 183831
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/qr.mp3",
+      "status": "excluded",
+      "bytes": 223955
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/record.mp3",
+      "status": "excluded",
+      "bytes": 211834
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/scan.mp3",
+      "status": "excluded",
+      "bytes": 192608
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/select.mp3",
+      "status": "excluded",
+      "bytes": 170457
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/setup-close.mp3",
+      "status": "excluded",
+      "bytes": 179234
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/stage.mp3",
+      "status": "excluded",
+      "bytes": 165859
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/subject.mp3",
+      "status": "excluded",
+      "bytes": 165023
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/sync.mp3",
+      "status": "excluded",
+      "bytes": 231897
+    },
+    {
+      "path": "netlify_site/assets/guide-abdullah-v2/welcome.mp3",
+      "status": "excluded",
+      "bytes": 223955
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/add.mp3",
+      "status": "excluded",
+      "bytes": 92880
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/camera.mp3",
+      "status": "excluded",
+      "bytes": 125856
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/close.mp3",
+      "status": "excluded",
+      "bytes": 132912
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/confirm.mp3",
+      "status": "excluded",
+      "bytes": 108000
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/course.mp3",
+      "status": "excluded",
+      "bytes": 111312
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/department.mp3",
+      "status": "excluded",
+      "bytes": 91872
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/face-open.mp3",
+      "status": "excluded",
+      "bytes": 130752
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/face-save.mp3",
+      "status": "excluded",
+      "bytes": 101952
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/hours.mp3",
+      "status": "excluded",
+      "bytes": 116928
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/import.mp3",
+      "status": "excluded",
+      "bytes": 126432
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/name.mp3",
+      "status": "excluded",
+      "bytes": 110304
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/profile-close.mp3",
+      "status": "excluded",
+      "bytes": 94032
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/qr.mp3",
+      "status": "excluded",
+      "bytes": 104400
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/record.mp3",
+      "status": "excluded",
+      "bytes": 106848
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/scan.mp3",
+      "status": "excluded",
+      "bytes": 120960
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/select.mp3",
+      "status": "excluded",
+      "bytes": 79344
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/setup-close.mp3",
+      "status": "excluded",
+      "bytes": 92448
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/stage.mp3",
+      "status": "excluded",
+      "bytes": 92880
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/subject.mp3",
+      "status": "excluded",
+      "bytes": 89568
+    },
+    {
+      "path": "netlify_site/assets/guide-ar-v1/sync.mp3",
+      "status": "excluded",
+      "bytes": 150768
+    },
+    {
+      "path": "netlify_site/assets/hathir-apple-180-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "83d68f30399a9aa6cd00da3846ee2bdb9864c5c371167940cd582067056806dd",
+      "deliverySha256": "83d68f30399a9aa6cd00da3846ee2bdb9864c5c371167940cd582067056806dd"
+    },
+    {
+      "path": "netlify_site/assets/hathir-brand-768-20260914.webp",
+      "status": "unchanged",
+      "sourceSha256": "9b02a246e9fa22121cd3c21c50215fa938c97f9f7985f579595f96f9f08a91a7",
+      "deliverySha256": "9b02a246e9fa22121cd3c21c50215fa938c97f9f7985f579595f96f9f08a91a7"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-apple-180-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "1c2f0814295fe91f9bbf2a434db82956535e674e6293cae89b4f589645cb6692",
+      "deliverySha256": "1c2f0814295fe91f9bbf2a434db82956535e674e6293cae89b4f589645cb6692"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-favicon-32-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "e973c4438d65f3ffe6025a69e4a74bbf592363c155b18b4138a3d41823ac6693",
+      "deliverySha256": "e973c4438d65f3ffe6025a69e4a74bbf592363c155b18b4138a3d41823ac6693"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-favicon-64-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "dadc6d525fd945b349f45739024247ca88fbd15c94e165c8b160056d67bc0dbf",
+      "deliverySha256": "dadc6d525fd945b349f45739024247ca88fbd15c94e165c8b160056d67bc0dbf"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-icon-192-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "cf369fda7ae1f7433dd0fe886eb8c04d4bf17739eb729f37f594fdaeb9b49b9a",
+      "deliverySha256": "cf369fda7ae1f7433dd0fe886eb8c04d4bf17739eb729f37f594fdaeb9b49b9a"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-icon-512-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "107cb5fc8ec123d695872560686e07501962679668af4f06dd3c9955d421b230",
+      "deliverySha256": "107cb5fc8ec123d695872560686e07501962679668af4f06dd3c9955d421b230"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-large-apple-180-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "b4a7fb08817e9af1422336225ce070d3a6107a311a66b1fcdfd99246c7c6af8e",
+      "deliverySha256": "b4a7fb08817e9af1422336225ce070d3a6107a311a66b1fcdfd99246c7c6af8e"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-large-favicon-32-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "e6cf39113d66e41f30a3c83ff7ab41427abd86db925592d0f588a401b475a1cf",
+      "deliverySha256": "e6cf39113d66e41f30a3c83ff7ab41427abd86db925592d0f588a401b475a1cf"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-large-favicon-64-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "ecdf08392585860db9b50a04204c151cacd26bbde94f1aaedab629dfb7c57c24",
+      "deliverySha256": "ecdf08392585860db9b50a04204c151cacd26bbde94f1aaedab629dfb7c57c24"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-large-icon-192-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "b7b0432c607e6bc8769357362755e67049bbd298f7e1cb62873e06e3eb690170",
+      "deliverySha256": "b7b0432c607e6bc8769357362755e67049bbd298f7e1cb62873e06e3eb690170"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-large-icon-512-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "6bd3d1b8f78bf8f58a54fe64f84b330858ed35ab2e28aa108c2186b6c7f998fd",
+      "deliverySha256": "6bd3d1b8f78bf8f58a54fe64f84b330858ed35ab2e28aa108c2186b6c7f998fd"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-large-maskable-512-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "d3a4d129cd41b494e034e7e2e1bb61134bf0588ca3629e67252c5fd78da3e21b",
+      "deliverySha256": "d3a4d129cd41b494e034e7e2e1bb61134bf0588ca3629e67252c5fd78da3e21b"
+    },
+    {
+      "path": "netlify_site/assets/hathir-check-maskable-512-20260929.png",
+      "status": "unchanged",
+      "sourceSha256": "72dd36fa0d50257f5baa46ac26214abfd85cbafab560cb0047b282a3d275a4a6",
+      "deliverySha256": "72dd36fa0d50257f5baa46ac26214abfd85cbafab560cb0047b282a3d275a4a6"
+    },
+    {
+      "path": "netlify_site/assets/hathir-favicon-32-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "3b9348631ba82c9ee1aca763493cf22aca18b3581d7b977b82fbca3254915387",
+      "deliverySha256": "3b9348631ba82c9ee1aca763493cf22aca18b3581d7b977b82fbca3254915387"
+    },
+    {
+      "path": "netlify_site/assets/hathir-favicon-64-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "dcade5cfc7e1792feacdbafa8bf579e5d050d2bff991298bbb8731879ad37cc8",
+      "deliverySha256": "dcade5cfc7e1792feacdbafa8bf579e5d050d2bff991298bbb8731879ad37cc8"
+    },
+    {
+      "path": "netlify_site/assets/hathir-green-apple-180-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "d6cff15201fdb752d6f5d57a4e6bc8a4e92a429b3acd7d813f5f767a8284f2e3",
+      "deliverySha256": "d6cff15201fdb752d6f5d57a4e6bc8a4e92a429b3acd7d813f5f767a8284f2e3"
+    },
+    {
+      "path": "netlify_site/assets/hathir-green-brand-768-20260914.webp",
+      "status": "unchanged",
+      "sourceSha256": "65349a2fcf6cdafa9eb010660d5b31eba92512caa0fe706fa330182ec9a2b987",
+      "deliverySha256": "65349a2fcf6cdafa9eb010660d5b31eba92512caa0fe706fa330182ec9a2b987"
+    },
+    {
+      "path": "netlify_site/assets/hathir-green-favicon-32-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "2fb4a8a2554067ca0380a6bff3a48fd1f86ecfe07f731d6f3725e15201e7af00",
+      "deliverySha256": "2fb4a8a2554067ca0380a6bff3a48fd1f86ecfe07f731d6f3725e15201e7af00"
+    },
+    {
+      "path": "netlify_site/assets/hathir-green-favicon-64-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "591a9c2f828f5f530b5c1aa897f5fb9ff989a810b5d576acf75d90093241321d",
+      "deliverySha256": "591a9c2f828f5f530b5c1aa897f5fb9ff989a810b5d576acf75d90093241321d"
+    },
+    {
+      "path": "netlify_site/assets/hathir-green-icon-192-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "f1d1656bfbf22df07f17cd284e45d72a16f64d8710d68950f7247815dd73fba5",
+      "deliverySha256": "f1d1656bfbf22df07f17cd284e45d72a16f64d8710d68950f7247815dd73fba5"
+    },
+    {
+      "path": "netlify_site/assets/hathir-green-icon-512-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "a4478d58d6d5d438249c0b0ffcaae3ca96b3c91a1e7be19bd3a17f2d30cb90f0",
+      "deliverySha256": "a4478d58d6d5d438249c0b0ffcaae3ca96b3c91a1e7be19bd3a17f2d30cb90f0"
+    },
+    {
+      "path": "netlify_site/assets/hathir-green-maskable-512-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "f48980caceac9893c9c9ed2e275c72f26c1755983347a421fd7cdf60e21c2eec",
+      "deliverySha256": "f48980caceac9893c9c9ed2e275c72f26c1755983347a421fd7cdf60e21c2eec"
+    },
+    {
+      "path": "netlify_site/assets/hathir-icon-192-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "1ef0e8d23d78ad92b89b794f24c7817f01319a3a5991068866c330b63a5d9cf6",
+      "deliverySha256": "1ef0e8d23d78ad92b89b794f24c7817f01319a3a5991068866c330b63a5d9cf6"
+    },
+    {
+      "path": "netlify_site/assets/hathir-icon-512-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "9e46e3e1ecaeaeb1fd2915d548c057a4b50ee76d45aa25be05c8627e259ceef6",
+      "deliverySha256": "9e46e3e1ecaeaeb1fd2915d548c057a4b50ee76d45aa25be05c8627e259ceef6"
+    },
+    {
+      "path": "netlify_site/assets/hathir-maskable-512-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "ca2514aea75c0722a0fd4c8b1a1382503296cb8c37403342d1673a43fdf2cb19",
+      "deliverySha256": "ca2514aea75c0722a0fd4c8b1a1382503296cb8c37403342d1673a43fdf2cb19"
+    },
+    {
+      "path": "netlify_site/assets/hathir-white-apple-180-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "5342e395f86973c3b6a1b62bb6df95c15d757a2184ed7ea8efae7bebc7f913a9",
+      "deliverySha256": "5342e395f86973c3b6a1b62bb6df95c15d757a2184ed7ea8efae7bebc7f913a9"
+    },
+    {
+      "path": "netlify_site/assets/hathir-white-brand-768-20260914.webp",
+      "status": "unchanged",
+      "sourceSha256": "599fe30c9a6dd885495d8bb43c2e5d138f9f0283e7d9343582a8b2d4cfe99711",
+      "deliverySha256": "599fe30c9a6dd885495d8bb43c2e5d138f9f0283e7d9343582a8b2d4cfe99711"
+    },
+    {
+      "path": "netlify_site/assets/hathir-white-favicon-32-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "0d595f865594411febba31f3605f606b0daf51d1195855dfbc3f59e8ff062f65",
+      "deliverySha256": "0d595f865594411febba31f3605f606b0daf51d1195855dfbc3f59e8ff062f65"
+    },
+    {
+      "path": "netlify_site/assets/hathir-white-favicon-64-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "7f6df6607ddfad962a1439322ebd5d82c29a7c7193e8168ca73dfaa90345f724",
+      "deliverySha256": "7f6df6607ddfad962a1439322ebd5d82c29a7c7193e8168ca73dfaa90345f724"
+    },
+    {
+      "path": "netlify_site/assets/hathir-white-icon-192-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "41f57199138085605d7b9c27364812571d15b927158406ac21d763b9dc6aac19",
+      "deliverySha256": "41f57199138085605d7b9c27364812571d15b927158406ac21d763b9dc6aac19"
+    },
+    {
+      "path": "netlify_site/assets/hathir-white-icon-512-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "86bc25049cdecfd561c3ca94fba5f83577dd94d785b65dcbeb9b1a227afe5252",
+      "deliverySha256": "86bc25049cdecfd561c3ca94fba5f83577dd94d785b65dcbeb9b1a227afe5252"
+    },
+    {
+      "path": "netlify_site/assets/hathir-white-maskable-512-20260914.png",
+      "status": "unchanged",
+      "sourceSha256": "259577cf9caecec72807f005323c205f6a3252a91fb970e2ac8796acf7fdebd4",
+      "deliverySha256": "259577cf9caecec72807f005323c205f6a3252a91fb970e2ac8796acf7fdebd4"
+    },
+    {
+      "path": "netlify_site/assets/help-v1/account.mp4",
+      "status": "excluded",
+      "bytes": 1151517
+    },
+    {
+      "path": "netlify_site/assets/help-v1/account.webp",
+      "status": "excluded",
+      "bytes": 17664
+    },
+    {
+      "path": "netlify_site/assets/help-v1/export.mp4",
+      "status": "excluded",
+      "bytes": 923366
+    },
+    {
+      "path": "netlify_site/assets/help-v1/export.webp",
+      "status": "excluded",
+      "bytes": 20208
+    },
+    {
+      "path": "netlify_site/assets/help-v1/face.mp4",
+      "status": "excluded",
+      "bytes": 718425
+    },
+    {
+      "path": "netlify_site/assets/help-v1/face.webp",
+      "status": "excluded",
+      "bytes": 20898
+    },
+    {
+      "path": "netlify_site/assets/help-v1/lecture.mp4",
+      "status": "excluded",
+      "bytes": 992071
+    },
+    {
+      "path": "netlify_site/assets/help-v1/lecture.webp",
+      "status": "excluded",
+      "bytes": 14882
+    },
+    {
+      "path": "netlify_site/assets/help-v1/manual.mp4",
+      "status": "excluded",
+      "bytes": 1485617
+    },
+    {
+      "path": "netlify_site/assets/help-v1/manual.webp",
+      "status": "excluded",
+      "bytes": 21908
+    },
+    {
+      "path": "netlify_site/assets/help-v1/policy.mp4",
+      "status": "excluded",
+      "bytes": 2002448
+    },
+    {
+      "path": "netlify_site/assets/help-v1/policy.webp",
+      "status": "excluded",
+      "bytes": 21224
+    },
+    {
+      "path": "netlify_site/assets/help-v1/qr.mp4",
+      "status": "excluded",
+      "bytes": 325974
+    },
+    {
+      "path": "netlify_site/assets/help-v1/qr.webp",
+      "status": "excluded",
+      "bytes": 19810
+    },
+    {
+      "path": "netlify_site/assets/help-v1/status.mp4",
+      "status": "excluded",
+      "bytes": 961516
+    },
+    {
+      "path": "netlify_site/assets/help-v1/status.webp",
+      "status": "excluded",
+      "bytes": 21624
+    },
+    {
+      "path": "netlify_site/assets/help-v1/students.mp4",
+      "status": "excluded",
+      "bytes": 949262
+    },
+    {
+      "path": "netlify_site/assets/help-v1/students.webp",
+      "status": "excluded",
+      "bytes": 21318
+    },
+    {
+      "path": "netlify_site/assets/help-v1/subject.mp4",
+      "status": "excluded",
+      "bytes": 1058633
+    },
+    {
+      "path": "netlify_site/assets/help-v1/subject.webp",
+      "status": "excluded",
+      "bytes": 18418
+    },
+    {
+      "path": "netlify_site/assets/help-v1/sync.mp4",
+      "status": "excluded",
+      "bytes": 1432873
+    },
+    {
+      "path": "netlify_site/assets/help-v1/sync.webp",
+      "status": "excluded",
+      "bytes": 25424
+    },
+    {
+      "path": "netlify_site/assets/help-v2/account.mp4",
+      "status": "excluded",
+      "bytes": 2106493
+    },
+    {
+      "path": "netlify_site/assets/help-v2/account.webp",
+      "status": "excluded",
+      "bytes": 11448
+    },
+    {
+      "path": "netlify_site/assets/help-v2/export.mp4",
+      "status": "excluded",
+      "bytes": 2029499
+    },
+    {
+      "path": "netlify_site/assets/help-v2/export.webp",
+      "status": "excluded",
+      "bytes": 27124
+    },
+    {
+      "path": "netlify_site/assets/help-v2/face.mp4",
+      "status": "excluded",
+      "bytes": 4194554
+    },
+    {
+      "path": "netlify_site/assets/help-v2/face.webp",
+      "status": "excluded",
+      "bytes": 24846
+    },
+    {
+      "path": "netlify_site/assets/help-v2/lecture.mp4",
+      "status": "excluded",
+      "bytes": 3334693
+    },
+    {
+      "path": "netlify_site/assets/help-v2/lecture.webp",
+      "status": "excluded",
+      "bytes": 27816
+    },
+    {
+      "path": "netlify_site/assets/help-v2/manual.mp4",
+      "status": "excluded",
+      "bytes": 3255981
+    },
+    {
+      "path": "netlify_site/assets/help-v2/manual.webp",
+      "status": "excluded",
+      "bytes": 26806
+    },
+    {
+      "path": "netlify_site/assets/help-v2/policy.mp4",
+      "status": "excluded",
+      "bytes": 3943496
+    },
+    {
+      "path": "netlify_site/assets/help-v2/policy.webp",
+      "status": "excluded",
+      "bytes": 14398
+    },
+    {
+      "path": "netlify_site/assets/help-v2/qr.mp4",
+      "status": "excluded",
+      "bytes": 819757
+    },
+    {
+      "path": "netlify_site/assets/help-v2/qr.webp",
+      "status": "excluded",
+      "bytes": 24066
+    },
+    {
+      "path": "netlify_site/assets/help-v2/status.mp4",
+      "status": "excluded",
+      "bytes": 1724571
+    },
+    {
+      "path": "netlify_site/assets/help-v2/status.webp",
+      "status": "excluded",
+      "bytes": 16132
+    },
+    {
+      "path": "netlify_site/assets/help-v2/students.mp4",
+      "status": "excluded",
+      "bytes": 2154796
+    },
+    {
+      "path": "netlify_site/assets/help-v2/students.webp",
+      "status": "excluded",
+      "bytes": 25296
+    },
+    {
+      "path": "netlify_site/assets/help-v2/subject.mp4",
+      "status": "excluded",
+      "bytes": 2226587
+    },
+    {
+      "path": "netlify_site/assets/help-v2/subject.webp",
+      "status": "excluded",
+      "bytes": 14854
+    },
+    {
+      "path": "netlify_site/assets/help-v2/sync.mp4",
+      "status": "excluded",
+      "bytes": 3245575
+    },
+    {
+      "path": "netlify_site/assets/help-v2/sync.webp",
+      "status": "excluded",
+      "bytes": 34514
+    },
+    {
+      "path": "netlify_site/assets/help-v3/account.mp4",
+      "status": "excluded",
+      "bytes": 1942116
+    },
+    {
+      "path": "netlify_site/assets/help-v3/account.webp",
+      "status": "excluded",
+      "bytes": 10858
+    },
+    {
+      "path": "netlify_site/assets/help-v3/export.mp4",
+      "status": "excluded",
+      "bytes": 2289725
+    },
+    {
+      "path": "netlify_site/assets/help-v3/export.webp",
+      "status": "excluded",
+      "bytes": 29410
+    },
+    {
+      "path": "netlify_site/assets/help-v3/face.mp4",
+      "status": "excluded",
+      "bytes": 4606784
+    },
+    {
+      "path": "netlify_site/assets/help-v3/face.webp",
+      "status": "excluded",
+      "bytes": 24918
+    },
+    {
+      "path": "netlify_site/assets/help-v3/lecture.mp4",
+      "status": "excluded",
+      "bytes": 2917864
+    },
+    {
+      "path": "netlify_site/assets/help-v3/lecture.webp",
+      "status": "excluded",
+      "bytes": 22808
+    },
+    {
+      "path": "netlify_site/assets/help-v3/manual.mp4",
+      "status": "excluded",
+      "bytes": 3491406
+    },
+    {
+      "path": "netlify_site/assets/help-v3/manual.webp",
+      "status": "excluded",
+      "bytes": 27000
+    },
+    {
+      "path": "netlify_site/assets/help-v3/policy.mp4",
+      "status": "excluded",
+      "bytes": 4118857
+    },
+    {
+      "path": "netlify_site/assets/help-v3/policy.webp",
+      "status": "excluded",
+      "bytes": 14640
+    },
+    {
+      "path": "netlify_site/assets/help-v3/qr.mp4",
+      "status": "excluded",
+      "bytes": 986589
+    },
+    {
+      "path": "netlify_site/assets/help-v3/qr.webp",
+      "status": "excluded",
+      "bytes": 24206
+    },
+    {
+      "path": "netlify_site/assets/help-v3/status.mp4",
+      "status": "excluded",
+      "bytes": 1645282
+    },
+    {
+      "path": "netlify_site/assets/help-v3/status.webp",
+      "status": "excluded",
+      "bytes": 16258
+    },
+    {
+      "path": "netlify_site/assets/help-v3/students.mp4",
+      "status": "excluded",
+      "bytes": 2470555
+    },
+    {
+      "path": "netlify_site/assets/help-v3/students.webp",
+      "status": "excluded",
+      "bytes": 25556
+    },
+    {
+      "path": "netlify_site/assets/help-v3/subject.mp4",
+      "status": "excluded",
+      "bytes": 2369241
+    },
+    {
+      "path": "netlify_site/assets/help-v3/subject.webp",
+      "status": "excluded",
+      "bytes": 15778
+    },
+    {
+      "path": "netlify_site/assets/help-v3/sync.mp4",
+      "status": "excluded",
+      "bytes": 3561382
+    },
+    {
+      "path": "netlify_site/assets/help-v3/sync.webp",
+      "status": "excluded",
+      "bytes": 34630
+    },
+    {
+      "path": "netlify_site/assets/help-v4/account.mp4",
+      "status": "excluded",
+      "bytes": 1757042
+    },
+    {
+      "path": "netlify_site/assets/help-v4/account.webp",
+      "status": "excluded",
+      "bytes": 17942
+    },
+    {
+      "path": "netlify_site/assets/help-v4/export.mp4",
+      "status": "excluded",
+      "bytes": 1560841
+    },
+    {
+      "path": "netlify_site/assets/help-v4/export.webp",
+      "status": "excluded",
+      "bytes": 30312
+    },
+    {
+      "path": "netlify_site/assets/help-v4/face.mp4",
+      "status": "excluded",
+      "bytes": 2964955
+    },
+    {
+      "path": "netlify_site/assets/help-v4/face.webp",
+      "status": "excluded",
+      "bytes": 21582
+    },
+    {
+      "path": "netlify_site/assets/help-v4/lecture.mp4",
+      "status": "excluded",
+      "bytes": 1865638
+    },
+    {
+      "path": "netlify_site/assets/help-v4/lecture.webp",
+      "status": "excluded",
+      "bytes": 2570
+    },
+    {
+      "path": "netlify_site/assets/help-v4/manual.mp4",
+      "status": "excluded",
+      "bytes": 2336216
+    },
+    {
+      "path": "netlify_site/assets/help-v4/manual.webp",
+      "status": "excluded",
+      "bytes": 25636
+    },
+    {
+      "path": "netlify_site/assets/help-v4/policy.mp4",
+      "status": "excluded",
+      "bytes": 3096687
+    },
+    {
+      "path": "netlify_site/assets/help-v4/policy.webp",
+      "status": "excluded",
+      "bytes": 23884
+    },
+    {
+      "path": "netlify_site/assets/help-v4/qr.mp4",
+      "status": "excluded",
+      "bytes": 665601
+    },
+    {
+      "path": "netlify_site/assets/help-v4/qr.webp",
+      "status": "excluded",
+      "bytes": 24222
+    },
+    {
+      "path": "netlify_site/assets/help-v4/status.mp4",
+      "status": "excluded",
+      "bytes": 1446889
+    },
+    {
+      "path": "netlify_site/assets/help-v4/status.webp",
+      "status": "excluded",
+      "bytes": 22068
+    },
+    {
+      "path": "netlify_site/assets/help-v4/students.mp4",
+      "status": "excluded",
+      "bytes": 1482594
+    },
+    {
+      "path": "netlify_site/assets/help-v4/students.webp",
+      "status": "excluded",
+      "bytes": 20654
+    },
+    {
+      "path": "netlify_site/assets/help-v4/subject.mp4",
+      "status": "excluded",
+      "bytes": 1674704
+    },
+    {
+      "path": "netlify_site/assets/help-v4/subject.webp",
+      "status": "excluded",
+      "bytes": 27966
+    },
+    {
+      "path": "netlify_site/assets/help-v4/sync.mp4",
+      "status": "excluded",
+      "bytes": 2569111
+    },
+    {
+      "path": "netlify_site/assets/help-v4/sync.webp",
+      "status": "excluded",
+      "bytes": 46494
+    },
+    {
+      "path": "netlify_site/assets/help-v5/teacher-guide.mp4",
+      "status": "excluded",
+      "bytes": 19556369
+    },
+    {
+      "path": "netlify_site/assets/heroicons-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+      "deliverySha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "path": "netlify_site/assets/lucide-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
+      "deliverySha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+    },
+    {
+      "path": "netlify_site/assets/student-attendance-icon.png",
+      "status": "unchanged",
+      "sourceSha256": "c4aaf27ef1f6ee4998075655bd80615d0ef86ae6540f81cc6962d3fb4af799d9",
+      "deliverySha256": "c4aaf27ef1f6ee4998075655bd80615d0ef86ae6540f81cc6962d3fb4af799d9"
+    },
+    {
+      "path": "netlify_site/attendance-tones.js",
+      "status": "unchanged",
+      "sourceSha256": "ad41847a0a89b7f68eba00a1bd6f72d6fb1c2fc3b2282afc03c5d1816befdc68",
+      "deliverySha256": "ad41847a0a89b7f68eba00a1bd6f72d6fb1c2fc3b2282afc03c5d1816befdc68"
+    },
+    {
+      "path": "netlify_site/beginner-ui.css",
+      "status": "unchanged",
+      "sourceSha256": "79a7c12b6165e494d5b706e4d8c12987383d30fef8e3211dc5a9dfa18f89921a",
+      "deliverySha256": "79a7c12b6165e494d5b706e4d8c12987383d30fef8e3211dc5a9dfa18f89921a"
+    },
+    {
+      "path": "netlify_site/beginner-ui.js",
+      "status": "unchanged",
+      "sourceSha256": "c461cd4e643501a0e471407f6c29805f8090523f14e66043864579727d94e31a",
+      "deliverySha256": "c461cd4e643501a0e471407f6c29805f8090523f14e66043864579727d94e31a"
+    },
+    {
+      "path": "netlify_site/card-readers.js",
+      "status": "unchanged",
+      "sourceSha256": "5edfc158ed0d57b50f523a324a05a3b331ab33062bd6a1ef367ba93315a28fe3",
+      "deliverySha256": "5edfc158ed0d57b50f523a324a05a3b331ab33062bd6a1ef367ba93315a28fe3"
+    },
+    {
+      "path": "netlify_site/consolidation-model.js",
+      "status": "unchanged",
+      "sourceSha256": "a57e5583927c2160bfcd1baa9ec2ffe2225acf3f243d25307940a8c36e6eadc5",
+      "deliverySha256": "a57e5583927c2160bfcd1baa9ec2ffe2225acf3f243d25307940a8c36e6eadc5"
+    },
+    {
+      "path": "netlify_site/consolidation.css",
+      "status": "unchanged",
+      "sourceSha256": "4c15d77ba58d1e9698bda9f1f684a8065ba56bf31fc59755bf24baf4ada98956",
+      "deliverySha256": "4c15d77ba58d1e9698bda9f1f684a8065ba56bf31fc59755bf24baf4ada98956"
+    },
+    {
+      "path": "netlify_site/consolidation.js",
+      "status": "unchanged",
+      "sourceSha256": "ec0611a6701e2e003a4e45b6ec952e04f5dce1e0e6e21dc1477322d0320d9099",
+      "deliverySha256": "ec0611a6701e2e003a4e45b6ec952e04f5dce1e0e6e21dc1477322d0320d9099"
+    },
+    {
+      "path": "netlify_site/department-tools.css",
+      "status": "unchanged",
+      "sourceSha256": "c7ce36c4b6ffdbdc2d60912e135cfe129b3089b972bf45d9ee303bf8877bcf03",
+      "deliverySha256": "c7ce36c4b6ffdbdc2d60912e135cfe129b3089b972bf45d9ee303bf8877bcf03"
+    },
+    {
+      "path": "netlify_site/department-tools.js",
+      "status": "unchanged",
+      "sourceSha256": "bfb15b4941db1e23b9e5dd8c9e781e5211c0a62d2a25c934bebddbb43d188d6a",
+      "deliverySha256": "bfb15b4941db1e23b9e5dd8c9e781e5211c0a62d2a25c934bebddbb43d188d6a"
+    },
+    {
+      "path": "netlify_site/device-sync-model.js",
+      "status": "unchanged",
+      "sourceSha256": "209f623c7fd655e09f5101ead835e8e59f7eea5a477113ea8418b0af1d4e96fe",
+      "deliverySha256": "209f623c7fd655e09f5101ead835e8e59f7eea5a477113ea8418b0af1d4e96fe"
+    },
+    {
+      "path": "netlify_site/device-workspace-store.js",
+      "status": "unchanged",
+      "sourceSha256": "0ea0817c88059c822676fa40316f647f41944b95c913f6e92798950df909e3d9",
+      "deliverySha256": "0ea0817c88059c822676fa40316f647f41944b95c913f6e92798950df909e3d9"
+    },
+    {
+      "path": "netlify_site/device-workspace.css",
+      "status": "unchanged",
+      "sourceSha256": "6b832cb7368d9f2d66819b961e150b78b5c3fe8417204b381418325e3365d8c3",
+      "deliverySha256": "6b832cb7368d9f2d66819b961e150b78b5c3fe8417204b381418325e3365d8c3"
+    },
+    {
+      "path": "netlify_site/device-workspace.js",
+      "status": "unchanged",
+      "sourceSha256": "6c33a5a51c3787239ca8d960a0b9358c745f1c08e0d5d116e3b48592f41e31df",
+      "deliverySha256": "6c33a5a51c3787239ca8d960a0b9358c745f1c08e0d5d116e3b48592f41e31df"
+    },
+    {
+      "path": "netlify_site/fonts.css",
+      "status": "unchanged",
+      "sourceSha256": "ddfd55a2f39005feb10695dd95fd3645a9b735ecb93f84971ae8f5c2523628ee",
+      "deliverySha256": "ddfd55a2f39005feb10695dd95fd3645a9b735ecb93f84971ae8f5c2523628ee"
+    },
+    {
+      "path": "netlify_site/guide-lessons.js",
+      "status": "unchanged",
+      "sourceSha256": "29349fa4e2e719dff0be57c63c1595b4dcebd98d1550766cef09fc469d748e7b",
+      "deliverySha256": "29349fa4e2e719dff0be57c63c1595b4dcebd98d1550766cef09fc469d748e7b"
+    },
+    {
+      "path": "netlify_site/guide.html",
+      "status": "delivery adaptation",
+      "sourceSha256": "0144444920c32f71bc8ba6d5deddee28bbf9c9ba54683389cd70ff5e1325c300",
+      "deliverySha256": "ac108ff615eccd23ed9c6be64e3b0aa7b8c209448f7d002506b2c9cf16819846"
+    },
+    {
+      "path": "netlify_site/help-catalog.js",
+      "status": "unchanged",
+      "sourceSha256": "23a98ffdb051a90e077279ac402301445aa7f0624c480771237245ff51d1023b",
+      "deliverySha256": "23a98ffdb051a90e077279ac402301445aa7f0624c480771237245ff51d1023b"
+    },
+    {
+      "path": "netlify_site/help.css",
+      "status": "unchanged",
+      "sourceSha256": "8e41025ccf24595a59e8d020dcc4fc9cf56abfc261465927d3ac8b709c690231",
+      "deliverySha256": "8e41025ccf24595a59e8d020dcc4fc9cf56abfc261465927d3ac8b709c690231"
+    },
+    {
+      "path": "netlify_site/help.html",
+      "status": "unchanged",
+      "sourceSha256": "9d20b9951910605fc491c0d7df71a858e976e6d63f222ba22be6e002b92a3a57",
+      "deliverySha256": "9d20b9951910605fc491c0d7df71a858e976e6d63f222ba22be6e002b92a3a57"
+    },
+    {
+      "path": "netlify_site/help.js",
+      "status": "unchanged",
+      "sourceSha256": "65f3dac2e03173d5cf227d56bc8265925724f04e65daa7cc70ed47f978ed34ad",
+      "deliverySha256": "65f3dac2e03173d5cf227d56bc8265925724f04e65daa7cc70ed47f978ed34ad"
+    },
+    {
+      "path": "netlify_site/index.html",
+      "status": "unchanged",
+      "sourceSha256": "4e59b0642ed3f256d0d87a4e3d7e0e948698427ec6352e60b524f3a59a23e788",
+      "deliverySha256": "4e59b0642ed3f256d0d87a4e3d7e0e948698427ec6352e60b524f3a59a23e788"
+    },
+    {
+      "path": "netlify_site/lecture-column-actions.js",
+      "status": "unchanged",
+      "sourceSha256": "b9182a1e514e9a84c880ad351124b6b01c4e2784434b0db48d83e8b936434926",
+      "deliverySha256": "b9182a1e514e9a84c880ad351124b6b01c4e2784434b0db48d83e8b936434926"
+    },
+    {
+      "path": "netlify_site/live-attendance.js",
+      "status": "unchanged",
+      "sourceSha256": "313e79a3931f11fbc7b0ab8c778f6dbe244f14684587fee30496b5d204c11a8a",
+      "deliverySha256": "313e79a3931f11fbc7b0ab8c778f6dbe244f14684587fee30496b5d204c11a8a"
+    },
+    {
+      "path": "netlify_site/manifest.webmanifest",
+      "status": "unchanged",
+      "sourceSha256": "0eb9caeea74e4441ffa83f7eb4b900aa27ba89235f4704807e4b0b763eb6c98c",
+      "deliverySha256": "0eb9caeea74e4441ffa83f7eb4b900aa27ba89235f4704807e4b0b763eb6c98c"
+    },
+    {
+      "path": "netlify_site/modal-dismiss.js",
+      "status": "unchanged",
+      "sourceSha256": "3ab4c574daf90c051aee363cb3ac854bc8abfe91d027c5a23d27ead24c90248f",
+      "deliverySha256": "3ab4c574daf90c051aee363cb3ac854bc8abfe91d027c5a23d27ead24c90248f"
+    },
+    {
+      "path": "netlify_site/name-attendance.js",
+      "status": "unchanged",
+      "sourceSha256": "e2510529072e8f23e9e581e96b722842dd15b14662a09c63c16def74aa11c456",
+      "deliverySha256": "e2510529072e8f23e9e581e96b722842dd15b14662a09c63c16def74aa11c456"
+    },
+    {
+      "path": "netlify_site/name-qr.js",
+      "status": "unchanged",
+      "sourceSha256": "c328bd9c2b493e8de9b242959c30fe0e3918c665626ff67d45e1ed0a0a4c1401",
+      "deliverySha256": "c328bd9c2b493e8de9b242959c30fe0e3918c665626ff67d45e1ed0a0a4c1401"
+    },
+    {
+      "path": "netlify_site/notification-worker.js",
+      "status": "unchanged",
+      "sourceSha256": "a3e8d7f0d2210506502d25bc391d22cca660d41a8d0e18ea882eb421a9e4e5bd",
+      "deliverySha256": "a3e8d7f0d2210506502d25bc391d22cca660d41a8d0e18ea882eb421a9e4e5bd"
+    },
+    {
+      "path": "netlify_site/notifications.js",
+      "status": "unchanged",
+      "sourceSha256": "7b7518e08f01569bac7a49491695cc38e759c85d0777d5ee215d214e3b77191b",
+      "deliverySha256": "7b7518e08f01569bac7a49491695cc38e759c85d0777d5ee215d214e3b77191b"
+    },
+    {
+      "path": "netlify_site/offline-attendance.js",
+      "status": "unchanged",
+      "sourceSha256": "e2e6e4bad96fa7eed78297e3b3110bdda3ba95cda422808f94007c42a4054aab",
+      "deliverySha256": "e2e6e4bad96fa7eed78297e3b3110bdda3ba95cda422808f94007c42a4054aab"
+    },
+    {
+      "path": "netlify_site/offline-package-manifest.js",
+      "status": "unchanged",
+      "sourceSha256": "69d7fcbece928e3c1c6cffe110d3bb6833cdcfb799e33587a0258dcdaa8acf38",
+      "deliverySha256": "69d7fcbece928e3c1c6cffe110d3bb6833cdcfb799e33587a0258dcdaa8acf38"
+    },
+    {
+      "path": "netlify_site/offline-package.js",
+      "status": "unchanged",
+      "sourceSha256": "bef098d705a9c46e94f0aa8ee639bc5242d86abe96f6f91230147f28edfe6e59",
+      "deliverySha256": "bef098d705a9c46e94f0aa8ee639bc5242d86abe96f6f91230147f28edfe6e59"
+    },
+    {
+      "path": "netlify_site/offline-store.js",
+      "status": "unchanged",
+      "sourceSha256": "22b305e620f0f6affbf1b38c39bd5eb6dd7164ebb1f6cab56b8a47cb3a8c3670",
+      "deliverySha256": "22b305e620f0f6affbf1b38c39bd5eb6dd7164ebb1f6cab56b8a47cb3a8c3670"
+    },
+    {
+      "path": "netlify_site/offline-vendor-manifest.json",
+      "status": "unchanged",
+      "sourceSha256": "a5077d9bb4a390be26ea399c3ebac94e74ab590b75d93d4d38fca9512cc9327f",
+      "deliverySha256": "a5077d9bb4a390be26ea399c3ebac94e74ab590b75d93d4d38fca9512cc9327f"
+    },
+    {
+      "path": "netlify_site/onboarding.css",
+      "status": "unchanged",
+      "sourceSha256": "5417c117ea33022e90663ffd34de243ea0352b1a2fd0aff49e48d8180d3bd9fb",
+      "deliverySha256": "5417c117ea33022e90663ffd34de243ea0352b1a2fd0aff49e48d8180d3bd9fb"
+    },
+    {
+      "path": "netlify_site/onboarding.js",
+      "status": "unchanged",
+      "sourceSha256": "88f546d913bbf2558f459c94c60d30931a687bab4c0abeff7b6db7f26f3f2d27",
+      "deliverySha256": "88f546d913bbf2558f459c94c60d30931a687bab4c0abeff7b6db7f26f3f2d27"
+    },
+    {
+      "path": "netlify_site/personal-ui.css",
+      "status": "unchanged",
+      "sourceSha256": "c337c7282d7948ac3b5d27a7a92fa1dc9e194c53f1cd72623d2173a9d898e63f",
+      "deliverySha256": "c337c7282d7948ac3b5d27a7a92fa1dc9e194c53f1cd72623d2173a9d898e63f"
+    },
+    {
+      "path": "netlify_site/personal-ui.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "99f8ba950219277252c420a5751f56c4eccc0061feb252fe06741090a6c4537d",
+      "deliverySha256": "2adc7130787892de5608ea98bb33ad06e7395a06cf049b91a122a1311240dde5"
+    },
+    {
+      "path": "netlify_site/private-scope-roster.js",
+      "status": "unchanged",
+      "sourceSha256": "78b0343f15dfc35a5730be395bff807a1c83b1e7e71f6dc9ae1d44151205a0a5",
+      "deliverySha256": "78b0343f15dfc35a5730be395bff807a1c83b1e7e71f6dc9ae1d44151205a0a5"
+    },
+    {
+      "path": "netlify_site/private-share-model.js",
+      "status": "unchanged",
+      "sourceSha256": "fc5a4745be611516799a5208397ad0930c5b1f4d81f1820e8fa52aba1125de6d",
+      "deliverySha256": "fc5a4745be611516799a5208397ad0930c5b1f4d81f1820e8fa52aba1125de6d"
+    },
+    {
+      "path": "netlify_site/private-share.css",
+      "status": "unchanged",
+      "sourceSha256": "82cbff6002b427b23f39d50d541d8a5fcc96ae5d2ad56b0c34b431c0c2e5849b",
+      "deliverySha256": "82cbff6002b427b23f39d50d541d8a5fcc96ae5d2ad56b0c34b431c0c2e5849b"
+    },
+    {
+      "path": "netlify_site/private-share.js",
+      "status": "unchanged",
+      "sourceSha256": "e9d1730407745e38da84cc8cd84022e29bb09242ef5e3b601a46d71ce4b9c45d",
+      "deliverySha256": "e9d1730407745e38da84cc8cd84022e29bb09242ef5e3b601a46d71ce4b9c45d"
+    },
+    {
+      "path": "netlify_site/qr-decoder-worker.js",
+      "status": "unchanged",
+      "sourceSha256": "4ea78ad15984b899de30f3e1787ea60531aaffab2e3e2d60f2de6cd041cf5dc1",
+      "deliverySha256": "4ea78ad15984b899de30f3e1787ea60531aaffab2e3e2d60f2de6cd041cf5dc1"
+    },
+    {
+      "path": "netlify_site/qr-decoder.js",
+      "status": "unchanged",
+      "sourceSha256": "bd6c1bee45826d5661099da5e5202db9ceddd75a588653d184351d2ad7687014",
+      "deliverySha256": "bd6c1bee45826d5661099da5e5202db9ceddd75a588653d184351d2ad7687014"
+    },
+    {
+      "path": "netlify_site/record-window.css",
+      "status": "unchanged",
+      "sourceSha256": "e80af44157f5931735994e464dfa578c3e1146cdf36d4eb663bb116d329ab4ea",
+      "deliverySha256": "e80af44157f5931735994e464dfa578c3e1146cdf36d4eb663bb116d329ab4ea"
+    },
+    {
+      "path": "netlify_site/roster-filters.css",
+      "status": "unchanged",
+      "sourceSha256": "5726c061a385f267d6304cf832305e78bdfab923cfbefdd8ee0536212aa366d2",
+      "deliverySha256": "5726c061a385f267d6304cf832305e78bdfab923cfbefdd8ee0536212aa366d2"
+    },
+    {
+      "path": "netlify_site/roster-filters.js",
+      "status": "unchanged",
+      "sourceSha256": "264a610c56abf056d3a7be2837fff9cc7fe1dfbfe1cb23379956dc41b9d16832",
+      "deliverySha256": "264a610c56abf056d3a7be2837fff9cc7fe1dfbfe1cb23379956dc41b9d16832"
+    },
+    {
+      "path": "netlify_site/roster-name-rail.css",
+      "status": "unchanged",
+      "sourceSha256": "e8e4de7bb040ce34ecd74cb4b2be3a283cb2b9c3972daf05c32d7c7437e16371",
+      "deliverySha256": "e8e4de7bb040ce34ecd74cb4b2be3a283cb2b9c3972daf05c32d7c7437e16371"
+    },
+    {
+      "path": "netlify_site/roster-name-rail.js",
+      "status": "unchanged",
+      "sourceSha256": "1686c16b0cf1cf74862d86e13faf3f786a972694caee6a96556140b6687a1977",
+      "deliverySha256": "1686c16b0cf1cf74862d86e13faf3f786a972694caee6a96556140b6687a1977"
+    },
+    {
+      "path": "netlify_site/runtime-config.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "3b7fb0b1a97d4410cb117b2d0455af22305ce3e18e2c360c17b98ad9df30f138",
+      "deliverySha256": "fd21afa3404a9c2a9dfbbee641da3e475e0f2274b6dc016673175c4c517bb4af"
+    },
+    {
+      "path": "netlify_site/scope-preview.js",
+      "status": "unchanged",
+      "sourceSha256": "e4409f17f475360400e46fc615f7205759abfa5169a9bc3d7584b60a61a64d06",
+      "deliverySha256": "e4409f17f475360400e46fc615f7205759abfa5169a9bc3d7584b60a61a64d06"
+    },
+    {
+      "path": "netlify_site/service-worker.js",
+      "status": "unchanged",
+      "sourceSha256": "76ebcd35a15ceb5a0dc942e281494b150a0dc863900ba0e9f1215f6d7ae0d46a",
+      "deliverySha256": "76ebcd35a15ceb5a0dc942e281494b150a0dc863900ba0e9f1215f6d7ae0d46a"
+    },
+    {
+      "path": "netlify_site/settings-ui.css",
+      "status": "unchanged",
+      "sourceSha256": "e63fee6236ca3eb5b6c7a82aaac20a12200035397858ca39580cc889720cc765",
+      "deliverySha256": "e63fee6236ca3eb5b6c7a82aaac20a12200035397858ca39580cc889720cc765"
+    },
+    {
+      "path": "netlify_site/settings-ui.js",
+      "status": "unchanged",
+      "sourceSha256": "501a5d20406149f0d266c282eb30a1d29fe8c5addd05d55fa6cac123e76c5134",
+      "deliverySha256": "501a5d20406149f0d266c282eb30a1d29fe8c5addd05d55fa6cac123e76c5134"
+    },
+    {
+      "path": "netlify_site/shared-rosters.css",
+      "status": "unchanged",
+      "sourceSha256": "e19a04addfa2d8247868d400d22b5108c4d116de107e29aed6f20356b11b8d32",
+      "deliverySha256": "e19a04addfa2d8247868d400d22b5108c4d116de107e29aed6f20356b11b8d32"
+    },
+    {
+      "path": "netlify_site/shared-rosters.js",
+      "status": "unchanged",
+      "sourceSha256": "006075b2cd60cc286ce1576f1cc252ac25240158e2265301e7f6ea164f728085",
+      "deliverySha256": "006075b2cd60cc286ce1576f1cc252ac25240158e2265301e7f6ea164f728085"
+    },
+    {
+      "path": "netlify_site/spreadsheet-import.js",
+      "status": "unchanged",
+      "sourceSha256": "cfde4d2e776dd32bef7467190073bcd136c1eb8c817aca391fec2d6d278553b2",
+      "deliverySha256": "cfde4d2e776dd32bef7467190073bcd136c1eb8c817aca391fec2d6d278553b2"
+    },
+    {
+      "path": "netlify_site/spreadsheet-worker.js",
+      "status": "unchanged",
+      "sourceSha256": "aa8105e905dba3b912299943bf0e4aa79db1469c8ded8dd7c8d4fe5fabedc45f",
+      "deliverySha256": "aa8105e905dba3b912299943bf0e4aa79db1469c8ded8dd7c8d4fe5fabedc45f"
+    },
+    {
+      "path": "netlify_site/subject-tools.css",
+      "status": "unchanged",
+      "sourceSha256": "a2dbd47f0ce64f45ad8026346b5d7eb0c089bf5d5900ef8d3c667f65d9c362d8",
+      "deliverySha256": "a2dbd47f0ce64f45ad8026346b5d7eb0c089bf5d5900ef8d3c667f65d9c362d8"
+    },
+    {
+      "path": "netlify_site/subject-tools.js",
+      "status": "unchanged",
+      "sourceSha256": "a55526677d7e7e06901d2d5a6bd5459e55465a3837324b74f03c39d75d8bb070",
+      "deliverySha256": "a55526677d7e7e06901d2d5a6bd5459e55465a3837324b74f03c39d75d8bb070"
+    },
+    {
+      "path": "netlify_site/support-chat.css",
+      "status": "unchanged",
+      "sourceSha256": "87ed094f823497d4b84d4db5fb529b1c81282fafc60d46638a9a2dcb30f1d780",
+      "deliverySha256": "87ed094f823497d4b84d4db5fb529b1c81282fafc60d46638a9a2dcb30f1d780"
+    },
+    {
+      "path": "netlify_site/support-chat.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "d684b6f3a2c709bbf7dcb54bae6fd1064e1d236543c68bd43c9bfc78c0e2a969",
+      "deliverySha256": "028fbad4a5cb39612aa304195a1ac374fc5aefa9a3826ebe637351224b0a2bdc"
+    },
+    {
+      "path": "netlify_site/sync-reminder.css",
+      "status": "unchanged",
+      "sourceSha256": "1e4196d4272487c7a87af6454758e6ef1846f241a2bad64bdd341506b0366b76",
+      "deliverySha256": "1e4196d4272487c7a87af6454758e6ef1846f241a2bad64bdd341506b0366b76"
+    },
+    {
+      "path": "netlify_site/sync-reminder.js",
+      "status": "unchanged",
+      "sourceSha256": "23dccabfc8bbe732a44bdffc33d571f16250f97d5f34a43f09d3461a8ea03cd1",
+      "deliverySha256": "23dccabfc8bbe732a44bdffc33d571f16250f97d5f34a43f09d3461a8ea03cd1"
+    },
+    {
+      "path": "netlify_site/vendor/exceljs-4.4.0.min.js",
+      "status": "unchanged",
+      "sourceSha256": "7e49da68588e250dbb8bba190d2caa8ab3787cc0284bda1d8b2f805c4df742c9",
+      "deliverySha256": "7e49da68588e250dbb8bba190d2caa8ab3787cc0284bda1d8b2f805c4df742c9"
+    },
+    {
+      "path": "netlify_site/vendor/ExcelJS-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0",
+      "deliverySha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0"
+    },
+    {
+      "path": "netlify_site/vendor/face-api-1.7.15.min.js",
+      "status": "unchanged",
+      "sourceSha256": "8c68e735534357792c93f0fa9bdeddbdbd7ff19716af84b93fcab09d1e4201c7",
+      "deliverySha256": "8c68e735534357792c93f0fa9bdeddbdbd7ff19716af84b93fcab09d1e4201c7"
+    },
+    {
+      "path": "netlify_site/vendor/face-api-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "9a3442b79acaf4fbc7c2e07b7e2d8f84af9bb3871bf08a69d80304ab00640e9a",
+      "deliverySha256": "9a3442b79acaf4fbc7c2e07b7e2d8f84af9bb3871bf08a69d80304ab00640e9a"
+    },
+    {
+      "path": "netlify_site/vendor/face-models-1.7.15/face_landmark_68_model-weights_manifest.json",
+      "status": "unchanged",
+      "sourceSha256": "ca4886639f86e99b39fed0c155f81b63317225773bd9616716e887b0153389c9",
+      "deliverySha256": "ca4886639f86e99b39fed0c155f81b63317225773bd9616716e887b0153389c9"
+    },
+    {
+      "path": "netlify_site/vendor/face-models-1.7.15/face_landmark_68_model.bin",
+      "status": "unchanged",
+      "sourceSha256": "4611ef65c87d836d03d684b30eec4d195d8b219fa1dd58fc58945831c6b9299b",
+      "deliverySha256": "4611ef65c87d836d03d684b30eec4d195d8b219fa1dd58fc58945831c6b9299b"
+    },
+    {
+      "path": "netlify_site/vendor/face-models-1.7.15/face_recognition_model-weights_manifest.json",
+      "status": "unchanged",
+      "sourceSha256": "cbaffa501b0b9275a12b63357a6843e7e30c054e1c9151e1a5f879b26e32986b",
+      "deliverySha256": "cbaffa501b0b9275a12b63357a6843e7e30c054e1c9151e1a5f879b26e32986b"
+    },
+    {
+      "path": "netlify_site/vendor/face-models-1.7.15/face_recognition_model.bin",
+      "status": "unchanged",
+      "sourceSha256": "b413e420d6840b2775fba32008db6f3cddb07d485967fb42cfcf379c16a8c589",
+      "deliverySha256": "b413e420d6840b2775fba32008db6f3cddb07d485967fb42cfcf379c16a8c589"
+    },
+    {
+      "path": "netlify_site/vendor/face-models-1.7.15/tiny_face_detector_model-weights_manifest.json",
+      "status": "unchanged",
+      "sourceSha256": "5d1af4849ac48d5b985f4a9b16010c512353ddd6fcc63d50fd0bc9e9e64296e5",
+      "deliverySha256": "5d1af4849ac48d5b985f4a9b16010c512353ddd6fcc63d50fd0bc9e9e64296e5"
+    },
+    {
+      "path": "netlify_site/vendor/face-models-1.7.15/tiny_face_detector_model.bin",
+      "status": "unchanged",
+      "sourceSha256": "b7503ce7df31039b1c43316a9b865cab6a70dd748cc602d3fa28b551503c3871",
+      "deliverySha256": "b7503ce7df31039b1c43316a9b865cab6a70dd748cc602d3fa28b551503c3871"
+    },
+    {
+      "path": "netlify_site/vendor/firebase-10.12.5/firebase-app-compat.js",
+      "status": "unchanged",
+      "sourceSha256": "8912da846b0424822a8ca681e0021bc9281a089313966c5f97bad82d02cb9f65",
+      "deliverySha256": "8912da846b0424822a8ca681e0021bc9281a089313966c5f97bad82d02cb9f65"
+    },
+    {
+      "path": "netlify_site/vendor/firebase-10.12.5/firebase-auth-compat.js",
+      "status": "unchanged",
+      "sourceSha256": "d08600699f3d17864b1e133b8d4e0a5a94ac62756b6ffdd9e4516b457800de61",
+      "deliverySha256": "d08600699f3d17864b1e133b8d4e0a5a94ac62756b6ffdd9e4516b457800de61"
+    },
+    {
+      "path": "netlify_site/vendor/firebase-10.12.5/firebase-firestore-compat.js",
+      "status": "unchanged",
+      "sourceSha256": "603b7f6d0a9d4a214960f4d720afd76ff9ecdc9187bcc689b477780fabea0b75",
+      "deliverySha256": "603b7f6d0a9d4a214960f4d720afd76ff9ecdc9187bcc689b477780fabea0b75"
+    },
+    {
+      "path": "netlify_site/vendor/firebase-10.12.5/firebase-functions-compat.js",
+      "status": "unchanged",
+      "sourceSha256": "b6b2c559aaa6a0dac7603c493209d54a8ac345a3fe522504e86fb578e53b0b18",
+      "deliverySha256": "b6b2c559aaa6a0dac7603c493209d54a8ac345a3fe522504e86fb578e53b0b18"
+    },
+    {
+      "path": "netlify_site/vendor/Firebase-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "065e45b5674f9bf76670496e5472611b3fbd87fbeaf99336725430a9909cb687",
+      "deliverySha256": "065e45b5674f9bf76670496e5472611b3fbd87fbeaf99336725430a9909cb687"
+    },
+    {
+      "path": "netlify_site/vendor/jspdf-2.5.1.umd.min.js",
+      "status": "unchanged",
+      "sourceSha256": "98ccf17aa10c20bb1301762618fcc9b6ab3a4e7f26b6071d64d0b41154df3875",
+      "deliverySha256": "98ccf17aa10c20bb1301762618fcc9b6ab3a4e7f26b6071d64d0b41154df3875"
+    },
+    {
+      "path": "netlify_site/vendor/jsPDF-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "2d26bfab8a36d2250602c7a7597237e180c5cd3517acc108126e3cb399f483c8",
+      "deliverySha256": "2d26bfab8a36d2250602c7a7597237e180c5cd3517acc108126e3cb399f483c8"
+    },
+    {
+      "path": "netlify_site/vendor/jsQR-1.4.0.min.js",
+      "status": "unchanged",
+      "sourceSha256": "32214c74ee92d37de6d88276987690d996ce757668e82ca1709dba5e0be9fcce",
+      "deliverySha256": "32214c74ee92d37de6d88276987690d996ce757668e82ca1709dba5e0be9fcce"
+    },
+    {
+      "path": "netlify_site/vendor/jsQR-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+      "deliverySha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "netlify_site/vendor/qrcode-generator-1.4.4.js",
+      "status": "unchanged",
+      "sourceSha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780",
+      "deliverySha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+    },
+    {
+      "path": "netlify_site/vendor/qrcode-generator-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "e3bfe22e42d2468903efff785f6f05b11dea9895bcd41b5d790d665338b27be3",
+      "deliverySha256": "e3bfe22e42d2468903efff785f6f05b11dea9895bcd41b5d790d665338b27be3"
+    },
+    {
+      "path": "netlify_site/vendor/README.md",
+      "status": "unchanged",
+      "sourceSha256": "e499ff99db8307d58a2e8a1bc7c47bfb5607fc590fc99f0dc51f50350b50e93b",
+      "deliverySha256": "e499ff99db8307d58a2e8a1bc7c47bfb5607fc590fc99f0dc51f50350b50e93b"
+    },
+    {
+      "path": "netlify_site/vendor/SheetJS-LICENSE.txt",
+      "status": "unchanged",
+      "sourceSha256": "4d2a38ac35cda06a555c84074a819d413339cd3691b822cae50f8f322fe01f64",
+      "deliverySha256": "4d2a38ac35cda06a555c84074a819d413339cd3691b822cae50f8f322fe01f64"
+    },
+    {
+      "path": "netlify_site/vendor/xlsx-0.20.3.full.min.js",
+      "status": "unchanged",
+      "sourceSha256": "cc015130aa8521e7f088f88898eba949ccdcbfb38df0bd129b44b7273c3a6f41",
+      "deliverySha256": "cc015130aa8521e7f088f88898eba949ccdcbfb38df0bd129b44b7273c3a6f41"
+    },
+    {
+      "path": "netlify_site/__/firebase/init.js",
+      "status": "delivery adaptation",
+      "sourceSha256": "46e8005d982b899258c9c6859943e0133244ac730ea4a23255778360e56bd9c0",
+      "deliverySha256": "439aa9b8b8f66faad0df89c7b87860890acb34beb4a08fc0068105bfe8ef1805"
+    },
+    {
+      "path": "netlify_site/__/firebase/init.json",
+      "status": "delivery adaptation",
+      "sourceSha256": "901680ff1cc0af6788c34630c0ecb8cdcf2684fac0dc159685665ddd1aefce26",
+      "deliverySha256": "ecd9b1f2caedb340a14446894fd882a30ffc41b7f0c68d4363900aba757cf404"
+    },
+    {
+      "path": "page-scroll-results-chromium.json",
+      "status": "unchanged",
+      "sourceSha256": "b2ceefd8410196bc818d3ca92684aa7e26d4a9e402728a3df274c9abdc4a7b27",
+      "deliverySha256": "b2ceefd8410196bc818d3ca92684aa7e26d4a9e402728a3df274c9abdc4a7b27"
+    },
+    {
+      "path": "page-scroll-results-webkit.json",
+      "status": "unchanged",
+      "sourceSha256": "98dc417061d7b361a57a2007bf3f99a44b9a242396726b010ec6632fb8272b23",
+      "deliverySha256": "98dc417061d7b361a57a2007bf3f99a44b9a242396726b010ec6632fb8272b23"
+    },
+    {
+      "path": "page-scroll-results.json",
+      "status": "unchanged",
+      "sourceSha256": "aa7539df3038bc905c02985af457c3eef55ec13ebe7d3803dd849d0a4cada765",
+      "deliverySha256": "aa7539df3038bc905c02985af457c3eef55ec13ebe7d3803dd849d0a4cada765"
+    },
+    {
+      "path": "preview.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "9aace92e78465afc12cd0446467f179597c7b1a0796a45b752788541dfb853e8",
+      "deliverySha256": "e30d33d9ee64d73889b1e7d8666540a17081ffe2a021f3c08d4337ea95bb2eab"
+    },
+    {
+      "path": "reports/attendance-removal-1440.png",
+      "status": "excluded",
+      "bytes": 40709
+    },
+    {
+      "path": "reports/attendance-removal-390.png",
+      "status": "excluded",
+      "bytes": 28435
+    },
+    {
+      "path": "reports/attendance-row-feedback-1440.png",
+      "status": "excluded",
+      "bytes": 37856
+    },
+    {
+      "path": "reports/attendance-row-feedback-390.png",
+      "status": "excluded",
+      "bytes": 24241
+    },
+    {
+      "path": "reports/attendance-row-feedback.log",
+      "status": "excluded",
+      "bytes": 405
+    },
+    {
+      "path": "reports/auth-startup-regression.log",
+      "status": "excluded",
+      "bytes": 1651
+    },
+    {
+      "path": "reports/beginner-ui-regression.log",
+      "status": "excluded",
+      "bytes": 2135
+    },
+    {
+      "path": "reports/department-stage-qr.log",
+      "status": "excluded",
+      "bytes": 1209
+    },
+    {
+      "path": "reports/department-tools.log",
+      "status": "excluded",
+      "bytes": 1011
+    },
+    {
+      "path": "reports/device-live-regression.log",
+      "status": "excluded",
+      "bytes": 1174
+    },
+    {
+      "path": "reports/device-workspace-regression.log",
+      "status": "excluded",
+      "bytes": 1843
+    },
+    {
+      "path": "reports/interaction-repair.log",
+      "status": "excluded",
+      "bytes": 790
+    },
+    {
+      "path": "reports/lecture-action-visibility.log",
+      "status": "excluded",
+      "bytes": 487
+    },
+    {
+      "path": "reports/lecture-sync-1440.png",
+      "status": "excluded",
+      "bytes": 138381
+    },
+    {
+      "path": "reports/lecture-sync-390.png",
+      "status": "excluded",
+      "bytes": 69970
+    },
+    {
+      "path": "reports/lecture-sync-ui.log",
+      "status": "excluded",
+      "bytes": 759
+    },
+    {
+      "path": "reports/live-attendance-regression.log",
+      "status": "excluded",
+      "bytes": 312
+    },
+    {
+      "path": "reports/name-attendance-toggle.log",
+      "status": "excluded",
+      "bytes": 426
+    },
+    {
+      "path": "reports/name-qr-unit.log",
+      "status": "excluded",
+      "bytes": 2477
+    },
+    {
+      "path": "reports/numbered-roster-import.log",
+      "status": "excluded",
+      "bytes": 638
+    },
+    {
+      "path": "reports/offline-package-regression.log",
+      "status": "excluded",
+      "bytes": 942
+    },
+    {
+      "path": "reports/password-reset-ui.log",
+      "status": "excluded",
+      "bytes": 597
+    },
+    {
+      "path": "reports/personal-rules-emulator.log",
+      "status": "excluded",
+      "bytes": 7627
+    },
+    {
+      "path": "reports/profile-qr-regression.log",
+      "status": "excluded",
+      "bytes": 556
+    },
+    {
+      "path": "reports/release-current-auth.log",
+      "status": "excluded",
+      "bytes": 359
+    },
+    {
+      "path": "reports/scope-preview-1440.png",
+      "status": "excluded",
+      "bytes": 159045
+    },
+    {
+      "path": "reports/scope-preview-390.png",
+      "status": "excluded",
+      "bytes": 96710
+    },
+    {
+      "path": "reports/scope-preview.log",
+      "status": "excluded",
+      "bytes": 417
+    },
+    {
+      "path": "reports/security-backend-20261117.log",
+      "status": "excluded",
+      "bytes": 8631
+    },
+    {
+      "path": "reports/security-hardening-backend.log",
+      "status": "excluded",
+      "bytes": 8936
+    },
+    {
+      "path": "reports/security-headers.log",
+      "status": "excluded",
+      "bytes": 446
+    },
+    {
+      "path": "reports/security-isolation-static.log",
+      "status": "excluded",
+      "bytes": 796
+    },
+    {
+      "path": "reports/security-phase2-backend.log",
+      "status": "excluded",
+      "bytes": 9442
+    },
+    {
+      "path": "reports/security-review-20261117.png",
+      "status": "excluded",
+      "bytes": 136777
+    },
+    {
+      "path": "reports/security-server-release-backend.log",
+      "status": "excluded",
+      "bytes": 58274
+    },
+    {
+      "path": "reports/service-worker-upgrade.log",
+      "status": "excluded",
+      "bytes": 1326
+    },
+    {
+      "path": "reports/stability-regression.log",
+      "status": "excluded",
+      "bytes": 887
+    },
+    {
+      "path": "reports/student-profile-regression.log",
+      "status": "excluded",
+      "bytes": 1091
+    },
+    {
+      "path": "reports/subject-tools-regression.log",
+      "status": "excluded",
+      "bytes": 769
+    },
+    {
+      "path": "reports/sync-background-1440.png",
+      "status": "excluded",
+      "bytes": 2614
+    },
+    {
+      "path": "reports/sync-background-390.png",
+      "status": "excluded",
+      "bytes": 2354
+    },
+    {
+      "path": "reports/sync-background-indicator.log",
+      "status": "excluded",
+      "bytes": 1021
+    },
+    {
+      "path": "reports/sync-readiness-regression.log",
+      "status": "excluded",
+      "bytes": 1320
+    },
+    {
+      "path": "test-page-scroll.cjs",
+      "status": "unchanged",
+      "sourceSha256": "121f0f7dce6408cf062f5124055b161955decd05d5ea66ccbb012ead6237d94a",
+      "deliverySha256": "121f0f7dce6408cf062f5124055b161955decd05d5ea66ccbb012ead6237d94a"
+    },
+    {
+      "path": "tests/account-presence-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "055dee50389f95f8a9ad151bddef1168e5b88c18b0361487605f721c7a5cb7b8",
+      "deliverySha256": "055dee50389f95f8a9ad151bddef1168e5b88c18b0361487605f721c7a5cb7b8"
+    },
+    {
+      "path": "tests/admin-options-ui.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "02f2470b005b89c9e62f01b9702ca7a04d738aba9aa467706ca2231da58b1966",
+      "deliverySha256": "98fbc9b397f6c42f4d5b46ae8e889b8f4d08e2e3c1e958036412226abc8fb0aa"
+    },
+    {
+      "path": "tests/attendance-row-feedback.cjs",
+      "status": "unchanged",
+      "sourceSha256": "0876c1d0b8661cf71ae3715f632899a194f40ecb39c15c564742312a1ec2a7e4",
+      "deliverySha256": "0876c1d0b8661cf71ae3715f632899a194f40ecb39c15c564742312a1ec2a7e4"
+    },
+    {
+      "path": "tests/auth-startup-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "05947c87d7fea6096ea351e3d2041343866cecf709cc6166395654f3879bd1cd",
+      "deliverySha256": "05947c87d7fea6096ea351e3d2041343866cecf709cc6166395654f3879bd1cd"
+    },
+    {
+      "path": "tests/beginner-ui-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "98f1e89e0e448eaaab6bc53dc927dda21264ff03b0e52dea4147d79e529661c8",
+      "deliverySha256": "98f1e89e0e448eaaab6bc53dc927dda21264ff03b0e52dea4147d79e529661c8"
+    },
+    {
+      "path": "tests/civil-defaults.cjs",
+      "status": "unchanged",
+      "sourceSha256": "97e98e291a522cb0b71f7415f0d162416de6d48831506f5217936dfbcea44b43",
+      "deliverySha256": "97e98e291a522cb0b71f7415f0d162416de6d48831506f5217936dfbcea44b43"
+    },
+    {
+      "path": "tests/consolidation-mixed-xlsx.cjs",
+      "status": "unchanged",
+      "sourceSha256": "faad4315910ecccb5102586a216ccab0ca9f3e1b07f24da9343074ee987865c7",
+      "deliverySha256": "faad4315910ecccb5102586a216ccab0ca9f3e1b07f24da9343074ee987865c7"
+    },
+    {
+      "path": "tests/consolidation-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "9ba6837d251ac3f6c9e5cd1e9404e11708c9f95c635ea5904ca3a7c0b9e26cbb",
+      "deliverySha256": "9ba6837d251ac3f6c9e5cd1e9404e11708c9f95c635ea5904ca3a7c0b9e26cbb"
+    },
+    {
+      "path": "tests/deleted-lecture-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "4133a2471852c5645cfc7269ac74f18bf2dde892ecf3f9418c5579bd69b482c4",
+      "deliverySha256": "4133a2471852c5645cfc7269ac74f18bf2dde892ecf3f9418c5579bd69b482c4"
+    },
+    {
+      "path": "tests/department-prefix-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "5a693c49ac7aa08591c2c1fe727e5e6aa1d3ca603d0d49e9afb299deb56d1566",
+      "deliverySha256": "5a693c49ac7aa08591c2c1fe727e5e6aa1d3ca603d0d49e9afb299deb56d1566"
+    },
+    {
+      "path": "tests/department-stage-qr.cjs",
+      "status": "unchanged",
+      "sourceSha256": "cd4d617be823dc86fef1b62f9af55cd32d34260ce048369a816a655ddf4ff385",
+      "deliverySha256": "cd4d617be823dc86fef1b62f9af55cd32d34260ce048369a816a655ddf4ff385"
+    },
+    {
+      "path": "tests/department-tools.cjs",
+      "status": "unchanged",
+      "sourceSha256": "a0d6d1a8c60b95389add88046d42dfc51d68a393f048b7d7f5de78c167981942",
+      "deliverySha256": "a0d6d1a8c60b95389add88046d42dfc51d68a393f048b7d7f5de78c167981942"
+    },
+    {
+      "path": "tests/device-live-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "1fd370997e756433c52e0dc907b32f49d7a1925cce7ad7c5948be6648090f1de",
+      "deliverySha256": "1fd370997e756433c52e0dc907b32f49d7a1925cce7ad7c5948be6648090f1de"
+    },
+    {
+      "path": "tests/device-workspace-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "42869ba6de7ccc26c4a376d914d05db5ffdda56c453cd1b3e3f48636110fe4e8",
+      "deliverySha256": "42869ba6de7ccc26c4a376d914d05db5ffdda56c453cd1b3e3f48636110fe4e8"
+    },
+    {
+      "path": "tests/emulator-live-fixture.cjs",
+      "status": "unchanged",
+      "sourceSha256": "fe3b88adc1aad0fe8fec1aa34093abdcceacaa9999417f43d853a69ccc4b840b",
+      "deliverySha256": "fe3b88adc1aad0fe8fec1aa34093abdcceacaa9999417f43d853a69ccc4b840b"
+    },
+    {
+      "path": "tests/function-metadata-static.cjs",
+      "status": "unchanged",
+      "sourceSha256": "57150e6f3e22706b7f22a8c6efd970f4ebda13b5ee42124bc44b880a4f247f18",
+      "deliverySha256": "57150e6f3e22706b7f22a8c6efd970f4ebda13b5ee42124bc44b880a4f247f18"
+    },
+    {
+      "path": "tests/help-videos-123.cjs",
+      "status": "unchanged",
+      "sourceSha256": "087d3d45ad225b7bf975dfe346e36d2d5d49db0305be3d946751dcdf201ba45c",
+      "deliverySha256": "087d3d45ad225b7bf975dfe346e36d2d5d49db0305be3d946751dcdf201ba45c"
+    },
+    {
+      "path": "tests/home-record-scroll.cjs",
+      "status": "unchanged",
+      "sourceSha256": "be7324f1855d1ece12b66527216593e2ed73922d2d83f9802d7eb73a80817efd",
+      "deliverySha256": "be7324f1855d1ece12b66527216593e2ed73922d2d83f9802d7eb73a80817efd"
+    },
+    {
+      "path": "tests/interaction-repair.cjs",
+      "status": "unchanged",
+      "sourceSha256": "dba9fe19c81de4ff2cb557f9079a7cfd0606f12c98d4b6f07f93fad1a6c34743",
+      "deliverySha256": "dba9fe19c81de4ff2cb557f9079a7cfd0606f12c98d4b6f07f93fad1a6c34743"
+    },
+    {
+      "path": "tests/lecture-action-visibility.cjs",
+      "status": "unchanged",
+      "sourceSha256": "c558dba3b34fc119c7b9a9831fc97c981ce862b295c5c50a99c7f5ce2576d800",
+      "deliverySha256": "c558dba3b34fc119c7b9a9831fc97c981ce862b295c5c50a99c7f5ce2576d800"
+    },
+    {
+      "path": "tests/lecture-sync-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "30172f2cebce3e5933f66db6403220f010c50a6cebe05a0a06d9c815e8104224",
+      "deliverySha256": "30172f2cebce3e5933f66db6403220f010c50a6cebe05a0a06d9c815e8104224"
+    },
+    {
+      "path": "tests/live-attendance-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "f40272a82956f5ace91d34582a8fc8fddd1b35afadd33e4bcd1230d298952501",
+      "deliverySha256": "f40272a82956f5ace91d34582a8fc8fddd1b35afadd33e4bcd1230d298952501"
+    },
+    {
+      "path": "tests/live-public-smoke.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "62bf2bb4e51b99f713009a4f502e8cda6e4d939cc5945f449503726b4aa33b55",
+      "deliverySha256": "74569d32927f3e685c26e7df5fc0508475708a591bbb70bf1f6da9783372afda"
+    },
+    {
+      "path": "tests/local-owner-requests.cjs",
+      "status": "unchanged",
+      "sourceSha256": "60a61669f8d1b369cf1396482839a002f8eb945524f802c3fc7f273d782aa18d",
+      "deliverySha256": "60a61669f8d1b369cf1396482839a002f8eb945524f802c3fc7f273d782aa18d"
+    },
+    {
+      "path": "tests/local-preview-check.cjs",
+      "status": "unchanged",
+      "sourceSha256": "399bd73762ca7db503b228ef95facc00df87794bb874d76df7c6da37e3b51d2a",
+      "deliverySha256": "399bd73762ca7db503b228ef95facc00df87794bb874d76df7c6da37e3b51d2a"
+    },
+    {
+      "path": "tests/name-attendance-toggle.cjs",
+      "status": "unchanged",
+      "sourceSha256": "eb80ef35aafaa1c32e69fe9a8e32aee18c2244ca783cbdca8d76ab51e8185abf",
+      "deliverySha256": "eb80ef35aafaa1c32e69fe9a8e32aee18c2244ca783cbdca8d76ab51e8185abf"
+    },
+    {
+      "path": "tests/name-only-ui-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "e2b08d42bc740fbc9257a2a6c54c5ac6bd34f2558c16ebb674a0a6218eabd5bb",
+      "deliverySha256": "e2b08d42bc740fbc9257a2a6c54c5ac6bd34f2558c16ebb674a0a6218eabd5bb"
+    },
+    {
+      "path": "tests/name-qr-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "12fc1b99d1903665b5bdf88e82ae479524d46bfa3f41d62664c7fd6aaeca56d3",
+      "deliverySha256": "12fc1b99d1903665b5bdf88e82ae479524d46bfa3f41d62664c7fd6aaeca56d3"
+    },
+    {
+      "path": "tests/name-qr-unit.cjs",
+      "status": "unchanged",
+      "sourceSha256": "522ad8b760bfcd0567d52e2663af8ca232b728ed8d49de96320db797a0ba3654",
+      "deliverySha256": "522ad8b760bfcd0567d52e2663af8ca232b728ed8d49de96320db797a0ba3654"
+    },
+    {
+      "path": "tests/name-roster-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "70980b516efdb27c85d5de45820943cf224fcaacf7d004e06b45e4a66ff14796",
+      "deliverySha256": "70980b516efdb27c85d5de45820943cf224fcaacf7d004e06b45e4a66ff14796"
+    },
+    {
+      "path": "tests/numbered-roster-import.cjs",
+      "status": "unchanged",
+      "sourceSha256": "870f9bd898462e34d955cf217c2e76c1560f80c2e35e86b4a721c3ace61f1de6",
+      "deliverySha256": "870f9bd898462e34d955cf217c2e76c1560f80c2e35e86b4a721c3ace61f1de6"
+    },
+    {
+      "path": "tests/offline-harness.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "c6ec43c9f200a9d380d3d769492878a75fc24961e3ae10a9f0a48fe6b57614e3",
+      "deliverySha256": "f8c22d5545f11c93e7030bb1eb7cb339766c3ec89cd9cee536b90f95fc5df745"
+    },
+    {
+      "path": "tests/offline-package-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "6c54880a702a94b082dff4e8f908e45e86ebb58fcc396211aa2bc1e06f505e56",
+      "deliverySha256": "6c54880a702a94b082dff4e8f908e45e86ebb58fcc396211aa2bc1e06f505e56"
+    },
+    {
+      "path": "tests/onboarding-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "60827a0ff066c5768b076a01e9600325e865dec3475060e4363449aa9d1129cc",
+      "deliverySha256": "60827a0ff066c5768b076a01e9600325e865dec3475060e4363449aa9d1129cc"
+    },
+    {
+      "path": "tests/password-reset-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "ab2ac8a417111d666f6926c962af8a012bfb2b61d65b1f9b67a3c9236d750933",
+      "deliverySha256": "ab2ac8a417111d666f6926c962af8a012bfb2b61d65b1f9b67a3c9236d750933"
+    },
+    {
+      "path": "tests/performance-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "8a3d8020e14afb14280305440fe0a0221de68f89a1c3007c621f85eb2753ea54",
+      "deliverySha256": "8a3d8020e14afb14280305440fe0a0221de68f89a1c3007c621f85eb2753ea54"
+    },
+    {
+      "path": "tests/personal-rules-emulator.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "188a274748bc9b394dab7f80709eaa514123e30226787ed7c5462e3c42a6f6d2",
+      "deliverySha256": "1892bd4653bce1f32173de84965c236850b4bc67ca32925b7665864a7e63896c"
+    },
+    {
+      "path": "tests/personal-ui-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "e12743601326fb1c0be2e48388d633c4f2016713ceb16bfc7539cf3ffec76682",
+      "deliverySha256": "e12743601326fb1c0be2e48388d633c4f2016713ceb16bfc7539cf3ffec76682"
+    },
+    {
+      "path": "tests/preview-chrome-sw-smoke.cjs",
+      "status": "unchanged",
+      "sourceSha256": "21cbec6b6b4a6718bd476d92494862289db8f2d227d3b3152497e9e05676f863",
+      "deliverySha256": "21cbec6b6b4a6718bd476d92494862289db8f2d227d3b3152497e9e05676f863"
+    },
+    {
+      "path": "tests/preview-shell-smoke.cjs",
+      "status": "unchanged",
+      "sourceSha256": "b624a0097857679ef68fb91d2179c645856cb52ed0980d980f5d0d4d424ed093",
+      "deliverySha256": "b624a0097857679ef68fb91d2179c645856cb52ed0980d980f5d0d4d424ed093"
+    },
+    {
+      "path": "tests/previous-worker-fixture.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "9858466596616c0a6a4e10131bf80d13c3104b9400628298f63db63496a92f76",
+      "deliverySha256": "b5c81bc11f1f1c29813996e29caa5cb2e57976f9a63d647d15952358da966275"
+    },
+    {
+      "path": "tests/private-scope-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "0ee49b967f2bd1d15df7c8b24a86b7d69ccc99d997cb0d6c113b47477d934965",
+      "deliverySha256": "0ee49b967f2bd1d15df7c8b24a86b7d69ccc99d997cb0d6c113b47477d934965"
+    },
+    {
+      "path": "tests/private-share-emulator.cjs",
+      "status": "unchanged",
+      "sourceSha256": "be040a285815135fdac9d5bab08045027bdc73e4a4bcb6cc9f2257b4540bca72",
+      "deliverySha256": "be040a285815135fdac9d5bab08045027bdc73e4a4bcb6cc9f2257b4540bca72"
+    },
+    {
+      "path": "tests/private-share-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "6202ad109df4fdead9588de75047c1f92c528dee1ffec91202ade7f79303c4e1",
+      "deliverySha256": "6202ad109df4fdead9588de75047c1f92c528dee1ffec91202ade7f79303c4e1"
+    },
+    {
+      "path": "tests/profile-qr-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "1061e471013cc0599453765b39e530010af98bf4cec6230b3d9555877566913a",
+      "deliverySha256": "1061e471013cc0599453765b39e530010af98bf4cec6230b3d9555877566913a"
+    },
+    {
+      "path": "tests/promotion-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "bfa8c9df8ca824b5b5cba58f8c29041d23dafdeae62f516ca34ddd8885325d80",
+      "deliverySha256": "bfa8c9df8ca824b5b5cba58f8c29041d23dafdeae62f516ca34ddd8885325d80"
+    },
+    {
+      "path": "tests/qr-auto-enrollment.cjs",
+      "status": "unchanged",
+      "sourceSha256": "05dfd4028f155809ba4e4fa017efca5a29a339d8c363c4a6379a7add483f03b1",
+      "deliverySha256": "05dfd4028f155809ba4e4fa017efca5a29a339d8c363c4a6379a7add483f03b1"
+    },
+    {
+      "path": "tests/qr-preview-check.cjs",
+      "status": "unchanged",
+      "sourceSha256": "92e501f75d556080a0b4c5f900827949e5de89893eb15181d607ea288f94ac22",
+      "deliverySha256": "92e501f75d556080a0b4c5f900827949e5de89893eb15181d607ea288f94ac22"
+    },
+    {
+      "path": "tests/qr-reference-model.cjs",
+      "status": "unchanged",
+      "sourceSha256": "d093881824f031eedb6bde92f7fc07601fa84c5fa889af72b8db879fcef50c70",
+      "deliverySha256": "d093881824f031eedb6bde92f7fc07601fa84c5fa889af72b8db879fcef50c70"
+    },
+    {
+      "path": "tests/README.md",
+      "status": "unchanged",
+      "sourceSha256": "92cfe477aeec4d4285e15df517c9ed20fa73c05db02440d54835ceba69aa2b98",
+      "deliverySha256": "92cfe477aeec4d4285e15df517c9ed20fa73c05db02440d54835ceba69aa2b98"
+    },
+    {
+      "path": "tests/record-expansion.cjs",
+      "status": "unchanged",
+      "sourceSha256": "ade40a195161182f6cec9fd6aaae21dc1e074e38562da54dcfde60203681541c",
+      "deliverySha256": "ade40a195161182f6cec9fd6aaae21dc1e074e38562da54dcfde60203681541c"
+    },
+    {
+      "path": "tests/reference-roster-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "7a23f157062f4c83c9d2833d2b0cdbc229e855ca740a2027d4c357823aae0672",
+      "deliverySha256": "7a23f157062f4c83c9d2833d2b0cdbc229e855ca740a2027d4c357823aae0672"
+    },
+    {
+      "path": "tests/release-current-auth.cjs",
+      "status": "unchanged",
+      "sourceSha256": "b86630bf06b54606a12bf63e25b51950f9b26cb49a302597656bb6ca3a11ce1a",
+      "deliverySha256": "b86630bf06b54606a12bf63e25b51950f9b26cb49a302597656bb6ca3a11ce1a"
+    },
+    {
+      "path": "tests/roster-confirm-layer.cjs",
+      "status": "unchanged",
+      "sourceSha256": "53746110c428d476c86ea090f8f17645e339e170086777a29bb05b6b8b85fb9f",
+      "deliverySha256": "53746110c428d476c86ea090f8f17645e339e170086777a29bb05b6b8b85fb9f"
+    },
+    {
+      "path": "tests/roster-filters.cjs",
+      "status": "unchanged",
+      "sourceSha256": "3c5773c6398eec10042e6a69ef90dc5c3678ece9ff4b7bf9dd8be77887e80103",
+      "deliverySha256": "3c5773c6398eec10042e6a69ef90dc5c3678ece9ff4b7bf9dd8be77887e80103"
+    },
+    {
+      "path": "tests/roster700-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "e6bad4c1a0110fe033fac1c033c297698001166eecbaebf4dc5c76489bb59129",
+      "deliverySha256": "e6bad4c1a0110fe033fac1c033c297698001166eecbaebf4dc5c76489bb59129"
+    },
+    {
+      "path": "tests/run-local.cjs",
+      "status": "unchanged",
+      "sourceSha256": "314799f79d868e5e721c7ceae32cacf350e8359da5dcf7026d14a410c9a0a127",
+      "deliverySha256": "314799f79d868e5e721c7ceae32cacf350e8359da5dcf7026d14a410c9a0a127"
+    },
+    {
+      "path": "tests/scope-faces-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "45e0af99ac1c69a44a1292d7b294b7c2441d33d817ad38d920f84740dac6c3fb",
+      "deliverySha256": "45e0af99ac1c69a44a1292d7b294b7c2441d33d817ad38d920f84740dac6c3fb"
+    },
+    {
+      "path": "tests/scope-preview.cjs",
+      "status": "unchanged",
+      "sourceSha256": "5407a229b4efc1f6297311b4abe2432eed9734e985776200b516ad8d1ac02ef2",
+      "deliverySha256": "5407a229b4efc1f6297311b4abe2432eed9734e985776200b516ad8d1ac02ef2"
+    },
+    {
+      "path": "tests/security-headers.cjs",
+      "status": "unchanged",
+      "sourceSha256": "ef263857a1b1fa9574119b7961f32638839294d71a82efde025fc09d6d870f11",
+      "deliverySha256": "ef263857a1b1fa9574119b7961f32638839294d71a82efde025fc09d6d870f11"
+    },
+    {
+      "path": "tests/security-isolation-static.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "7d2717f03e11fb05b5904b07245bf8ed975794bff98782c2a985c51be529d74b",
+      "deliverySha256": "5a2753c0bae1297c7885f0a93f6579bd538774cdca9209cad73eb62ec87f9732"
+    },
+    {
+      "path": "tests/service-worker-upgrade.cjs",
+      "status": "unchanged",
+      "sourceSha256": "a71a8df2aea479e169edb4c00c3ed7829a2c5779ec5647d7b5501a44cb8c5e14",
+      "deliverySha256": "a71a8df2aea479e169edb4c00c3ed7829a2c5779ec5647d7b5501a44cb8c5e14"
+    },
+    {
+      "path": "tests/share-notices-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "8cfa6ba561f0384f57a42f218a9363073e11dd65a200f5d3c8e52b852ab8905e",
+      "deliverySha256": "8cfa6ba561f0384f57a42f218a9363073e11dd65a200f5d3c8e52b852ab8905e"
+    },
+    {
+      "path": "tests/shared-rosters-retirement.cjs",
+      "status": "unchanged",
+      "sourceSha256": "d355d890a3d932c0c0209df4204f401cf8ce1c5a807cfce52e9119bcaed2c0ad",
+      "deliverySha256": "d355d890a3d932c0c0209df4204f401cf8ce1c5a807cfce52e9119bcaed2c0ad"
+    },
+    {
+      "path": "tests/shared-rosters-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "e1190c467130a77b546bcc41a493c5dcc624286db240f05e76181d03dbb95a64",
+      "deliverySha256": "e1190c467130a77b546bcc41a493c5dcc624286db240f05e76181d03dbb95a64"
+    },
+    {
+      "path": "tests/stability-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "a9ed8a247e98c63c662b898e1b915f523f5bb504a6c75ab3ae2746368fb7f035",
+      "deliverySha256": "a9ed8a247e98c63c662b898e1b915f523f5bb504a6c75ab3ae2746368fb7f035"
+    },
+    {
+      "path": "tests/student-profile-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "c514eede8218815c3e9aa8916e99987824ad6a629ff3de8e10ec252f051cef83",
+      "deliverySha256": "c514eede8218815c3e9aa8916e99987824ad6a629ff3de8e10ec252f051cef83"
+    },
+    {
+      "path": "tests/study-period-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "372f966b3f16ffa09ae03f8395f616d5118802f3f62965840184acd766f36950",
+      "deliverySha256": "372f966b3f16ffa09ae03f8395f616d5118802f3f62965840184acd766f36950"
+    },
+    {
+      "path": "tests/subject-tools-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "0866b92d49046fc7f867fd75dc64bf52e1d5a74ea9166bd39d0ae72f82fd3faf",
+      "deliverySha256": "0866b92d49046fc7f867fd75dc64bf52e1d5a74ea9166bd39d0ae72f82fd3faf"
+    },
+    {
+      "path": "tests/subject-validation-ui.cjs",
+      "status": "unchanged",
+      "sourceSha256": "88fa6cb175dad4698225a1e41e414110b7977a6a6dc7041c44ac207bbaddaa74",
+      "deliverySha256": "88fa6cb175dad4698225a1e41e414110b7977a6a6dc7041c44ac207bbaddaa74"
+    },
+    {
+      "path": "tests/summarize-offline-review.cjs",
+      "status": "unchanged",
+      "sourceSha256": "0d222e7c80518d8045791f7f51d5b6683154d7249a4f594cadb7a2c800e25661",
+      "deliverySha256": "0d222e7c80518d8045791f7f51d5b6683154d7249a4f594cadb7a2c800e25661"
+    },
+    {
+      "path": "tests/support-chat-push.cjs",
+      "status": "unchanged",
+      "sourceSha256": "c718edb2bfea31f28e8970860092e7b5b37eef5c648c325b1b0fd6ec795dedab",
+      "deliverySha256": "c718edb2bfea31f28e8970860092e7b5b37eef5c648c325b1b0fd6ec795dedab"
+    },
+    {
+      "path": "tests/support-chat-server-check.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "4276c7c3ae9c4fd118cf856f8c5a5bcb7be3312eccec8de028751045ab39f9f9",
+      "deliverySha256": "dd71f38f008e9d4f279eb19f1f494a42a2769766421983fcb7086e7f69be93ee"
+    },
+    {
+      "path": "tests/support-chat-ui.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "4273aaece7d2ea9c84a116ac0ba0bf7360bfd3b200937697d841b3296260e97f",
+      "deliverySha256": "cd389629d27df65b235b72e3871a4f2f0cf6180a20dc3f8c397117fc66935a9f"
+    },
+    {
+      "path": "tests/sync-background-indicator.cjs",
+      "status": "unchanged",
+      "sourceSha256": "901799a77ae9fcd5d1484161b08fc1ef25d0b640ee7a000cc2c1d842ff684ed5",
+      "deliverySha256": "901799a77ae9fcd5d1484161b08fc1ef25d0b640ee7a000cc2c1d842ff684ed5"
+    },
+    {
+      "path": "tests/sync-controls-layout.cjs",
+      "status": "unchanged",
+      "sourceSha256": "f73ebdabfbcbc62c94473749093dc13cd444683e40b90e2f1459439ed2543b87",
+      "deliverySha256": "f73ebdabfbcbc62c94473749093dc13cd444683e40b90e2f1459439ed2543b87"
+    },
+    {
+      "path": "tests/sync-emulator-extended.cjs",
+      "status": "unchanged",
+      "sourceSha256": "004bff0e5d2de0889b60831d90b6a9a72a78dd5286529f90922fb539c32656c7",
+      "deliverySha256": "004bff0e5d2de0889b60831d90b6a9a72a78dd5286529f90922fb539c32656c7"
+    },
+    {
+      "path": "tests/sync-lecture-number.test.cjs",
+      "status": "unchanged",
+      "sourceSha256": "b32dd89235c33ca19b97c18c4b338a827d89646e73f171d7517248d083443cd3",
+      "deliverySha256": "b32dd89235c33ca19b97c18c4b338a827d89646e73f171d7517248d083443cd3"
+    },
+    {
+      "path": "tests/sync-readiness-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "5bc6b00ebc8ce8b217596b5e90993d082296e98b99398712916b41eecf86e96b",
+      "deliverySha256": "5bc6b00ebc8ce8b217596b5e90993d082296e98b99398712916b41eecf86e96b"
+    },
+    {
+      "path": "tests/sync-stress-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "efeeb7d2e84788590fb5225bf7716827e3f8a03787b2d506532e750e42c8550d",
+      "deliverySha256": "efeeb7d2e84788590fb5225bf7716827e3f8a03787b2d506532e750e42c8550d"
+    },
+    {
+      "path": "tests/sync-transport-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "394d828f7f7462ecc902f2d88c8316e57146555c357d6486c7f9f3ab197212b0",
+      "deliverySha256": "394d828f7f7462ecc902f2d88c8316e57146555c357d6486c7f9f3ab197212b0"
+    },
+    {
+      "path": "tests/trial-reset-regression.cjs",
+      "status": "unchanged",
+      "sourceSha256": "cec18e565253f7b44242255818d39a13b36ce1b6f6c2658088a42ca71a81b8e0",
+      "deliverySha256": "cec18e565253f7b44242255818d39a13b36ce1b6f6c2658088a42ca71a81b8e0"
+    },
+    {
+      "path": "tools/deploy-check.cjs",
+      "status": "delivery adaptation",
+      "sourceSha256": "72c18efafc53f11dd81ecf1369564c2ea05fd735741a15c4bd07e3d6ee8eeb53",
+      "deliverySha256": "cf69b7f82f71579cbc437cec3e56a66a9cd36728c8f40434e99a81558addf774"
+    },
+    {
+      "path": "tools/freeze-release.cjs",
+      "status": "unchanged",
+      "sourceSha256": "a50874f38fad93d0766a648e6533a3796d15b9febaa7ce91a5a1b9aef5fce321",
+      "deliverySha256": "a50874f38fad93d0766a648e6533a3796d15b9febaa7ce91a5a1b9aef5fce321"
+    }
+  ]
+}

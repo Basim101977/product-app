@@ -1,0 +1,1536 @@
+{
+  "note": "Original safe text/source copied unchanged where possible; personal information redacted. Private, large, recorded media, dependency/runtime and raw report files excluded under security instructions.",
+  "files": [
+    {
+      "path": "HATHIR_HANDOVER/ACCESS_AND_SECRETS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "438abe281550d6862f71b88e61f91c08626442929da76c9f93c11144a5fdd39e"
+    },
+    {
+      "path": "HATHIR_HANDOVER/DECISIONS_AND_CONTEXT.md",
+      "status": "copied unchanged",
+      "sourceSha256": "04c2c7b096da5d5b911591facf8f88272374bd24dbe99c5e7ce1762b369b62ac"
+    },
+    {
+      "path": "HATHIR_HANDOVER/FILE_MANIFEST.json",
+      "status": "privacy redacted",
+      "sourceSha256": "d950d6cc4e29206cb7b2980c9371347f6caf4a382aef80522c184559fec2b63a"
+    },
+    {
+      "path": "HATHIR_HANDOVER/HANDOVER.md",
+      "status": "copied unchanged",
+      "sourceSha256": "c3f15c8c1bd80e254f6a54746c82035b808772fa4d5e7918810971ae5953a742"
+    },
+    {
+      "path": "HATHIR_HANDOVER/INDEX.md",
+      "status": "privacy redacted",
+      "sourceSha256": "4ed2a9220f37983ad1afb097d1fcc985fdafa14ea0ec0a080977aca72d4caeed"
+    },
+    {
+      "path": "HATHIR_HANDOVER/media",
+      "status": "excluded: runtime, private data, historical reports or unreviewed media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/MEDIA_INDEX.md",
+      "status": "privacy redacted",
+      "sourceSha256": "dfbcff4d6896530295ab0fa47281ad661a634440912b94821e55a0a1d76556bd"
+    },
+    {
+      "path": "HATHIR_HANDOVER/NEXT_STEPS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "4f8dc552830f4aacb3572fe66e820dca9cf70795d137299dd1dbe6e7b682b8a9"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/.env.example",
+      "status": "copied unchanged",
+      "sourceSha256": "304edef55b787b08ca9a46b3a826a9310db51169b8ba8f729ba74db0668e17f4"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/.nvmrc",
+      "status": "copied unchanged",
+      "sourceSha256": "a0e27aeeac42d6102f4ff2bce40d8fb011c07e5cb28eff3c9d77e68df29e5dd6"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/AGENTS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "295bc551077141b2d34eed24c7f6992c83070a6c55bb063609cc0997b4960688"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/docs/ARCHITECTURE.md",
+      "status": "copied unchanged",
+      "sourceSha256": "3893e5502e98f61267422d0cf1286ff0cceb1775b57a9a5b4a4337dc31023ca0"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/docs/DATA-AND-SERVICES.md",
+      "status": "copied unchanged",
+      "sourceSha256": "82efd9d35b9d067ffa93778c2ae2814e432c5232b1cae5bdff5818f4122faaeb"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/docs/KNOWN-ISSUES.md",
+      "status": "copied unchanged",
+      "sourceSha256": "16f7f3c48626b28770f03c97fc82fbb8956e1d464f20d911094afe4f5eca3ec6"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/docs/SECURITY-AND-ACCESS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "7868be3042c9189b1b4d5a0ef2f58ab268ce2b556b55929789307e53574af98d"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/docs/SETUP-AND-TESTS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "7ec45947cabbff65326ce7b7b830bb8793c7f37985ad6de2498ad7df3f96f959"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/deployment/deployed-all.json",
+      "status": "copied unchanged",
+      "sourceSha256": "a10af0984c2876a1b5b53d65d8ba4ac1fb03f2b85b8c99f72b9dc33f8d56a25d"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/deployment/live-shell-assets.json",
+      "status": "copied unchanged",
+      "sourceSha256": "ce3de42a7ee1999e9e990a32daa627acb6910e071d53e981ea7745091fbfec43"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/deployment/public-callables.json",
+      "status": "copied unchanged",
+      "sourceSha256": "7ff533f51c32c857f9d24f106be4ebe6549be0f4967b6db716979019dc94078b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/extracted-test-summary.json",
+      "status": "copied unchanged",
+      "sourceSha256": "566d591fa0ca5a7538be8060d6b6adcb9e5140597908a2fa1b6810227f6e037d"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/final-source-integrity.json",
+      "status": "copied unchanged",
+      "sourceSha256": "9c112bdd478fe5fd1978ef780754dc588d314e315e7777a11e4e62c9ccf119b0"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/fresh-live-comparison.json",
+      "status": "copied unchanged",
+      "sourceSha256": "285121d0f10bef14fe82d8e7ff223f34dd9e7573351d8fa39ea70d03424c53cf"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/function-source-comparison.json",
+      "status": "copied unchanged",
+      "sourceSha256": "7b3d29aca7b804e03dfeca2e3bcfe6465f37d2bce22468b29b2f767f84b12700"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/original-copy-inventory.json",
+      "status": "copied unchanged",
+      "sourceSha256": "4a7d0d9e3c0419744bb22b218b6fe530030019bf7ca8e8ed5dffcc65b68d4e1c"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/portable-test-summary.json",
+      "status": "copied unchanged",
+      "sourceSha256": "3817e5c75a26665efcc369ddb869edb6c37ebe231f27d7423660ba065a228f73"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/privacy-transform.json",
+      "status": "copied unchanged",
+      "sourceSha256": "99aa1ac54d803b8cb11e028472edef8a8f1a6d929047156eac1f5fea029454ad"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/tests/extracted-local-regression-summary.json",
+      "status": "copied unchanged",
+      "sourceSha256": "bc750388ba6f1c5daf1039ed02fcd7cdc046c7049a28eb89fcf0b88665a0db9f"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/evidence/tests/local-regression-summary.json",
+      "status": "copied unchanged",
+      "sourceSha256": "fd2e3084de0c7c84a7976c2802ffb7fe69ae246769ab72ef7e3ee32eae471ceb"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/FILE-MANIFEST.json",
+      "status": "copied unchanged",
+      "sourceSha256": "d7d3926dad2242571898c2c0a91e75655f25063aa18b156bcdffa4436313f315"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/FILES-EXCLUDED.md",
+      "status": "copied unchanged",
+      "sourceSha256": "755bb638e1135d81e2491ef0e59823ee37f91e28ee0f10e0e2bedbcb8391d0f5"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/HANDOVER.md",
+      "status": "copied unchanged",
+      "sourceSha256": "43f170dd70222bcb0a6b401fa2da63b09cc81ad821cf9b9f05f630d4793f260f"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/local-machine/Run-Hathir-Local.ps1",
+      "status": "privacy redacted",
+      "sourceSha256": "79b2d7d6ded273da77a3e13b8a5fdba333709c98154f1442f72388c82cf6e7c4"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/local-machine/workspace.gitignore",
+      "status": "copied unchanged",
+      "sourceSha256": "743eb28867c8b18dd1f6a1f415dbcc2639cbf0c78853dfd2ea8ad70452428211"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/PACKAGE-VERIFICATION.md",
+      "status": "copied unchanged",
+      "sourceSha256": "59589bec9bd3bb055e6d9cbf7969bf2f38648585926586e39fba24cca077b36d"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/.firebaserc",
+      "status": "copied unchanged",
+      "sourceSha256": "50e9ab6dbf046f827c9b1e093e9318349cc3a8fec097dcff56d3d420812e5d71"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/.gitignore",
+      "status": "copied unchanged",
+      "sourceSha256": "4938d450daf1d2ba891161960b8e1a5181edc406cabdd5c6f8b314393fc6d5d1"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/firebase.json",
+      "status": "copied unchanged",
+      "sourceSha256": "9523f3b21d8f8d7410d084c0671b7cf060e097fe7e84e7da58380c7484654cfc"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/firestore.indexes.json",
+      "status": "copied unchanged",
+      "sourceSha256": "15d0c990a0c72e6352cec0672274060853e63139e00a36694786385f486d0412"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/firestore_attendance.rules",
+      "status": "privacy redacted",
+      "sourceSha256": "2e22632d5a15e56e1e044d79e1a361ddd17d4a22f63dfb98e79e61a5dce33229"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/cumulative-attendance.js",
+      "status": "copied unchanged",
+      "sourceSha256": "0840cc1502b02b87df72e3df1866e6ffbd83cdab662e1b05b1a3d855fa3d0546"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/index.js",
+      "status": "copied unchanged",
+      "sourceSha256": "8e0af6b7833ac348b73a3f93714ac82d6e479004a8662e9e9f6f5733d504c4a2"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/lecture-session.js",
+      "status": "copied unchanged",
+      "sourceSha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/official-correction.js",
+      "status": "copied unchanged",
+      "sourceSha256": "0f9ccd53c839c87ae9054df8cf875a1d76576f5777f880dff76cc94759b8abc0"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/offline-attendance-batch.js",
+      "status": "copied unchanged",
+      "sourceSha256": "aa053e3e434fd9ff09f76585863a650b1225205e70f9d0355f0fe2148a106116"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/offline-attendance.js",
+      "status": "copied unchanged",
+      "sourceSha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/package-lock.json",
+      "status": "privacy redacted",
+      "sourceSha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/package.json",
+      "status": "copied unchanged",
+      "sourceSha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/personal-workspace.js",
+      "status": "privacy redacted",
+      "sourceSha256": "07cabbfafeb06a3f82addd2052885cbecf1fa2291b27382928223ccc6956dd3f"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/README-personal.md",
+      "status": "privacy redacted",
+      "sourceSha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/README-production-upgrade.md",
+      "status": "copied unchanged",
+      "sourceSha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/retired-compatibility.js",
+      "status": "copied unchanged",
+      "sourceSha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/shared-rosters.js",
+      "status": "copied unchanged",
+      "sourceSha256": "8a4369a562d5da44c1b478eee79895690ae2699f85400c650d1fcb1e92025aa9"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/subject-roster-reset.js",
+      "status": "copied unchanged",
+      "sourceSha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/lecture-lifecycle.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/legacy-elapsed-close.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "7370804d26289c8996720b62216f71874623e33468d28c500e1101dc7157ba27"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/name-attendance.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "e480cbe9f0979db6df3e73498dd2808cbc1965b3d5bac361244eb69b44177db3"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/official-correction.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "926ef578afbf2c93008306c13fc10f08def34b6486d4d163fe9b3579c9daf2e8"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/offline-corrections-server.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "006e5504558e31a9de53af0c538bff77f03dccfe5abaabfcd5437d552a71fe99"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/offline-server.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/personal-workspace.test.js",
+      "status": "copied unchanged",
+      "sourceSha256": "3c08eee5d5921a499c686fb63b95b0e5f058f9ce6ad049de5b117b59b492c344"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/preview-close.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "521bf098da55a4f28e5c3443126c6a481d9ce8cca90ea21a1052b48b70d2be39"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/production-roster-sources.test.js",
+      "status": "copied unchanged",
+      "sourceSha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/registration-pagination.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "309790b7ba7ce8f5fd979bf50bee843a154d5138fc2566d863a865fb3fd471d2"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/subject-roster-reset.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/test/summary-read-fence.test.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "ca9692b15594d42d779832db4a7b8e7a13dd465563dc52d46c8124f967d5f994"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/functions/weekly-approval.js",
+      "status": "copied unchanged",
+      "sourceSha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/.gitignore",
+      "status": "copied unchanged",
+      "sourceSha256": "54341e20cb85f1f17ecff418bfe6098e669fb5a496411da22a3adae0782caca2"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/font-checksums.json",
+      "status": "copied unchanged",
+      "sourceSha256": "007f042deb8f94d3b030ddc759d6e2d88addd4aac4329e45af3275c4dbae203f"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/OFL.txt",
+      "status": "copied unchanged",
+      "sourceSha256": "9b584984f9db0ee30347391a76eff9c0a6b03dc450c3c6afe3757a2cb3a4db87"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/README.md",
+      "status": "copied unchanged",
+      "sourceSha256": "4417297717fad8e7f617c9079fb441e804c3cd24dac5e7bc5437506f24a86943"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/Tajawal-Black.ttf",
+      "status": "copied unchanged",
+      "sourceSha256": "da582a579d3200869535dc994d2349608a8582042f8776b3679b157015db287c"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/Tajawal-Bold.ttf",
+      "status": "copied unchanged",
+      "sourceSha256": "0342ab6b74b6bd1b4b5bf7beda45a9734a2b3147a31e8a3a45b6a3417a52d9d7"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/Tajawal-ExtraBold.ttf",
+      "status": "copied unchanged",
+      "sourceSha256": "3d1298b747c22579f9e1bdeb0d4165064cb17f7e66145e2f43f9deb12ad7a2cf"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/Tajawal-Light.ttf",
+      "status": "copied unchanged",
+      "sourceSha256": "ab26ed3e0c5af2c71b469b5780decff8088d290ab91aa29b07321580136e813a"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/Tajawal-Medium.ttf",
+      "status": "copied unchanged",
+      "sourceSha256": "1ff8bd943a261c9dd7906bdb1993cab87b6d925a7fb5f848cdb51ed301531090"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/fonts/Tajawal-Regular.ttf",
+      "status": "copied unchanged",
+      "sourceSha256": "6882892da3e03527d5db2bbab3b48bde6ef2e878a43f522d1a4eebda90010a19"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/add.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/camera.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/confirm.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/course.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/department.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/face-open.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/face-save.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/hours.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/import.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/name.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/profile-close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/qr.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/record.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/scan.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/select.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/setup-close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/stage.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/subject.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v1/sync.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/add.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/camera.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/confirm.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/course.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/department.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/face-open.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/face-save.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/hours.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/import.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/name.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/profile-close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/qr.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/record.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/scan.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/select.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/setup-close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/stage.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/subject.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/sync.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-abdullah-v2/welcome.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/add.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/camera.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/confirm.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/course.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/department.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/face-open.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/face-save.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/hours.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/import.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/name.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/profile-close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/qr.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/record.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/scan.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/select.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/setup-close.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/stage.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/subject.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/guide-ar-v1/sync.mp3",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-apple-180-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-brand-768-20260914.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-favicon-32-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-favicon-64-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-green-apple-180-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-green-brand-768-20260914.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-green-favicon-32-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-green-favicon-64-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-green-icon-192-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-green-icon-512-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-green-maskable-512-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-icon-192-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-icon-512-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-maskable-512-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-white-apple-180-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-white-brand-768-20260914.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-white-favicon-32-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-white-favicon-64-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-white-icon-192-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-white-icon-512-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/hathir-white-maskable-512-20260914.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/account.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/account.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/export.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/export.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/face.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/face.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/lecture.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/lecture.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/manual.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/manual.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/policy.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/policy.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/qr.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/qr.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/status.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/status.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/students.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/students.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/subject.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/subject.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/sync.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v1/sync.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/account.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/account.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/export.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/export.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/face.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/face.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/lecture.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/lecture.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/manual.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/manual.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/policy.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/policy.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/qr.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/qr.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/status.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/status.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/students.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/students.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/subject.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/subject.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/sync.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v2/sync.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/account.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/account.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/export.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/export.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/face.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/face.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/lecture.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/lecture.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/manual.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/manual.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/policy.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/policy.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/qr.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/qr.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/status.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/status.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/students.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/students.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/subject.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/subject.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/sync.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v3/sync.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/account.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/account.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/export.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/export.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/face.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/face.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/lecture.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/lecture.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/manual.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/manual.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/policy.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/policy.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/qr.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/qr.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/status.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/status.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/students.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/students.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/subject.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/subject.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/sync.mp4",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/help-v4/sync.webp",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/assets/student-attendance-icon.png",
+      "status": "excluded: size/privacy/binary media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/beginner-ui.css",
+      "status": "copied unchanged",
+      "sourceSha256": "306427a97800288995b25f3e166a5c32624a79003cc841b8b6cf3a1d4a110a6d"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/beginner-ui.js",
+      "status": "copied unchanged",
+      "sourceSha256": "d84bd2f2dd584975af0a0e8787d988ba7c61ff0f5f7214943c1c193ed07d7e55"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/card-readers.js",
+      "status": "copied unchanged",
+      "sourceSha256": "5edfc158ed0d57b50f523a324a05a3b331ab33062bd6a1ef367ba93315a28fe3"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/fonts.css",
+      "status": "copied unchanged",
+      "sourceSha256": "ddfd55a2f39005feb10695dd95fd3645a9b735ecb93f84971ae8f5c2523628ee"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/guide-lessons.js",
+      "status": "copied unchanged",
+      "sourceSha256": "29349fa4e2e719dff0be57c63c1595b4dcebd98d1550766cef09fc469d748e7b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/guide.html",
+      "status": "privacy redacted",
+      "sourceSha256": "0144444920c32f71bc8ba6d5deddee28bbf9c9ba54683389cd70ff5e1325c300"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/help-catalog.js",
+      "status": "copied unchanged",
+      "sourceSha256": "409ecdfc968199bf466939dc6e92fe2f3bed3a4761cfd0ddfea696aeb60ebc02"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/help.css",
+      "status": "copied unchanged",
+      "sourceSha256": "8e41025ccf24595a59e8d020dcc4fc9cf56abfc261465927d3ac8b709c690231"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/help.html",
+      "status": "privacy redacted",
+      "sourceSha256": "6adfd3516e9c876e165abaf2e41b82412e58807e7eed0ffe1c2c5f31590adf8a"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/help.js",
+      "status": "copied unchanged",
+      "sourceSha256": "ad5d93866a4e126ae459cb2411c1b25eebc819b8799e2953e9be9468a6ea3b77"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/index.html",
+      "status": "copied unchanged",
+      "sourceSha256": "bf78af92ffcc16c7c12972659277b859b8438d6300a5b459a4c7c25f63e293d9"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/live-attendance.js",
+      "status": "copied unchanged",
+      "sourceSha256": "2397e1afcf885988d7f166e9747e2dc47f96b5033be6a0803b79b4e016b043fe"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/manifest.webmanifest",
+      "status": "copied unchanged",
+      "sourceSha256": "f75a7a367beae62ec85e67e0fcf9e6666c56946a68c8dbb8f9c18186b9d3c5e9"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/name-qr.js",
+      "status": "copied unchanged",
+      "sourceSha256": "90e76692dc8851f66febd2a73630e0e96506c481f0a7d774e93c4f682ebfd78b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/netlify.toml",
+      "status": "copied unchanged",
+      "sourceSha256": "d7002066b0b18cb1da15cd508240b16c0a5a54349eca48a9aea94dfedce218d1"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/offline-attendance.js",
+      "status": "copied unchanged",
+      "sourceSha256": "48a22bb27bafc42db8f3e9893454a04a0d9ce0906f23f4d1750e39570921a11d"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/offline-store.js",
+      "status": "copied unchanged",
+      "sourceSha256": "22b305e620f0f6affbf1b38c39bd5eb6dd7164ebb1f6cab56b8a47cb3a8c3670"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/onboarding.css",
+      "status": "copied unchanged",
+      "sourceSha256": "5417c117ea33022e90663ffd34de243ea0352b1a2fd0aff49e48d8180d3bd9fb"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/onboarding.js",
+      "status": "copied unchanged",
+      "sourceSha256": "36bbc8af6455440b4930bf9999671f33359277393e350baf40b94bc7588792f6"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/personal-ui.css",
+      "status": "copied unchanged",
+      "sourceSha256": "c337c7282d7948ac3b5d27a7a92fa1dc9e194c53f1cd72623d2173a9d898e63f"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/personal-ui.js",
+      "status": "privacy redacted",
+      "sourceSha256": "00cbe166a10b8fcac7c2285a3a5446e4c9e7332e518e69e28015b0b8f3519673"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/qr-decoder-worker.js",
+      "status": "copied unchanged",
+      "sourceSha256": "4ea78ad15984b899de30f3e1787ea60531aaffab2e3e2d60f2de6cd041cf5dc1"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/qr-decoder.js",
+      "status": "copied unchanged",
+      "sourceSha256": "bd6c1bee45826d5661099da5e5202db9ceddd75a588653d184351d2ad7687014"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/record-window.css",
+      "status": "copied unchanged",
+      "sourceSha256": "e80af44157f5931735994e464dfa578c3e1146cdf36d4eb663bb116d329ab4ea"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/runtime-config.js",
+      "status": "privacy redacted",
+      "sourceSha256": "3b7fb0b1a97d4410cb117b2d0455af22305ce3e18e2c360c17b98ad9df30f138"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/service-worker.js",
+      "status": "copied unchanged",
+      "sourceSha256": "6b95d462f4e67103408bf2e336e4dadbafe7edea08a8d5c62469cc3a09175768"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/settings-ui.css",
+      "status": "copied unchanged",
+      "sourceSha256": "e63fee6236ca3eb5b6c7a82aaac20a12200035397858ca39580cc889720cc765"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/settings-ui.js",
+      "status": "copied unchanged",
+      "sourceSha256": "6bea11662f35092e877b9bb1b6726ffd6c5f6a8f29a3b5e537e148cd2c560cab"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/shared-rosters.css",
+      "status": "copied unchanged",
+      "sourceSha256": "fe9066d13a619d2a860ce667f77eca2b1e2cf405ad324780f2faa4ad2fb1ed0c"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/shared-rosters.js",
+      "status": "copied unchanged",
+      "sourceSha256": "9a1fc5405d718f7742f8909c6a7f8ca8ef639c3996cd741967b38fdfbeddfd63"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/spreadsheet-import.js",
+      "status": "copied unchanged",
+      "sourceSha256": "aea9022819730205741d188f409ff4ea0bbbe81032f1e19c5c2e056b3f4aac59"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/spreadsheet-worker.js",
+      "status": "copied unchanged",
+      "sourceSha256": "aa8105e905dba3b912299943bf0e4aa79db1469c8ded8dd7c8d4fe5fabedc45f"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/exceljs-4.4.0.min.js",
+      "status": "copied unchanged",
+      "sourceSha256": "7e49da68588e250dbb8bba190d2caa8ab3787cc0284bda1d8b2f805c4df742c9"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/ExcelJS-LICENSE.txt",
+      "status": "copied unchanged",
+      "sourceSha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/jsQR-1.4.0.min.js",
+      "status": "copied unchanged",
+      "sourceSha256": "32214c74ee92d37de6d88276987690d996ce757668e82ca1709dba5e0be9fcce"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/jsQR-LICENSE.txt",
+      "status": "copied unchanged",
+      "sourceSha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/qrcode-generator-1.4.4.js",
+      "status": "copied unchanged",
+      "sourceSha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/qrcode-generator-LICENSE.txt",
+      "status": "copied unchanged",
+      "sourceSha256": "e3bfe22e42d2468903efff785f6f05b11dea9895bcd41b5d790d665338b27be3"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/README.md",
+      "status": "copied unchanged",
+      "sourceSha256": "e499ff99db8307d58a2e8a1bc7c47bfb5607fc590fc99f0dc51f50350b50e93b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/SheetJS-LICENSE.txt",
+      "status": "copied unchanged",
+      "sourceSha256": "4d2a38ac35cda06a555c84074a819d413339cd3691b822cae50f8f322fe01f64"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/vendor/xlsx-0.20.3.full.min.js",
+      "status": "copied unchanged",
+      "sourceSha256": "cc015130aa8521e7f088f88898eba949ccdcbfb38df0bd129b44b7273c3a6f41"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/netlify_site/_headers",
+      "status": "copied unchanged",
+      "sourceSha256": "6cd260a3cf0cc0748251daf2a47daf24f2e3b69c9adfdb86de2e4034067bd7f6"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/reports",
+      "status": "excluded: runtime, private data, historical reports or unreviewed media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/auth-startup-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "84332f2434fbac7128735349fc089ed489729a63d35de881a5ff721ab6a43501"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/beginner-ui-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "443280f5f0741c8d71029c81c581cfbc7ced7002cf7db456e9f6ec9a79e11e2e"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/department-prefix-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "5e38efb8dfddc754fd4ceaba3c6cb2f3617797a5f936c2b644bd5da7d8fdfa57"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/function-metadata-static.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "73383466b8cb9b5b50cd19cd0d2018748337f6a69e5705618ccd7f04473ad3ec"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/live-attendance-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "f40272a82956f5ace91d34582a8fc8fddd1b35afadd33e4bcd1230d298952501"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/live-public-smoke.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "62bf2bb4e51b99f713009a4f502e8cda6e4d939cc5945f449503726b4aa33b55"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/name-only-ui-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "75ccfd39d3cfcfb671d6816360458a9baf6f053723e5612acdd5403cdc53f903"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/name-qr-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "2cb7e6a9bd790c70fda30d05e3a1b836b7d9f6cde2a6df36398a7b3125c6b806"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/name-qr-unit.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "cf9bbd53cdb8a24c00a7596728738d66b79747e03c7f10ac00e7942511d18389"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/name-roster-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "2e87fd5fb6a5f6f08ca41d4cf77862f35709d9a593a47a3b52efbb5ab9df0b53"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/offline-harness.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "7601bd9230ec7f3ab41dd29473be6b55f22ca8275bc1263c5b2a275d6e20feac"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/onboarding-regression.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "886b541d992f4786d0a1dc9940763ddeff5e398eb44ebcf591553911b95279c3"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/performance-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "c2e5739118c859ba5a12ed89bd01469c85fc4e2adc2851df2070d691f1a01c8d"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/personal-rules-emulator.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "55b17be190ca1adfcec85be92cfb68cc3c8877804b17a566cfa1e7b8c8a68ccd"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/personal-ui-regression.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "25bee0aa92e4725ebfc0221679c80aa66f143ca5cb39ebec994c46bc52839c3a"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/preview-chrome-sw-smoke.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "21cbec6b6b4a6718bd476d92494862289db8f2d227d3b3152497e9e05676f863"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/preview-shell-smoke.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "b624a0097857679ef68fb91d2179c645856cb52ed0980d980f5d0d4d424ed093"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/previous-worker-fixture.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "dcc882995be253128bf84de9b5c67d8ee08585e60e375aabd6a627becbca2d10"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/profile-qr-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "61da40eca8a9ec2216b448a82b7e1a1b9f56d48f8bbef39d26c000100b46ac6b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/promotion-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "6a6603a56da806d5a6742d3dae59a5286df6edf9513eb9219af43ed1da8590c3"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/README.md",
+      "status": "copied unchanged",
+      "sourceSha256": "92cfe477aeec4d4285e15df517c9ed20fa73c05db02440d54835ceba69aa2b98"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/record-expansion.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "ade40a195161182f6cec9fd6aaae21dc1e074e38562da54dcfde60203681541c"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/run-local.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "8676f622c7f533c1264a8623df54e76a795804a55542066e3abf5494e096e2fa"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/security-isolation-static.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "7d2717f03e11fb05b5904b07245bf8ed975794bff98782c2a985c51be529d74b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/service-worker-upgrade.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "d1d3c24343d81dff2628dbf97cee0f28892442a3ad43a49624b865389255b5b0"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/shared-rosters-ui.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "d7310a8c4bed16d6afe731cf03fd47a833a4940b0a682a1d49b451d696caccb5"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/stability-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "a9ed8a247e98c63c662b898e1b915f523f5bb504a6c75ab3ae2746368fb7f035"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/student-profile-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "c514eede8218815c3e9aa8916e99987824ad6a629ff3de8e10ec252f051cef83"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/sync-transport-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "eb73e2d4f29dd966a7f1ecefde750e52b960fde417c9d7d7c84e7ffe396fcb7a"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tests/trial-reset-regression.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "92dd319702793bdd5e2159a9fe1c0184a1b58e8e21118304173ca28178c17b81"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tools/deploy-check.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "aa770c3ff520b50fb97fa867328c738c66f12229bbe3058cf8f97ce84176e8e6"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/app/tools/freeze-release.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "a50874f38fad93d0766a648e6533a3796d15b9febaa7ce91a5a1b9aef5fce321"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/RELEASE-NOTES.md",
+      "status": "copied unchanged",
+      "sourceSha256": "6f8693cad7c7748a5a797084544ceac11e4a4ed8e7d5a8d7bb3e63fee783bd51"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/source/work/hathir-production-upgrade-20260922/STATUS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "289827f357d6137cfa65b4fbce5d35595557c076ed7525af9aefc7a1dfc446de"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/START_HERE.md",
+      "status": "copied unchanged",
+      "sourceSha256": "b2296757612e557301a999431f4efb991c9ee1ae0e519e9d7b19ed4588a15aa7"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/.gitignore",
+      "status": "copied unchanged",
+      "sourceSha256": "84150c4668e816d29b3715fc7e0629e904a9e6ba9dfe1a3f0bbf1ffcef037cfc"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/beginner-preview.cjs",
+      "status": "privacy redacted",
+      "sourceSha256": "76f21ab0b01c746f1b083a79e8cbdbf9649ddec541d9d51683dcb2b6434781a0"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/development-final-test.log",
+      "status": "copied unchanged",
+      "sourceSha256": "92c77e248b015a0ac28ae43eda018e04d04942a6536ac71e687be9115a83e817"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/development-test.log",
+      "status": "copied unchanged",
+      "sourceSha256": "fcc67f3f7260413811a8f46d6e5e2372b785b03fad1bb9343626fea5314531d5"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/install-runtime.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "eb55f63b7d60454cdd84852a19bb2f32e8228204154ca4ebac7dc731d7718c54"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/package-lock.json",
+      "status": "privacy redacted",
+      "sourceSha256": "ba78dffa52dd501f9b8a3eb33d27a2d9994701fc64764a96da5a01ecd2b5fb9b"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/package.json",
+      "status": "copied unchanged",
+      "sourceSha256": "d6b3c1e7c3987fb28677efaed4b2430c5d7005c28357c62691fc2bfa92dc1af7"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/portable-env.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "aef2874d5b5a6f6596fc7ab7c9deb06a88d2d9bc8a9dd62889020db6b4113e49"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/run-tests.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "2525d968232295d02519e7cadb64610a64015825755322c55ee3426797ee2689"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/runtime",
+      "status": "excluded: runtime, private data, historical reports or unreviewed media"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/safe-preview.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "e5b65e71294a22eb636ac5b8794591ee5f4571b29a2cb37ff2ccbb81db4a54af"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/sanitize-legacy-fixture.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "441950e1cb8787e144d857dd35b3bbaf8dcad931a456289eb16049143e873c99"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/SETUP-AND-TESTS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "f9311b16681f5cfe1a204099aa34331eed8b0c4e3641fb9480f5cf2b50737d0a"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/support/verify-package.cjs",
+      "status": "copied unchanged",
+      "sourceSha256": "6566b89615ebda37fd0f579b112a41bcaa5a778b532e9f9bf3cee1cb37e49743"
+    },
+    {
+      "path": "HATHIR_HANDOVER/project/TRANSFER-STATUS.md",
+      "status": "copied unchanged",
+      "sourceSha256": "f2b3bba35c826a367ccffe7dbb5a50539156780c4d443f41967f4f2b6da1f083"
+    },
+    {
+      "path": "HATHIR_HANDOVER/VERIFY_BUNDLE.py",
+      "status": "copied unchanged",
+      "sourceSha256": "822bd31893822c3bf2c07a98a6b22212558e9a882f8cbdb59ce2651148fd2a39"
+    }
+  ]
+}

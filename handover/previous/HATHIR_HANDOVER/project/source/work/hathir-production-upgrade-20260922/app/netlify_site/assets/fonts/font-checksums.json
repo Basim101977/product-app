@@ -1,0 +1,32 @@
+[
+  {
+    "file": "Tajawal-Black.ttf",
+    "bytes": 59028,
+    "sha256": "da582a579d3200869535dc994d2349608a8582042f8776b3679b157015db287c"
+  },
+  {
+    "file": "Tajawal-Bold.ttf",
+    "bytes": 59988,
+    "sha256": "0342ab6b74b6bd1b4b5bf7beda45a9734a2b3147a31e8a3a45b6a3417a52d9d7"
+  },
+  {
+    "file": "Tajawal-ExtraBold.ttf",
+    "bytes": 59648,
+    "sha256": "3d1298b747c22579f9e1bdeb0d4165064cb17f7e66145e2f43f9deb12ad7a2cf"
+  },
+  {
+    "file": "Tajawal-Light.ttf",
+    "bytes": 61864,
+    "sha256": "ab26ed3e0c5af2c71b469b5780decff8088d290ab91aa29b07321580136e813a"
+  },
+  {
+    "file": "Tajawal-Medium.ttf",
+    "bytes": 62280,
+    "sha256": "1ff8bd943a261c9dd7906bdb1993cab87b6d925a7fb5f848cdb51ed301531090"
+  },
+  {
+    "file": "Tajawal-Regular.ttf",
+    "bytes": 60364,
+    "sha256": "6882892da3e03527d5db2bbab3b48bde6ef2e878a43f522d1a4eebda90010a19"
+  }
+]

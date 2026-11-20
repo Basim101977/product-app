@@ -1,0 +1,181 @@
+body.beginnerSimplified, body.beginnerSimplified button, body.beginnerSimplified input, body.beginnerSimplified select, body.beginnerSimplified textarea { font-family: "Tajawal", "Segoe UI", Tahoma, Arial, sans-serif !important; font-weight: 500; }
+body.beginnerSimplified .headerActions { display: none !important; }
+body.beginnerSimplified .head { position: relative; }
+html[lang="ar"] body.beginnerSimplified .head { padding-left: 94px; }
+html[lang="en"] body.beginnerSimplified .head { padding-right: 94px; }
+body.beginnerSimplified .accountArea { position: static; }
+body.beginnerSimplified #userBadge, body.beginnerSimplified #appVersion { display: none !important; }
+.beginnerMenuButton { position: absolute; top: 72px; translate: 0 0; display: grid; place-items: center; width: 44px; height: 38px; padding: 7px; border: 0; border-radius: 0; background: transparent; color: #17394c; }
+html[lang="ar"] .beginnerMenuButton { left: 18px; right: auto; }
+html[lang="en"] .beginnerMenuButton { right: 18px; left: auto; }
+.beginnerMenuButton svg { width: 24px; height: 24px; margin: auto; }
+.beginnerAvatar { position: absolute; top: 14px; display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; padding: 0; border-radius: 50%; background: #e1f0ed; color: #0f6f67; font-size: 14px; font-weight: 700; line-height: 1; direction: ltr; letter-spacing: 0; text-align: center; }
+html[lang="ar"] .beginnerAvatar { left: 16px; right: auto; }
+html[lang="en"] .beginnerAvatar { right: 16px; left: auto; }
+.beginnerMenuShade { position: fixed; inset: 0; z-index: 10990; border: 0; border-radius: 0; background: rgba(15, 35, 50, .45); backdrop-filter: blur(3px); }
+.beginnerMenuShade[hidden] { display: none; }
+.beginnerSideMenu { position: fixed; z-index: 11000; top: 0; bottom: 0; left: 0; width: min(360px, 88vw); padding: 24px; background: #fff; box-shadow: 20px 0 55px rgba(15, 35, 50, .22); translate: -105% 0; transition: translate .24s ease; }
+html[lang="en"] .beginnerSideMenu { left: auto; right: 0; translate: 105% 0; box-shadow: -20px 0 55px rgba(15,35,50,.22); }
+body.beginnerMenuOpen { overflow: hidden; }
+body.beginnerMenuOpen .beginnerSideMenu { translate: 0 0; }
+.beginnerMenuHead { display: flex; align-items: center; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid #e2eaed; color: #17394c; font-size: 20px; }
+.beginnerMenuHead button, .beginnerDialogHead > button, .beginnerRecordClose { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0; border-radius: 50%; background: #f1f5f7; color: #405365; font-family: Arial, sans-serif !important; font-size: 25px; font-weight: 400; line-height: 1; text-align: center; }
+#beginnerMenuItems { display: grid; margin-top: 8px; }
+#beginnerMenuItems button { width: 100%; min-height: 58px; padding: 15px 4px; border: 0; border-bottom: 1px solid #e2eaed; border-radius: 0; background: transparent; color: #17394c; text-align: start; font-size: 17px; box-shadow: none; }
+#beginnerMenuItems button:hover { padding-inline-start: 10px; background: #f5faf9; color: #0f766e; }
+#beginnerMenuItems #logoutBtn { color: #b42318; }
+.beginnerMenuIdentity { display: grid; gap: 3px; margin-top: 22px; padding: 18px 4px 0; border-top: 1px solid #d6e2e6; color: #17394c; }
+.beginnerMenuIdentity span { color: #657687; font-size: 13px; }.beginnerMenuIdentity small { margin-top: 8px; color: #8a98a5; font-size: 10px; direction: ltr; text-align: start; }
+.beginnerHub { display: grid; gap: 15px; width: min(760px, 100%); margin: clamp(24px, 7vh, 72px) auto; padding: clamp(22px, 4vw, 38px); border: 1px solid #d6e3e7; border-radius: 24px; background: #fff; box-shadow: 0 18px 48px rgba(18, 63, 82, .08); }
+.beginnerSubjectChooser { position: relative; }
+.beginnerSubjectToggle::after { content: "⌄"; float: left; font-size: 18px; line-height: 1; }
+.beginnerSubjectToggle { min-height: 64px; border-color: #b9d0d5; background: #fff; color: #17394c; box-shadow: none; text-align: start; font-size: 16px; }
+.beginnerSubjectToggle:hover { background: #f8fbfc; color: #0f6f67; }
+html[lang="en"] .beginnerSubjectToggle::after { float: right; }
+.beginnerSubjectMenu { position: absolute; z-index: 100; top: calc(100% + 8px); inset-inline: 0; padding: 8px; border: 1px solid #cbdde1; border-radius: 16px; background: #fff; box-shadow: 0 18px 46px rgba(15,35,50,.18); }
+.beginnerSubjectMenu[hidden] { display: none; }
+#beginnerSubjectChoices, .beginnerSubjectCommands { display: grid; }
+#beginnerSubjectChoices button, .beginnerSubjectCommands button { min-height: 48px; padding: 11px 13px; border: 0; border-bottom: 1px solid #e5ecef; border-radius: 0; background: transparent; color: #17394c; text-align: start; font-size: 15px; }
+#beginnerSubjectChoices button:hover, #beginnerSubjectChoices button.active { background: #f0f8f6; color: #0f766e; }
+.beginnerSubjectCommands { margin-top: 6px; border-top: 1px solid #cbdde1; }.beginnerSubjectCommands button { color: #0f766e; font-weight: 700; }
+.beginnerMainButton { width: 100%; min-height: 58px; padding: 13px 22px; border: 1px solid #0f6f67; border-radius: 15px; background: #0f766e; color: #fff; font-size: clamp(17px, 2vw, 20px); box-shadow: 0 9px 20px rgba(15, 118, 110, .16); transition: background .18s ease, translate .18s ease; }
+.beginnerMainButton.beginnerSubjectToggle { min-height: 64px; border-color: #b9d0d5; background: #fff; color: #17394c; box-shadow: none; text-align: start; font-size: 16px; }
+.beginnerMainButton.beginnerSubjectToggle:hover { background: #f8fbfc; color: #0f6f67; }
+.beginnerMainButton:hover { background: #0b655f; translate: 0 -1px; }
+.beginnerMainButton:focus-visible, .beginnerMenuButton:focus-visible { outline: 3px solid #99f6e4; outline-offset: 3px; }
+.beginnerRosterDialog { width: min(92vw, 480px); border: 1px solid #d6e3e9; border-radius: 22px; padding: 0; color: #132235; box-shadow: 0 28px 90px rgba(15,23,42,.3); }
+.beginnerRosterDialog::backdrop { background: rgba(15,35,50,.5); backdrop-filter: blur(4px); }
+.beginnerRosterBody { display: grid; gap: 10px; padding: 22px; }
+.beginnerDialogHead { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 4px; }
+.beginnerDialogHead h2 { margin: 0 0 5px; }.beginnerDialogHead p { margin: 0; color: #68798a; line-height: 1.55; }
+.beginnerRosterChoice { display: grid; gap: 3px; min-height: 66px; padding: 12px 15px; border: 1px solid #d7e3e8; border-radius: 14px; background: #fff; text-align: start; }
+.beginnerRosterChoice:hover { border-color: #64b7aa; background: #f7fffd; }.beginnerRosterChoice strong { color: #17354a; font-size: 16px; }.beginnerRosterChoice span { color: #718092; font-size: 13px; }
+body.beginnerSimplified .attendanceContext, body.beginnerSimplified .lectureBanner { display: none !important; }
+body.beginnerSimplified:not(.beginnerScannerVisible) .scannerCard, body.beginnerSimplified:not(.beginnerScannerVisible) .todayAttendanceCard { display: none !important; }
+body.beginnerSimplified:not(.beginnerRecordVisible) #attendanceRecordCard { display: none !important; }
+body.beginnerSimplified #appVersion { display: none !important; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) { overflow: hidden; }
+body.beginnerRecordVisible #attendanceRecordCard { display: flex !important; flex-direction: column; overflow: hidden; }
+body.beginnerRecordVisible #attendanceRecordCard > .cardHeader { flex: 0 0 auto; }
+body.beginnerRecordVisible #attendanceRecordCard .tableWrap { flex: 1 1 auto; min-height: 0; overflow: auto !important; }
+.beginnerRecordClose { display: none; margin-inline-start: 8px; flex: 0 0 auto; }
+body.beginnerRecordVisible .beginnerRecordClose { display: inline-grid; place-items: center; }
+body.beginnerRecordVisible #expandAttendanceRecordBtn { display: inline-flex !important; align-items: center; justify-content: center; width: 44px; height: 44px; min-width: 44px; padding: 10px; }
+.beginnerInlineRecordVisible #attendanceRecordCard { height: auto !important; min-height: 0; margin-top: 18px; overflow: visible; }
+.beginnerInlineRecordVisible #attendanceRecordCard .tableWrap { max-height: none; overflow: auto !important; }
+body.beginnerRecordVisible #attendanceRecordCard .recordControls { display: none !important; }
+/* Give the roster all space left after its controls, including in the dialog. */
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard { display: grid !important; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto auto minmax(0, 1fr); gap: 8px 12px; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .cardHeader { grid-column: 1; grid-row: 1; margin: 0; min-width: 0; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .attendanceActions { grid-column: 2; grid-row: 1; margin: 0; justify-content: flex-end; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > #sharedRosterTools,
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .attendanceSearch,
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .tableWrap { grid-column: 1 / -1; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > #sharedRosterTools { grid-row: 2; margin: 0; gap: 5px; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > #sharedRosterTools .miniActions { min-height: 0; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > #sharedRosterTools .miniActions .btn { min-height: 30px; padding: 4px 10px; font-size: 12px; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > #sharedRosterTools .sharedRosterAvailable { padding: 7px 10px; border-radius: 10px; font-size: 13px; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .attendanceSearch { grid-row: 3; margin: 0; }
+body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .tableWrap { grid-row: 4; min-height: 0; max-height: none !important; height: 100%; }
+/* The More button sits at the dialog's trailing edge; open its panel inward. */
+body.beginnerRecordVisible #attendanceRecordCard .actionMenuList { inset-inline-start: auto; inset-inline-end: 0; }
+.beginnerScannerPip { position: absolute; z-index: 5; left: 18px; bottom: 18px; display: grid; grid-template-columns: 92px 1fr; align-items: center; gap: 10px; width: min(280px, calc(100% - 36px)); padding: 8px; border: 1px solid rgba(255,255,255,.5); border-radius: 16px; background: #123b46; color: #fff; box-shadow: 0 14px 38px rgba(15,35,50,.3); text-align: start; overflow: hidden; }
+.beginnerScannerPip video { width: 92px; height: 68px; border-radius: 10px; background: #07171c; object-fit: cover; }
+.beginnerScannerPip span { display: grid; gap: 2px; }.beginnerScannerPip strong { font-size: 14px; }.beginnerScannerPip small { color: #c8dcdf; font-size: 11px; }
+.beginnerScannerRecordButton { display: block; width: calc(100% - 32px); min-height: 54px; margin: 14px 16px 16px; border: 1px solid #0f6f67; border-radius: 14px; background: #0f766e; color: #fff; font-size: 17px; }
+body.beginnerSimplified .scannerCard { width: min(760px, 100%); margin-inline: auto; }
+@media (max-width: 720px) {
+  body.beginnerSimplified .head { align-items: flex-start; }
+  html[lang="ar"] body.beginnerSimplified .head { padding-left: 78px; }
+  html[lang="en"] body.beginnerSimplified .head { padding-right: 78px; }
+  .beginnerMenuButton { top: 62px; width: 38px; height: 34px; }
+  html[lang="ar"] .beginnerMenuButton { left: 8px; right: auto; }
+  html[lang="en"] .beginnerMenuButton { right: 8px; left: auto; }
+  .beginnerAvatar { top: 10px; width: 42px; height: 42px; font-size: 13px; }
+  html[lang="ar"] .beginnerAvatar { left: 8px; right: auto; }
+  html[lang="en"] .beginnerAvatar { right: 8px; left: auto; }
+  .beginnerHub { margin: 20px auto; padding: 18px; border-radius: 20px; }
+  .beginnerMainButton, .beginnerSubjectSlot select { min-height: 56px; }
+  .beginnerSideMenu { width: min(330px, 92vw); }
+  body.beginnerSimplified .scannerCard { width: 100%; }
+  body.beginnerSimplified .scannerCard .scannerStage { height: clamp(190px, 30vh, 250px); min-height: 190px; }
+  .beginnerScannerPip { left: 10px; bottom: 10px; grid-template-columns: 76px 1fr; width: min(240px, calc(100% - 20px)); }
+  .beginnerScannerPip video { width: 76px; height: 58px; }
+}
+@media (prefers-reduced-motion: reduce) { .beginnerSideMenu, .beginnerMainButton { transition: none; } }
+
+/* Mobile navigation must not inherit the old header's grid coordinates. */
+#beginnerMenuItems { display: flex !important; flex-direction: column; gap: 0; }
+#beginnerMenuItems #settingsBtn { order: 0; }
+#beginnerMenuItems #syncBtn { order: 1; }
+#beginnerMenuItems #tourReplay { order: 2; }
+#beginnerMenuItems #logoutBtn { order: 3; }
+#beginnerMenuItems > button { display: flex; align-items: center; flex: 0 0 auto; grid-column: auto !important; grid-row: auto !important; margin: 0; min-height: 60px; padding: 16px 12px; }
+.beginnerSideMenu { overflow-y: auto; padding-top: max(24px, env(safe-area-inset-top)); padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+.beginnerAvatar { width: 36px; height: 36px; font-size: 15px; }
+#beginnerStartAttendance { display: flex; align-items: center; justify-content: center; width: 100%; height: 150px; min-height: 150px; padding: 22px; border: 1px solid #125f58; border-radius: 22px; background: linear-gradient(160deg,#178477 0%,#0d7068 55%,#095a55 100%); color: #fff; font-size: clamp(26px,4vw,31px); font-weight: 500; line-height: 1.3; text-align: center; box-shadow: inset 0 1px 0 #ffffff48,0 14px 28px #0a62583d,0 4px 8px #0a625822; transition: transform .16s ease,box-shadow .16s ease,filter .16s ease; }
+#beginnerStartAttendance:hover { transform: translateY(-2px); filter: brightness(1.06); box-shadow: inset 0 1px 0 #ffffff55,0 18px 32px #0a62584a,0 6px 10px #0a625826; }
+#beginnerStartAttendance:active { transform: translateY(2px); filter: brightness(.98); box-shadow: inset 0 2px 5px #063d393b,0 5px 10px #0a62582b; }
+#beginnerStartAttendance:focus-visible { outline: 3px solid #73d8c7; outline-offset: 4px; }
+body.beginnerSimplified #attendanceView > .twoCol { display: flex; flex-direction: column; }
+body.beginnerSimplified .scannerCard { order: 0 !important; scroll-margin-top: 150px; }
+body.beginnerInlineRecordVisible #attendanceRecordCard { order: 1 !important; position: relative !important; width: 100%; scroll-margin-top: 150px; }
+body.beginnerRecordVisible #attendanceRecordCard > .cardHeader { position: sticky; top: 0; z-index: 12; background: #fff; align-items: center; }
+body.beginnerRecordVisible #beginnerRecordClose { display: inline-flex !important; width: 44px; height: 44px; min-width: 44px; padding: 0; align-items: center; justify-content: center; font: 28px/1 Arial,sans-serif !important; }
+body.beginnerRecordVisible #attendanceRecordCard .attendanceActions > #expandAttendanceRecordBtn,
+body.beginnerRecordVisible #attendanceRecordCard .attendanceActions > #beginnerRecordClose { flex: 0 0 44px; margin: 0; }
+body.beginnerSimplified #scannerStage .attendanceSuccess { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 8px; }
+.attendanceSuccessTick { display: grid; place-items: center; width: 72px; height: 72px; border-radius: 50%; color: #22c55e; background: #052e16e8; border: 2px solid #4ade80; font: 54px/1 Arial,sans-serif; text-shadow: none; }
+.attendanceSuccess strong { padding: 5px 14px; border-radius: 10px; background: #071e22df; color: #fff; font: 500 22px/1.4 Tajawal,sans-serif; }
+@media(max-width:720px) {
+  body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto auto minmax(0, 1fr); gap: 7px; }
+  body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .attendanceActions { grid-column: 1; grid-row: 2; justify-content: flex-start; }
+  body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > #sharedRosterTools { grid-row: 3; }
+  body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .attendanceSearch { grid-row: 4; }
+  body.beginnerRecordVisible:not(.beginnerInlineRecordVisible) #attendanceRecordCard > .tableWrap { grid-row: 5; }
+  .beginnerAvatar { width: 36px; height: 36px; font-size: 15px; }
+  body.beginnerRecordVisible #attendanceRecordCard { padding: 12px; }
+  body.beginnerRecordVisible #attendanceRecordCard > .cardHeader { flex-direction: row !important; gap: 8px; padding-bottom: 8px; }
+  body.beginnerRecordVisible #attendanceRecordCard > .cardHeader h2 { font-size: 21px; }
+  body.beginnerRecordVisible #attendanceRecordCard > .cardHeader p { display: none; }
+  body.beginnerRecordVisible #attendanceRecordCard .attendanceActions { gap: 6px; flex-wrap: wrap; }
+  body.beginnerRecordVisible #attendanceRecordCard .attendanceActions button { font-size: 13px; padding: 8px 10px; }
+  body.beginnerRecordVisible #beginnerRecordClose { position: absolute; top: max(12px, env(safe-area-inset-top)); left: 12px; z-index: 20; }
+  body.beginnerRecordVisible #expandAttendanceRecordBtn { position: absolute; top: max(12px, env(safe-area-inset-top)); left: 62px; z-index: 20; }
+  body.beginnerRecordVisible #attendanceRecordCard > .cardHeader { padding-left: 52px; }
+}
+
+@media(max-width:720px) { body.beginnerSimplified #attendanceView #scannerStage { height: 76dvh !important; min-height: 260px !important; max-height: 900px; } }
+
+body.beginnerSimplified #beginnerAvatar { display: grid; place-items: center; padding: 0; font-family: Arial, sans-serif !important; font-size: 15px; font-weight: 500; line-height: 1; }
+
+body.beginnerSimplified #completeLectureBtn { display: none !important; }
+body.beginnerSimplified #beginnerHub > .scannerCard { order: 0 !important; margin: 0; width: 100%; min-width: 0; }
+body.beginnerRecordMaximized .scannerCard { visibility: hidden !important; }
+
+#beginnerSessionActions { display: grid; grid-template-columns: minmax(0,1fr); gap: 12px; }
+body.beginnerSimplified:not(.beginnerScannerVisible) #beginnerSessionActions #cancelLectureBtn { display: none !important; }
+body.beginnerScannerVisible #beginnerSessionActions { grid-template-columns: repeat(2,minmax(0,1fr)); direction: rtl; }
+body.beginnerScannerVisible #beginnerSessionActions > button { width: 100%; height: 150px; min-height: 150px; border-radius: 20px; padding: 16px 8px; font-size: clamp(19px,3vw,24px); line-height: 1.4; }
+body.beginnerScannerVisible #beginnerSessionActions > #cancelLectureBtn { border: 1px solid #125f58; background: #0f766e; color: #fff; box-shadow: 0 8px 20px #0f766e26; }
+body.beginnerScannerVisible #beginnerSessionActions > #cancelLectureBtn:hover { background: #115e59; }
+@media (prefers-reduced-motion: reduce) { #beginnerStartAttendance { transition: none; } }
+body.beginnerSimplified #beginnerHub > .stats { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 0; }
+body.beginnerSimplified #beginnerHub > .stats[hidden] { display: none; }
+body.beginnerSimplified #beginnerHub .stats article { padding: 12px 8px; min-width: 0; border-radius: 14px; box-shadow: none; }
+body.beginnerSimplified #beginnerHub .stats h3 { font-size: 13px; margin: 0 0 8px; }
+body.beginnerSimplified #beginnerHub .stats .value { font-size: 24px; }
+body.beginnerSimplified #beginnerHub #lastScanId { font-size: 16px; overflow-wrap: anywhere; }
+body.beginnerSimplified #beginnerHub #ownerLine, body.beginnerSimplified #beginnerHub #todayLabel { display: none; }
+#beginnerMenuAccount { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+#beginnerMenuUser { min-width: 0; overflow-wrap: anywhere; }
+#beginnerMenuAccount #logoutBtn { flex: 0 0 auto; grid-column: auto !important; grid-row: auto !important; width: auto; min-height: 42px; padding: 8px 12px; border-radius: 10px; border: 1px solid #f1d0d0; background: #fff5f5; color: #b42318; font-size: 15px; }
+
+body.beginnerSimplified .scannerCard [data-i18n="scannerHelp"],
+body.beginnerSimplified .scannerCard .scannerBadges,
+body.beginnerSimplified .scannerCard .smartHint,
+body.beginnerSimplified .scannerCard #scanStatus:not(.error):not(.warn) { display: none !important; }
+body.beginnerSimplified #beginnerHub > .scannerCard { padding: 0; border: 0; box-shadow: none; background: transparent; }
+body.beginnerSimplified #beginnerHub > .scannerCard > .cardHeader { margin: 0; padding: 8px 0 14px; }
+body.beginnerSimplified #attendanceView #scannerStage { border-radius: 20px; }
+@media(min-width:721px) { body.beginnerSimplified #attendanceView #scannerStage { height: min(76dvh, 820px); min-height: 300px; } }

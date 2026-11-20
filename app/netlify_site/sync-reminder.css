@@ -1,0 +1,19 @@
+#workspaceSyncReminder{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:14px;grid-column:1 / -1;max-width:100%;margin:0 0 10px;padding:4px 12px;border:1px solid #cbded8;border-radius:10px;background:#d8f3e6;color:#14583c;font-size:13px;line-height:1.5}
+#workspaceSyncReminder[hidden]{display:none}
+#workspaceSyncReminder[data-state=pending]{background:#fff0c2;color:#704009;border-color:#dca736}
+#workspaceSyncReminder[data-state=error]{background:#ffe0dc;color:#8d231c;border-color:#ce6a5f}
+#workspaceSyncReminder[data-state=busy]{background:#dcecff;color:#184f86;border-color:#699dd1}
+@media print{#workspaceSyncReminder{display:none!important}}
+/* The workspace bar replaces the older lecture-only synchronization indicators. */
+body:has(#workspaceSyncReminder:not([hidden])) #syncStatusHost,
+body:has(#workspaceSyncReminder:not([hidden])) #offlineStatus,
+body:has(#workspaceSyncReminder:not([hidden])) #deviceRecordStatus,
+body:has(#workspaceSyncReminder:not([hidden])) #beginnerSyncStatus{display:none!important}
+
+#workspaceSyncReminder{position:relative;overflow:hidden;padding-bottom:6px}
+#workspaceSyncReminder .workspaceSyncMessage::before{content:"";display:inline-block;width:8px;height:8px;margin-inline-end:7px;border-radius:50%;background:currentColor}
+#workspaceSyncReminder[data-progress=true]::after{content:"";position:absolute;inset-inline-start:0;bottom:0;height:3px;width:var(--sync-progress,0%);background:currentColor}
+.rosterFullName[data-name-attendance]{touch-action:manipulation}
+
+#workspaceSyncReminder .workspaceSyncMessage{min-width:0;flex:1}
+#workspaceSyncReminder .workspaceSyncPercent{flex:none;font-size:24px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap}

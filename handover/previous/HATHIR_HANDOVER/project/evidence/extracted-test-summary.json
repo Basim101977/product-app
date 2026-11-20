@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-22T21:04:40.930Z",
+  "passed": true,
+  "total": 394,
+  "stage": "independent-extracted-draft-archive-payload",
+  "extractedDirectory": "unpacked-verification/Hathir-Handover-20260922",
+  "sourceRoot": "source/work/hathir-production-upgrade-20260922/app",
+  "manifestBeforeInstall": {
+    "passed": true,
+    "checked": 144,
+    "sha256": "bfe3057ef181a473423940b81d1fa61d173643ded54b044e4c66dcc22b4489c5"
+  },
+  "postRunManifest": {
+    "checked": 144,
+    "unchanged": 131,
+    "changedGeneratedReports": [
+      "source/work/hathir-production-upgrade-20260922/app/reports/backend-unit-tests.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/department-prefix-regression.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/function-metadata-static.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/local-regression-summary.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/name-only-ui-regression.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/name-qr-regression.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/name-qr-unit.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/personal-rules-emulator.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/personal-ui-regression.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/promotion-regression.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/security-isolation-static.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/service-worker-upgrade.json",
+      "source/work/hathir-production-upgrade-20260922/app/reports/sync-transport-regression.json"
+    ],
+    "unexpectedChanges": []
+  },
+  "immutableSource": {
+    "checked": 96,
+    "matchesStaging": true,
+    "mismatches": []
+  },
+  "testedFileHashes": [
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/tests/personal-ui-regression.cjs",
+      "sha256": "72f65fbd91d66d98ae347b2b3e5261d1f84105c51bb11fefe188f37e303e15e8",
+      "stagedSha256": "72f65fbd91d66d98ae347b2b3e5261d1f84105c51bb11fefe188f37e303e15e8"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/netlify_site/index.html",
+      "sha256": "daee6b7a7de6d9cdd0a78363f5821b6e3dea13475e4b4c74dbcbec5a0d59c914",
+      "stagedSha256": "daee6b7a7de6d9cdd0a78363f5821b6e3dea13475e4b4c74dbcbec5a0d59c914"
+    },
+    {
+      "path": "source/work/hathir-mobile-actions-20260919/candidate/netlify_site/index.html",
+      "sha256": "816ab880d2f1be3b0d7bc57b0323e9892d0824e7efbee24748e59923ca7f79ed",
+      "stagedSha256": "816ab880d2f1be3b0d7bc57b0323e9892d0824e7efbee24748e59923ca7f79ed"
+    },
+    {
+      "path": "source/work/hathir-production-upgrade-20260922/app/functions/package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "stagedSha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac"
+    },
+    {
+      "path": "support/package-lock.json",
+      "sha256": "ba78dffa52dd501f9b8a3eb33d27a2d9994701fc64764a96da5a01ecd2b5fb9b",
+      "stagedSha256": "ba78dffa52dd501f9b8a3eb33d27a2d9994701fc64764a96da5a01ecd2b5fb9b"
+    }
+  ],
+  "commands": [
+    {
+      "cwd": "extracted package root",
+      "command": "node support/verify-package.cjs",
+      "exitCode": 0
+    },
+    {
+      "cwd": "extracted support",
+      "command": "npm.cmd ci --ignore-scripts --no-audit --no-fund --fetch-retries=1 --fetch-timeout=30000",
+      "exitCode": 0,
+      "installedPackages": 675
+    },
+    {
+      "cwd": "extracted source/work/hathir-production-upgrade-20260922/app/functions",
+      "command": "npm.cmd ci --ignore-scripts --no-audit --no-fund --fetch-retries=1 --fetch-timeout=30000",
+      "exitCode": 0,
+      "installedPackages": 265
+    },
+    {
+      "cwd": "extracted support",
+      "command": "node run-tests.cjs --check",
+      "exitCode": 0
+    },
+    {
+      "cwd": "extracted support",
+      "command": "node run-tests.cjs",
+      "exitCode": 0
+    },
+    {
+      "cwd": "extracted support",
+      "command": "node safe-preview.cjs",
+      "exitCode": 0
+    }
+  ],
+  "versions": {
+    "node": "22.20.0",
+    "npm": "10.9.3",
+    "firebaseTools": "15.30.0",
+    "playwright": "1.62.1",
+    "chrome": "153.0.8010.53",
+    "java": "Temurin 21.0.12.1+1",
+    "firestoreEmulator": "1.22.0",
+    "firebaseAdmin": "14.4.0",
+    "firebaseFunctions": "7.3.2",
+    "qrcodeGenerator": "1.4.4",
+    "jsqr": "1.4.0"
+  },
+  "testRuntime": {
+    "freshSupportNpmInstall": true,
+    "freshFunctionsNpmInstall": true,
+    "dependenciesResolvedInsideExtractedCopy": true,
+    "existingBrowserVia": "CHROME_PATH",
+    "existingJavaVia": "PERSONAL_TEST_JAVA",
+    "existingVerifiedEmulatorVia": "PERSONAL_TEST_FIRESTORE_JAR",
+    "emulatorSha256": "9b6498b7f62714d67f48f59b3818883cd682dbcd46b9f59511de81c97bb5166c"
+  },
+  "privacyScope": "Authorized delivery derivatives: current and historical index.html plus synthetic replacement of legacy login credentials in personal-ui-regression.cjs. No test assertions were weakened for this run.",
+  "tests": {
+    "summary": "evidence/tests/extracted-local-regression-summary.json",
+    "summarySha256": "bc750388ba6f1c5daf1039ed02fcd7cdc046c7049a28eb89fcf0b88665a0db9f",
+    "passed": true,
+    "total": 394,
+    "suites": [
+      {
+        "suite": "promotion",
+        "passed": true,
+        "total": 39,
+        "elapsedMs": 12032
+      },
+      {
+        "suite": "service-worker-upgrade",
+        "passed": true,
+        "total": 10,
+        "elapsedMs": 5408
+      },
+      {
+        "suite": "function-metadata",
+        "passed": true,
+        "total": 1,
+        "elapsedMs": 784
+      },
+      {
+        "suite": "static",
+        "passed": true,
+        "total": 7,
+        "elapsedMs": 93
+      },
+      {
+        "suite": "backend",
+        "passed": true,
+        "total": 47,
+        "elapsedMs": 250
+      },
+      {
+        "suite": "browser",
+        "passed": true,
+        "total": 30,
+        "elapsedMs": 6255
+      },
+      {
+        "suite": "prefixes",
+        "passed": true,
+        "total": 36,
+        "elapsedMs": 4176
+      },
+      {
+        "suite": "name-qr-unit",
+        "passed": true,
+        "total": 29,
+        "elapsedMs": 113
+      },
+      {
+        "suite": "name-only-ui",
+        "passed": true,
+        "total": 34,
+        "elapsedMs": 4931
+      },
+      {
+        "suite": "name-qr-browser",
+        "passed": true,
+        "total": 50,
+        "elapsedMs": 17489
+      },
+      {
+        "suite": "sync-transport",
+        "passed": true,
+        "total": 28,
+        "elapsedMs": 8706
+      },
+      {
+        "suite": "emulator",
+        "passed": true,
+        "total": 83,
+        "elapsedMs": 15188
+      }
+    ],
+    "cloudWrites": 0,
+    "productionDataRead": false,
+    "credentialsRead": false,
+    "syntheticOnly": true,
+    "originalSourceWrites": 0,
+    "stagingSourceReportWrites": 0,
+    "sourceEditsDuringExtractedTest": 0
+  },
+  "preview": {
+    "pathWithinExtractedTree": "support/previews/synthetic-login-390.png",
+    "sha256": "8c16975183bf3a087d9a4591d45c73cfe1785bb686fc55bf669f5c66b29f806e",
+    "passed": true,
+    "visuallyInspected": true,
+    "width": 390,
+    "mode": "synthetic Firebase fixture, external browser requests blocked, screenshot only"
+  },
+  "limitations": [
+    "This was an independent extracted draft archive on the original Windows PC, not a new notebook.",
+    "The final archive is rebuilt later to include this evidence and final documentation; its entry hashes must separately match staging. The tested source, privacy fixture and lock hashes are recorded above.",
+    "Existing Chrome, Java and verified emulator JAR were explicitly provided; their fresh downloads were not exercised.",
+    "Running the tests intentionally rewrites 13 extracted app/reports files; all 96 non-report source entries still match the verified extraction and staging.",
+    "No Firebase login, deployment, real user data access, cloud mutations, camera/NFC real-device acceptance or actual-email workflow was performed.",
+    "npm deprecation warnings were retained; no dependency lock updates or automatic audit fixes were made."
+  ]
+}

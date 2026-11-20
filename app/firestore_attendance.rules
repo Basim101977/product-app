@@ -1,0 +1,242 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /attendanceSupportSignals/{uid} {
+      allow get: if approved(uid);
+      allow list, write: if false;
+    }
+    match /attendanceSupportThreads/{uid} {
+      allow get: if approved(request.auth.uid) && (request.auth.uid == uid || platformOwner());
+      allow list, write: if false;
+      match /{document=**} { allow read, write: if false; }
+    }
+    // Only an opaque mailbox-change signal is readable, never invitation payloads.
+    match /attendancePrivateShareSignals/{uid} {
+      allow get: if approved(uid);
+      allow list, write: if false;
+    }
+    function verified() {
+      return request.auth != null && request.auth.token.email_verified == true;
+    }
+    // Pin the real production identity; email alone never grants ownership.
+    function platformOwner() {
+      return request.auth != null && request.auth.uid == 'HATHIR_OWNER_UID_REQUIRED'
+        && request.auth.token.email.lower() == 'redacted@example.invalid'
+        && (verified() || (legacyAccess(request.auth.uid)
+          && get(legacyAccessPath(request.auth.uid)).data.get('platformOwner', false) == true));
+    }
+    function approvalPath(uid) {
+      return /databases/$(database)/documents/attendanceIndividualRequests/$(uid);
+    }
+    function legacyAccessPath(uid) {
+      return /databases/$(database)/documents/attendanceLegacyAccess/$(uid);
+    }
+    function matchingApproval(uid) {
+      return exists(approvalPath(uid)) && get(approvalPath(uid)).data.status == 'approved'
+        && get(approvalPath(uid)).data.email == request.auth.token.email.lower();
+    }
+    function legacyAccess(uid) {
+      return exists(legacyAccessPath(uid)) && get(legacyAccessPath(uid)).data.uid == uid
+        && get(legacyAccessPath(uid)).data.email == request.auth.token.email.lower()
+        && get(legacyAccessPath(uid)).data.approvedAtCutover == true;
+    }
+    function workspacePath(uid) {
+      return /databases/$(database)/documents/attendanceWorkspaces/$(uid);
+    }
+    function memberPath(uid) {
+      return /databases/$(database)/documents/attendanceWorkspaces/$(uid)/members/$(uid);
+    }
+    function subjectPath(uid, subjectId) {
+      return /databases/$(database)/documents/attendanceWorkspaces/$(uid)/subjects/$(subjectId);
+    }
+    function cohortPath(uid, cohortId) {
+      return /databases/$(database)/documents/attendanceWorkspaces/$(uid)/cohorts/$(cohortId);
+    }
+    function approved(uid) {
+      return request.auth != null && uid == request.auth.uid && (platformOwner() || (
+        matchingApproval(uid) && (verified() || (get(approvalPath(uid)).data.get('adminEmailApproved', false) == true
+          && get(approvalPath(uid)).data.get('reviewedBy', '') == 'HATHIR_OWNER_UID_REQUIRED') || (legacyAccess(uid)
+          && get(legacyAccessPath(uid)).data.get('platformOwner', false) == false))
+      ));
+    }
+    function active(uid) {
+      return approved(uid) && exists(workspacePath(uid))
+        && get(workspacePath(uid)).data.ownerUid == uid
+        && get(workspacePath(uid)).data.primaryOwnerUid == uid
+        && exists(memberPath(uid)) && get(memberPath(uid)).data.active == true
+        && get(memberPath(uid)).data.uid == uid;
+    }
+    function subjectAvailable(uid, subjectId) {
+      return active(uid) && exists(subjectPath(uid, subjectId))
+        && get(subjectPath(uid, subjectId)).data.get('rosterOperationId', '') == '';
+    }
+    function cohortAvailable(uid, cohortId) {
+      return active(uid) && (!exists(cohortPath(uid, cohortId))
+        || get(cohortPath(uid, cohortId)).data.get('rosterOperationId', '') == '');
+    }
+    function validSubject(subjectId) {
+      return request.resource.data.id == subjectId
+        && request.resource.data.ownerUserId == request.auth.uid
+        && request.resource.data.departmentId is string && request.resource.data.departmentId != 'civil_techniques' && request.resource.data.stageId is string
+        && (request.resource.data.get('rosterNaming', '') == 'name'
+          && !request.resource.data.keys().hasAny(['academicYearStart', 'stageNumber', 'departmentPrefix'])
+          || (request.resource.data.academicYearStart is int
+        && request.resource.data.academicYearStart >= 2000 && request.resource.data.academicYearStart <= 2100
+        && request.resource.data.stageNumber is int
+        && request.resource.data.stageNumber >= 1 && request.resource.data.stageNumber <= 6
+        && request.resource.data.departmentPrefix is string
+        && request.resource.data.departmentPrefix.matches('^[A-Z]{2,6}$')));
+    }
+    function legacySubject(data) {
+      return data.get('rosterSchemaVersion', 0) == 1 || (
+        !data.keys().hasAny(['rosterSchemaVersion', 'academicYearStart', 'stageNumber'])
+      );
+    }
+    function validLegacySubjectUpdate(subjectId) {
+      return legacySubject(resource.data)
+        && resource.data.get('id', subjectId) == subjectId
+        && !request.resource.data.diff(resource.data).affectedKeys().hasAny([
+          'academicYearStart', 'stageNumber', 'departmentPrefix', 'departmentId', 'stageId', 'section'
+        ]);
+    }
+    function preservesSubjectServerFields() {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny([
+        'sharedRosterSubscriptionId', 'id', 'ownerUserId', 'rosterNaming', 'rosterOperationId', 'rosterCohortId', 'lastRosterResetId',
+        'rosterSchemaVersion', 'legacyImportConfigured', 'legacyScopeConfiguredBy', 'legacyScopeConfiguredAt', 'students',
+        'academicStatuses', 'policySnapshot', 'summarySchemaVersion', 'summaryGeneration',
+        'attendanceLocked', 'attendanceClearInProgress', 'attendanceClearedAt', 'personalScopeLocked', 'studentCount'
+      ]) && (
+        resource.data.get('personalScopeLocked', false) == false && resource.data.get('attendanceLocked', false) == false
+        || !request.resource.data.diff(resource.data).affectedKeys().hasAny([
+          'academicYearStart', 'stageNumber', 'departmentPrefix', 'departmentId', 'stageId', 'section'
+        ])
+      ) && (
+        resource.data.get('attendanceLocked', false) == false
+        || !request.resource.data.diff(resource.data).affectedKeys().hasAny([
+          'totalHours', 'lectureDurationHours', 'attendancePolicy', 'policyVersion', 'academicYear', 'term'
+        ])
+      );
+    }
+    // Callables exclusively validate and write registrations and decisions.
+    // Frozen, administrator-created cutover evidence is never client-readable
+    // or writable. Current approval is independently checked on every access.
+    match /attendanceLegacyAccess/{uid} {
+      allow read, write: if false;
+    }
+    match /attendanceIndividualRequests/{uid} {
+      allow get: if request.auth != null && (uid == request.auth.uid || platformOwner());
+      allow list: if platformOwner();
+      allow write: if false;
+    }
+    match /attendanceUserWorkspaces/{uid} {
+      allow get: if active(uid);
+      allow list, write: if false;
+    }
+    match /attendanceWorkspaces/{workspaceId} {
+      allow get: if active(workspaceId);
+      allow list, create, delete: if false;
+      allow update: if active(workspaceId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name', 'settings', 'updatedAt']);
+      match /members/{uid} {
+        allow get: if active(workspaceId) && uid == request.auth.uid;
+        allow list, write: if false;
+      }
+      match /invites/{inviteId} { allow read, write: if false; }
+      match /departments/{departmentId} {
+        allow read: if active(workspaceId);
+        allow create: if active(workspaceId) && departmentId != 'civil_techniques' && !request.resource.data.keys().hasAny(['codePrefixLocked']);
+        allow update: if active(workspaceId)
+          && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['codePrefixLocked'])
+          && (resource.data.get('codePrefixLocked', false) == false
+            || !request.resource.data.diff(resource.data).affectedKeys().hasAny(['codePrefix', 'prefix', 'id']));
+        allow delete: if active(workspaceId) && resource.data.get('codePrefixLocked', false) == false;
+      }
+      match /stages/{stageId} {
+        allow read: if active(workspaceId);
+        allow create: if active(workspaceId) && request.resource.data.get('departmentId','') != 'civil_techniques' && !request.resource.data.keys().hasAny(['personalScopeLocked']);
+        allow update: if active(workspaceId)
+          && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['personalScopeLocked'])
+          && (resource.data.get('personalScopeLocked', false) == false
+            || !request.resource.data.diff(resource.data).affectedKeys().hasAny(['sort', 'departmentId', 'id']));
+        allow delete: if active(workspaceId) && resource.data.get('personalScopeLocked', false) == false;
+      }
+      match /cohorts/{cohortId} {
+        allow get, list: if active(workspaceId);
+        allow write: if false;
+        match /students/{studentId} {
+          allow read: if active(workspaceId);
+          allow create: if false;
+          allow update: if cohortAvailable(workspaceId, cohortId)
+            && request.resource.data.name is string && request.resource.data.name.size() >= 3
+            && request.resource.data.name.size() <= 150
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name', 'updatedAt', 'updatedBy']);
+          allow delete: if cohortAvailable(workspaceId, cohortId);
+        }
+        match /faceTemplates/{studentId} {
+          allow read: if active(workspaceId);
+          allow create, update: if cohortAvailable(workspaceId, cohortId) && request.resource.data.studentId == studentId;
+          allow delete: if cohortAvailable(workspaceId, cohortId);
+        }
+      }
+      match /subjects/{subjectId} {
+        allow read: if active(workspaceId);
+        allow create: if active(workspaceId) && request.resource.data.get('departmentId','') != 'civil_techniques' && validSubject(subjectId)
+          && !request.resource.data.keys().hasAny(['sharedRosterSubscriptionId', 'rosterOperationId', 'rosterCohortId', 'rosterSchemaVersion', 'legacyImportConfigured', 'legacyScopeConfiguredBy', 'legacyScopeConfiguredAt', 'lastRosterResetId', 'academicStatuses', 'personalScopeLocked', 'students']);
+        allow update: if subjectAvailable(workspaceId, subjectId)
+          && (legacySubject(resource.data) ? validLegacySubjectUpdate(subjectId) : validSubject(subjectId)) && preservesSubjectServerFields();
+        allow delete: if subjectAvailable(workspaceId, subjectId);
+        match /students/{studentId} {
+          allow read: if active(workspaceId);
+          allow create: if false;
+          allow update: if subjectAvailable(workspaceId, subjectId)
+            && legacySubject(get(subjectPath(workspaceId, subjectId)).data)
+            && (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['name'])
+              || (request.resource.data.name is string && request.resource.data.name.size() >= 3 && request.resource.data.name.size() <= 150))
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name', 'faceDescriptor', 'faceDescriptors', 'faceDescriptorMap', 'faceTemplateCount', 'updatedAt', 'updatedBy']);
+          allow delete: if subjectAvailable(workspaceId, subjectId)
+            && legacySubject(get(subjectPath(workspaceId, subjectId)).data);
+        }
+        match /faceTemplates/{studentId} {
+          allow read: if active(workspaceId);
+          allow create, update: if subjectAvailable(workspaceId, subjectId) && request.resource.data.studentId == studentId;
+          allow delete: if subjectAvailable(workspaceId, subjectId);
+        }
+        match /lectures/{lectureDate} {
+          allow read: if active(workspaceId);
+          // Attendance mutations must atomically update revisions and receipts.
+          // Both current and legacy offline callables remain available.
+          allow write: if false;
+          match /marks/{studentId} {
+            allow read: if active(workspaceId);
+            allow write: if false;
+          }
+          match /excuses/{studentId} {
+            allow read: if active(workspaceId);
+            allow write: if false;
+          }
+          match /scanEvents/{eventId} {
+            allow read: if active(workspaceId);
+            allow write: if false;
+          }
+        }
+        match /attendanceSummaries/{studentId} {
+          allow read: if active(workspaceId);
+          allow write: if false;
+        }
+      }
+      match /auditEvents/{eventId} {
+        allow read: if active(workspaceId);
+        allow write: if false;
+      }
+      match /lectureSnapshots/{snapshotId} {
+        allow read: if active(workspaceId);
+        allow write: if false;
+        match /{record=**} {
+          allow read: if active(workspaceId);
+          allow write: if false;
+        }
+      }
+      // Counters, receipts, recovery backups and unknown paths deny by default.
+    }
+  }
+}

@@ -1,0 +1,4683 @@
+{
+  "checkedAt": "2026-09-22T20:06:37.5993039Z",
+  "cloudWrites": 0,
+  "filesCompared": 779,
+  "archives": 41,
+  "passed": true,
+  "results": [
+    {
+      "archive": "function-source-1.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-1.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-2.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-3.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-4.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-5.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-6.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-7.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-8.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-9.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-10.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-11.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-12.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-13.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-14.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-15.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-16.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-17.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-18.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-19.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-20.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-21.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-22.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-23.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-24.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-25.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-26.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-27.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-28.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-29.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-30.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-31.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-32.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-33.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-34.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-35.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-36.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-37.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-38.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-39.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-40.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "cumulative-attendance.js",
+      "sha256": "33b7aef7b153e2c9375e5cd809dfd4f7adfa475c2fc9a982238cde36cc513e89",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "index.js",
+      "sha256": "9c2439850f0782961986f96c81f4fae15bc8558c5faf6827fca614f7fe70c362",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "lecture-session.js",
+      "sha256": "e1a120a8a767b16b6075c07138c992ac0414861a88e84d39019d9a4465f6ca1e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "offline-attendance-batch.js",
+      "sha256": "0f3b6eebe1648ed2d5f20637a45c171bddaff3587381dece9877db1fae1bcbd0",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "offline-attendance.js",
+      "sha256": "a75745c2e4b57433326b431280cdfb676d9f094a40c57e422166ecbf38172a07",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "package-lock.json",
+      "sha256": "f2854e321abcd203e5b8f0856be4f7451d4be0d33f4761c66ac84f2464c407ac",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "package.json",
+      "sha256": "b6a6a62fe7b399766f95819c776d6ac292ff19d328d0d972869d30b80c862900",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "personal-workspace.js",
+      "sha256": "878966d921c0d7e9d640bd91a0a850d809bda378c5fb430e17dcf5736785e987",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "README-personal.md",
+      "sha256": "5e20c500d3893f90f980567ca142ee08faa20ee81ab5f0861fd0732eb14b0332",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "README-production-upgrade.md",
+      "sha256": "751b8310db94c54aa2f57985ba1463af87b508543a592b639b453ded5176399c",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "retired-compatibility.js",
+      "sha256": "1df4daf108785ad820ac3ee722729ee447ea7c755a6778e029a631e414313ed3",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "subject-roster-reset.js",
+      "sha256": "a5a336c9f111b77aefb09b758450b3333d01cb9d3c5b503084b9e9d5d986e7b4",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "test/lecture-lifecycle.test.cjs",
+      "sha256": "f608b03eb65c7fb4b882c86d6f94dbe84635714d1db78e860146d808ab4edcb6",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "test/offline-corrections-server.test.cjs",
+      "sha256": "afcd286e851f91ee079d9e6d9bee623fa7ce1c6e1edede4e5be0dfa2d0347f31",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "test/offline-server.test.cjs",
+      "sha256": "3470410d94a316168bba68f8a0b19752b06479eaacb71e5a219fa53ed0d04bf7",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "test/personal-workspace.test.js",
+      "sha256": "22afcd7639df524e5b2b287898f077f376a1a1b3f3fce6dc5d8cfd996006fc4e",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "test/production-roster-sources.test.js",
+      "sha256": "29c466825969744d039ab14a66a4b64732ecb850f2b0300dd4596a81118c571a",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "test/subject-roster-reset.test.cjs",
+      "sha256": "ef8da80380864c19a53f3cdef3b94e67ce64cd5b8bc30674a43c647fef344a2b",
+      "matches": true
+    },
+    {
+      "archive": "function-source-41.zip",
+      "path": "weekly-approval.js",
+      "sha256": "64f094a7afad1116e519f8e1b823f77b27bccb51d77e8d1666bf19dba5dded65",
+      "matches": true
+    }
+  ]
+}
