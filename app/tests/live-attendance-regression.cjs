@@ -47,7 +47,8 @@ let harness;
    for(const {page} of devices)await page.evaluate(()=>__emitLive());
    for(const {page} of devices){
     await page.waitForFunction(()=>Object.keys(subjects[0].attendance[todayISO()]||{}).length===9);
-    assert.equal(await page.locator('#lastScanId').textContent(),'Synthetic 9');
+    // Listener pulls persist to IndexedDB before renderAll(); wait for the render.
+    await page.waitForFunction(()=>document.getElementById('lastScanId').textContent==='Synthetic 9');
     assert.equal(await page.locator('#lastScanTime').textContent(),'09:05');
    }
    const second=await devices[1].page.evaluate(async()=>({ids:(await HathirOfflineStore.operations(session.uid)).map(o=>o.id),status:subjects[0].lectureMeta[todayISO()].status}));
