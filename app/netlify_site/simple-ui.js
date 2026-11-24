@@ -72,7 +72,8 @@
     const lastName = els.lastScanId?.textContent?.trim(), lastTime = els.lastScanTime?.textContent?.trim();
     const state = active ? `<span class="suLive"><span class="suDot"></span>${tr('جارية', 'In progress')}</span>`
       : present ? `<span class="suMuted">${tr('انتهت', 'Closed')}</span>` : `<span class="suMuted">${tr('لم تبدأ', 'Not started')}</span>`;
-    return `${subjectCard(subject)}
+    const empty = !total && canAddStudents(subject) ? `<section class="suCard suEmptyCard"><b>${tr('لا يوجد طلبة في هذه المادة بعد', 'This subject has no students yet')}</b><p class="suHint suStart">${tr('أضف الأسماء بنفسك، أو امسح بطاقات QR فيُضاف أصحابها تلقائياً.', 'Add names yourself, or scan QR cards to enrol their holders.')}</p><button class="suPrimary" data-su="addStudents">＋ ${tr('أضف الطلبة', 'Add students')}</button></section>` : '';
+    return `${subjectCard(subject)}${empty}
       <section class="suCard" aria-label="${tr('محاضرة اليوم', 'Today’s lecture')}">
         <div class="suLecture"><span>${tr('محاضرة اليوم', 'Today’s lecture')}${time ? ` · <span class="suNum">${esc(time)}</span>` : ''}</span>${state}</div>
         <div class="suRing">
@@ -118,6 +119,7 @@
     const shown = rows.filter(r => !level || r.cls === level);
     const labels = { ok: tr('سليم', 'Clear'), warn: tr('تنبيه', 'Notice'), danger: tr('إنذار', 'Warning'), fail: tr('راسب', 'Failed') };
     return `${subjectCard(subject, `${(subject.students || []).length} ${tr('طالباً', 'students')} · ${subjectTotalHours(subject)} ${tr('ساعة', 'hours')}`)}
+      ${canAddStudents(subject) ? `<button class="suSecondary" data-su="addStudents">＋ ${tr('إضافة طلبة', 'Add students')}</button>` : ''}
       <div class="suSummary" role="group" aria-label="${tr('مواقف الغياب', 'Absence status')}">${Object.keys(counts).map(k => `<button class="${LEVELS[k][0]}" data-su-level="${k}" aria-pressed="${level === k}"><b>${counts[k]}</b>${labels[k]}</button>`).join('')}</div>${otherNote}
       <div class="suList">${shown.map(({ s, st, cls }) => { const pct = Number(st.absencePercent) || 0; return `<div class="suStudent"><span class="suHead"><b>${esc(s.name)}</b><span class="suTag ${(LEVELS[cls] || LEVELS.ok)[0]}">${esc(absencePolicyLabel(st.policy))}</span></span><span class="suBar"><i style="width:${Math.min(100, pct * 5)}%;background:${(LEVELS[cls] || LEVELS.ok)[1]}"></i></span><small><span>${st.absentMinutes ? tr('غياب', 'Absent') + ' ' + esc(hoursLabel(st.absentMinutes)) : tr('لا غياب', 'No absence')}</span><span class="suNum">${esc(percentLabel(pct))}</span></small></div>`; }).join('') || `<p class="suEmpty">${tr('لا يوجد طلبة في هذا الموقف.', 'No students in this status.')}</p>`}</div>
       <div class="suTools"><button data-su="excel">⤓ Excel</button><button data-su="qr">▦ ${tr('بطاقات QR', 'QR cards')}</button></div>`;
@@ -228,7 +230,7 @@
     const layer = $('suLayer');
     layer.innerHTML = `<div class="suScrim"><div class="suSheet" role="dialog" aria-modal="true"><div class="suGrab"></div>${html}</div></div>`;
     layer.firstChild.addEventListener('click', e => { if (e.target === layer.firstChild) closeSheet(); });
-    bind?.(layer); layer.querySelector('button')?.focus();
+    bind?.(layer); (layer.querySelector('[data-autofocus]') || layer.querySelector('button'))?.focus();
   }
   function clearToast() { clearTimeout(toastTimer); root?.querySelector('.suToast')?.remove(); }
   function closeSheet() { const layer = $('suLayer'); if (layer) layer.innerHTML = ''; }
@@ -347,6 +349,57 @@
       <div class="suBtns"><button data-x="close">${tr('إغلاق', 'Close')}</button></div>`, layer => { layer.querySelector('[data-x="close"]').onclick = closeSheet; });
   }
 
+  const canAddStudents = subject => !!subject && !subject._sources && typeof canManageStudents === 'function' && canManageStudents(subject);
+  // Adding uses the existing importParsedStudents / importStudentsFromFile, so
+  // validation, numbering and the 700-name limit stay with the current code.
+  // A pasted list often keeps its numbering ("1. name", "2) name"); the shared
+  // parser only drops a serial in its own column, so strip it here.
+  const SERIAL = /^\s*[0-9\u0660-\u0669\u06F0-\u06F9]+\s*[.)\-\u2013:]\s*/;
+  function addSheet() {
+    const subject = view();
+    if (!canAddStudents(subject)) { notify(text('noPermission'), 'error'); return; }
+    sheet(`<h2>${tr('إضافة طلبة', 'Add students')}</h2>
+      <p class="suHint suStart">${tr('إلى', 'To')} ${esc(subjectTitle(subject))}. ${tr('يأخذ كل طالب رقماً داخلياً تلقائياً.', 'Each student gets an internal number automatically.')}</p>
+      <div class="suField"><label for="suOneName">${tr('اسم طالب واحد', 'One student')}</label>
+        <div class="suInline"><input id="suOneName" data-autofocus class="suSearch" autocomplete="off" maxlength="150" placeholder="${tr('الاسم الثلاثي أو الرباعي', 'Full name')}"><button class="suGo" data-x="one">${tr('إضافة', 'Add')}</button></div></div>
+      <div class="suField"><label for="suManyNames">${tr('أو عدة أسماء: اسم في كل سطر، ويُحذف الترقيم من بدايته', 'Or several names, one per line; leading numbers are removed')}</label>
+        <textarea id="suManyNames" class="suSearch" rows="5"></textarea><button class="suGo" data-x="many" disabled>${tr('إضافة الأسماء', 'Add names')}</button></div>
+      <div class="suField"><span>${tr('أو من ملف Excel أو CSV فيه عمود الأسماء', 'Or from an Excel or CSV file with a names column')}</span>
+        <button class="suSecondary" data-x="file">${tr('اختر ملفاً', 'Choose a file')}</button><input id="suNamesFile" type="file" accept=".xlsx,.xls,.csv,.txt" hidden></div>
+      <p class="suStatus" id="suAddStatus" role="status"></p>
+      <div class="suBtns"><button data-x="close">${tr('إغلاق', 'Close')}</button></div>`, layer => {
+      const one = layer.querySelector('#suOneName'), many = layer.querySelector('#suManyNames'), status = layer.querySelector('#suAddStatus');
+      const goOne = layer.querySelector('[data-x="one"]'), goMany = layer.querySelector('[data-x="many"]');
+      const say = (message, error = false) => { status.textContent = message; status.dataset.state = error ? 'error' : 'ok'; };
+      const parse = () => { const lines = many.value.split(/\r?\n/).filter(l => l.trim()); const parsed = lines.map(l => parseStudentLine(l.replace(SERIAL, ''))).filter(Boolean); return { parsed, skipped: lines.length - parsed.length }; };
+      async function run(button, task) {
+        const buttons = layer.querySelectorAll('button'); buttons.forEach(b => { b.disabled = true; });
+        try { return await task(); }
+        catch (error) { say(error.message || String(error), true); return null; }
+        finally { buttons.forEach(b => { b.disabled = false; }); goMany.disabled = !parse().parsed.length; }
+      }
+      async function addOne() {
+        const name = one.value.trim().replace(/\s+/g, ' ');
+        if (name.length < 3) { say(tr('اكتب اسماً من ثلاثة أحرف على الأقل.', 'Enter a name of at least three letters.'), true); one.focus(); return; }
+        const added = await run(goOne, () => importParsedStudents([{ name }], 0));
+        if (Array.isArray(added) && added.length) { say(tr('أُضيف: ', 'Added: ') + name); one.value = ''; one.focus(); queue(); }
+      }
+      layer.querySelector('[data-x="close"]').onclick = closeSheet;
+      goOne.onclick = addOne;
+      one.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); addOne(); } });
+      many.addEventListener('input', () => { const n = parse().parsed.length; goMany.disabled = !n; goMany.textContent = n ? tr('إضافة ', 'Add ') + n + tr(' اسماً', ' names') : tr('إضافة الأسماء', 'Add names'); });
+      goMany.onclick = async () => {
+        const { parsed, skipped } = parse();
+        if (!parsed.length) return;
+        const added = await run(goMany, () => importParsedStudents(parsed, skipped));
+        if (Array.isArray(added) && added.length) { closeSheet(); queue(); }
+      };
+      const file = layer.querySelector('#suNamesFile');
+      layer.querySelector('[data-x="file"]').onclick = () => file.click();
+      file.addEventListener('change', () => { if (!file.files?.length) return; closeSheet(); Promise.resolve(importStudentsFromFile({ target: file })).finally(queue); });
+    });
+  }
+
   function setClassic() {
     try { localStorage.removeItem(KEY); } catch {}
     enabled = false; closeSheet(); render();
@@ -368,6 +421,7 @@
       case 'scan': $('beginnerStartAttendance') ? $('beginnerStartAttendance').click() : startScanner(); queue(); break;
       case 'sync': syncSheet(); break;
       case 'endLecture': endSheet(); break;
+      case 'addStudents': addSheet(); break;
       case 'subjects': subjectSheet(); break;
       case 'setup': $('teachingSetupBtn')?.click(); break;
       case 'excel': exportExcel(); break;
