@@ -125,3 +125,13 @@ body.simpleUiScanning{overflow:auto}
 .suToast{position:absolute;bottom:calc(84px + env(safe-area-inset-bottom,0px));left:var(--su-gl);right:var(--su-gr);background:var(--su-toast);color:var(--su-toast-ink);border-radius:16px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:15px;z-index:3;box-shadow:0 8px 20px var(--su-shadow)}
 .suToast button{color:var(--su-toast-act)!important;font-weight:800!important}
 @media (prefers-reduced-motion: reduce){.suRoot *{animation:none!important;transition:none!important}}
+
+.suCenter{align-self:center;margin-top:0;padding:6px}
+.suStart{text-align:start}
+.suLec{width:100%;text-align:start}
+.suChevSmall{color:var(--su-muted);flex:none}
+.suSub{font-size:15px;color:var(--su-muted);margin:12px 2px 6px}
+.suOptDanger b{color:var(--su-fail)}
+.suSheet .suList{max-height:40vh;overflow-y:auto}
+/* Classic notifications appear under the header instead of over the tab bar. */
+body.simpleUi #toast{inset-block-end:auto;inset-block-start:calc(64px + env(safe-area-inset-top,0px));inset-inline:16px;margin-inline:auto}

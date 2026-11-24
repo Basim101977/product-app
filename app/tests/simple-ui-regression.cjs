@@ -105,7 +105,53 @@ const row = (page, name) => page.locator('#simpleUi .suRow', { hasText: name });
           assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
         });
 
+        const ending = width === 390 ? 'completed' : 'cancelled';
+        await check(report, `${width}px the lecture can be ${ending} from the simple interface with an in-page confirmation`, async () => {
+          await page.locator('[data-su-tab="today"]').click();
+          await page.locator('[data-su="names"]').click();
+          await row(page, SECOND).click(); await row(page, SECOND).click();
+          await page.waitForFunction(() => { const s = attendanceView(); return !!getAttendanceRecord(s, currentLectureKey(s), 'MI20250002'); });
+          await page.locator('[data-su="back"]').click();
+          await page.locator('#simpleUi [data-su="endLecture"]').click();
+          if (ending === 'completed') await page.locator('#simpleUi .suSheet [data-x="complete"]').click();
+          else {
+            await page.locator('#simpleUi .suSheet [data-x="cancel"]').click();
+            assert.equal(await page.evaluate(() => { const s = attendanceView(); return s.lectureMeta[currentLectureKey(s)].status; }), 'active', 'first press only asks');
+            await page.locator('#simpleUi .suSheet [data-x="yes"]').click();
+          }
+          await page.waitForFunction(status => { const s = getSubject(); return Object.values(s.lectureMeta).some(m => m.status === status); }, ending);
+          const ops = (await state(page)).ops.map(o => o.kind);
+          assert(ops.includes(ending === 'completed' ? 'close' : 'cancel'), JSON.stringify(ops));
+          assert.equal(dialogs, 0);
+          await page.waitForFunction(() => !document.querySelector('#simpleUi [data-su="endLecture"]'));
+          await page.screenshot({ path: path.join(REPORTS, `simple-ui-closed-${width}.png`) });
+        });
+
+        await check(report, `${width}px a lecture in the record opens its status and absent students`, async () => {
+          await page.locator('[data-su-tab="records"]').click();
+          const rows = page.locator('#simpleUi .suLec');
+          assert(await rows.count() >= 1);
+          await rows.first().click();
+          const text = await page.locator('#simpleUi .suSheet').innerText();
+          assert(text.includes(ending === 'completed' ? 'مكتملة' : 'ملغاة'), text);
+          assert(text.includes('الغائبون (1)') && text.includes(FIRST), text);
+          await page.screenshot({ path: path.join(REPORTS, `simple-ui-lecture-${width}.png`) });
+          await page.locator('#simpleUi .suSheet [data-x="close"]').click();
+        });
+
+        await check(report, `${width}px English renders left-to-right with English labels`, async () => {
+          await page.evaluate(() => { lang = 'en'; applyLanguage(); renderAll(); });
+          await page.locator('[data-su-tab="today"]').click();
+          await page.waitForFunction(() => document.getElementById('simpleUi').dir === 'ltr');
+          const labels = await page.locator('#suNav button').allInnerTexts();
+          assert.deepEqual(labels.map(l => l.replace(/\s+/g, ' ').trim().split(' ').pop()), ['Today', 'Students', 'Record', 'More']);
+          assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+          await page.screenshot({ path: path.join(REPORTS, `simple-ui-english-${width}.png`) });
+          await page.evaluate(() => { lang = 'ar'; applyLanguage(); renderAll(); });
+        });
+
         await check(report, `${width}px the classic switch restores the existing interface and forgets the preference`, async () => {
+          await page.locator('[data-su-tab="more"]').click();
           await page.locator('#simpleUi [data-su="classic"]').click();
           await page.waitForFunction(() => document.getElementById('simpleUi').hidden && !document.body.classList.contains('simpleUi'));
           assert.equal(await page.evaluate(() => localStorage.getItem('hathir-simple-ui')), null);

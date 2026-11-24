@@ -8,6 +8,13 @@
   const $ = id => document.getElementById(id);
   const tr = (ar, en) => (typeof lang !== 'undefined' && lang === 'en' ? en : ar);
   const esc = value => escapeHtml(String(value ?? ''));
+  // Weekday, day and month with Western digits, e.g. «الثلاثاء 24 نوفمبر».
+  function lectureDate(key) {
+    const day = typeof lectureCalendarDate === 'function' ? lectureCalendarDate(key) : String(key).slice(0, 10);
+    const date = new Date(day + 'T12:00:00');
+    if (Number.isNaN(date.getTime())) return attendanceColumnDate(key);
+    return new Intl.DateTimeFormat(tr('ar-u-nu-latn', 'en-GB'), { weekday: 'long', day: 'numeric', month: 'long' }).format(date);
+  }
   let enabled = false, root = null, tab = 'today', sub = '', filter = 'all', query = '', level = '';
   let syncState = null, tapKey = null, tapAt = 0, toastTimer = null, renderQueued = false;
 
@@ -75,6 +82,7 @@
       </section>
       <button class="suPrimary" data-su="scan"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>${tr('امسح بطاقات الطلبة', 'Scan student cards')}</button>
       <button class="suSecondary" data-su="names">${tr('سجّل بالاسم', 'Mark by name')}</button>
+      ${active ? `<button class="suLink suCenter" data-su="endLecture">${tr('إنهاء المحاضرة أو إلغاؤها', 'Close or cancel the lecture')}</button>` : present ? `<p class="suHint">${tr('أول تسجيل جديد يبدأ محاضرة جديدة.', 'The next mark starts a new lecture.')}</p>` : ''}
       ${lastName && lastName !== '—' ? `<div class="suCard suLast"><span class="suAvatar" aria-hidden="true">${esc(lastName[0])}</span><span class="suGrow"><small>${tr('آخر تسجيل', 'Last mark')}</small><b>${esc(lastName)}</b></span><small class="suNum">${esc(lastTime || '')}</small></div>` : ''}`;
   }
 
@@ -120,7 +128,7 @@
     const total = (subject.students || []).length;
     const keys = sortedLectureKeys(subject).filter(k => !lectureColumnRemovedAfterUnmark(subject, k)).reverse();
     return `${subjectCard(subject, `${keys.length} ${tr('محاضرة', 'lectures')}`)}
-      <div class="suList">${keys.map((k, i) => { const meta = subject.lectureMeta?.[k] || {}, count = Object.keys(subject.attendance?.[k] || {}).length, cancelled = ['cancelled', 'voided'].includes(meta.status); return `<div class="suLec"><span class="suLecNo">${keys.length - i}</span><span class="suGrow"><b>${esc(attendanceColumnDate(k))}${meta.startTime ? ' · <span class="suNum">' + esc(displayAttendanceTime(meta.startTime)) + '</span>' : ''}</b><small>${cancelled ? tr('ملغاة', 'Cancelled') : count + ' ' + tr('من', 'of') + ' ' + total + ' ' + tr('حاضرون', 'present')}</small></span></div>`; }).join('') || `<p class="suEmpty">${tr('لا توجد محاضرات بعد.', 'No lectures yet.')}</p>`}</div>
+      <div class="suList">${keys.map((k, i) => { const meta = subject.lectureMeta?.[k] || {}, count = Object.keys(subject.attendance?.[k] || {}).length, cancelled = ['cancelled', 'voided'].includes(meta.status); return `<button class="suLec" data-su-lecture="${esc(k)}"><span class="suLecNo">${keys.length - i}</span><span class="suGrow"><b>${esc(lectureDate(k))}${meta.startTime ? ' · <span class="suNum">' + esc(displayAttendanceTime(meta.startTime)) + '</span>' : ''}</b><small>${cancelled ? tr('ملغاة', 'Cancelled') : count + ' ' + tr('من', 'of') + ' ' + total + ' ' + tr('حاضرون', 'present')}</small></span><span class="suChevSmall" aria-hidden="true">‹</span></button>`; }).join('') || `<p class="suEmpty">${tr('لا توجد محاضرات بعد.', 'No lectures yet.')}</p>`}</div>
       <button class="suSecondary" data-su="fullRecord">${tr('افتح السجل الكامل', 'Open full record')}</button>`;
   }
 
@@ -178,11 +186,13 @@
     toastTimer = setTimeout(() => el.remove(), action ? 5000 : 2600);
   }
   function sheet(html, bind) {
+    clearToast();
     const layer = $('suLayer');
     layer.innerHTML = `<div class="suScrim"><div class="suSheet" role="dialog" aria-modal="true"><div class="suGrab"></div>${html}</div></div>`;
     layer.firstChild.addEventListener('click', e => { if (e.target === layer.firstChild) closeSheet(); });
     bind?.(layer); layer.querySelector('button')?.focus();
   }
+  function clearToast() { clearTimeout(toastTimer); root?.querySelector('.suToast')?.remove(); }
   function closeSheet() { const layer = $('suLayer'); if (layer) layer.innerHTML = ''; }
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && root && !root.hidden) closeSheet(); });
 
@@ -254,6 +264,51 @@
     });
   }
 
+  // The sheet is the confirmation, so the existing status change runs with
+  // confirmed:true and the same in-flight guard as the classic buttons.
+  async function lectureStatus(status) {
+    if (manualLectureStatusInFlight) return;
+    manualLectureStatusInFlight = true;
+    try { await setTodayLectureStatus(status, { confirmed: true }); }
+    catch (error) { notify(error.message || String(error), 'error'); }
+    finally { manualLectureStatusInFlight = false; clearToast(); renderLectureBanner(); queue(); }
+  }
+  function endSheet() {
+    const subject = view(), key = lectureKey(subject), students = subject?.students || [];
+    const present = students.filter(s => record(subject, key, s.id)).length;
+    const canCancel = hasAttendanceEditPermission();
+    sheet(`<h2>${tr('إنهاء محاضرة اليوم؟', 'Close today’s lecture?')}</h2>
+      <p class="suHint suStart">${tr('حضر', 'Present:')} ${present} ${tr('من', 'of')} ${students.length}. ${tr('بعد الإنهاء يُحتسب الغياب للباقين، وأول تسجيل جديد يبدأ محاضرة جديدة.', 'Closing counts the rest as absent; the next mark starts a new lecture.')}</p>
+      <div class="suOpts">
+        <button class="suOpt" data-x="complete"><b>${tr('إنهاء المحاضرة', 'Close lecture')}</b><small>${tr('تُحفظ الساعات والتسجيلات كما هي', 'Hours and marks are kept')}</small></button>
+        ${canCancel ? `<button class="suOpt suOptDanger" data-x="cancel"><b>${tr('إلغاء المحاضرة', 'Cancel lecture')}</b><small>${tr('لا تُحسب في الغياب؛ تبقى التسجيلات محفوظة للمراجعة', 'Excluded from absence; marks stay for review')}</small></button>` : ''}
+      </div>
+      <div class="suBtns"><button data-x="close">${tr('متابعة التسجيل', 'Keep marking')}</button></div>`, layer => {
+      layer.querySelector('[data-x="close"]').onclick = closeSheet;
+      layer.querySelector('[data-x="complete"]').onclick = () => { closeSheet(); lectureStatus('completed'); };
+      layer.querySelector('[data-x="cancel"]')?.addEventListener('click', () => {
+        const row = layer.querySelector('.suBtns');
+        row.innerHTML = `<button data-x="no">${tr('تراجع', 'Keep')}</button><button class="suDanger" data-x="yes">${tr('نعم، ألغِ المحاضرة', 'Yes, cancel it')}</button>`;
+        row.querySelector('[data-x="no"]').onclick = closeSheet;
+        row.querySelector('[data-x="yes"]').onclick = () => { closeSheet(); lectureStatus('cancelled'); };
+        row.querySelector('[data-x="yes"]').focus();
+      });
+    });
+  }
+  function lectureSheet(key) {
+    const subject = view(); if (!subject) return;
+    const meta = subject.lectureMeta?.[key] || {}, students = subject.students || [];
+    const cancelled = ['cancelled', 'voided'].includes(meta.status);
+    const present = students.filter(s => record(subject, key, s.id));
+    const absent = students.filter(s => !record(subject, key, s.id));
+    const status = cancelled ? tr('ملغاة · لا تُحسب في الغياب', 'Cancelled · excluded from absence') : meta.status === 'active' && !lectureIsComplete(subject, key) ? tr('جارية', 'In progress') : tr('مكتملة', 'Closed');
+    sheet(`<h2>${esc(lectureDate(key))}${meta.startTime ? ' · <span class="suNum">' + esc(displayAttendanceTime(meta.startTime)) + '</span>' : ''}</h2>
+      <dl class="suKv"><dt>${tr('الحالة', 'Status')}</dt><dd>${status}</dd><dt>${tr('الحضور', 'Present')}</dt><dd>${present.length} ${tr('من', 'of')} ${students.length}</dd></dl>
+      <h3 class="suSub">${tr('الغائبون', 'Absent')} (${absent.length})</h3>
+      <div class="suList">${absent.map(s => `<div class="suLec"><span class="suGrow"><b>${esc(s.name)}</b></span></div>`).join('') || `<p class="suEmpty">${tr('لا غياب في هذه المحاضرة.', 'Nobody was absent.')}</p>`}</div>
+      <div class="suBtns"><button data-x="close">${tr('إغلاق', 'Close')}</button></div>`, layer => { layer.querySelector('[data-x="close"]').onclick = closeSheet; });
+  }
+
   function setClassic() {
     try { localStorage.removeItem(KEY); } catch {}
     enabled = false; closeSheet(); render();
@@ -262,15 +317,17 @@
   function onClick(event) {
     const t = event.target.closest('button'); if (!t || t.closest('.suToast')) return;
     const d = t.dataset;
-    if (d.suTab) { tab = d.suTab; sub = ''; level = ''; render(); $('suView').scrollTop = 0; return; }
+    if (d.suTab) { clearToast(); tab = d.suTab; sub = ''; level = ''; render(); $('suView').scrollTop = 0; return; }
     if (d.suFilter) { filter = d.suFilter; render(); return; }
     if (d.suLevel) { level = level === d.suLevel ? '' : d.suLevel; render(); return; }
     if (d.suStudent) { studentTap(d.suStudent, t); return; }
+    if (d.suLecture) { lectureSheet(d.suLecture); return; }
     switch (d.su) {
       case 'back': sub = ''; query = ''; filter = 'all'; render(); break;
       case 'names': sub = 'names'; render(); $('suView').scrollTop = 0; break;
       case 'scan': $('beginnerStartAttendance') ? $('beginnerStartAttendance').click() : startScanner(); queue(); break;
       case 'sync': syncSheet(); break;
+      case 'endLecture': endSheet(); break;
       case 'subjects': subjectSheet(); break;
       case 'setup': $('teachingSetupBtn')?.click(); break;
       case 'excel': exportExcel(); break;
