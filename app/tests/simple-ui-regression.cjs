@@ -144,6 +144,18 @@ const row = (page, name) => page.locator('#simpleUi .suRow', { hasText: name });
 
         await check(report, `${width}px a lecture in the record opens its status and absent students`, async () => {
           await page.locator('[data-su-tab="records"]').click();
+          // Names record (default): one row per student, one cell per lecture.
+          const names = page.locator('#simpleUi .suNameRec');
+          assert.equal(await names.count(), 2);
+          assert.equal(await names.first().locator('.suCell').count(), await page.evaluate(() => sortedLectureKeys(attendanceView()).filter(k => !lectureColumnRemovedAfterUnmark(attendanceView(), k)).length));
+          const firstRow = page.locator('#simpleUi .suNameRec', { hasText: FIRST });
+          assert.equal(await firstRow.locator('.suCellP').count(), 0, 'first student was absent');
+          await page.screenshot({ path: path.join(REPORTS, `simple-ui-names-record-${width}.png`) });
+          await firstRow.click();
+          const history = await page.locator('#simpleUi .suSheet').innerText();
+          assert(history.includes(FIRST) && /غائب|ملغاة/.test(history), history);
+          await page.locator('#simpleUi .suSheet [data-x="close"]').click();
+          await page.locator('[data-su-record="lectures"]').click();
           const rows = page.locator('#simpleUi .suLec');
           assert(await rows.count() >= 1);
           await rows.first().click();

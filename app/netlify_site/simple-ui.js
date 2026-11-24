@@ -15,7 +15,7 @@
     if (Number.isNaN(date.getTime())) return attendanceColumnDate(key);
     return new Intl.DateTimeFormat(tr('ar-u-nu-latn', 'en-GB'), { weekday: 'long', day: 'numeric', month: 'long' }).format(date);
   }
-  let enabled = false, root = null, tab = 'today', sub = '', filter = 'all', query = '', level = '';
+  let enabled = false, root = null, tab = 'today', sub = '', filter = 'all', query = '', level = '', recordMode = 'names';
   let syncState = null, tapKey = null, tapAt = 0, toastTimer = null, renderQueued = false;
 
   try {
@@ -123,14 +123,51 @@
       <div class="suTools"><button data-su="excel">⤓ Excel</button><button data-su="qr">▦ ${tr('بطاقات QR', 'QR cards')}</button></div>`;
   }
 
+  // Names record: one row per student with a cell per lecture, oldest to newest,
+  // replacing the wide classic grid on small screens. Read-only; corrections stay
+  // in the full classic record.
+  function lectureCell(subject, key, id) {
+    const meta = subject.lectureMeta?.[key] || {};
+    if (['cancelled', 'voided'].includes(meta.status)) return 'x';
+    if (record(subject, key, id)) return 'p';
+    // Same rule as cumulativeAttendanceStats: a lecture without activity, or one
+    // neither running nor complete, is not counted, so it is not an absence.
+    if (meta.restorationInProgress || !lectureHasActivity(subject, key) || (meta.status !== 'active' && !lectureIsComplete(subject, key))) return 'n';
+    if (typeof hasExcusedAbsence === 'function' && hasExcusedAbsence(subject, key, normalizeId(id))) return 'e';
+    return meta.status === 'active' && !lectureIsComplete(subject, key) ? 'w' : 'a';
+  }
+  const CELL = { p: ['suCellP', 'حاضر', 'Present'], a: ['suCellA', 'غائب', 'Absent'], e: ['suCellE', 'غائب بعذر', 'Excused'], x: ['suCellX', 'ملغاة', 'Cancelled'], n: ['suCellN', 'لا تُحتسب', 'Not counted'], w: ['suCellW', 'لم يُسجَّل بعد', 'Not marked yet'] };
+  const lectureKeys = subject => sortedLectureKeys(subject).filter(k => !lectureColumnRemovedAfterUnmark(subject, k));
   function records() {
     const subject = view();
     if (!subject) return subjectCard(null);
-    const total = (subject.students || []).length;
-    const keys = sortedLectureKeys(subject).filter(k => !lectureColumnRemovedAfterUnmark(subject, k)).reverse();
-    return `${subjectCard(subject, `${keys.length} ${tr('محاضرة', 'lectures')}`)}
-      <div class="suList">${keys.map((k, i) => { const meta = subject.lectureMeta?.[k] || {}, count = Object.keys(subject.attendance?.[k] || {}).length, cancelled = ['cancelled', 'voided'].includes(meta.status); return `<button class="suLec" data-su-lecture="${esc(k)}"><span class="suLecNo">${keys.length - i}</span><span class="suGrow"><b>${esc(lectureDate(k))}${meta.startTime ? ' · <span class="suNum">' + esc(displayAttendanceTime(meta.startTime)) + '</span>' : ''}</b><small>${cancelled ? tr('ملغاة', 'Cancelled') : count + ' ' + tr('من', 'of') + ' ' + total + ' ' + tr('حاضرون', 'present')}</small></span><span class="suChevSmall" aria-hidden="true">‹</span></button>`; }).join('') || `<p class="suEmpty">${tr('لا توجد محاضرات بعد.', 'No lectures yet.')}</p>`}</div>
-      <button class="suSecondary" data-su="fullRecord">${tr('افتح السجل الكامل', 'Open full record')}</button>`;
+    const students = subject.students || [], keys = lectureKeys(subject);
+    const toggle = `<div class="suChips" role="group" aria-label="${tr('طريقة العرض', 'View')}">
+        <button class="suChip" data-su-record="names" aria-pressed="${recordMode === 'names'}">${tr('حسب الطالب', 'By student')}</button>
+        <button class="suChip" data-su-record="lectures" aria-pressed="${recordMode === 'lectures'}">${tr('حسب المحاضرة', 'By lecture')}</button></div>`;
+    let body;
+    if (recordMode === 'names') {
+      const used = new Set(students.flatMap(s => keys.map(k => lectureCell(subject, k, s.id))));
+      const legend = ['p', 'a', 'e', 'x', 'n', 'w'].filter(c => used.has(c)).map(c => `<span><i class="suCell ${CELL[c][0]}"></i>${tr(CELL[c][1], CELL[c][2])}</span>`).join('');
+      body = `<p class="suLegend">${legend}</p>
+        <div class="suList">${students.map((s, n) => {
+          const cells = keys.map(k => lectureCell(subject, k, s.id)), held = cells.filter(c => 'pae'.includes(c)).length, came = cells.filter(c => c === 'p').length;
+          return `<button class="suNameRec" data-su-history="${esc(s.id)}"><span class="suHead"><b><span class="suIdx">${n + 1}</span>${esc(s.name)}</b><span class="suNum suMutedSmall">${came}/${held}</span></span><span class="suCells" aria-label="${tr('حضر', 'Present')} ${came} ${tr('من', 'of')} ${held}">${cells.map(c => `<i class="suCell ${CELL[c][0]}"></i>`).join('')}</span></button>`;
+        }).join('') || `<p class="suEmpty">${tr('لا يوجد طلبة بعد.', 'No students yet.')}</p>`}</div>`;
+    } else {
+      const total = students.length;
+      body = `<div class="suList">${[...keys].reverse().map((k, i) => { const meta = subject.lectureMeta?.[k] || {}, count = Object.keys(subject.attendance?.[k] || {}).length, cancelled = ['cancelled', 'voided'].includes(meta.status); return `<button class="suLec" data-su-lecture="${esc(k)}"><span class="suLecNo">${keys.length - i}</span><span class="suGrow"><b>${esc(lectureDate(k))}${meta.startTime ? ' · <span class="suNum">' + esc(displayAttendanceTime(meta.startTime)) + '</span>' : ''}</b><small>${cancelled ? tr('ملغاة', 'Cancelled') : count + ' ' + tr('من', 'of') + ' ' + total + ' ' + tr('حاضرون', 'present')}</small></span><span class="suChevSmall" aria-hidden="true">‹</span></button>`; }).join('') || `<p class="suEmpty">${tr('لا توجد محاضرات بعد.', 'No lectures yet.')}</p>`}</div>`;
+    }
+    return `${subjectCard(subject, `${students.length} ${tr('طالباً', 'students')} · ${keys.length} ${tr('محاضرة', 'lectures')}`)}${toggle}${body}
+      <button class="suLink suCenter" data-su="fullRecord">${tr('الجدول الكامل للتعديل والتصحيح', 'Full table for edits and corrections')}</button>`;
+  }
+  function historySheet(id) {
+    const subject = view(); if (!subject) return;
+    const student = subject.students?.find(s => normalizeId(s.id) === normalizeId(id)); if (!student) return;
+    const keys = lectureKeys(subject).reverse(), st = studentAttendanceStats(subject, student.id);
+    sheet(`<h2>${esc(student.name)}</h2><p class="suHint suStart"><span class="suTag ${(LEVELS[st.policy?.className] || LEVELS.ok)[0]}">${esc(absencePolicyLabel(st.policy))}</span> ${st.absentMinutes ? tr('غياب', 'Absent') + ' ' + esc(hoursLabel(st.absentMinutes)) + ' · <span class="suNum">' + esc(percentLabel(st.absencePercent)) + '</span>' : tr('لا غياب', 'No absence')}</p>
+      <div class="suList">${keys.map(k => { const c = lectureCell(subject, k, student.id), r = record(subject, k, student.id); return `<div class="suLec"><i class="suCell ${CELL[c][0]}"></i><span class="suGrow"><b>${esc(lectureDate(k))}</b><small>${tr(CELL[c][1], CELL[c][2])}${r?.time ? ' · <span class="suNum">' + esc(displayAttendanceTime(r.time)) + '</span>' : ''}</small></span></div>`; }).join('') || `<p class="suEmpty">${tr('لا توجد محاضرات بعد.', 'No lectures yet.')}</p>`}</div>
+      <div class="suBtns"><button data-x="close">${tr('إغلاق', 'Close')}</button></div>`, layer => { layer.querySelector('[data-x="close"]').onclick = closeSheet; });
   }
 
   function more() {
@@ -323,6 +360,8 @@
     if (d.suLevel) { level = level === d.suLevel ? '' : d.suLevel; render(); return; }
     if (d.suStudent) { studentTap(d.suStudent, t); return; }
     if (d.suLecture) { lectureSheet(d.suLecture); return; }
+    if (d.suHistory) { historySheet(d.suHistory); return; }
+    if (d.suRecord) { recordMode = d.suRecord; render(); return; }
     switch (d.su) {
       case 'back': sub = ''; query = ''; filter = 'all'; render(); break;
       case 'names': sub = 'names'; render(); $('suView').scrollTop = 0; break;
