@@ -32,7 +32,8 @@
   const ready = () => enabled && typeof session !== 'undefined' && session && !$('appPage')?.hidden;
   const view = () => (typeof attendanceView === 'function' ? attendanceView() : null);
   const lectureKey = subject => (subject ? currentLectureKey(subject) : '');
-  const record = (subject, key, id) => (subject && key ? getAttendanceRecord(subject, key, id) : null);
+  // Attendance is keyed by normalizeId (e.g. upper case), not the roster's raw id.
+  const record = (subject, key, id) => (subject && key ? getAttendanceRecord(subject, key, normalizeId(id)) : null);
   const scanning = () => document.body.classList.contains('beginnerScannerVisible') || (typeof cameraStream !== 'undefined' && !!cameraStream);
 
   function pending() {

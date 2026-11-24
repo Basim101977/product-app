@@ -78,6 +78,21 @@ const row = (page, name) => page.locator('#simpleUi .suRow', { hasText: name });
           assert.equal(dialogs, 0);
         });
 
+        await check(report, `${width}px a roster id that is not already normalised still shows its mark`, async () => {
+          await page.evaluate(async () => {
+            const s = subjects[0]; s.students.push({ id: 'qa-lower-7', name: 'طالب بمعرف صغير', faceDescriptors: [] });
+            s.studentCount = s.students.length; s.loadedSummaryStudentIds.add('qa-lower-7'); buildStudentCache();
+            await HathirOfflineStore.save(offlineSnapshot(s)); renderAll();
+          });
+          const lower = row(page, 'طالب بمعرف صغير');
+          await lower.click(); await lower.click();
+          await page.waitForFunction(() => { const s = attendanceView(); return !!getAttendanceRecord(s, currentLectureKey(s), normalizeId('qa-lower-7')); });
+          await page.waitForFunction(() => [...document.querySelectorAll('#simpleUi .suRow')].some(r => r.textContent.includes('طالب بمعرف صغير') && r.querySelector('.suCheck.on')));
+          await page.locator('#simpleUi .suToast button').click();
+          await page.waitForFunction(() => { const s = attendanceView(); return !getAttendanceRecord(s, currentLectureKey(s), normalizeId('qa-lower-7')); });
+          await page.evaluate(async () => { const s = subjects[0]; s.students = s.students.filter(x => x.id !== 'qa-lower-7'); s.studentCount = s.students.length; buildStudentCache(); renderAll(); });
+        });
+
         await check(report, `${width}px search and filters narrow the list`, async () => {
           await page.locator('#suSearch').fill('سارة');
           assert.equal(await page.locator('#simpleUi .suRow').count(), 1);
