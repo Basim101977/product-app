@@ -128,5 +128,17 @@ const stopCamera = page => page.evaluate(() => { stopScanner(); return { live: B
     assert.equal(state.writes, 0);
     assert.deepEqual(await stopCamera(page), { live: false, src: null });
   }));
+
+  await check(report, 'Simple interface: scan hands off to the existing scanner, marks once, and returns on stop', () => withCamera(files.normal, async page => {
+    await page.evaluate(() => HathirSimpleUI.enable());
+    await page.locator('#simpleUi .suPrimary').click();
+    const deadline = Date.now() + 20000;
+    while (!(await queued(page)).length) { assert(Date.now() < deadline, 'No scan mark from the simple interface'); await page.waitForTimeout(100); }
+    assert.equal(await page.evaluate(() => getComputedStyle(document.getElementById('simpleUi')).display), 'none', 'Scanner is visible while scanning');
+    assert.deepEqual(await queued(page), [{ studentId: 'MI20250001', method: 'scan', subjectId: 'qa_name_a' }]);
+    await stopCamera(page);
+    await page.waitForFunction(() => getComputedStyle(document.getElementById('simpleUi')).display !== 'none');
+    assert.equal((await page.locator('[data-su-count]').innerText()).trim(), '1 من 2');
+  }));
 })().catch(error => report.cases.push({ label: 'setup', passed: false, error: error.stack }))
   .finally(() => { saveReport(report, 'camera-fake-stream'); if (!report.passed) process.exitCode = 1; });
