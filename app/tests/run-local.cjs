@@ -48,6 +48,7 @@ const suites = [
   { name: 'simple-ui', args: ['tests/simple-ui-regression.cjs'], report: 'simple-ui-regression.json' },
   { name: 'simple-ui-students', args: ['tests/simple-ui-students.cjs'], report: 'simple-ui-students.json' },
   { name: 'simple-ui-edit', args: ['tests/simple-ui-edit.cjs'], report: 'simple-ui-edit.json' },
+  { name: 'simple-ui-settings', args: ['tests/simple-ui-settings.cjs'], report: 'simple-ui-settings.json' },
   { name: 'sync-transport', args: ['tests/sync-transport-regression.cjs'], report: 'sync-transport-regression.json' },
   { name: 'emulator', args: ['tests/personal-rules-emulator.cjs'], report: 'personal-rules-emulator.json' }
 ];

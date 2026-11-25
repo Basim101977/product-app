@@ -174,6 +174,7 @@
 
   function more() {
     return `<div class="suList">
+        ${canEditSubject(view()) ? `<button class="suRow" data-su="subjectSettings"><span class="suGrow"><b>${tr('إعدادات المادة', 'Subject settings')}</b><small>${tr('الاسم والساعات وحدود الغياب', 'Name, hours and absence limits')}</small></span><span aria-hidden="true">‹</span></button>` : ''}
         <button class="suRow" data-su="settings"><span class="suGrow"><b>${tr('الإعدادات', 'Settings')}</b></span><span aria-hidden="true">‹</span></button>
         <a class="suRow" href="help.html"><span class="suGrow"><b>${tr('مركز المساعدة', 'Help center')}</b></span><span aria-hidden="true">‹</span></a>
         <button class="suRow" data-su="classic"><span class="suGrow"><b>${tr('الواجهة الكلاسيكية', 'Classic interface')}</b><small>${tr('العودة إلى الواجهة السابقة؛ لا تتأثر البيانات', 'Switch back; data is unaffected')}</small></span><span aria-hidden="true">‹</span></button>
@@ -287,7 +288,9 @@
     const options = [...(els.subjectSelect?.options || [])].filter(o => o.value && !o.value.startsWith('__'));
     if (options.length < 2) { $('teachingSetupBtn')?.click(); return; }
     sheet(`<h2>${tr('اختر المادة', 'Choose a subject')}</h2><div class="suOpts">${options.map(o => `<button class="suOpt" data-value="${esc(o.value)}" aria-pressed="${o.value === els.subjectSelect.value}"><b>${esc(o.textContent)}</b></button>`).join('')}</div>
+      ${canEditSubject(view()) ? `<button class="suLink" data-x="settings">${tr('إعدادات هذه المادة', 'This subject’s settings')}</button>` : ''}
       <button class="suLink" data-x="setup">${tr('قسم ومرحلة أخرى…', 'Other department or stage…')}</button>`, layer => {
+      layer.querySelector('[data-x="settings"]')?.addEventListener('click', () => { closeSheet(); settingsSheet(); });
       layer.querySelectorAll('[data-value]').forEach(b => b.onclick = () => {
         closeSheet(); els.subjectSelect.value = b.dataset.value; els.subjectSelect.dispatchEvent(new Event('change', { bubbles: true }));
       });
@@ -480,6 +483,81 @@
     });
   }
 
+  const canEditSubject = subject => !!subject && !subject._sources && typeof canManageSubject === 'function' && canManageSubject(subject) && !!window.HathirSubjectTools;
+  const THRESHOLDS = ['notice', 'warning', 'fail'];
+  // The classic subject editor owns validation and saving (local workspace, or
+  // correctSubjectAnnualHours plus the title update). It is opened hidden to
+  // read the current values, and again hidden to submit the new ones.
+  function openEditorHidden(subject) {
+    HathirSubjectTools.openEditor('edit', subject.id);
+    const editor = $('subjectEditor');
+    if (!editor?.open) return null;
+    editor.style.visibility = 'hidden';
+    return editor;
+  }
+  function closeEditorHidden(editor) { if (editor?.open) editor.close(); if (editor) editor.style.visibility = ''; }
+  function readSubjectSettings(subject) {
+    const editor = openEditorHidden(subject);
+    if (!editor) return null;
+    try {
+      return { name: $('subjectName').value, hours: $('subjectHours').value, duration: $('subjectDuration').value, system: $('subjectSystem').value,
+        systems: [...$('subjectSystem').options].map(o => ({ value: o.value, label: o.textContent })),
+        limits: Object.fromEntries(THRESHOLDS.map(k => [k, $('subject_' + k).value])) };
+    } finally { closeEditorHidden(editor); }
+  }
+  async function saveSubjectSettings(subject, values) {
+    const editor = openEditorHidden(subject);
+    if (!editor) throw Error(text('noPermission'));
+    try {
+      $('subjectName').value = values.name; $('subjectHours').value = values.hours; $('subjectDuration').value = values.duration; $('subjectSystem').value = values.system;
+      THRESHOLDS.forEach(k => { $('subject_' + k).value = values.limits[k]; });
+      $('subjectEditorError').textContent = '';
+      $('subjectEditorForm').requestSubmit();
+      const deadline = Date.now() + 60000;
+      for (;;) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+        if (!editor.open) return true;
+        const saving = $('subjectEditorSave')?.disabled, message = $('subjectEditorError')?.textContent?.trim();
+        if (!saving && message) throw Error(message);
+        if (!saving && !message && editor.open && $('subjectName')?.validity && !$('subjectEditorForm').checkValidity()) throw Error(tr('تحقق من الحقول.', 'Check the fields.'));
+        if (Date.now() > deadline) throw Error(tr('انتهت مهلة الحفظ. أعد المحاولة.', 'Saving timed out. Try again.'));
+      }
+    } finally { closeEditorHidden(editor); }
+  }
+  function settingsSheet() {
+    const subject = view();
+    if (!canEditSubject(subject)) { notify(text('noPermission'), 'error'); return; }
+    const current = readSubjectSettings(subject);
+    if (!current) return;
+    const num = (id, label, value, attrs) => `<label class="suField" for="${id}">${label}<input id="${id}" class="suSearch" type="number" inputmode="decimal" value="${esc(value)}" ${attrs}></label>`;
+    sheet(`<h2>${tr('إعدادات المادة', 'Subject settings')}</h2>
+      <label class="suField" for="suSubName">${tr('اسم المادة', 'Subject name')}<input id="suSubName" class="suSearch" maxlength="120" value="${esc(current.name)}"></label>
+      <div class="suGrid2">${num('suSubHours', tr('مجموع ساعات المادة', 'Total hours'), current.hours, 'min="0.1" step="any"')}${num('suSubDuration', tr('مدة المحاضرة (ساعة)', 'Lecture length (hours)'), current.duration, 'min="0.1" max="24" step="any"')}</div>
+      <p class="suHint suStart">${tr('تغيير مدة المحاضرة يسري على المحاضرات القادمة فقط.', 'A new lecture length applies to future lectures only.')}</p>
+      <label class="suField" for="suSubSystem">${tr('نظام التدريس', 'Teaching system')}<select id="suSubSystem" class="suSearch">${current.systems.map(o => `<option value="${esc(o.value)}"${o.value === current.system ? ' selected' : ''}>${esc(o.label)}</option>`).join('')}</select></label>
+      <fieldset class="suFieldset"><legend>${tr('حدود الغياب (% من ساعات المادة)', 'Absence limits (% of subject hours)')}</legend>
+        <div class="suGrid3">${THRESHOLDS.map((k, i) => num('suSub_' + k, [tr('تنبيه', 'Notice'), tr('إنذار', 'Warning'), tr('رسوب', 'Fail')][i], current.limits[k], 'min="1" max="100" step="1"')).join('')}</div></fieldset>
+      <p class="suHint suStart">${tr('القسم والمرحلة والدراسة ثابتة للحفاظ على ارتباط الطلبة والحضور.', 'Department, stage and study period stay fixed to keep students and attendance linked.')}</p>
+      <p class="suStatus" id="suSubStatus" role="status"></p>
+      <div class="suBtns"><button data-x="close">${tr('إلغاء', 'Cancel')}</button><button class="suGoBtn" data-x="save">${tr('حفظ', 'Save')}</button></div>`, layer => {
+      const status = layer.querySelector('#suSubStatus');
+      const say = (message, error = false) => { status.textContent = message; status.dataset.state = error ? 'error' : 'ok'; };
+      layer.querySelector('[data-x="close"]').onclick = closeSheet;
+      layer.querySelector('#suSubSystem').onchange = event => {
+        const values = typeof defaultAbsenceSettings === 'function' ? defaultAbsenceSettings(event.target.value) : null;
+        if (values) THRESHOLDS.forEach(k => { layer.querySelector('#suSub_' + k).value = values[k] ?? ''; });
+      };
+      layer.querySelector('[data-x="save"]').onclick = async () => {
+        const values = { name: layer.querySelector('#suSubName').value.trim(), hours: layer.querySelector('#suSubHours').value, duration: layer.querySelector('#suSubDuration').value,
+          system: layer.querySelector('#suSubSystem').value, limits: Object.fromEntries(THRESHOLDS.map(k => [k, layer.querySelector('#suSub_' + k).value])) };
+        const controls = layer.querySelectorAll('button,input,select'); controls.forEach(el => { el.disabled = true; });
+        say(tr('جارٍ الحفظ…', 'Saving…'));
+        try { await saveSubjectSettings(subject, values); closeSheet(); queue(); }
+        catch (error) { say(error.message || String(error), true); controls.forEach(el => { el.disabled = false; }); }
+      };
+    });
+  }
+
   function setClassic() {
     try { localStorage.removeItem(KEY); } catch {}
     enabled = false; closeSheet(); render();
@@ -503,6 +581,7 @@
       case 'sync': syncSheet(); break;
       case 'endLecture': endSheet(); break;
       case 'addStudents': addSheet(); break;
+      case 'subjectSettings': settingsSheet(); break;
       case 'subjects': subjectSheet(); break;
       case 'setup': $('teachingSetupBtn')?.click(); break;
       case 'excel': exportExcel(); break;

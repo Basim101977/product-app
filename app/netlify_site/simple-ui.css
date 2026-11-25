@@ -167,3 +167,11 @@ body.simpleUi #toast{inset-block-end:auto;inset-block-start:calc(64px + env(safe
 .suStatus[data-state="error"]{color:var(--su-fail)}
 .suOpt b,.suOpt small{display:block}
 .suOpt small{color:var(--su-muted);font-size:13.5px;margin-top:2px}
+/* Subject settings */
+.suGrid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.suGrid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.suGrid2 .suField,.suGrid3 .suField{margin-top:10px}
+.suFieldset{border:1px solid var(--su-line);border-radius:16px;padding:4px 12px 12px;margin:14px 0 0}
+.suFieldset legend{font-size:14px;font-weight:700;color:var(--su-ink);padding:0 6px}
+select.suSearch{appearance:auto}
+.suBtns .suGoBtn{background:var(--su-brand)!important;color:var(--su-on-brand)!important}
