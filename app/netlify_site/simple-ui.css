@@ -89,8 +89,8 @@ body.simpleUiScanning{overflow:auto}
 .suAlert{background:var(--su-alert-bg)!important;color:var(--su-alert)!important}
 .suFail{background:var(--su-fail-bg)!important;color:var(--su-fail)!important}
 .suOff{background:var(--su-sunk)!important;color:var(--su-muted)!important}
-.suStudent{display:grid;gap:6px;padding:12px 16px;border-top:1px solid var(--su-line)}
-.suStudent:first-child{border-top:0}
+.suStudent{display:grid;gap:6px;padding:12px 16px;border-top:1px solid var(--su-line)!important;width:100%;text-align:start}
+.suStudent:first-child{border-top:0!important}
 .suHead{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .suHead b{font-size:16.5px;min-width:0}
 .suTag{font-size:12.5px;font-weight:800;border-radius:99px;padding:3px 10px;white-space:nowrap}
@@ -165,3 +165,5 @@ body.simpleUi #toast{inset-block-end:auto;inset-block-start:calc(64px + env(safe
 .suStatus{margin:12px 0 0;font-size:14.5px;font-weight:700;min-height:1.2em}
 .suStatus[data-state="ok"]{color:var(--su-ok)}
 .suStatus[data-state="error"]{color:var(--su-fail)}
+.suOpt b,.suOpt small{display:block}
+.suOpt small{color:var(--su-muted);font-size:13.5px;margin-top:2px}

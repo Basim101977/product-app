@@ -121,7 +121,7 @@
     return `${subjectCard(subject, `${(subject.students || []).length} ${tr('طالباً', 'students')} · ${subjectTotalHours(subject)} ${tr('ساعة', 'hours')}`)}
       ${canAddStudents(subject) ? `<button class="suSecondary" data-su="addStudents">＋ ${tr('إضافة طلبة', 'Add students')}</button>` : ''}
       <div class="suSummary" role="group" aria-label="${tr('مواقف الغياب', 'Absence status')}">${Object.keys(counts).map(k => `<button class="${LEVELS[k][0]}" data-su-level="${k}" aria-pressed="${level === k}"><b>${counts[k]}</b>${labels[k]}</button>`).join('')}</div>${otherNote}
-      <div class="suList">${shown.map(({ s, st, cls }) => { const pct = Number(st.absencePercent) || 0; return `<div class="suStudent"><span class="suHead"><b>${esc(s.name)}</b><span class="suTag ${(LEVELS[cls] || LEVELS.ok)[0]}">${esc(absencePolicyLabel(st.policy))}</span></span><span class="suBar"><i style="width:${Math.min(100, pct * 5)}%;background:${(LEVELS[cls] || LEVELS.ok)[1]}"></i></span><small><span>${st.absentMinutes ? tr('غياب', 'Absent') + ' ' + esc(hoursLabel(st.absentMinutes)) : tr('لا غياب', 'No absence')}</span><span class="suNum">${esc(percentLabel(pct))}</span></small></div>`; }).join('') || `<p class="suEmpty">${tr('لا يوجد طلبة في هذا الموقف.', 'No students in this status.')}</p>`}</div>
+      <div class="suList">${shown.map(({ s, st, cls }) => { const pct = Number(st.absencePercent) || 0; return `<button class="suStudent" data-su-card="${esc(s.id)}"><span class="suHead"><b>${esc(s.name)}</b><span class="suTag ${(LEVELS[cls] || LEVELS.ok)[0]}">${esc(absencePolicyLabel(st.policy))}</span></span><span class="suBar"><i style="width:${Math.min(100, pct * 5)}%;background:${(LEVELS[cls] || LEVELS.ok)[1]}"></i></span><small><span>${st.absentMinutes ? tr('غياب', 'Absent') + ' ' + esc(hoursLabel(st.absentMinutes)) : tr('لا غياب', 'No absence')}</span><span class="suNum">${esc(percentLabel(pct))}</span></small></button>`; }).join('') || `<p class="suEmpty">${tr('لا يوجد طلبة في هذا الموقف.', 'No students in this status.')}</p>`}</div>
       <div class="suTools"><button data-su="excel">⤓ Excel</button><button data-su="qr">▦ ${tr('بطاقات QR', 'QR cards')}</button></div>`;
   }
 
@@ -400,6 +400,86 @@
     });
   }
 
+  // Rename and delete drive the existing profile functions with the profile
+  // window kept hidden, so its own permission, offline and sync rules decide:
+  // the save button's disabled state and #profileEditReason are read as-is.
+  function profileGate(id) {
+    openStudentProfile(id);
+    els.studentProfileModal.hidden = true;
+    return { allowed: !els.saveStudentProfileBtn.disabled, deletable: !els.deleteStudentBtn?.disabled, reason: $('profileEditReason')?.textContent?.trim() || '' };
+  }
+  async function renameStudent(id, name) {
+    const gate = profileGate(id);
+    try {
+      if (!gate.allowed) throw Error(gate.reason || text('noPermission'));
+      els.profileStudentNameInput.value = name;
+      await saveStudentProfile();
+    } finally { closeStudentProfile(); queue(); }
+    const after = view()?.students?.find(s => normalizeId(s.id) === normalizeId(id));
+    return after?.name === name;
+  }
+  async function deleteStudent(id) {
+    const gate = profileGate(id);
+    if (!gate.deletable) { closeStudentProfile(); throw Error(gate.reason || text('noPermission')); }
+    // deleteStudentFromRoster asks window.confirm before its first await; the
+    // sheet has already asked.
+    const original = window.confirm; let task;
+    window.confirm = () => true;
+    try { task = deleteStudentFromRoster(); } finally { window.confirm = original; }
+    try { await task; } finally { if (activeProfileStudentId) closeStudentProfile(); queue(); }
+    return !view()?.students?.some(s => normalizeId(s.id) === normalizeId(id));
+  }
+  function studentSheet(id) {
+    const subject = view(), student = subject?.students?.find(s => normalizeId(s.id) === normalizeId(id));
+    if (!student) return;
+    const st = studentAttendanceStats(subject, student.id);
+    // Ask the classic profile in every case: it also explains a temporary block
+    // (offline, sync pending) when canManageStudents is false for that reason.
+    const gate = subject._sources ? { allowed: false, deletable: false, reason: '' } : profileGate(student.id);
+    if (!subject._sources) closeStudentProfile();
+    const manage = gate.allowed || !!gate.reason;
+    const history = typeof studentHasHistory === 'function' && studentHasHistory(studentSubject(student.id) || subject, student.id);
+    sheet(`<h2>${esc(student.name)}</h2>
+      <p class="suHint suStart"><span class="suTag ${(LEVELS[st.policy?.className] || LEVELS.ok)[0]}">${esc(absencePolicyLabel(st.policy))}</span> ${st.absentMinutes ? tr('غياب', 'Absent') + ' ' + esc(hoursLabel(st.absentMinutes)) : tr('لا غياب', 'No absence')}</p>
+      ${manage ? `<div class="suField"><label for="suEditName">${tr('الاسم', 'Name')}</label>
+        <div class="suInline"><input id="suEditName" class="suSearch" maxlength="150" autocomplete="off" value="${esc(student.name)}"${gate.allowed ? '' : ' disabled'}><button class="suGo" data-x="rename"${gate.allowed ? '' : ' disabled'}>${tr('حفظ', 'Save')}</button></div></div>
+        ${gate.allowed ? '' : `<p class="suStatus" data-state="error">${esc(gate.reason || tr('لا يمكن التعديل الآن.', 'Editing is not available now.'))}</p>`}` : ''}
+      <p class="suStatus" id="suEditStatus" role="status"></p>
+      <div class="suOpts">
+        <button class="suOpt" data-x="profile"><b>${tr('الوجه وبطاقة QR', 'Face and QR card')}</b><small>${tr('يفتح ملف الطالب الكامل', 'Opens the full student profile')}</small></button>
+        ${manage && gate.deletable ? `<button class="suOpt suOptDanger" data-x="delete"><b>${tr('حذف الطالب', 'Delete student')}</b><small>${history ? tr('له سجل حضور: يُنقل إلى المؤرشفين وتبقى سجلاته', 'Has attendance: moved to archived, records kept') : tr('لا سجل حضور له: يُحذف من القائمة', 'No attendance: removed from the list')}</small></button>` : ''}
+      </div>
+      <div class="suBtns"><button data-x="close">${tr('إغلاق', 'Close')}</button></div>`, layer => {
+      const status = layer.querySelector('#suEditStatus');
+      const say = (message, error = false) => { status.textContent = message; status.dataset.state = error ? 'error' : 'ok'; };
+      const lock = on => layer.querySelectorAll('button,input').forEach(el => { if (on) { el.dataset.wasDisabled = el.disabled ? '1' : ''; el.disabled = true; } else el.disabled = el.dataset.wasDisabled === '1'; });
+      layer.querySelector('[data-x="close"]').onclick = closeSheet;
+      layer.querySelector('[data-x="profile"]').onclick = () => { closeSheet(); openStudentProfile(student.id); };
+      const input = layer.querySelector('#suEditName'), save = layer.querySelector('[data-x="rename"]');
+      async function doRename() {
+        const name = input.value.trim().replace(/\s+/g, ' ');
+        if (name === student.name) { say(tr('لم يتغير الاسم.', 'The name did not change.')); return; }
+        if (name.length < 3) { say(tr('اكتب اسماً من ثلاثة أحرف على الأقل.', 'Enter a name of at least three letters.'), true); return; }
+        lock(true);
+        try { if (await renameStudent(student.id, name)) { student.name = name; layer.querySelector('h2').textContent = name; say(tr('حُفظ الاسم.', 'Name saved.')); } }
+        catch (error) { say(error.message || String(error), true); }
+        finally { lock(false); }
+      }
+      if (save) { save.onclick = doRename; input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); doRename(); } }); }
+      layer.querySelector('[data-x="delete"]')?.addEventListener('click', () => {
+        const row = layer.querySelector('.suBtns');
+        row.innerHTML = `<button data-x="no">${tr('تراجع', 'Keep')}</button><button class="suDanger" data-x="yes">${tr('نعم، احذف الطالب', 'Yes, delete')}</button>`;
+        row.querySelector('[data-x="no"]').onclick = closeSheet;
+        row.querySelector('[data-x="yes"]').onclick = async () => {
+          lock(true);
+          try { if (await deleteStudent(student.id)) closeSheet(); else { lock(false); say(tr('لم يُحذف الطالب.', 'The student was not deleted.'), true); } }
+          catch (error) { lock(false); say(error.message || String(error), true); }
+        };
+        row.querySelector('[data-x="yes"]').focus();
+      });
+    });
+  }
+
   function setClassic() {
     try { localStorage.removeItem(KEY); } catch {}
     enabled = false; closeSheet(); render();
@@ -414,6 +494,7 @@
     if (d.suStudent) { studentTap(d.suStudent, t); return; }
     if (d.suLecture) { lectureSheet(d.suLecture); return; }
     if (d.suHistory) { historySheet(d.suHistory); return; }
+    if (d.suCard) { studentSheet(d.suCard); return; }
     if (d.suRecord) { recordMode = d.suRecord; render(); return; }
     switch (d.su) {
       case 'back': sub = ''; query = ''; filter = 'all'; render(); break;
