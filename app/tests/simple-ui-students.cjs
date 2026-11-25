@@ -58,8 +58,10 @@ const imports = page => page.evaluate(() => personalFixture.calls.filter(c => c.
           await page.locator('#simpleUi [data-su="addStudents"]').click();
           const file = path.join(REPORTS, 'simple-ui-names.csv');
           fs.writeFileSync(file, 'الاسم\nمريم سعد ناصر\nحسين كاظم جواد\n');
+          // Count before choosing the file: a fast import could otherwise finish first.
+          const before = (await imports(page)).length;
           await page.locator('#suNamesFile').setInputFiles(file);
-          await page.waitForFunction(n => personalFixture.calls.filter(c => c.name === 'importPersonalStudents').length > n, (await imports(page)).length);
+          await page.waitForFunction(n => personalFixture.calls.filter(c => c.name === 'importPersonalStudents').length > n, before);
           assert.deepEqual((await imports(page)).at(-1), ['مريم سعد ناصر', 'حسين كاظم جواد']);
           await page.locator('#studentImportProgressStatus[data-state="success"]').waitFor();
           await page.keyboard.press('Escape');

@@ -175,3 +175,9 @@ body.simpleUi #toast{inset-block-end:auto;inset-block-start:calc(64px + env(safe
 .suFieldset legend{font-size:14px;font-weight:700;color:var(--su-ink);padding:0 6px}
 select.suSearch{appearance:auto}
 .suBtns .suGoBtn{background:var(--su-brand)!important;color:var(--su-on-brand)!important}
+/* Subject chooser and creation */
+.suOptsEnd{margin-top:14px}
+.suOptAdd b{color:var(--su-brand-ink)}
+.suDetails{margin-top:14px;border:1px solid var(--su-line);border-radius:16px;padding:10px 12px}
+.suDetails summary{cursor:pointer;font-weight:700;font-size:14.5px}
+.suNamesBody{display:flex;flex-direction:column;gap:12px}

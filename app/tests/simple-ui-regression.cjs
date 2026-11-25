@@ -94,6 +94,11 @@ const row = (page, name) => page.locator('#simpleUi .suRow', { hasText: name });
         });
 
         await check(report, `${width}px search and filters narrow the list`, async () => {
+          // A background refresh while typing keeps the same field and its text.
+          await page.evaluate(() => { document.getElementById('suSearch').dataset.probe = 'kept'; });
+          await page.locator('#suSearch').pressSequentially('سا');
+          await page.evaluate(() => new Promise(resolve => { renderAll(); requestAnimationFrame(() => requestAnimationFrame(resolve)); }));
+          assert.deepEqual(await page.evaluate(() => ({ probe: document.getElementById('suSearch').dataset.probe, value: document.getElementById('suSearch').value })), { probe: 'kept', value: 'سا' });
           await page.locator('#suSearch').fill('سارة');
           assert.equal(await page.locator('#simpleUi .suRow').count(), 1);
           await page.locator('#suSearch').fill('');

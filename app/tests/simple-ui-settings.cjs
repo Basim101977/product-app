@@ -61,6 +61,42 @@ const editorClosed = page => page.evaluate(() => { const e = document.getElement
           assert(await editorClosed(page));
           assert.deepEqual(report.pageErrors, []);
         });
+
+        await check(report, `${width}px the chooser lists every subject grouped by department, stage and period`, async () => {
+          await page.locator('[data-su-tab="today"]').click();
+          await page.locator('#simpleUi [data-su="subjects"]').click();
+          assert.equal(await page.locator('#simpleUi .suSheet .suSub').count(), 1);
+          assert.equal(await page.locator('#simpleUi .suSheet [data-subject]').count(), 2);
+          await page.screenshot({ path: path.join(REPORTS, `simple-ui-chooser-${width}.png`) });
+        });
+
+        let target;
+        await check(report, `${width}px a new subject needs a name, then is created in another stage through the classic editor`, async () => {
+          await page.locator('#simpleUi [data-x="create"]').click();
+          await page.locator('#suNewName').waitFor();
+          assert(await editorClosed(page));
+          await page.locator('#simpleUi [data-x="save"]').click();
+          assert.equal(await page.locator('#suNewStatus').getAttribute('data-state'), 'error');
+          target = await page.evaluate(() => { const sel = document.getElementById('suNewStage'); const other = [...sel.options].find(o => o.value !== compactScope.stageId); sel.value = other.value; return other.value; });
+          await page.locator('#suNewName').fill('مادة مرحلة أخرى');
+          await page.screenshot({ path: path.join(REPORTS, `simple-ui-create-${width}.png`) });
+          await page.locator('#simpleUi [data-x="save"]').click();
+          await page.waitForFunction(() => !document.querySelector('#simpleUi .suSheet'));
+          const state = await page.evaluate(() => ({ title: getSubject().titleAr, stage: compactScope.stageId, stored: Object.values(localData.subjects).some(s => s.titleAr === 'مادة مرحلة أخرى'), students: getSubject().students.length }));
+          assert.deepEqual(state, { title: 'مادة مرحلة أخرى', stage: target, stored: true, students: 0 });
+          assert(await editorClosed(page));
+          await page.locator('#simpleUi .suEmptyCard, #simpleUi [data-su="addStudents"]').first().waitFor();
+        });
+
+        await check(report, `${width}px switching to a subject in another stage goes through the classic scope change`, async () => {
+          await page.locator('#simpleUi [data-su="subjects"]').click();
+          assert.equal(await page.locator('#simpleUi .suSheet .suSub').count(), 2, 'two department/stage groups now');
+          await page.locator('#simpleUi .suSheet [data-subject="computer"]').click();
+          await page.waitForFunction(() => getSubject()?.id === 'computer');
+          assert.notEqual(await page.evaluate(() => compactScope.stageId), target);
+          assert((await page.locator('#suView').innerText()).includes('الحاسوب'));
+          assert.deepEqual(report.pageErrors, []);
+        });
       } finally { await context.close(); }
     }
   } finally { await harness.close(); }

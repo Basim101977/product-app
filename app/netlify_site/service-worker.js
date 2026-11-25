@@ -51,7 +51,7 @@ const APP_SHELL = ["/name-attendance.js?v=v2026.11.18-interaction-167","/sync-re
   "/settings-ui.js?v=v2026.11.18-interaction-167",
   "/beginner-ui.js?v=v2026.11.18-interaction-167",
   "/beginner-ui.css?v=v2026.11.18-interaction-167",
-  "/simple-ui.js?v=20261125-simple-7", "/simple-ui.css?v=20261125-simple-7",
+  "/simple-ui.js?v=20261125-simple-9", "/simple-ui.css?v=20261125-simple-9",
   "/record-window.css?v=v2026.11.18-interaction-167",
   "/card-readers.js?v=20260915-settings1",
   "/settings-ui.css?v=20260923-ui2",

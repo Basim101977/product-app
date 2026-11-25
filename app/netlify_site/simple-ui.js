@@ -56,7 +56,7 @@
   }
 
   function subjectCard(subject, caption) {
-    if (!subject) return `<button class="suCard suSubject" data-su="setup"><span class="suGrow"><b>${tr('أضف مادة', 'Add a subject')}</b><small>${tr('ابدأ بإنشاء مادتك الأولى', 'Create your first subject')}</small></span></button>`;
+    if (!subject) return `<button class="suCard suSubject" data-su="${canCreateSubject() ? 'create' : 'setup'}"><span class="suGrow"><b>${tr('أضف مادة', 'Add a subject')}</b><small>${tr('ابدأ بإنشاء مادتك الأولى', 'Create your first subject')}</small></span></button>`;
     return `<button class="suCard suSubject" data-su="subjects"><span class="suGrow"><b>${esc(subjectTitle(subject))}</b><small>${esc(caption ?? subjectContext(subject))}</small></span><span class="suChev" aria-hidden="true">⌄</span></button>`;
   }
 
@@ -94,14 +94,19 @@
     const key = lectureKey(subject), students = subject.students || [];
     const present = students.filter(s => record(subject, key, s.id)).length, q = query.trim().normalize('NFKC');
     const rows = students.filter(s => (!q || String(s.name).normalize('NFKC').includes(q)) && (filter === 'all' || (filter === 'absent') === !record(subject, key, s.id)));
-    return `<input class="suSearch" id="suSearch" type="search" placeholder="${tr('ابحث باسم الطالب', 'Search by name')}" value="${esc(query)}" autocomplete="off" aria-label="${tr('بحث', 'Search')}">
-      <div class="suChips" role="group" aria-label="${tr('تصفية', 'Filter')}">
+    return `<div class="suChips" role="group" aria-label="${tr('تصفية', 'Filter')}">
         <button class="suChip" data-su-filter="all" aria-pressed="${filter === 'all'}">${tr('الكل', 'All')} ${students.length}</button>
         <button class="suChip" data-su-filter="absent" aria-pressed="${filter === 'absent'}">${tr('غائبون', 'Absent')} ${students.length - present}</button>
         <button class="suChip" data-su-filter="present" aria-pressed="${filter === 'present'}">${tr('حاضرون', 'Present')} ${present}</button>
       </div>
       <p class="suHint">${tr('اضغط مرتين على اسم الغائب لتسجيل حضوره · اضغط مرة على الحاضر لعرض التفاصيل', 'Double-tap an absent name to mark · tap a present name for details')}</p>
       <div class="suList">${rows.map(s => { const r = record(subject, key, s.id); return `<button class="suRow" data-su-student="${esc(s.id)}"><span class="suCheck${r ? ' on' : ''}" aria-hidden="true">${r ? '✓' : ''}</span><span class="suGrow suName">${esc(s.name)}</span><span class="suNum suTime">${r ? esc(displayAttendanceTime(r.time) || '') : ''}</span></button>`; }).join('') || `<p class="suEmpty">${tr('لا يوجد طالب بهذا الاسم.', 'No student with this name.')}</p>`}</div>`;
+  }
+
+  // The search field is created once per visit; background refreshes (live
+  // sync, timers) only replace the body below it, so typing is never lost.
+  function namesView() {
+    return `<input class="suSearch" id="suSearch" type="search" placeholder="${tr('ابحث باسم الطالب', 'Search by name')}" value="${esc(query)}" autocomplete="off" aria-label="${tr('بحث', 'Search')}"><div id="suNamesBody" class="suNamesBody">${names()}</div>`;
   }
 
   const LEVELS = { ok: ['suOk', 'var(--su-ok)'], warn: ['suWarnTag', 'var(--su-warn)'], danger: ['suAlert', 'var(--su-alert)'], fail: ['suFail', 'var(--su-fail)'], off: ['suOff', 'var(--su-muted)'] };
@@ -205,15 +210,12 @@
     if (!on) { if (root) root.hidden = true; return; }
     ensureRoot().hidden = false;
     root.dir = typeof lang !== 'undefined' && lang === 'en' ? 'ltr' : 'rtl';
-    const searchFocused = document.activeElement?.id === 'suSearch', caret = searchFocused ? document.activeElement.selectionStart : 0;
     $('suTop').innerHTML = header();
-    $('suView').innerHTML = sub === 'names' ? names() : tab === 'students' ? students() : tab === 'records' ? records() : tab === 'more' ? more() : today();
     $('suNav').innerHTML = nav(); $('suNav').hidden = sub === 'names';
+    if (sub === 'names' && $('suSearch') && $('suNamesBody')) { $('suNamesBody').innerHTML = names(); return; }
+    $('suView').innerHTML = sub === 'names' ? namesView() : tab === 'students' ? students() : tab === 'records' ? records() : tab === 'more' ? more() : today();
     const search = $('suSearch');
-    if (search) {
-      search.oninput = () => { query = search.value; render(); };
-      if (searchFocused) { search.focus(); search.setSelectionRange(caret, caret); }
-    }
+    if (search) search.oninput = () => { query = search.value; $('suNamesBody').innerHTML = names(); };
   }
   function queue() { if (!renderQueued) { renderQueued = true; requestAnimationFrame(render); } }
 
@@ -284,18 +286,36 @@
     row.classList.add('armed'); setTimeout(() => row.classList.remove('armed'), 600);
   }
 
+  // All of the teacher's subjects, grouped by department · stage · period. Picking
+  // one uses #quickTeachingSubject, the same path as the classic subject menu,
+  // which sets the department/stage scope and refreshes.
   function subjectSheet() {
-    const options = [...(els.subjectSelect?.options || [])].filter(o => o.value && !o.value.startsWith('__'));
-    if (options.length < 2) { $('teachingSetupBtn')?.click(); return; }
-    sheet(`<h2>${tr('اختر المادة', 'Choose a subject')}</h2><div class="suOpts">${options.map(o => `<button class="suOpt" data-value="${esc(o.value)}" aria-pressed="${o.value === els.subjectSelect.value}"><b>${esc(o.textContent)}</b></button>`).join('')}</div>
-      ${canEditSubject(view()) ? `<button class="suLink" data-x="settings">${tr('إعدادات هذه المادة', 'This subject’s settings')}</button>` : ''}
-      <button class="suLink" data-x="setup">${tr('قسم ومرحلة أخرى…', 'Other department or stage…')}</button>`, layer => {
+    const list = typeof attendanceAvailableSubjects === 'function' ? attendanceAvailableSubjects() : [];
+    const current = view(), canCreate = canCreateSubject();
+    if (!list.length) { canCreate ? createSheet() : $('teachingSetupBtn')?.click(); return; }
+    const groups = new Map();
+    for (const subject of list) {
+      const label = [subjectContext(subject), studyPeriodLabel(subject)].filter(Boolean).join(' · ');
+      if (!groups.has(label)) groups.set(label, []);
+      groups.get(label).push(subject);
+    }
+    sheet(`<h2>${tr('اختر المادة', 'Choose a subject')}</h2>
+      ${[...groups].map(([label, items]) => `<h3 class="suSub">${esc(label)}</h3><div class="suOpts">${items.map(subject => `<button class="suOpt" data-subject="${esc(subject.id)}" aria-pressed="${subject.id === current?.id}"><b>${esc(subjectTitle(subject))}</b><small>${(subject.students || []).length || subject.studentCount || 0} ${tr('طالباً', 'students')}</small></button>`).join('')}</div>`).join('')}
+      <div class="suOpts suOptsEnd">
+        ${canCreate ? `<button class="suOpt suOptAdd" data-x="create"><b>＋ ${tr('مادة جديدة', 'New subject')}</b><small>${tr('في أي قسم ومرحلة', 'In any department and stage')}</small></button>` : ''}
+        ${canEditSubject(current) ? `<button class="suLink" data-x="settings">${tr('إعدادات المادة الحالية', 'Current subject settings')}</button>` : ''}
+      </div>`, layer => {
+      layer.querySelectorAll('[data-subject]').forEach(button => button.onclick = () => { closeSheet(); chooseSubject(button.dataset.subject); });
+      layer.querySelector('[data-x="create"]')?.addEventListener('click', () => { closeSheet(); createSheet(); });
       layer.querySelector('[data-x="settings"]')?.addEventListener('click', () => { closeSheet(); settingsSheet(); });
-      layer.querySelectorAll('[data-value]').forEach(b => b.onclick = () => {
-        closeSheet(); els.subjectSelect.value = b.dataset.value; els.subjectSelect.dispatchEvent(new Event('change', { bubbles: true }));
-      });
-      layer.querySelector('[data-x="setup"]').onclick = () => { closeSheet(); $('teachingSetupBtn')?.click(); };
     });
+  }
+  function chooseSubject(id) {
+    const select = $('quickTeachingSubject');
+    if (!select) return;
+    if (![...select.options].some(o => o.value === id)) select.insertAdjacentHTML('beforeend', `<option value="${esc(id)}"></option>`);
+    select.value = id; select.dispatchEvent(new Event('change', { bubbles: true }));
+    sub = ''; queue();
   }
   function syncSheet() {
     const count = pending();
@@ -488,8 +508,8 @@
   // The classic subject editor owns validation and saving (local workspace, or
   // correctSubjectAnnualHours plus the title update). It is opened hidden to
   // read the current values, and again hidden to submit the new ones.
-  function openEditorHidden(subject) {
-    HathirSubjectTools.openEditor('edit', subject.id);
+  function openEditorHidden(subject, mode = 'edit') {
+    HathirSubjectTools.openEditor(mode, subject?.id);
     const editor = $('subjectEditor');
     if (!editor?.open) return null;
     editor.style.visibility = 'hidden';
@@ -505,10 +525,14 @@
         limits: Object.fromEntries(THRESHOLDS.map(k => [k, $('subject_' + k).value])) };
     } finally { closeEditorHidden(editor); }
   }
-  async function saveSubjectSettings(subject, values) {
-    const editor = openEditorHidden(subject);
+  async function saveSubjectSettings(subject, values, mode = 'edit') {
+    const editor = openEditorHidden(subject, mode);
     if (!editor) throw Error(text('noPermission'));
     try {
+      if (mode === 'create') {
+        $('subjectDept').value = values.dept; $('subjectDept').dispatchEvent(new Event('change'));
+        $('subjectStage').value = values.stage; $('subjectPeriod').value = values.period;
+      }
       $('subjectName').value = values.name; $('subjectHours').value = values.hours; $('subjectDuration').value = values.duration; $('subjectSystem').value = values.system;
       THRESHOLDS.forEach(k => { $('subject_' + k).value = values.limits[k]; });
       $('subjectEditorError').textContent = '';
@@ -523,6 +547,60 @@
         if (Date.now() > deadline) throw Error(tr('انتهت مهلة الحفظ. أعد المحاولة.', 'Saving timed out. Try again.'));
       }
     } finally { closeEditorHidden(editor); }
+  }
+  const canCreateSubject = () => !!window.HathirSubjectTools && typeof hasPermission === 'function' && hasPermission('classesCreate');
+  // Departments, their stages, periods and defaults come from the classic
+  // editor in create mode, opened hidden; so do validation and saving.
+  function readCreateOptions() {
+    const editor = openEditorHidden(null, 'create');
+    if (!editor) return null;
+    try {
+      const dept = $('subjectDept'), stagesByDept = {};
+      const initial = { dept: dept.value, stage: $('subjectStage').value };
+      for (const option of dept.options) {
+        dept.value = option.value; dept.dispatchEvent(new Event('change'));
+        stagesByDept[option.value] = [...$('subjectStage').options].map(o => ({ value: o.value, label: o.textContent }));
+      }
+      return { ...initial, period: $('subjectPeriod').value, hours: $('subjectHours').value, duration: $('subjectDuration').value, system: $('subjectSystem').value,
+        departments: [...dept.options].map(o => ({ value: o.value, label: o.textContent })), stagesByDept,
+        periods: [...$('subjectPeriod').options].map(o => ({ value: o.value, label: o.textContent })),
+        systems: [...$('subjectSystem').options].map(o => ({ value: o.value, label: o.textContent })),
+        limits: Object.fromEntries(THRESHOLDS.map(k => [k, $('subject_' + k).value])) };
+    } finally { closeEditorHidden(editor); }
+  }
+  const selectField = (id, label, options, value) => `<label class="suField" for="${id}">${label}<select id="${id}" class="suSearch">${options.map(o => `<option value="${esc(o.value)}"${o.value === value ? ' selected' : ''}>${esc(o.label)}</option>`).join('')}</select></label>`;
+  const numberField = (id, label, value, attrs) => `<label class="suField" for="${id}">${label}<input id="${id}" class="suSearch" type="number" inputmode="decimal" value="${esc(value)}" ${attrs}></label>`;
+  function createSheet() {
+    if (!canCreateSubject()) { notify(text('noPermission'), 'error'); return; }
+    const o = readCreateOptions();
+    if (!o) return;
+    sheet(`<h2>${tr('مادة جديدة', 'New subject')}</h2>
+      <label class="suField" for="suNewName">${tr('اسم المادة', 'Subject name')}<input id="suNewName" data-autofocus class="suSearch" maxlength="120" autocomplete="off"></label>
+      ${selectField('suNewDept', tr('القسم', 'Department'), o.departments, o.dept)}
+      <div class="suGrid2">${selectField('suNewStage', tr('المرحلة', 'Stage'), o.stagesByDept[o.dept] || [], o.stage)}${selectField('suNewPeriod', tr('الدراسة', 'Study period'), o.periods, o.period)}</div>
+      <div class="suGrid2">${numberField('suNewHours', tr('مجموع ساعات المادة', 'Total hours'), o.hours, 'min="0.1" step="any"')}${numberField('suNewDuration', tr('مدة المحاضرة (ساعة)', 'Lecture length (hours)'), o.duration, 'min="0.1" max="24" step="any"')}</div>
+      <details class="suDetails"><summary>${tr('نظام التدريس وحدود الغياب', 'Teaching system and absence limits')}</summary>
+        ${selectField('suNewSystem', tr('نظام التدريس', 'Teaching system'), o.systems, o.system)}
+        <div class="suGrid3">${THRESHOLDS.map((k, i) => numberField('suNew_' + k, [tr('تنبيه %', 'Notice %'), tr('إنذار %', 'Warning %'), tr('رسوب %', 'Fail %')][i], o.limits[k], 'min="1" max="100" step="1"')).join('')}</div></details>
+      <p class="suHint suStart">${tr('القسم والمرحلة والدراسة لا تتغير بعد الإنشاء.', 'Department, stage and period cannot change after creation.')}</p>
+      <p class="suStatus" id="suNewStatus" role="status"></p>
+      <div class="suBtns"><button data-x="close">${tr('إلغاء', 'Cancel')}</button><button class="suGoBtn" data-x="save">${tr('إنشاء المادة', 'Create subject')}</button></div>`, layer => {
+      const q = id => layer.querySelector('#' + id), status = q('suNewStatus');
+      const say = (message, error = false) => { status.textContent = message; status.dataset.state = error ? 'error' : 'ok'; };
+      layer.querySelector('[data-x="close"]').onclick = closeSheet;
+      q('suNewName').addEventListener('input', () => { if (status.dataset.state === 'error') say(''); });
+      q('suNewDept').onchange = () => { q('suNewStage').innerHTML = (o.stagesByDept[q('suNewDept').value] || []).map(s => `<option value="${esc(s.value)}">${esc(s.label)}</option>`).join(''); };
+      q('suNewSystem').onchange = () => { const v = typeof defaultAbsenceSettings === 'function' ? defaultAbsenceSettings(q('suNewSystem').value) : null; if (v) THRESHOLDS.forEach(k => { q('suNew_' + k).value = v[k] ?? ''; }); };
+      layer.querySelector('[data-x="save"]').onclick = async () => {
+        const values = { name: q('suNewName').value.trim(), dept: q('suNewDept').value, stage: q('suNewStage').value, period: q('suNewPeriod').value,
+          hours: q('suNewHours').value, duration: q('suNewDuration').value, system: q('suNewSystem').value, limits: Object.fromEntries(THRESHOLDS.map(k => [k, q('suNew_' + k).value])) };
+        if (!values.name) { say(tr('اكتب اسم المادة.', 'Enter the subject name.'), true); q('suNewName').focus(); return; }
+        const controls = layer.querySelectorAll('button,input,select'); controls.forEach(el => { el.disabled = true; });
+        say(tr('جارٍ الإنشاء…', 'Creating…'));
+        try { await saveSubjectSettings(null, values, 'create'); closeSheet(); tab = 'today'; sub = ''; queue(); }
+        catch (error) { say(error.message || String(error), true); controls.forEach(el => { el.disabled = false; }); }
+      };
+    });
   }
   function settingsSheet() {
     const subject = view();
@@ -584,6 +662,7 @@
       case 'subjectSettings': settingsSheet(); break;
       case 'subjects': subjectSheet(); break;
       case 'setup': $('teachingSetupBtn')?.click(); break;
+      case 'create': createSheet(); break;
       case 'excel': exportExcel(); break;
       case 'qr': exportStudentQrPdf(); break;
       case 'fullRecord': (window.HathirBeginnerUI?.openRecord || (() => {}))(); break;
